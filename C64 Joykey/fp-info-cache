@@ -1,4 +1,4 @@
-272052738265085
+273665958163069
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -1378,6 +1378,13 @@ PUIAudio_SMT_0825_S_4_R
 0
 0
 0
+C64 IDC
+IDC_Joystick
+Through hole straight IDC box header, 2x05, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x05 2.54mm double row
+0
+10
+10
 Capacitors_SMD
 CP_Elec_3x5.3
 
