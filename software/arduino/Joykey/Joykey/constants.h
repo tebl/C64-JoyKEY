@@ -3,8 +3,8 @@
 #define APP_VERSION "0.1"
 #define LED_FLASH_DELAY 100
 #define BOOT_MODE_THRESHOLD 1000
-#define DEBOUNCE_VALUE 10
-#define REPEAT_DELAY 250
+#define USB_DEBOUNCE_DELAY 10
+#define USB_REPEAT_DELAY 200
 
 /* Pin definitions */
 #define PIN_FIRE1 2
@@ -29,11 +29,11 @@
 #define KEY_MODE_DEFAULT 0
 #define KEY_MODE_USB 1
 
-#define KEY_UP 0
-#define KEY_DOWN 1
-#define KEY_LEFT 2
-#define KEY_RIGHT 3
-#define KEY_FIRE1 4
-#define KEY_FIRE2 5
-#define KEY_FIRE3 6
+#define JOYKEY_UP 0
+#define JOYKEY_DOWN 1
+#define JOYKEY_LEFT 2
+#define JOYKEY_RIGHT 3
+#define JOYKEY_FIRE1 4
+#define JOYKEY_FIRE2 5
+#define JOYKEY_FIRE3 6
 #define NUM_KEYS 7

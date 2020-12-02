@@ -14,6 +14,10 @@ const int key_pins[NUM_KEYS] = {
 };
 unsigned long debounce[NUM_KEYS];
 
+#define KEY_MAP_WASD 0
+#define KEY_MAP_CURSOR 1
+byte key_map = KEY_MAP_CURSOR;
+
 #define KEY_STATE_NEUTRAL 0
 #define KEY_STATE_CHANGING 1
 #define KEY_STATE_WAIT_RELEASE 2
@@ -29,6 +33,8 @@ void init_mode_usb() {
     debounce[key_id] = 0;
     key_state[key_id] = KEY_STATE_NEUTRAL;
   }
+
+  Keyboard.begin();
 }
 
 /*
@@ -44,13 +50,13 @@ bool check_debounced(byte key_id, bool allow_repeat) {
     switch (key_state[key_id]) {
       case KEY_STATE_NEUTRAL:
         if(debounce[key_id] == 0) {
-          debounce[key_id] = millis() + DEBOUNCE_VALUE;
+          debounce[key_id] = millis() + USB_DEBOUNCE_DELAY;
           return false;
         }
 
         if (millis() > debounce[key_id]) {
           if (allow_repeat) {
-            debounce[key_id] += REPEAT_DELAY;
+            debounce[key_id] += USB_REPEAT_DELAY;
           } else {
             key_state[key_id] = KEY_STATE_WAIT_RELEASE;
           }
@@ -64,27 +70,6 @@ bool check_debounced(byte key_id, bool allow_repeat) {
         return false;
         break;
     }
-    /*
-    // has the switch been pressed continually for long enough?
-    if (millis() > debounce[key_id]) {
-      return true;
-    }
-
-    debounce_count[key_id]++;
-
-    // has the switch been pressed continually for long enough?
-    int count = debounce_count[key_id];
-    if (count == DEBOUNCE_VALUE) {
-      return true;
-    } else if (count > DEBOUNCE_VALUE) {
-      if (count == (DEBOUNCE_VALUE + REPEAT_DELAY)) {
-        debounce_count[key_id] = DEBOUNCE_VALUE + 1;
-
-        if (allow_repeat) return true;
-        else return false;
-      }
-    }
-    */
   } else {
     // not pressed, reset debounce count
     debounce[key_id] = 0;
@@ -98,23 +83,38 @@ bool check_debounced(byte key_id, bool allow_repeat) {
  * Translate keypad keys to their equivalents found on a modern keyboard.
  */
 void handle_key(byte key_id) {
-  switch(key_id) {
-    case KEY_UP: Keyboard.write('W'); return;
-    case KEY_DOWN: Keyboard.write('S'); return;
-    case KEY_LEFT: Keyboard.write('A'); return;
-    case KEY_RIGHT: Keyboard.write('D'); return;
-    case KEY_FIRE1: Keyboard.write(' '); return;
-    case KEY_FIRE2: Keyboard.write('Q'); return;
-    case KEY_FIRE3: Keyboard.write('E'); return;
+  switch (key_map) {
+    case KEY_MAP_WASD:
+      switch(key_id) {
+        case JOYKEY_UP:     Keyboard.write('W'); return;
+        case JOYKEY_DOWN:   Keyboard.write('S'); return;
+        case JOYKEY_LEFT:   Keyboard.write('A'); return;
+        case JOYKEY_RIGHT:  Keyboard.write('D'); return;
+        case JOYKEY_FIRE1:  Keyboard.write(' '); return;
+        case JOYKEY_FIRE2:  Keyboard.write('Q'); return;
+        case JOYKEY_FIRE3:  Keyboard.write('E'); return;
+      }
+      break;
+    
+    case KEY_MAP_CURSOR:
+    default:
+      switch(key_id) {
+        case JOYKEY_UP:     Keyboard.write(KEY_UP_ARROW); return;
+        case JOYKEY_DOWN:   Keyboard.write(KEY_DOWN_ARROW); return;
+        case JOYKEY_LEFT:   Keyboard.write(KEY_LEFT_ARROW); return;
+        case JOYKEY_RIGHT:  Keyboard.write(KEY_RIGHT_ARROW); return;
+        case JOYKEY_FIRE1:  Keyboard.write(' '); return;
+        case JOYKEY_FIRE2:  Keyboard.write('Q'); return;
+        case JOYKEY_FIRE3:  Keyboard.write('E'); return;
+      }
+      break;
   }
 }
 
 void handle_mode_usb() {
-  if (check_debounced(KEY_UP, true)) Serial.println("KEY_UP");
-  if (check_debounced(KEY_DOWN, true)) Serial.println("KEY_DOWN");
-  if (check_debounced(KEY_LEFT, true)) Serial.println("KEY_LEFT");
-  if (check_debounced(KEY_RIGHT, true)) Serial.println("KEY_RIGHT");
-  if (check_debounced(KEY_FIRE1, true)) Serial.println("KEY_FIRE1");
-  if (check_debounced(KEY_FIRE2, true)) Serial.println("KEY_FIRE2");
-  if (check_debounced(KEY_FIRE3, true)) Serial.println("KEY_FIRE3");
+  for (int key_id = 0; key_id < NUM_KEYS; key_id++) {
+    if (check_debounced(key_id, true)) {
+      handle_key(key_id);
+    }
+  }
 }

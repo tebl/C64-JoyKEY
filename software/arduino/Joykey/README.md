@@ -4,6 +4,8 @@ While the board itself was envisioned as a simple joystick replacement, I didn't
 
 I'm doing most of the development these days using *PlatformIO* in order to make things a bit easier on myself, but as I know most users won't have anything more than the standard Arduino studio I've tried to keep things compatible - you'll find the expected Arduino-sketch (*.ino*-file in the Joykey subfolder). *PlatformIO* should be able to figure out most things automatically, but see below for details on setting up *Arduino Studio*.
 
+Finally some words on the modes of the sketch, I've added a failsafe so that it doesn't automatically start up in a way that takes any sort of control over the keys. The reason for this is that a few vintage computers, and possibly some consoles, would have issues with the pullups that can be enabled on the Arduino - so in order to have it act as a modern USB-device you'll have to hold down both LEFT and RIGHT key when plugging in the device, the SYS LED will then be lit and stay on. When the magic combination haven't been held, the device will instead flash and silently sit there without doing much noticable.
+
 ## Arduino Studio
 For assistance on getting going with the Pro Micro on common tasks such as uploading code and communicating with the module, I found the drivers guides on [learn.sparkfun.com](https://learn.sparkfun.com/tutorials/pro-micro--fio-v3-hookup-guide#hardware-overview-pro-micro) to be of great help (the board I purchased and used for the project was a DIY MORE Arduino Pro Micro). The following is what I have selected as board type, make sure that you pick the one that corresponds to your module as Pro Micro will have to be reset using the module if you have problems.
 
