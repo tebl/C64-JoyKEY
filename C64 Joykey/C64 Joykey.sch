@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "C64 Joykey"
+Title "C64 JoyKEY"
 Date ""
-Rev "A"
+Rev "B"
 Comp ""
 Comment1 ""
 Comment2 ""
-Comment3 "Note that due to the risk to shorting the wrong pin, it should be built hardwired."
-Comment4 "Joystick for C64/Amiga/SMS using directional keys."
+Comment3 ""
+Comment4 ""
 $EndDescr
 $Comp
 L mounting:Mounting M1
@@ -108,89 +108,89 @@ Wire Wire Line
 $Comp
 L c64_idc:c64_idc J2
 U 1 1 5FB748C4
-P 8350 2075
-F 0 "J2" H 8400 2492 50  0000 C CNN
-F 1 "Port_2" H 8400 2401 50  0000 C CNN
-F 2 "C64 IDC:IDC_Joystick" H 8350 2075 50  0001 C CNN
-F 3 "~" H 8350 2075 50  0001 C CNN
-	1    8350 2075
+P 8350 1125
+F 0 "J2" H 8400 1542 50  0000 C CNN
+F 1 "Port_2" H 8400 1451 50  0000 C CNN
+F 2 "C64 IDC:IDC_Joystick" H 8350 1125 50  0001 C CNN
+F 3 "~" H 8350 1125 50  0001 C CNN
+	1    8350 1125
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x05_Top_Bottom J1
 U 1 1 5FB76154
-P 8350 2875
-F 0 "J1" H 8400 3292 50  0000 C CNN
-F 1 "Port_1" H 8400 3201 50  0000 C CNN
-F 2 "C64 IDC:IDC_Joystick" H 8350 2875 50  0001 C CNN
-F 3 "~" H 8350 2875 50  0001 C CNN
-	1    8350 2875
+P 8350 1925
+F 0 "J1" H 8400 2342 50  0000 C CNN
+F 1 "Port_1" H 8400 2251 50  0000 C CNN
+F 2 "C64 IDC:IDC_Joystick" H 8350 1925 50  0001 C CNN
+F 3 "~" H 8350 1925 50  0001 C CNN
+	1    8350 1925
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR03
 U 1 1 5FB76300
-P 8725 3150
-F 0 "#PWR03" H 8725 2900 50  0001 C CNN
-F 1 "GND" H 8730 2977 50  0000 C CNN
-F 2 "" H 8725 3150 50  0001 C CNN
-F 3 "" H 8725 3150 50  0001 C CNN
-	1    8725 3150
+P 8725 2200
+F 0 "#PWR03" H 8725 1950 50  0001 C CNN
+F 1 "GND" H 8730 2027 50  0000 C CNN
+F 2 "" H 8725 2200 50  0001 C CNN
+F 3 "" H 8725 2200 50  0001 C CNN
+	1    8725 2200
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8650 2275
-NoConn ~ 8650 3075
+NoConn ~ 8650 1325
+NoConn ~ 8650 2125
 Wire Wire Line
-	8650 1875 8800 1875
+	8650 925  8800 925 
 Wire Wire Line
-	8650 2675 8800 2675
-Text GLabel 8800 1875 2    50   Input ~ 0
+	8650 1725 8800 1725
+Text GLabel 8800 925  2    50   Input ~ 0
 P2_FIRE1
-Text GLabel 8800 2675 2    50   Input ~ 0
+Text GLabel 8800 1725 2    50   Input ~ 0
 P1_FIRE1
 $Comp
 L power:VCC #PWR02
 U 1 1 5FB781A5
-P 8725 1800
-F 0 "#PWR02" H 8725 1650 50  0001 C CNN
-F 1 "VCC" H 8742 1973 50  0000 C CNN
-F 2 "" H 8725 1800 50  0001 C CNN
-F 3 "" H 8725 1800 50  0001 C CNN
-	1    8725 1800
+P 8725 850
+F 0 "#PWR02" H 8725 700 50  0001 C CNN
+F 1 "VCC" H 8742 1023 50  0000 C CNN
+F 2 "" H 8725 850 50  0001 C CNN
+F 3 "" H 8725 850 50  0001 C CNN
+	1    8725 850 
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8150 2675
-NoConn ~ 8150 2775
-NoConn ~ 8150 2875
-NoConn ~ 8150 2975
-NoConn ~ 8150 3075
-NoConn ~ 8650 2775
-Text GLabel 8000 1875 0    50   Input ~ 0
+NoConn ~ 8150 1725
+NoConn ~ 8150 1825
+NoConn ~ 8150 1925
+NoConn ~ 8150 2025
+NoConn ~ 8150 2125
+NoConn ~ 8650 1825
+Text GLabel 8000 925  0    50   Input ~ 0
 P2_UP
 Wire Wire Line
-	8000 1875 8150 1875
-Text GLabel 8000 1975 0    50   Input ~ 0
+	8000 925  8150 925 
+Text GLabel 8000 1025 0    50   Input ~ 0
 P2_DOWN
 Wire Wire Line
-	8150 1975 8000 1975
-Text GLabel 8000 2075 0    50   Input ~ 0
+	8150 1025 8000 1025
+Text GLabel 8000 1125 0    50   Input ~ 0
 P2_LEFT
 Wire Wire Line
-	8000 2075 8150 2075
-Text GLabel 8000 2175 0    50   Input ~ 0
+	8000 1125 8150 1125
+Text GLabel 8000 1225 0    50   Input ~ 0
 P2_RIGHT
 Wire Wire Line
-	8000 2175 8150 2175
-Text GLabel 8800 2175 2    50   Input ~ 0
+	8000 1225 8150 1225
+Text GLabel 8800 1225 2    50   Input ~ 0
 P2_FIRE2
 Wire Wire Line
-	8800 2175 8650 2175
+	8800 1225 8650 1225
 Text GLabel 4100 1425 2    50   Output ~ 0
 P2_FIRE1
-Text GLabel 8000 2275 0    50   Input ~ 0
+Text GLabel 8000 1325 0    50   Input ~ 0
 P2_FIRE3
 Wire Wire Line
-	8000 2275 8150 2275
+	8000 1325 8150 1325
 $Comp
 L sw_keyboard:SW_Keyboard SW4
 U 1 1 5FB7E128
@@ -282,7 +282,7 @@ L Jumper:Jumper_3_Bridged12 JP1
 U 1 1 5FB8F17B
 P 2775 3175
 F 0 "JP1" H 2775 3286 50  0000 C CNN
-F 1 "F2_COM" H 2775 3377 50  0000 C CNN
+F 1 "F2_POL" H 2775 3377 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm" H 2775 3175 50  0001 C CNN
 F 3 "~" H 2775 3175 50  0001 C CNN
 	1    2775 3175
@@ -365,7 +365,7 @@ L Jumper:Jumper_3_Bridged12 JP2
 U 1 1 5FBD1161
 P 2775 5075
 F 0 "JP2" H 2775 5186 50  0000 C CNN
-F 1 "F3_COM" H 2775 5277 50  0000 C CNN
+F 1 "F3_POL" H 2775 5277 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm" H 2775 5075 50  0001 C CNN
 F 3 "~" H 2775 5075 50  0001 C CNN
 	1    2775 5075
@@ -429,17 +429,6 @@ Wire Wire Line
 Wire Wire Line
 	1050 4425 1275 4425
 $Comp
-L promicro:Arduino_Pro_Micro A1
-U 1 1 5FBBE539
-P 8400 4850
-F 0 "A1" H 8125 5250 50  0000 C CNN
-F 1 "Arduino_Pro_Micro" V 8400 4550 50  0000 C CNN
-F 2 "arduino_pro_micro:Arduino_Pro_Micro" H 8350 4850 50  0001 C CNN
-F 3 "~" H 8350 4850 50  0001 C CNN
-	1    8400 4850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Switch:SW_Push SW8
 U 1 1 5FBBF92E
 P 9150 4800
@@ -481,12 +470,12 @@ Connection ~ 8500 6025
 $Comp
 L power:VCC #PWR0102
 U 1 1 5FBC8167
-P 8400 4200
-F 0 "#PWR0102" H 8400 4050 50  0001 C CNN
-F 1 "VCC" H 8417 4373 50  0000 C CNN
-F 2 "" H 8400 4200 50  0001 C CNN
-F 3 "" H 8400 4200 50  0001 C CNN
-	1    8400 4200
+P 8400 3850
+F 0 "#PWR0102" H 8400 3700 50  0001 C CNN
+F 1 "VCC" H 8417 4023 50  0000 C CNN
+F 2 "" H 8400 3850 50  0001 C CNN
+F 3 "" H 8400 3850 50  0001 C CNN
+	1    8400 3850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -503,32 +492,28 @@ $EndComp
 $Comp
 L Device:LED D1
 U 1 1 5FBD6E88
-P 9625 4275
-F 0 "D1" H 9625 4175 50  0000 C CNN
-F 1 "PWR" H 9625 4375 50  0000 C CNN
-F 2 "LEDs:LED_D5.0mm" H 9625 4275 50  0001 C CNN
-F 3 "~" H 9625 4275 50  0001 C CNN
-	1    9625 4275
-	-1   0    0    1   
+P 9850 4575
+F 0 "D1" H 9850 4475 50  0000 C CNN
+F 1 "PWR" H 9850 4675 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 9850 4575 50  0001 C CNN
+F 3 "~" H 9850 4575 50  0001 C CNN
+	1    9850 4575
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	9775 4275 9850 4275
 $Comp
 L Device:R_Small R3
 U 1 1 5FBD9406
-P 9300 4275
-F 0 "R3" V 9400 4225 50  0000 L CNN
-F 1 "220" V 9200 4200 50  0000 L CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 9300 4275 50  0001 C CNN
-F 3 "~" H 9300 4275 50  0001 C CNN
-	1    9300 4275
-	0    -1   -1   0   
+P 9850 4250
+F 0 "R3" V 9950 4200 50  0000 L CNN
+F 1 "220" V 9750 4175 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 9850 4250 50  0001 C CNN
+F 3 "~" H 9850 4250 50  0001 C CNN
+	1    9850 4250
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 4275 8400 4200
-Wire Wire Line
-	8400 4275 8400 4350
-Connection ~ 8400 4275
+	8400 3925 8400 3850
+Connection ~ 8400 3925
 $Comp
 L Device:LED D2
 U 1 1 5FBDF2F9
@@ -563,12 +548,7 @@ Wire Wire Line
 	9850 4800 9850 5200
 Connection ~ 9850 5200
 Wire Wire Line
-	9850 4800 9850 4275
-Connection ~ 9850 4800
-Wire Wire Line
-	9400 4275 9475 4275
-Wire Wire Line
-	8400 4275 9200 4275
+	9850 4350 9850 4425
 Wire Wire Line
 	8875 4800 8950 4800
 Wire Wire Line
@@ -579,19 +559,19 @@ NoConn ~ 8875 5000
 NoConn ~ 8875 5100
 NoConn ~ 8875 5300
 Wire Wire Line
-	8650 2875 8725 2875
-Connection ~ 8725 2875
+	8650 1925 8725 1925
+Connection ~ 8725 1925
 Wire Wire Line
-	8725 2875 8725 3150
-NoConn ~ 8650 2975
+	8725 1925 8725 2200
+NoConn ~ 8650 2025
 Wire Wire Line
-	8650 2075 8725 2075
+	8650 1125 8725 1125
 Wire Wire Line
-	8725 2075 8725 2875
+	8725 1125 8725 1925
 Wire Wire Line
-	8650 1975 8725 1975
+	8650 1025 8725 1025
 Wire Wire Line
-	8725 1975 8725 1800
+	8725 1025 8725 850 
 Text GLabel 9025 5500 2    50   Input ~ 0
 P2_RIGHT
 Wire Wire Line
@@ -610,8 +590,6 @@ Wire Wire Line
 	9025 5500 8875 5500
 Text Notes 4675 4425 0    50   ~ 0
 JP3 (fire3 wiring):\n1-2 C64/Amiga FIRE1 (port 1)\n2-3 C64/Amiga FIRE3 (port 2)\nN/C SMS/Arduino
-NoConn ~ 7925 5700
-NoConn ~ 7925 5600
 Wire Wire Line
 	3575 3925 6825 3925
 Wire Wire Line
@@ -716,4 +694,58 @@ Wire Notes Line
 	5050 1925 3250 1925
 Wire Wire Line
 	3525 1100 3525 1425
+$Comp
+L promicro:Arduino_Pro_Micro A1
+U 1 1 5FBBE539
+P 8400 4850
+F 0 "A1" H 8125 5250 50  0000 C CNN
+F 1 "Arduino_Pro_Micro" V 8400 4550 50  0000 C CNN
+F 2 "arduino_pro_micro:Arduino_Pro_Micro" H 8350 4850 50  0001 C CNN
+F 3 "~" H 8350 4850 50  0001 C CNN
+	1    8400 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Bridged12 JP5
+U 1 1 60BF4B55
+P 9850 3925
+F 0 "JP5" H 9850 4036 50  0000 C CNN
+F 1 "LED_SEL" H 9850 4127 50  0000 C CNN
+F 2 "solder_bridge:select" H 9850 3925 50  0001 C CNN
+F 3 "~" H 9850 3925 50  0001 C CNN
+	1    9850 3925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 4725 9850 4800
+Connection ~ 9850 4800
+Wire Wire Line
+	8400 3925 8400 4350
+Wire Wire Line
+	8400 3925 9600 3925
+Wire Wire Line
+	7925 5700 7850 5700
+Wire Wire Line
+	7850 5700 7850 6425
+Wire Wire Line
+	7850 6425 10175 6425
+Wire Wire Line
+	10175 6425 10175 3925
+Wire Wire Line
+	10175 3925 10100 3925
+Wire Wire Line
+	9850 4075 9850 4150
+NoConn ~ 7925 5600
+Text Notes 9275 3650 0    50   ~ 0
+Linking 1-2 will light PWR LED\npermanently, 2-3 enables\nArduino to control it.
+Wire Notes Line
+	10525 4100 10525 3350
+Wire Notes Line
+	10525 3350 9225 3350
+Wire Notes Line
+	9225 3350 9225 4100
+Wire Notes Line
+	9225 4100 10525 4100
+Text Notes 7025 6900 0    50   ~ 0
+WASD-style keypad for use with vintage computers, can also be used as a simple USB keyboard with\nArduino Pro Micro installed. Note that selecting the wrong polarity may not be a good thing \ndepending on which system you're connecting it to (not installing a jumper here may be the safe\nchoice).
 $EndSCHEMATC

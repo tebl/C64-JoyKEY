@@ -1,4 +1,4 @@
-update=03/12/2020 23:46:03
+update=24/11/2020 03:17:17
 version=1
 last_client=kicad
 [general]
@@ -15,7 +15,7 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=C64 Joykey.net
+LastNetListRead=C64 Joykey Faceplate.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
@@ -57,7 +57,7 @@ OthersTextUpright=1
 SolderMaskClearance=0.051
 SolderMaskMinWidth=0.25
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
@@ -229,17 +229,6 @@ Enabled=0
 Name=Default
 Clearance=0.2
 TrackWidth=0.25
-ViaDiameter=0.8
-ViaDrill=0.4
-uViaDiameter=0.3
-uViaDrill=0.1
-dPairWidth=0.2
-dPairGap=0.25
-dPairViaGap=0.25
-[pcbnew/Netclasses/1]
-Name=PWR
-Clearance=0.2
-TrackWidth=0.381
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3

@@ -1,4 +1,4 @@
-276963951484418
+276880102963513
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -1378,13 +1378,6 @@ PUIAudio_SMT_0825_S_4_R
 0
 0
 0
-C64 IDC
-IDC_Joystick
-Through hole straight IDC box header, 2x05, 2.54mm pitch, double rows
-Through hole IDC box header THT 2x05 2.54mm double row
-0
-10
-10
 Capacitors_SMD
 CP_Elec_3x5.3
 
@@ -51785,17 +51778,24 @@ DEV
 0
 1
 1
-solder_bridge
-bridge
-Through hole straight pin header, 1x02, 1.00mm pitch, single row
-Through hole pin header THT 1x02 1.00mm single row
+symbols
+ik
+
+
 0
-2
-2
-solder_bridge
-select
-Through hole straight pin header, 1x02, 1.00mm pitch, single row
-Through hole pin header THT 1x02 1.00mm single row
 0
-2
-2
+0
+symbols
+wreath
+
+
+0
+0
+0
+symbols
+wreath2
+
+
+0
+0
+0
