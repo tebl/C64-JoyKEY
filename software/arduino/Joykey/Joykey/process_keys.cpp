@@ -21,32 +21,6 @@ unsigned long boot_detect = 0;
   pinMode(PIN_FIRE1, INPUT);
   pinMode(PIN_FIRE2, INPUT);
   pinMode(PIN_FIRE3, INPUT);
-
-     /*
-  pinMode(ST_PIN, INPUT_PULLUP);
-  pinMode(RS_PIN, INPUT_PULLUP);
-  pinMode(SST_PIN, INPUT_PULLUP);
-  pinMode(LED_PIN, OUTPUT);
-
-  // set all pins as inputs and activate pullups
-  for (byte c = 0; c < NUM_COLS; c++) {
-    pinMode(colPins[c], INPUT);
-    digitalWrite(colPins[c], HIGH);
-
-    // clear debounce counts
-    for (byte r = 0; r < NUM_ROWS; r++) {
-      debounceCount[r][c] = 0;
-    }
-  }
-
-  // set all pins as inputs
-  for (byte r = 0; r < NUM_ROWS; r++) {
-    pinMode(rowPins[r], INPUT);
-  }
-
-  Keyboard.begin();
-  */
-
  }
 
 /*
@@ -88,33 +62,3 @@ void process_keys() {
     handle_mode();
   }
 }
-
-  /*
-
-void loop() {
-  if (check_debounced(RS_PIN, 3, ROW3_RS, false)) handle_key(ROW3, ROW3_RS);
-  if (check_debounced(ST_PIN, 3, ROW3_ST, false)) handle_key(ROW3, ROW3_ST);
-  check_sst();
-
-  for (byte row = 0; row < NUM_ROWS; row++) {
-    // turn the row on
-    pinMode(rowPins[row], OUTPUT);
-    digitalWrite(rowPins[row], LOW);
-
-    for (byte col = 0; col < NUM_COLS; col++) {
-      if (check_debounced(
-          colPins[col], 
-          row, 
-          col, 
-          is_repeatable(row, col)
-        )) {
-        handle_key(row, col);
-      }
-    }
-
-    // turn the row back off
-    pinMode(rowPins[row], INPUT);
-  }
-}
-  */
-

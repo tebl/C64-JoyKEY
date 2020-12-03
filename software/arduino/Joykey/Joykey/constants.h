@@ -1,3 +1,5 @@
+#include "Keyboard.h"
+
 /* Settings */
 #define APP_TITLE "JoyKEY"
 #define APP_VERSION "0.1"
@@ -37,3 +39,13 @@
 #define JOYKEY_FIRE2 5
 #define JOYKEY_FIRE3 6
 #define NUM_KEYS 7
+
+#define KEY_STATE_NEUTRAL 0
+#define KEY_STATE_WAIT_RELEASE 1
+
+#define KEY_MAP_WASD 0
+#define KEY_MAP_CURSOR 1
+#define KEY_MAP_DEFAULT KEY_MAP_CURSOR
+const int KEY_PINS[NUM_KEYS] = { PIN_UP, PIN_DOWN, PIN_LEFT, PIN_RIGHT, PIN_FIRE1, PIN_FIRE2, PIN_FIRE3 };
+const uint8_t KEY_MAP_WASD_KEYS[NUM_KEYS] = { 'W', 'S', 'A', 'D', ' ', 'Q', 'E' };
+const uint8_t KEY_MAP_CURSOR_KEYS[NUM_KEYS] = { KEY_UP_ARROW, KEY_DOWN_ARROW, KEY_LEFT_ARROW, KEY_RIGHT_ARROW, ' ', 'Q', 'E' };
