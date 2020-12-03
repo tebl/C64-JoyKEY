@@ -6,59 +6,31 @@
 unsigned long debounce[NUM_KEYS];
 byte key_map = KEY_MAP_DEFAULT;
 byte key_state[NUM_KEYS];
+bool key_enabled[NUM_KEYS];
 
 void init_mode_usb() {
   set_sys(true);
 
-  for (int key_id = 0; key_id < NUM_KEYS; key_id++) {
+  for (int key_id = 0; key_id <= JOYKEY_FIRE1; key_id++) {
     pinMode(KEY_PINS[key_id], INPUT_PULLUP);
-    debounce[key_id] = 0;
-    key_state[key_id] = KEY_STATE_NEUTRAL;
+    key_enabled[key_id] = true;
   }
+
+  /* Verify FIRE2 polarity setting */
+  pinMode(PIN_FIRE2_POL, INPUT);
+  if (digitalRead(PIN_FIRE2_POL) == LOW) {
+    pinMode(KEY_PINS[JOYKEY_FIRE2], INPUT_PULLUP);
+    key_enabled[JOYKEY_FIRE2] = true;
+  } else key_enabled[JOYKEY_FIRE2] = false;
+
+  /* Verify FIRE3 polarity setting */
+  pinMode(PIN_FIRE3_POL, INPUT);
+  if (digitalRead(PIN_FIRE3_POL) == LOW) {
+    pinMode(KEY_PINS[JOYKEY_FIRE3], INPUT_PULLUP);
+    key_enabled[JOYKEY_FIRE3] = true;
+  } else key_enabled[JOYKEY_FIRE3] = false;
 
   Keyboard.begin();
-}
-
-/*
- * Reads the specified digital pins, debouncing is performed in order to ignore
- * erroneous key-presses due to the mechanical nature of the switches
- * themselves. A key will normally only register as pressed as long as the
- * reading has been stable for a reasonable amount of time. allow_repeat
- * specifies wether a key held down will register as subsequent presses, or if
- * it should be ignored until key has been released.
- */
-bool check_debounced(byte key_id, bool allow_repeat) {
-  if (digitalRead(KEY_PINS[key_id]) == LOW) {
-    switch (key_state[key_id]) {
-      case KEY_STATE_NEUTRAL:
-        if(debounce[key_id] == 0) {
-          debounce[key_id] = millis() + USB_DEBOUNCE_DELAY;
-          return false;
-        }
-
-        if (millis() > debounce[key_id]) {
-          if (allow_repeat) {
-            debounce[key_id] += USB_REPEAT_DELAY;
-          } else {
-            key_state[key_id] = KEY_STATE_WAIT_RELEASE;
-          }
-          return true;
-        }
-        break;
-      
-      case KEY_STATE_WAIT_RELEASE:
-        /* Wait for a high state to release */
-      default:
-        return false;
-        break;
-    }
-  } else {
-    // not pressed, reset debounce count
-    debounce[key_id] = 0;
-    key_state[key_id] = KEY_STATE_NEUTRAL;
-  }
-  
-  return false;
 }
 
 /*
@@ -75,6 +47,30 @@ uint8_t get_keycode(byte key_id) {
   }
 }
 
+void press_key(byte key_id) {
+  uint8_t keycode = get_keycode(key_id);
+  if (keycode != 0x00) {
+    Keyboard.press(keycode);
+  }
+}
+
+void release_key(byte key_id) {
+  uint8_t keycode = get_keycode(key_id);
+  if (keycode != 0x00) {
+    Keyboard.release(keycode);
+  }
+}
+
+/*    
+ * Check and process key states, which in specific terms means ensuring that
+ * we at least try to handle some of the mechanical switch bouncing. This adds
+ * some delays in the key handling, but this is adjustable with 
+ * USB_DEBOUNCE_DELAY - increase the value if you experience unintended key
+ * presses.
+ * 
+ * Note that the polarity jumpers for FIRE2 and FIRE3 must be set to GND in
+ * order for these keys to function as expected.
+ */
 void check_key(byte key_id) {
   if (digitalRead(KEY_PINS[key_id]) == LOW) {
     switch (key_state[key_id]) {
@@ -86,7 +82,7 @@ void check_key(byte key_id) {
 
         if (millis() > debounce[key_id]) {
           key_state[key_id] = KEY_STATE_WAIT_RELEASE;
-          Keyboard.press(get_keycode(key_id));
+          press_key(key_id);
           return;
         }
         break;
@@ -98,10 +94,9 @@ void check_key(byte key_id) {
     }
   } else {
     if (key_state[key_id] != KEY_STATE_NEUTRAL) {
-      Keyboard.release(get_keycode(key_id));
+      release_key(key_id);
     }
 
-    // not pressed, reset debounce count
     debounce[key_id] = 0;
     key_state[key_id] = KEY_STATE_NEUTRAL;
   }
@@ -109,12 +104,8 @@ void check_key(byte key_id) {
 
 void handle_mode_usb() {
   for (int key_id = 0; key_id < NUM_KEYS; key_id++) {
-    /*
-    if (check_debounced(key_id)) {
-      Keyboard.write(get_keycode(key_id));
+    if (key_enabled[key_id]) {
+      check_key(key_id);
     }
-    */
-
-    check_key(key_id);
   }
 }

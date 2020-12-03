@@ -6,7 +6,6 @@
 #define LED_FLASH_DELAY 100
 #define BOOT_MODE_THRESHOLD 1000
 #define USB_DEBOUNCE_DELAY 10
-#define USB_REPEAT_DELAY 200
 
 /* Pin definitions */
 #define PIN_FIRE1 2
