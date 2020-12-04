@@ -1,13 +1,10 @@
+#ifndef _CONSTANTS_H
+#define _CONSTANTS_H
 #include "Keyboard.h"
 
-/* Settings */
-#define APP_TITLE "JoyKEY"
-#define APP_VERSION "0.1"
-#define LED_FLASH_DELAY 100
-#define BOOT_MODE_THRESHOLD 1000
-#define USB_DEBOUNCE_DELAY 10
-
-/* Pin definitions */
+/* 
+ * Pin definitions 
+ */
 #define PIN_FIRE1 2
 #define PIN_FIRE1_OUT 5
 
@@ -26,9 +23,12 @@
 #define LED_PWR_MAX 56
 #define LED_SYS 19
 
-/* Definitions */
+/* 
+ * Definitions
+ */
 #define KEY_MODE_DEFAULT 0
 #define KEY_MODE_USB 1
+#define KEY_MODE_JOYSTICK 2
 
 #define JOYKEY_UP 0
 #define JOYKEY_DOWN 1
@@ -48,3 +48,4 @@
 const int KEY_PINS[NUM_KEYS] = { PIN_UP, PIN_DOWN, PIN_LEFT, PIN_RIGHT, PIN_FIRE1, PIN_FIRE2, PIN_FIRE3 };
 const uint8_t KEY_MAP_WASD_KEYS[NUM_KEYS] = { 'W', 'S', 'A', 'D', ' ', 'Q', 'E' };
 const uint8_t KEY_MAP_CURSOR_KEYS[NUM_KEYS] = { KEY_UP_ARROW, KEY_DOWN_ARROW, KEY_LEFT_ARROW, KEY_RIGHT_ARROW, ' ', 'Q', 'E' };
+#endif

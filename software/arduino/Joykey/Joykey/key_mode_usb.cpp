@@ -1,12 +1,13 @@
 #include <Arduino.h>
 #include "Keyboard.h"
 #include "constants.h"
+#include "settings.h"
 #include "led_control.h"
 
 unsigned long debounce[NUM_KEYS];
 byte key_map = KEY_MAP_DEFAULT;
-byte key_state[NUM_KEYS];
-bool key_enabled[NUM_KEYS];
+extern byte key_state[NUM_KEYS];
+extern bool key_enabled[NUM_KEYS];
 
 void init_mode_usb() {
   set_sys(true);

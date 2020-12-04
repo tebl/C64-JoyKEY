@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include "constants.h"
+#include "settings.h"
 
 void init_led() {
   pinMode(LED_PWR, OUTPUT);

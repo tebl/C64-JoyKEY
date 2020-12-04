@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include "constants.h"
+#include "settings.h"
 
 void init_serial() {
   Serial.begin(115200);

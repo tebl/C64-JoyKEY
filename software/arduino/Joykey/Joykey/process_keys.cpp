@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include "constants.h"
+#include "settings.h"
 #include "led_control.h"
 #include "key_mode.h"
 
@@ -32,17 +33,15 @@ unsigned long boot_detect = 0;
  * the other end of the cable - which is why we're doing this in the first
  * place.
  * 
- * Holding down LEFT & RIGHT for at least the last second will enable WASD-mode
- * over USB.
+ * Holding down LEFT & RIGHT for at least the last second will enable the
+ * alternate USB-mode (configured in constants.h).
  */
 bool check_boot() {
   if (millis() > boot_timeout) {
     /* JoyKey mode timeout */
-    Serial.println(boot_detect);
     if (boot_detect > 0) {
-      Serial.println(millis() - boot_detect);
       if ((millis() - boot_detect) > BOOT_MODE_THRESHOLD) {
-        return init_mode(KEY_MODE_USB);
+        return init_mode(USB_ALTERNATE_MODE);
       }
     }
 
