@@ -6,6 +6,8 @@
 
 extern bool boot_done;
 int joykey_mode = KEY_MODE_DEFAULT;
+
+unsigned long key_debounce[NUM_KEYS];
 byte key_state[NUM_KEYS];
 bool key_enabled[NUM_KEYS];
 
@@ -27,6 +29,10 @@ bool init_mode(byte mode) {
       break;
   }
   return true;
+}
+
+bool is_waiting_release(byte key_id) {
+  return key_state[key_id] == KEY_STATE_WAIT_RELEASE;
 }
 
 void handle_mode() {

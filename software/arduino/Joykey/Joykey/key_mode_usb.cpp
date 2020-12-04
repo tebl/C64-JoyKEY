@@ -4,10 +4,11 @@
 #include "settings.h"
 #include "led_control.h"
 
-unsigned long debounce[NUM_KEYS];
-byte key_map = KEY_MAP_DEFAULT;
+extern unsigned long key_debounce[NUM_KEYS];
 extern byte key_state[NUM_KEYS];
 extern bool key_enabled[NUM_KEYS];
+
+byte key_map = KEY_MAP_DEFAULT;
 
 void init_mode_usb() {
   set_sys(true);
@@ -76,12 +77,12 @@ void check_key(byte key_id) {
   if (digitalRead(KEY_PINS[key_id]) == LOW) {
     switch (key_state[key_id]) {
       case KEY_STATE_NEUTRAL:
-        if(debounce[key_id] == 0) {
-          debounce[key_id] = millis() + USB_DEBOUNCE_DELAY;
+        if(key_debounce[key_id] == 0) {
+          key_debounce[key_id] = millis() + USB_DEBOUNCE_DELAY;
           return;
         }
 
-        if (millis() > debounce[key_id]) {
+        if (millis() > key_debounce[key_id]) {
           key_state[key_id] = KEY_STATE_WAIT_RELEASE;
           press_key(key_id);
           return;
@@ -98,7 +99,7 @@ void check_key(byte key_id) {
       release_key(key_id);
     }
 
-    debounce[key_id] = 0;
+    key_debounce[key_id] = 0;
     key_state[key_id] = KEY_STATE_NEUTRAL;
   }
 }
