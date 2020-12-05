@@ -273,7 +273,7 @@ P2_DOWN
 Text GLabel 1275 4425 2    50   Output ~ 0
 P2_RIGHT
 Connection ~ 775  4100
-Text GLabel 3300 2150 2    50   Output ~ 0
+Text GLabel 4100 2150 2    50   Output ~ 0
 P2_FIRE2
 Wire Wire Line
 	2775 1425 2775 1350
@@ -294,7 +294,7 @@ U 1 1 5FB96763
 P 2775 2850
 F 0 "R1" H 2834 2896 50  0000 L CNN
 F 1 "270" H 2834 2805 50  0000 L CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2775 2850 50  0001 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 2775 2850 50  0001 C CNN
 F 3 "~" H 2775 2850 50  0001 C CNN
 	1    2775 2850
 	1    0    0    -1  
@@ -377,7 +377,7 @@ U 1 1 5FBD1167
 P 2775 4750
 F 0 "R2" H 2834 4796 50  0000 L CNN
 F 1 "270" H 2834 4705 50  0000 L CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2775 4750 50  0001 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 2775 4750 50  0001 C CNN
 F 3 "~" H 2775 4750 50  0001 C CNN
 	1    2775 4750
 	1    0    0    -1  
@@ -433,7 +433,7 @@ L Switch:SW_Push SW8
 U 1 1 5FBBF92E
 P 9150 4800
 F 0 "SW8" H 9150 4975 50  0000 C CNN
-F 1 "Reset" H 9150 4725 50  0000 C CNN
+F 1 "RESET" H 9150 4725 50  0000 C CNN
 F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 9150 5000 50  0001 C CNN
 F 3 "~" H 9150 5000 50  0001 C CNN
 	1    9150 4800
@@ -504,12 +504,12 @@ $Comp
 L Device:R_Small R3
 U 1 1 5FBD9406
 P 9850 4250
-F 0 "R3" V 9950 4200 50  0000 L CNN
-F 1 "220" V 9750 4175 50  0000 L CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 9850 4250 50  0001 C CNN
+F 0 "R3" V 9750 4200 50  0000 L CNN
+F 1 "220" V 9950 4175 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 9850 4250 50  0001 C CNN
 F 3 "~" H 9850 4250 50  0001 C CNN
 	1    9850 4250
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	8400 3925 8400 3850
@@ -531,10 +531,10 @@ U 1 1 5FBDF2FF
 P 9300 5200
 F 0 "R4" V 9400 5150 50  0000 L CNN
 F 1 "220" V 9200 5125 50  0000 L CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 9300 5200 50  0001 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 9300 5200 50  0001 C CNN
 F 3 "~" H 9300 5200 50  0001 C CNN
 	1    9300 5200
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	9850 5275 9850 5200
@@ -600,8 +600,6 @@ Connection ~ 3575 3925
 Wire Wire Line
 	6925 2275 6925 5100
 Wire Wire Line
-	3050 2275 3175 2275
-Wire Wire Line
 	6925 5100 7925 5100
 Wire Wire Line
 	7025 1100 7025 5000
@@ -610,12 +608,7 @@ Wire Wire Line
 Wire Wire Line
 	7025 5000 7925 5000
 Wire Wire Line
-	3300 2150 3175 2150
-Wire Wire Line
-	3175 2150 3175 2275
-Connection ~ 3175 2275
-Wire Wire Line
-	3175 2275 6925 2275
+	3525 2150 3525 2275
 Connection ~ 3525 1100
 Wire Wire Line
 	3525 1100 7025 1100
@@ -682,16 +675,12 @@ Wire Notes Line
 	4100 4625 4100 5400
 Wire Notes Line
 	4100 5400 2300 5400
-Text Notes 3325 1850 0    50   ~ 0
-Experimental feature to have Arduino act\nas an autofire, but needs to be wired\nspecificly in order to not fry pro micro\noutput pin.
+Text Notes 3275 1900 0    50   ~ 0
+There will be an alternate Arduino firmware\nwhere FIRE2/FIRE3 controls various forms of\nautofire (for single-button systems). For the\ndefault FW or units without an Arduino\nPro Micro installed, JP4/JP6 must be linked.
 Wire Notes Line
 	3250 1150 5050 1150
 Wire Notes Line
-	3250 1925 3250 1150
-Wire Notes Line
-	5050 1150 5050 1925
-Wire Notes Line
-	5050 1925 3250 1925
+	5050 2350 3250 2350
 Wire Wire Line
 	3525 1100 3525 1425
 $Comp
@@ -746,4 +735,30 @@ Wire Notes Line
 	9225 3350 9225 4100
 Wire Notes Line
 	9225 4100 10525 4100
+Text Notes 7025 6900 0    50   ~ 0
+WASD-style keypad for use with vintage computers, can also be used as a simple USB keyboard with\nArduino Pro Micro installed. Note that selecting the wrong polarity may not be a good thing \ndepending on which system you're connecting it to (not installing a jumper here may be the safe\nchoice).
+Connection ~ 3525 2275
+Wire Wire Line
+	3525 2275 6925 2275
+Wire Wire Line
+	3050 2275 3525 2275
+$Comp
+L Device:Jumper_NC_Small JP6
+U 1 1 5FCB76F7
+P 3825 2150
+F 0 "JP6" H 3825 2325 50  0000 C CNN
+F 1 "DEFAULT_FW" H 3825 2250 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3825 2150 50  0001 C CNN
+F 3 "~" H 3825 2150 50  0001 C CNN
+	1    3825 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3525 2150 3725 2150
+Wire Wire Line
+	3925 2150 4100 2150
+Wire Notes Line
+	5050 1150 5050 2350
+Wire Notes Line
+	3250 2350 3250 1150
 $EndSCHEMATC
