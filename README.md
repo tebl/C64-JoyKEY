@@ -16,3 +16,4 @@ I won't be selling these, so if you want one you will probably have to build it 
 The *C64 JoyKEY* has a handful of jumpers that need to be set correctly in order to: A - function, B - not destroy your precious vintage computer and/or consoles. The necessary details have been put into a separate [configuration](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/configuration.md)-document, check it out for some information on the systems I've attempted to use the *C64 JoyKEY* with.
 
 * [Configuring C64 JoyKEY](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/configuration.md)
+* [Arduino firmware](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/firmware.md)
