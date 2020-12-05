@@ -2,6 +2,14 @@
 
 Congratulations on the taking the leap to build my slightly over-complicated 7-key keyboard/joystick, now probably compatible with your favourite vintage computer. It can be built or configured in a few ways, so take a look at the [configuration](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/configuration.md) document so that you'll have an idea of what you want to do with it - pay particular mention to whether you'd require any of the features provided by the Arduino Pro Micro. 
 
+- [Building C64 JoyKEY](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#building-c64-joykey)
+  - [Ordering components](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#ordering-components)
+  - [Soldering it together](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#soldering-it-together)
+  - [Assembling the parts](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#assembling-the-parts)
+  - [Building the cables](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#building-the-cables)
+  - [All done](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#all-done)
+- [BOM](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#bom)
+
 ## Ordering components
 The first step in building it, is what you've already done - figuring out what you wanted out of it in the first place! The second step is taking stock of which parts you don't already have, check out the [BOM](#BOM) (*Bill of Manufacturing*) below for a somewhat detailed of everything I used when building the prototype.
 
