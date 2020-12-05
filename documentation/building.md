@@ -45,7 +45,10 @@ The last step is putting together some cables for your most common vintage syste
 Soldering connectors is hard if you do it the hard way - the easiest way to get a cable suitable for use with *C64 JoyKEY* is adapting an existing cable. The ones I've used are usually listed as 2x5 pin *AVR* or *JTAG* cable, just cut off the end that doesn't fit into the board properly - the red stripe should be on the left side when plugging it into the board. The picture above should make things a bit easier to decipher, note that the 10th wire has been removed as it is not needed (only 9 pins on the DB9). The connectors I've used are described as female DB9 IDC, it is installed by lining up the red wire with pin 1 and pushing the clamp into place until you hear a click (a vice is helpful, that way you don't need to buy dedicated IDC connector tools).
 
 ## All done
-That should be most of the information you'll need. Head on over to the [configuration](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/configuration.md) page to ensure that you have the jumpers set up correctly before actually connecting it to something. Check out the [firmware](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/firmware.md) page if you installed an Arduino Pro Micro and need some ready-made code for it.
+That should be most of the information you'll need. Head on over to the [configuration](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/configuration.md) page to ensure that you have the jumpers set up correctly before actually connecting it to something (configuration for Commodore 64 shown below). Check out the [firmware](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/firmware.md) page if you installed an Arduino Pro Micro and need some ready-made code for it.
+
+![C64 Configuration](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/c64_jumpers.jpg)
+
 
 # BOM
 This section attempts to maintain a list of the parts you'd need in order to build a feature-complete *C64 JoyKEY*, any parts that you could potentially do without have part counts listed in parenthesis. 
