@@ -2,31 +2,45 @@
 
 Congratulations on the taking the leap to build my slightly over-complicated 7-key keyboard/joystick, now probably compatible with your favourite vintage computer. It can be built or configured in a few ways, so take a look at the [configuration](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/configuration.md) document so that you'll have an idea of what you want to do with it - pay particular mention to whether you'd require any of the features provided by the Arduino Pro Micro. 
 
-# Building it
-The first step in building it, you've already done (when you figured out what you wanted out of it). The second step is ordering the parts that you don't already have, check out the BOM (*Bill of Manufacturing*) for a somewhat detailed of what you might need. Order what you need, what you want and set aside until you're ready to start assembling things.
+## Ordering components
+The first step in building it, is what you've already done - figuring out what you wanted out of it in the first place! The second step is taking stock of which parts you don't already have, check out the [BOM](#BOM) (*Bill of Manufacturing*) below for a somewhat detailed of everything I used when building the prototype.
 
-When ready to start soldering things into place, start by installing the physically smaller parts such as the resistors then move on up vertically to the larger parts to make things easier on yourself. Note that the Cherry MX switches will usually take a bit of force to get into place, so make sure to push them firmly into place before soldering anything permanently into place (removing solder is a **lot** harder to remove than it is to add it).
+You should be able to get most from the more reputable electronic component oligopolists, but because of extreme import fees where I live - those are for the most part not an option for me (I can't afford to pay €40 worth of fees to get €10 worth of parts at ten times the cost). What I do instead is order most things from ebay and AliExpress, you'll have to do a bit more of guesswork to find the correct parts - additionally, delivery times are most probaly to be counted in number of weeks and not days. 
+
+My best suggestion on getting what you need the first time, is to use the search function and start with the description I've added, compare it to the pictures and order whichever looks to be the closest - if it's a cheap part, just get a few different ones! Pin headers usually come in 40-pin strips, both dual row and single row ones will be needed - add some right-angle ones as well (you'll just break off what you need). For some parts such as  common resistor values, M3 nylon hex standoffs and switches it might be preferable to get a kit instead of the specific kind (the are usually referred to as a parts kit "*assortment*").
+
+Order what you need, set the components aside until you're ready to start assembling things.
+
+## Soldering it together
+When ready to start soldering things into place, start by installing the physically smaller parts such as the resistors then move on up vertically to the taller parts in order to make things easier on yourself. Note that the Cherry MX switches will usually take a bit of force to get into place, so make sure to push them firmly into place before soldering anything permanently into place (removing solder is a **lot** harder to remove than it is to add it).
 
 ![Arduino Pro Micro variants](https://raw.githubusercontent.com/tebl/C64-JoyKEY/main/gallery/2020-12-01%2021.58.51.jpg)
 
-Arduino Pro Micro unfortunately seem to come in physically different variations, the ones most common seem to be the ones shown above (at least those are the two I have) - the *C64 JoyKEY* can use either of these, but you need to align it so that the pins are soldered in the correct place so do a bit of dry-fitting **before** commiting. The switch below it is needed if you accidentally try to flash it using the wrong settings in *Arduino Studio*, there is more information on flashing the Arduino [here](https://github.com/tebl/C64-JoyKEY/tree/main/software/arduino/Joykey).
+Arduino Pro Micro unfortunately seem to come in physically different variations, the ones most common seem to be the ones shown above (at least those are the two I have, the black DIYmore branded unit is recommended) - the *C64 JoyKEY* can use either of these, but you need to align it so that the pins are soldered in the correct place so do a bit of dry-fitting **before** commiting. The switch below it is needed if you accidentally try to flash it using the wrong settings in *Arduino Studio*, there is a separate page that details how to deal with the [firmware](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/firmware.md).
 
 Notice the spot for two jumpers marked **DEFAULT_FW**? You'll need to add solder a piece of wire here, the leftovers you got when snipping the leads from the resistors can be used for this purpose. You need to do this even if you don't want the Arduino at all, the only reason not to do so is if you specifically want to use the autofire variant of the firmware instead.
 
-Next you'll want to screw together both pieces of PCBs, just put the female HEX standoffs of the size you want between them and add screws from both sides - this should make the whole thing stand up to some abuse (physical, not the MS-DOS game though you could try that one out later in DOSBOX). Push the MX keycaps onto the top of the MX-switches, again you'll need to use a bit of careful force.
+Next you'll want to screw together both pieces of PCBs, just put the female HEX standoffs of the size you want between them and add screws from both sides - this should make the whole thing stand up to some abuse (physical, not the MS-DOS game though you could try that one out later in DOSBOX). 
 
+Given that this is a PCB you'll be handling directly, it is probably a good idea to clean the flux residue left from soldering the connection points. It probably won't be very toxic, but depending on how much you spent on the solder you never know (China isn't exactly known for focusing on employee health and safety) - it is however a very sticky substance, so at the very least it's pretty annoying. It can be cleaned by pouring isopropyl alcohol (*IPA*), sometimes sold as contact cleaner or rubbing alcohol, over the board and scrubbing it with an old toothbrush to dissolve it evenly. You'll now have an evenly super-sticky board, but do **NOT** panic if this happens! Next step is to put some cloth over the board, pour more more *IPA* over the cloth and allow it to soak through to the board and rub it gently - when the alcohol has mostly evaporated, the stickyness should now be on the cloth instead. Phew!
+
+## Assembling the parts
+Push the MX keycaps onto the top of the MX-switches, again you'll need to use a bit of careful force. You should now have a mostly completed unit, a recommended addition is to add som 3M bumpon adhesive rubber feet to the button - these are mostly there to keep the PCB from sliding around on your desk, but also keeps the solder points from scratching up your desk.
+
+![Bottom of the board](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/2020-12-04%2023.35.34.jpg)
+
+## Building the cables
 The last step is putting together some cables for your most common vintage systems, but if you only want to use it as a USB device then feel free to skip this step. Still here? Awesome.
 
-![IDC to female DB9 cable]()
+![IDC to female DB9 cable](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/2020-12-05%2003.48.41.jpg)
 
-Soldering connectors is hard if you do it the hard way - the easiest way to get a cable suitable for use with *C64 JoyKEY* is adapting an existing cable. The ones I've used are usually listed as 2x5 pin *AVR* or *JTAG* cable, just cut off the end that doesn't fit into the board properly (red stripe on left side) as in the photo above (remove the 10th wire as it is not needed). Buy some female DB9 IDC connectors, line up pin 1 with the red stripe and squeeze the top part of the connector into place until you hear a click.
+Soldering connectors is hard if you do it the hard way - the easiest way to get a cable suitable for use with *C64 JoyKEY* is adapting an existing cable. The ones I've used are usually listed as 2x5 pin *AVR* or *JTAG* cable, just cut off the end that doesn't fit into the board properly - the red stripe should be on the left side when plugging it into the board. The picture above should make things a bit easier to decipher, note that the 10th wire has been removed as it is not needed (only 9 pins on the DB9). The connectors I've used are described as female DB9 IDC, it is installed by lining up the red wire with pin 1 and pushing the clamp into place until you hear a click (a vice is helpful, that way you don't need to buy dedicated IDC connector tools).
 
-That's it! Head over to the [configuration](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/configuration.md) page to ensure that you have the jumpers set up correctly.
+## All done
+That should be most of the information you'll need. Head on over to the [configuration](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/configuration.md) page to ensure that you have the jumpers set up correctly before actually connecting it to something. Check out the [firmware](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/firmware.md) page if you installed an Arduino Pro Micro and need some ready-made code for it.
 
 # BOM
-This section attempts to maintain a list of the parts you'd need in order to build a feature-complete *C64 JoyKEY*, any parts that you could potentially do without have part counts listed in parenthesis. I get most of my parts from ebay or AliExpress, for the most part you can put in the description into the search box and pick parts on the cheaper side - do note however that delivery times might be counted in weeks and not days.
-
-Pin headers usually come in 40-pin strips, so you just break off what you need. There are assortment kits available with a selection of resistor values, nylon hex standoffs, switches etc that might be cheaper in the long run rather than buying each component separately.
+This section attempts to maintain a list of the parts you'd need in order to build a feature-complete *C64 JoyKEY*, any parts that you could potentially do without have part counts listed in parenthesis. 
 
 | Reference     | Item                                      | Count |
 | ------------- | ----------------------------------------- | ----- |
