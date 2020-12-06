@@ -55,6 +55,11 @@ void init_mode_joystick() {
   Joystick.setYAxisRange(-1, 1);
 }
 
+/* This is used to send the joystick state to the computer, but since these are
+ * actually keys that can all be pressed at the same time we'll need to avoid
+ * some weirdness - stuff like pressing LEFT and RIGHT at the same time (joysticks
+ * usually have physical limitations stopping you from doing things like that). 
+ */
 void update_joystick() {
   if (is_waiting_release(JOYKEY_LEFT) && is_waiting_release(JOYKEY_RIGHT)) Joystick.setXAxis(0);
   else if (is_waiting_release(JOYKEY_LEFT)) Joystick.setXAxis(-1);
@@ -78,6 +83,7 @@ void update_joystick() {
  * doing some sanity checks.
  */
 void debounce_joystick_key(byte key_id) {
+  if (!key_enabled[key_id]) return;
   if (digitalRead(KEY_PINS[key_id]) == LOW) {
     switch (key_state[key_id]) {
       case KEY_STATE_NEUTRAL:
@@ -104,7 +110,6 @@ void debounce_joystick_key(byte key_id) {
 }
 
 void handle_mode_joystick() {
-  /* Handle keys that probably shouldn't be active at once */
   debounce_joystick_key(JOYKEY_LEFT);
   debounce_joystick_key(JOYKEY_RIGHT);
   debounce_joystick_key(JOYKEY_UP);
