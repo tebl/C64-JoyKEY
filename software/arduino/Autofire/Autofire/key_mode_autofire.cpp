@@ -42,7 +42,9 @@ void init_mode_autofire() {
  * directly.
  */
 void set_fire(bool active) {
+  #ifdef LINK_FIRE_SYS
   set_sys(active);
+  #endif
   digitalWrite(PIN_FIRE1_OUT, (active ? LOW : HIGH));
 }
 
