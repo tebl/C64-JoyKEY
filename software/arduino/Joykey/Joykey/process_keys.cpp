@@ -22,10 +22,6 @@ unsigned long boot_detect = 0;
   pinMode(PIN_FIRE1, INPUT);
   pinMode(PIN_FIRE2, INPUT);
   pinMode(PIN_FIRE3, INPUT);
-
-  #ifdef USB_FORCE_ALTERNATE
-  init_mode(USB_ALTERNATE_MODE);
-  #endif
  }
 
 /*
@@ -61,7 +57,8 @@ bool check_boot() {
 
 void process_keys() {
   #ifdef USB_FORCE_ALTERNATE
-    handle_mode();
+    if (!boot_done) init_mode(USB_ALTERNATE_MODE);
+    else handle_mode();
   #else
     if (!boot_done) check_boot();
     else {
