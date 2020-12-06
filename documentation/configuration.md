@@ -37,6 +37,9 @@ See [Autofire FW](https://github.com/tebl/C64-JoyKEY/blob/main/software/arduino/
 
 Using the autofire firmware assumes that the system will emulate a single-button joystick connected to a vintage system, the actual FIRE-buttons (FIRE1,2 and 3) will not be directly connected to the system and the Arduino will handle controlling the actual fire button signal sent to the vintage computer system.
 
+![Autofire Configuration](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/autofire_jumpers.jpg)
+
+
 # USB-mode
 The [Default FW](https://github.com/tebl/C64-JoyKEY/blob/main/software/arduino/Joykey/README.md) can be used to connect the computer to a modern-ish computer, the device will present itself as either a keyboard or a joystick depending on the settings used. USB-mode supports all of the keys, but FIRE2/FIRE3 will be disabled unless you set the jumpers to what is shown below. USB-mode does not care about the two DEFAULT_FW jumpers, those just control the behavior when connected to a vintage system.
 
