@@ -61,12 +61,14 @@ This section attempts to maintain a list of the parts you'd need in order to bui
 |               | 12-pin straight pin header                |    (2)|
 | D1 *          | 5mm bright LED, RED                       |    (1)|
 | D2 *          | 5mm bright LED, GREEN                     |    (1)|
-| J1,J2 **      | 2x5 pin straight header pins or 2x5 IDC   |     2 |
+| D3 **         | 1N4001 diode DO-41                        |    (1)|
+| D4            | 1n4148 diode DO-35                        |    (1)|
+| J1,J2 ***     | 2x5 pin straight header pins or 2x5 IDC   |     2 |
 |               | 2x5 pin IDC to female DB9 cable           | 1 (1) |
 | JP1-JP3       | 3-pin right-angle header pins             |     3 |
 | R1,R2         | 270 ohm resistor                          |     2 | 
 | R3,R4         | 220 ohm resistor                          |    (2)| 
-| SW1-SW7 ***   | Cherry MX compatible switch (green)       |     7 |
+| SW1-SW7 ****  | Cherry MX compatible switch (green)       |     7 |
 |               | MX compatible 1u blank keycaps            |     7 |
 | SW8           | Tactile momentary switch 6x6x6mm          |    (1)|
 |               | 3M bumpon adhesive rubber feet            |    (4)|
@@ -75,6 +77,8 @@ This section attempts to maintain a list of the parts you'd need in order to bui
 
 *) When used with the faceplate, a bright LED will be needed to shine through the PCB. 5mm flat top type LEDs will allow less space between the PCBs.
 
-**) Breakable dual row pin headers can be used here, but I find it is nicer to use a 2x5 pin connector here instead. The easiest way to get a cable like this is to order a couple of 2x5 pin IDC cable (usually listed as *AVR* or *JTAG* cable) with sufficient length, cut off the end you don't need and then attach a female DB9 connector of the IDC variety. Pre-made cables have been observed on ebay, but have not seen any that are more than 20cm in length.
+**) Replace with piece of wire if not installing Arduino Pro Micro on the board.
 
-***) I've been using the cheaper Gateron clones and they work well for this type of use, you can use either the 3- or 5-pin variety. The green switches are the ones that have a clicky sound, pick a different colour if that is not something you'd be interested in. Keycaps are usually listed as blank mechanical gaming MX-compatible keycaps.
+***) Breakable dual row pin headers can be used here, but I find it is nicer to use a 2x5 pin connector here instead. The easiest way to get a cable like this is to order a couple of 2x5 pin IDC cable (usually listed as *AVR* or *JTAG* cable) with sufficient length, cut off the end you don't need and then attach a female DB9 connector of the IDC variety. Pre-made cables have been observed on ebay, but have not seen any that are more than 20cm in length.
+
+****) I've been using the cheaper Gateron clones and they work well for this type of use, you can use either the 3- or 5-pin variety. The green switches are the ones that have a clicky sound, pick a different colour if that is not something you'd be interested in. Keycaps are usually listed as blank mechanical gaming MX-compatible keycaps.

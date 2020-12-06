@@ -141,8 +141,6 @@ $EndComp
 NoConn ~ 8650 1325
 NoConn ~ 8650 2125
 Wire Wire Line
-	8650 925  8800 925 
-Wire Wire Line
 	8650 1725 8800 1725
 Text GLabel 8800 925  2    50   Input ~ 0
 P2_FIRE1
@@ -151,12 +149,12 @@ P1_FIRE1
 $Comp
 L power:VCC #PWR02
 U 1 1 5FB781A5
-P 8725 850
-F 0 "#PWR02" H 8725 700 50  0001 C CNN
-F 1 "VCC" H 8742 1023 50  0000 C CNN
-F 2 "" H 8725 850 50  0001 C CNN
-F 3 "" H 8725 850 50  0001 C CNN
-	1    8725 850 
+P 9650 850
+F 0 "#PWR02" H 9650 700 50  0001 C CNN
+F 1 "VCC" H 9667 1023 50  0000 C CNN
+F 2 "" H 9650 850 50  0001 C CNN
+F 3 "" H 9650 850 50  0001 C CNN
+	1    9650 850 
 	1    0    0    -1  
 $EndComp
 NoConn ~ 8150 1725
@@ -185,8 +183,6 @@ Text GLabel 8800 1225 2    50   Input ~ 0
 P2_FIRE2
 Wire Wire Line
 	8800 1225 8650 1225
-Text GLabel 4100 1425 2    50   Output ~ 0
-P2_FIRE1
 Text GLabel 8000 1325 0    50   Input ~ 0
 P2_FIRE3
 Wire Wire Line
@@ -553,7 +549,7 @@ Wire Wire Line
 	8875 4800 8950 4800
 Wire Wire Line
 	9350 4800 9850 4800
-Text GLabel 7450 5300 0    50   Output ~ 0
+Text GLabel 6275 5300 0    50   Output ~ 0
 P2_FIRE1
 NoConn ~ 8875 5000
 NoConn ~ 8875 5100
@@ -569,9 +565,7 @@ Wire Wire Line
 Wire Wire Line
 	8725 1125 8725 1925
 Wire Wire Line
-	8650 1025 8725 1025
-Wire Wire Line
-	8725 1025 8725 850 
+	9650 1025 9650 850 
 Text GLabel 9025 5500 2    50   Input ~ 0
 P2_RIGHT
 Wire Wire Line
@@ -638,27 +632,12 @@ Text Label 7900 5100 2    50   ~ 0
 FIRE2_IN
 Text Label 7900 5200 2    50   ~ 0
 FIRE3_IN
-$Comp
-L Device:Jumper_NC_Small JP4
-U 1 1 5FCF52E4
-P 3825 1425
-F 0 "JP4" H 3825 1600 50  0000 C CNN
-F 1 "DEFAULT_FW" H 3825 1525 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3825 1425 50  0001 C CNN
-F 3 "~" H 3825 1425 50  0001 C CNN
-	1    3825 1425
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3525 1425 3725 1425
-Wire Wire Line
-	3925 1425 4100 1425
 Text Label 7900 5400 2    50   ~ 0
 FIRE2_POL
 Text Label 7900 5500 2    50   ~ 0
 FIRE3_POL
-Wire Wire Line
-	7450 5300 7925 5300
 Wire Notes Line
 	2300 2725 4100 2725
 Wire Notes Line
@@ -761,4 +740,81 @@ Wire Notes Line
 	5050 1150 5050 2350
 Wire Notes Line
 	3250 2350 3250 1150
+$Comp
+L Device:D D3
+U 1 1 5FCFF93E
+P 9425 1025
+F 0 "D3" H 9425 809 50  0000 C CNN
+F 1 "1n4001" H 9425 900 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 9425 1025 50  0001 C CNN
+F 3 "~" H 9425 1025 50  0001 C CNN
+	1    9425 1025
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8650 925  8800 925 
+Wire Wire Line
+	9575 1025 9650 1025
+Wire Wire Line
+	8650 1025 9275 1025
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FD15FFC
+P 11025 850
+F 0 "#FLG0101" H 11025 925 50  0001 C CNN
+F 1 "PWR_FLAG" H 11025 1023 50  0000 C CNN
+F 2 "" H 11025 850 50  0001 C CNN
+F 3 "~" H 11025 850 50  0001 C CNN
+	1    11025 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0104
+U 1 1 5FD16D69
+P 10675 850
+F 0 "#PWR0104" H 10675 700 50  0001 C CNN
+F 1 "VCC" H 10692 1023 50  0000 C CNN
+F 2 "" H 10675 850 50  0001 C CNN
+F 3 "" H 10675 850 50  0001 C CNN
+	1    10675 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10675 850  10675 925 
+Wire Wire Line
+	10675 925  11025 925 
+Wire Wire Line
+	11025 925  11025 850 
+$Comp
+L Device:D_Small D4
+U 1 1 5FD49B7F
+P 6450 5300
+F 0 "D4" H 6450 5095 50  0000 C CNN
+F 1 "1n4148" H 6450 5186 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 6450 5300 50  0001 C CNN
+F 3 "~" V 6450 5300 50  0001 C CNN
+	1    6450 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6275 5300 6350 5300
+Wire Wire Line
+	6550 5300 7925 5300
+Text Label 7900 5300 2    50   ~ 0
+FIRE1_OUT
+Wire Wire Line
+	3925 1425 4100 1425
+Text GLabel 4100 1425 2    50   Output ~ 0
+P2_FIRE1
+$Comp
+L Device:Jumper_NC_Small JP4
+U 1 1 5FCF52E4
+P 3825 1425
+F 0 "JP4" H 3825 1600 50  0000 C CNN
+F 1 "DEFAULT_FW" H 3825 1525 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3825 1425 50  0001 C CNN
+F 3 "~" H 3825 1425 50  0001 C CNN
+	1    3825 1425
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
