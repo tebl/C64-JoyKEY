@@ -5,8 +5,8 @@ The *C64 JoyKEY* does not actually need to have an Arduino Pro Micro installed u
 
 ## Firmware selection
 As already mentioned, the firmware options listed below can be used. Note that as mentioned when [building](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#soldering-it-together) the unit, there is a couple of links marked **DEFAULT_FW** that must be set according to your selection.
-- [Default FW](https://github.com/tebl/C64-JoyKEY/blob/main/software/arduino/Joykey/README.md)
-- [Autofire FW](https://github.com/tebl/C64-JoyKEY/blob/main/software/arduino/Autofire/README.md)
+- [Default FW](https://github.com/tebl/C64-JoyKEY/tree/main/software/arduino/Joykey)
+- [Autofire FW](https://github.com/tebl/C64-JoyKEY/blob/main/software/arduino/Autofire/)
 
 ## Installing the firmware
 Installation of the firmware would normally include compiling the code via either *Arduino Studio* or using the development environment I'm using these days - *PlatformIO*. Unless you want to do any coding, then whichever you already have installed should do what you need it to do.

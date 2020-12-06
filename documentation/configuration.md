@@ -1,5 +1,5 @@
 # Configuration
-This document details the jumpers physically found on the *C64 JoyKEY*, see document [firmware](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/firmware.md) if you are looking for a description of software settings. Check out the table of contents and jump directly to it if you are looking to use this device with a specific vintage system, note that this will mostly describe settings relevant to the [Default FW](https://github.com/tebl/C64-JoyKEY/blob/main/software/arduino/Joykey/README.md) - the use of the [Autofire FW](https://github.com/tebl/C64-JoyKEY/blob/main/software/arduino/Autofire/README.md) or the USB-mode is described separately.
+This document details the jumpers physically found on the *C64 JoyKEY*, see document [firmware](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/firmware.md) if you are looking for a description of software settings. Check out the table of contents and jump directly to it if you are looking to use this device with a specific vintage system, note that this will mostly describe settings relevant to the [Default FW](https://github.com/tebl/C64-JoyKEY/blob/main/software/arduino/Joykey/) - the use of the [Autofire FW](https://github.com/tebl/C64-JoyKEY/blob/main/software/arduino/Autofire/) or the USB-mode is described separately.
 
 - [Vintage systems](#vintage-systems)
   - [Commodore 64](#commodore-64)
@@ -33,7 +33,7 @@ The Commodore 64 can support two additional fire buttons by connecting up signal
 ![C64 variant B](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/c64_jumpers_b.jpg)
 
 ## Autofire
-See [Autofire FW](https://github.com/tebl/C64-JoyKEY/blob/main/software/arduino/Autofire/README.md) for more information on using the device in Autofire-mode, note that it too has a failsafe-mode so you'll need to hold LEFT and RIGHT key on powerup to enable it (that way things are not accidentally activated until you're sure you've set the jumpers correctly). Autofires require that both of the **DEFAULT_FW** pads have **NOT** been linked/jumpered, this ensures that signals aren't also connected directly to your vintage system.
+See [Autofire FW](https://github.com/tebl/C64-JoyKEY/blob/main/software/arduino/Autofire/) for more information on using the device in Autofire-mode, note that it too has a failsafe-mode so you'll need to hold LEFT and RIGHT key on powerup to enable it (that way things are not accidentally activated until you're sure you've set the jumpers correctly). Autofires require that both of the **DEFAULT_FW** pads have **NOT** been linked/jumpered, this ensures that signals aren't also connected directly to your vintage system.
 
 Using the autofire firmware assumes that the system will emulate a single-button joystick connected to a vintage system, the actual FIRE-buttons (FIRE1,2 and 3) will not be directly connected to the system and the Arduino will handle controlling the actual fire button signal sent to the vintage computer system.
 
@@ -41,7 +41,7 @@ Using the autofire firmware assumes that the system will emulate a single-button
 
 
 # USB-mode
-The [Default FW](https://github.com/tebl/C64-JoyKEY/blob/main/software/arduino/Joykey/README.md) can be used to connect the computer to a modern-ish computer, the device will present itself as either a keyboard or a joystick depending on the settings used. USB-mode supports all of the keys, but FIRE2/FIRE3 will be disabled unless you set the jumpers to what is shown below. USB-mode does not care about the two DEFAULT_FW jumpers, those just control the behavior when connected to a vintage system.
+The [Default FW](https://github.com/tebl/C64-JoyKEY/blob/main/software/arduino/Joykey/) can be used to connect the computer to a modern-ish computer, the device will present itself as either a keyboard or a joystick depending on the settings used. USB-mode supports all of the keys, but FIRE2/FIRE3 will be disabled unless you set the jumpers to what is shown below. USB-mode does not care about the two DEFAULT_FW jumpers, those just control the behavior when connected to a vintage system.
 
 ![USB System](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/usb_system.jpg)
 
