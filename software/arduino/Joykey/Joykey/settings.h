@@ -25,10 +25,13 @@
 
 /* Specify the key mapping to use when setting USB_ALTERNATE_MODE to
  * KEY_MODE_USB (used as a USB keyboard). Valid options are:
- *   KEY_MAP_WASD_KEYS   - WASD
- *   KEY_MAP_CURSOR_KEYS - Cursor keys
+ *   KEYMAP_WASD_KEYS         - WASD
+ *   KEYMAP_CURSOR_GAME       - Cursor keys
+ *   KEYMAP_CURSOR_EDITOR     - Same as above except FIRE1/2/3 is copy/paste/cut
+ *   KEYMAP_KEYMAP_PLATFORMIO - Fire keys compile, upload and open serial 
+ *                              terminal (PlatformIO).
  * 
  * If you do not like any of these, feel free to modify one of these within
  * the file constants.h - or create your own.
  */
-#define KEY_MAP_DEFAULT KEY_MAP_CURSOR
+#define KEYMAP_DEFAULT KEYMAP_CURSOR_GAME

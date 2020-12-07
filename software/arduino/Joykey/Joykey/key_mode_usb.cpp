@@ -8,7 +8,7 @@ extern unsigned long key_debounce[NUM_KEYS];
 extern byte key_state[NUM_KEYS];
 extern bool key_enabled[NUM_KEYS];
 
-byte key_map = KEY_MAP_DEFAULT;
+byte key_map = KEYMAP_DEFAULT;
 
 void init_mode_usb() {
   set_sys(true);
@@ -38,27 +38,94 @@ void init_mode_usb() {
 /*
  * Translate keypad keys to their equivalents found on a modern keyboard.
  */
-uint8_t get_keycode(byte key_id) {
+unsigned int get_keycode(byte key_id) {
   switch (key_map) {
-    case KEY_MAP_WASD:
-      return KEY_MAP_WASD_KEYS[key_id];
+    case KEYMAP_PLATFORMIO:
+      return KEYCODES_PLATFORMIO[key_id];
+
+    case KEYMAP_WASD:
+      return KEYCODES_WASD[key_id];
     
-    case KEY_MAP_CURSOR:
+    case KEYMAP_CURSOR_EDITOR:
+      return KEYCODES_CURSOR_EDITOR[key_id];
+
+    case KEYMAP_CURSOR_GAME:
     default:
-      return KEY_MAP_CURSOR_KEYS[key_id];
+      return KEYCODES_CURSOR_GAME[key_id];
   }
 }
 
+/* Send keypresses. Note that 0x00 will always be assumed to be some sort of
+ * mistake, keycodes from 0x80 and up are extensions to ASCII and we'll just
+ * hope noone needs them - I reserved them for key macros.
+ */
 void press_key(byte key_id) {
-  uint8_t keycode = get_keycode(key_id);
-  if (keycode != 0x00) {
+  unsigned int keycode = get_keycode(key_id);
+  if (keycode == 0x00) return;
+  if (keycode < MACRO_NOTHING) {
     Keyboard.press(keycode);
+  } else {
+    switch (keycode) {
+      case MACRO_COPY:
+        Keyboard.press(KEY_LEFT_CTRL);
+        Keyboard.write('c');
+        Keyboard.release(KEY_LEFT_CTRL);
+        break;
+      case MACRO_CUT:
+        Keyboard.press(KEY_LEFT_CTRL);
+        Keyboard.write('x');
+        Keyboard.release(KEY_LEFT_CTRL);
+        break;
+      case MACRO_PASTE:
+        Keyboard.press(KEY_LEFT_CTRL);
+        Keyboard.write('v');
+        Keyboard.release(KEY_LEFT_CTRL);
+        break;
+      case MACRO_UNDO:
+        Keyboard.press(KEY_LEFT_CTRL);
+        Keyboard.write('z');
+        Keyboard.release(KEY_LEFT_CTRL);
+        break;
+      case MACRO_REDO:
+        Keyboard.press(KEY_LEFT_CTRL);
+        Keyboard.write('y');
+        Keyboard.release(KEY_LEFT_CTRL);
+        break;
+
+      case MACRO_PLATFORMIO_BUILD:
+        Keyboard.press(KEY_LEFT_CTRL);
+        Keyboard.press(KEY_LEFT_ALT);
+        Keyboard.write('b');
+        Keyboard.release(KEY_LEFT_ALT);
+        Keyboard.release(KEY_LEFT_CTRL);
+        break;
+
+      case MACRO_PLATFORMIO_SERIAL:
+        Keyboard.press(KEY_LEFT_CTRL);
+        Keyboard.press(KEY_LEFT_ALT);
+        Keyboard.write('s');
+        Keyboard.release(KEY_LEFT_ALT);
+        Keyboard.release(KEY_LEFT_CTRL);
+        break;
+
+      case MACRO_PLATFORMIO_UPLOAD:
+        Keyboard.press(KEY_LEFT_CTRL);
+        Keyboard.press(KEY_LEFT_ALT);
+        Keyboard.write('u');
+        Keyboard.release(KEY_LEFT_ALT);
+        Keyboard.release(KEY_LEFT_CTRL);
+        break;
+    }
   }
 }
 
+/*
+ *
+ */
 void release_key(byte key_id) {
-  uint8_t keycode = get_keycode(key_id);
-  if (keycode != 0x00) {
+  unsigned int keycode = get_keycode(key_id);
+  if (keycode == 0x00) return;
+  if (keycode < MACRO_NOTHING) {
     Keyboard.release(keycode);
   }
 }
