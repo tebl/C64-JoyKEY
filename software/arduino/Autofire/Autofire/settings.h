@@ -24,7 +24,7 @@
 /* Uncomment this line to force the alternate mode, meaning that the magic
  * key combination requirement on startup is removed completely.
  */
-#define FORCE_ALTERNATE
+//#define FORCE_ALTERNATE
 
 /* The SYS LED will ordinarily reflect the status of the fire key, this gives
  * the user some feedback on frequency used on autofire and rapid fire modes.
