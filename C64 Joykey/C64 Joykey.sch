@@ -549,7 +549,7 @@ Wire Wire Line
 	8875 4800 8950 4800
 Wire Wire Line
 	9350 4800 9850 4800
-Text GLabel 6275 5300 0    50   Output ~ 0
+Text GLabel 6000 5300 0    50   Output ~ 0
 P2_FIRE1
 NoConn ~ 8875 5000
 NoConn ~ 8875 5100
@@ -797,8 +797,6 @@ F 3 "~" V 6450 5300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6275 5300 6350 5300
-Wire Wire Line
 	6550 5300 7925 5300
 Text Label 7900 5300 2    50   ~ 0
 FIRE1_OUT
@@ -817,4 +815,19 @@ F 3 "~" H 3825 1425 50  0001 C CNN
 	1    3825 1425
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 5FDC0E14
+P 6175 5300
+F 0 "R5" V 6075 5250 50  0000 L CNN
+F 1 "150" V 6275 5225 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6175 5300 50  0001 C CNN
+F 3 "~" H 6175 5300 50  0001 C CNN
+	1    6175 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6275 5300 6350 5300
+Wire Wire Line
+	6000 5300 6075 5300
 $EndSCHEMATC
