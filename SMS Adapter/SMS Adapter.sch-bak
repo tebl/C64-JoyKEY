@@ -18,7 +18,7 @@ L c64_idc:C64_IDC2 J1
 U 1 1 5FD1F19D
 P 4425 3000
 F 0 "J1" H 4437 3415 50  0000 C CNN
-F 1 "c64_idc" H 4437 3324 50  0000 C CNN
+F 1 "JoyKEY" H 4437 3324 50  0000 C CNN
 F 2 "" H 4425 3000 50  0001 C CNN
 F 3 "~" H 4425 3000 50  0001 C CNN
 	1    4425 3000
@@ -28,8 +28,8 @@ $Comp
 L sega_joypad:sms_joypad J2
 U 1 1 5FD232F5
 P 7350 4550
-F 0 "J2" H 7944 4596 50  0000 L CNN
-F 1 "sms_joypad" H 7944 4505 50  0000 L CNN
+F 0 "J2" H 7300 5225 50  0000 L CNN
+F 1 "SMS" H 7275 5150 50  0000 L CNN
 F 2 "" H 7350 4550 50  0001 C CNN
 F 3 "" H 7350 4550 50  0001 C CNN
 	1    7350 4550
@@ -41,7 +41,7 @@ U 1 1 5FD268A5
 P 6125 3425
 F 0 "J3" H 6175 3642 50  0000 C CNN
 F 1 "FIRE_SWAP" H 6175 3551 50  0000 C CNN
-F 2 "" H 6125 3425 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x02_Pitch2.54mm" H 6125 3425 50  0001 C CNN
 F 3 "~" H 6125 3425 50  0001 C CNN
 	1    6125 3425
 	1    0    0    -1  
@@ -124,4 +124,50 @@ Wire Wire Line
 	4225 2050 4225 2525
 Wire Wire Line
 	6525 2050 6525 3425
+Text Notes 7000 6800 0    50   ~ 0
+The Sega Master System has a slightly different pinout from the standard Atari-style joysticks. There are\nno active components on this, so you may as well just create a dedicated cable with these changes \ninstead of having a straight-through IDC to DE-9.
+$Comp
+L joykey_jumpers:JUMPER_SETTINGS_1 #1
+U 1 1 5FD24880
+P 10975 700
+F 0 "#1" H 10875 825 50  0001 C CNN
+F 1 "JUMPER_SETTINGS_1" H 10850 -450 50  0001 C CNN
+F 2 "" H 10975 525 50  0001 C CNN
+F 3 "~" H 10975 525 50  0001 C CNN
+	1    10975 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L joykey_jumpers:JUMPER_CONNECTED #4
+U 1 1 5FD250F4
+P 10975 1650
+F 0 "#4" H 10975 1550 50  0001 C CNN
+F 1 "JUMPER_CONNECTED" H 10975 1750 50  0001 C CNN
+F 2 "" H 10975 1650 50  0001 C CNN
+F 3 "" H 10975 1650 50  0001 C CNN
+	1    10975 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L joykey_jumpers:JUMPER_NOT_CONNECTED #3
+U 1 1 5FD25605
+P 10975 1200
+F 0 "#3" H 10975 1125 50  0001 C CNN
+F 1 "JUMPER_NOT_CONNECTED" H 10975 1300 50  0001 C CNN
+F 2 "" H 10975 1200 50  0001 C CNN
+F 3 "" H 10975 1200 50  0001 C CNN
+	1    10975 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L joykey_jumpers:JUMPER_NOT_CONNECTED #2
+U 1 1 5FD25BFC
+P 10975 800
+F 0 "#2" H 10975 725 50  0001 C CNN
+F 1 "JUMPER_NOT_CONNECTED" H 10975 900 50  0001 C CNN
+F 2 "" H 10975 800 50  0001 C CNN
+F 3 "" H 10975 800 50  0001 C CNN
+	1    10975 800 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
