@@ -1,4 +1,4 @@
-147895653813767
+226632105827872
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -1175,6 +1175,13 @@ PUIAudio_SMT_0825_S_4_R
 0
 0
 0
+C64 IDC
+IDC_Joystick
+Through hole straight IDC box header, 2x05, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x05 2.54mm double row
+0
+10
+10
 Capacitors_SMD
 CP_Elec_3x5.3
 
@@ -4780,6 +4787,321 @@ Transformer_Toroid_horizontal_Diameter18mm
 0
 0
 0
+Connector_IDC
+IDC-Header_2x03_P2.54mm_Horizontal
+Through hole angled IDC box header, 2x03, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x03 2.54mm double row
+0
+6
+6
+Connector_IDC
+IDC-Header_2x03_P2.54mm_Vertical
+Through hole straight IDC box header, 2x03, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x03 2.54mm double row
+0
+6
+6
+Connector_IDC
+IDC-Header_2x04_P2.54mm_Horizontal
+Through hole angled IDC box header, 2x04, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x04 2.54mm double row
+0
+8
+8
+Connector_IDC
+IDC-Header_2x04_P2.54mm_Vertical
+Through hole straight IDC box header, 2x04, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x04 2.54mm double row
+0
+8
+8
+Connector_IDC
+IDC-Header_2x05_P2.54mm_Horizontal
+Through hole angled IDC box header, 2x05, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x05 2.54mm double row
+0
+10
+10
+Connector_IDC
+IDC-Header_2x05_P2.54mm_Horizontal_Lock
+Connector IDC Locked, 10 contacts, compatible header: PANCON HE10 (Series 50, (https://www.reboul.fr/storage/00003af6.pdf)
+connector idc locked
+0
+12
+10
+Connector_IDC
+IDC-Header_2x05_P2.54mm_Vertical
+Through hole straight IDC box header, 2x05, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x05 2.54mm double row
+0
+10
+10
+Connector_IDC
+IDC-Header_2x05_P2.54mm_Vertical_Lock
+Connector IDC Locked, 10 contacts, compatible header: PANCON HE10 (Series 50, (https://www.reboul.fr/storage/00003af6.pdf)
+connector idc locked
+0
+12
+10
+Connector_IDC
+IDC-Header_2x06_P2.54mm_Horizontal
+Through hole angled IDC box header, 2x06, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x06 2.54mm double row
+0
+12
+12
+Connector_IDC
+IDC-Header_2x06_P2.54mm_Vertical
+Through hole straight IDC box header, 2x06, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x06 2.54mm double row
+0
+12
+12
+Connector_IDC
+IDC-Header_2x07_P2.54mm_Horizontal
+Through hole angled IDC box header, 2x07, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x07 2.54mm double row
+0
+14
+14
+Connector_IDC
+IDC-Header_2x07_P2.54mm_Horizontal_Lock
+Connector IDC Locked, 10 contacts, compatible header: PANCON HE10 (Series 50, (https://www.reboul.fr/storage/00003af6.pdf)
+connector idc locked
+0
+16
+14
+Connector_IDC
+IDC-Header_2x07_P2.54mm_Vertical
+Through hole straight IDC box header, 2x07, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x07 2.54mm double row
+0
+14
+14
+Connector_IDC
+IDC-Header_2x07_P2.54mm_Vertical_Lock
+Connector IDC Locked, 10 contacts, compatible header: PANCON HE10 (Series 50, (https://www.reboul.fr/storage/00003af6.pdf)
+connector idc locked
+0
+16
+14
+Connector_IDC
+IDC-Header_2x08_P2.54mm_Horizontal
+Through hole angled IDC box header, 2x08, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x08 2.54mm double row
+0
+16
+16
+Connector_IDC
+IDC-Header_2x08_P2.54mm_Horizontal_Lock
+Connector IDC Locked, 10 contacts, compatible header: PANCON HE10 (Series 50, (https://www.reboul.fr/storage/00003af6.pdf)
+connector idc locked
+0
+18
+16
+Connector_IDC
+IDC-Header_2x08_P2.54mm_Vertical
+Through hole straight IDC box header, 2x08, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x08 2.54mm double row
+0
+16
+16
+Connector_IDC
+IDC-Header_2x08_P2.54mm_Vertical_Lock
+Connector IDC Locked, 10 contacts, compatible header: PANCON HE10 (Series 50, (https://www.reboul.fr/storage/00003af6.pdf)
+connector idc locked
+0
+18
+16
+Connector_IDC
+IDC-Header_2x10_P2.54mm_Horizontal
+Through hole angled IDC box header, 2x10, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x10 2.54mm double row
+0
+20
+20
+Connector_IDC
+IDC-Header_2x10_P2.54mm_Horizontal_Lock
+Connector IDC Locked, 10 contacts, compatible header: PANCON HE10 (Series 50, (https://www.reboul.fr/storage/00003af6.pdf)
+connector idc locked
+0
+22
+20
+Connector_IDC
+IDC-Header_2x10_P2.54mm_Vertical
+Through hole straight IDC box header, 2x10, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x10 2.54mm double row
+0
+20
+20
+Connector_IDC
+IDC-Header_2x10_P2.54mm_Vertical_Lock
+Connector IDC Locked, 10 contacts, compatible header: PANCON HE10 (Series 50, (https://www.reboul.fr/storage/00003af6.pdf)
+connector idc locked
+0
+22
+20
+Connector_IDC
+IDC-Header_2x13_P2.54mm_Horizontal
+Through hole angled IDC box header, 2x13, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x13 2.54mm double row
+0
+26
+26
+Connector_IDC
+IDC-Header_2x13_P2.54mm_Horizontal_Lock
+Connector IDC Locked, 10 contacts, compatible header: PANCON HE10 (Series 50, (https://www.reboul.fr/storage/00003af6.pdf)
+connector idc locked
+0
+28
+26
+Connector_IDC
+IDC-Header_2x13_P2.54mm_Vertical
+Through hole straight IDC box header, 2x13, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x13 2.54mm double row
+0
+26
+26
+Connector_IDC
+IDC-Header_2x13_P2.54mm_Vertical_Lock
+Connector IDC Locked, 10 contacts, compatible header: PANCON HE10 (Series 50, (https://www.reboul.fr/storage/00003af6.pdf)
+connector idc locked
+0
+28
+26
+Connector_IDC
+IDC-Header_2x15_P2.54mm_Horizontal
+Through hole angled IDC box header, 2x15, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x15 2.54mm double row
+0
+30
+30
+Connector_IDC
+IDC-Header_2x15_P2.54mm_Vertical
+Through hole straight IDC box header, 2x15, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x15 2.54mm double row
+0
+30
+30
+Connector_IDC
+IDC-Header_2x17_P2.54mm_Horizontal
+Through hole angled IDC box header, 2x17, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x17 2.54mm double row
+0
+34
+34
+Connector_IDC
+IDC-Header_2x17_P2.54mm_Horizontal_Lock
+Connector IDC Locked, 10 contacts, compatible header: PANCON HE10 (Series 50, (https://www.reboul.fr/storage/00003af6.pdf)
+connector idc locked
+0
+36
+34
+Connector_IDC
+IDC-Header_2x17_P2.54mm_Vertical
+Through hole straight IDC box header, 2x17, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x17 2.54mm double row
+0
+34
+34
+Connector_IDC
+IDC-Header_2x17_P2.54mm_Vertical_Lock
+Connector IDC Locked, 10 contacts, compatible header: PANCON HE10 (Series 50, (https://www.reboul.fr/storage/00003af6.pdf)
+connector idc locked
+0
+36
+34
+Connector_IDC
+IDC-Header_2x20_P2.54mm_Horizontal
+Through hole angled IDC box header, 2x20, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x20 2.54mm double row
+0
+40
+40
+Connector_IDC
+IDC-Header_2x20_P2.54mm_Horizontal_Lock
+Connector IDC Locked, 10 contacts, compatible header: PANCON HE10 (Series 50, (https://www.reboul.fr/storage/00003af6.pdf)
+connector idc locked
+0
+42
+41
+Connector_IDC
+IDC-Header_2x20_P2.54mm_Vertical
+Through hole straight IDC box header, 2x20, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x20 2.54mm double row
+0
+40
+40
+Connector_IDC
+IDC-Header_2x20_P2.54mm_Vertical_Lock
+Connector IDC Locked, 10 contacts, compatible header: PANCON HE10 (Series 50, (https://www.reboul.fr/storage/00003af6.pdf)
+connector idc locked
+0
+42
+40
+Connector_IDC
+IDC-Header_2x25_P2.54mm_Horizontal
+Through hole angled IDC box header, 2x25, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x25 2.54mm double row
+0
+50
+50
+Connector_IDC
+IDC-Header_2x25_P2.54mm_Vertical
+Through hole straight IDC box header, 2x25, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x25 2.54mm double row
+0
+50
+50
+Connector_IDC
+IDC-Header_2x25_P2.54mm_Vertical_Lock
+Connector IDC Locked, 10 contacts, compatible header: PANCON HE10 (Series 50, (https://www.reboul.fr/storage/00003af6.pdf)
+connector idc locked
+0
+52
+50
+Connector_IDC
+IDC-Header_2x30_P2.54mm_Horizontal
+Through hole angled IDC box header, 2x30, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x30 2.54mm double row
+0
+60
+60
+Connector_IDC
+IDC-Header_2x30_P2.54mm_Vertical
+Through hole straight IDC box header, 2x30, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x30 2.54mm double row
+0
+60
+60
+Connector_IDC
+IDC-Header_2x30_P2.54mm_Vertical_Lock
+Connector IDC Locked, 10 contacts, compatible header: PANCON HE10 (Series 50, (https://www.reboul.fr/storage/00003af6.pdf)
+connector idc locked
+0
+62
+60
+Connector_IDC
+IDC-Header_2x32_P2.54mm_Horizontal
+Through hole angled IDC box header, 2x32, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x32 2.54mm double row
+0
+64
+64
+Connector_IDC
+IDC-Header_2x32_P2.54mm_Vertical
+Through hole straight IDC box header, 2x32, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x32 2.54mm double row
+0
+64
+64
+Connector_IDC
+IDC-Header_2x32_P2.54mm_Vertical_Lock
+Connector IDC Locked, 10 contacts, compatible header: PANCON HE10 (Series 50, (https://www.reboul.fr/storage/00003af6.pdf)
+connector idc locked
+0
+66
+64
 Connectors
 1pin
 
@@ -40613,6 +40935,34 @@ nRF24L01_Breakout
 0
 0
 0
+RND_DSUB
+DSUB-9_Female_Edge
+Straight DE-9 connector, the blue kind with metal shield removed (solder to pads).
+9-pin D-Sub connector straight vertical THT male pitch 2.77x2.84mm mounting holes distance 25mm
+0
+9
+9
+RND_DSUB
+DSUB-9_Male_Vertical_Pitch2.77x2.84mm
+9-pin D-Sub connector, straight/vertical, THT-mount, male, pitch 2.77x2.84mm, distance of mounting holes 25mm, see https://disti-assets.s3.amazonaws.com/tonar/files/datasheets/16730.pdf
+9-pin D-Sub connector straight vertical THT male pitch 2.77x2.84mm mounting holes distance 25mm
+0
+9
+9
+RND_DSUB
+DSUB-15_Male_Horizontal_Pitch2.77x2.54mm_EdgePinOffset9.40mm
+15-pin D-Sub connector, horizontal/angled (90 deg), THT-mount, male, pitch 2.77x2.54mm, pin-PCB-offset 9.4mm, see http://docs-europe.electrocomponents.com/webdocs/1585/0900766b81585df2.pdf
+15-pin D-Sub connector horizontal angled 90deg THT male pitch 2.77x2.54mm pin-PCB-offset 9.4mm
+0
+15
+15
+RND_DSUB
+DSUB-15_Male_Vertical_Pitch2.77x2.84mm
+15-pin D-Sub connector, straight/vertical, THT-mount, male, pitch 2.77x2.84mm, distance of mounting holes 33.3mm, see https://disti-assets.s3.amazonaws.com/tonar/files/datasheets/16730.pdf
+15-pin D-Sub connector straight vertical THT male pitch 2.77x2.84mm mounting holes distance 33.3mm
+0
+15
+15
 Relays_THT
 Relay_1-Form-A_Schrack-RYII_RM5mm
 
