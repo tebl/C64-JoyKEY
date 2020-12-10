@@ -106,17 +106,6 @@ Wire Wire Line
 Wire Wire Line
 	2775 1350 2850 1350
 $Comp
-L c64_idc:c64_idc J2
-U 1 1 5FB748C4
-P 8350 1125
-F 0 "J2" H 8400 1542 50  0000 C CNN
-F 1 "Port_2" H 8400 1451 50  0000 C CNN
-F 2 "C64 IDC:IDC_Joystick" H 8350 1125 50  0001 C CNN
-F 3 "~" H 8350 1125 50  0001 C CNN
-	1    8350 1125
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x05_Top_Bottom J1
 U 1 1 5FB76154
 P 8350 1925
@@ -830,4 +819,15 @@ Wire Wire Line
 	6275 5300 6350 5300
 Wire Wire Line
 	6000 5300 6075 5300
+$Comp
+L c64_idc:c64_idc J2
+U 1 1 5FB748C4
+P 8350 1125
+F 0 "J2" H 8400 1542 50  0000 C CNN
+F 1 "Port_2" H 8400 1451 50  0000 C CNN
+F 2 "C64 IDC:IDC_Joystick" H 8350 1125 50  0001 C CNN
+F 3 "~" H 8350 1125 50  0001 C CNN
+	1    8350 1125
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

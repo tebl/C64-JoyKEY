@@ -821,7 +821,7 @@ U 1 1 5FDC0E14
 P 6175 5300
 F 0 "R5" V 6075 5250 50  0000 L CNN
 F 1 "150" V 6275 5225 50  0000 L CNN
-F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 6175 5300 50  0001 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6175 5300 50  0001 C CNN
 F 3 "~" H 6175 5300 50  0001 C CNN
 	1    6175 5300
 	0    1    1    0   
@@ -830,4 +830,22 @@ Wire Wire Line
 	6275 5300 6350 5300
 Wire Wire Line
 	6000 5300 6075 5300
+Text Notes 8625 875  0    50   ~ 0
+2
+Text Notes 8625 1025 0    50   ~ 0
+4
+Text Notes 8125 1125 0    50   ~ 0
+5
+Text Notes 8625 1125 0    50   ~ 0
+6
+Text Notes 8125 1225 0    50   ~ 0
+7
+Text Notes 8625 1225 0    50   ~ 0
+8
+Text Notes 8125 1325 0    50   ~ 0
+9
+Text Notes 8125 1025 0    50   ~ 0
+3
+Text Notes 8125 875  0    50   ~ 0
+1
 $EndSCHEMATC
