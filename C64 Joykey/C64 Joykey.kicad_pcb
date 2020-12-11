@@ -1550,7 +1550,7 @@
   (gr_text "Kempston\nGND\nGND" (at 181.61 154.305) (layer B.SilkS) (tstamp 5FCD4E3C)
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
-  (gr_text "SMS\nGND\nN/C" (at 186.69 154.305) (layer B.SilkS) (tstamp 5FCD4E34)
+  (gr_text "SMS*\nGND\nN/C" (at 186.69 154.305) (layer B.SilkS) (tstamp 5FCD4E34)
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (gr_text "Atari_ST\nGND\nGND" (at 194.31 154.305) (layer B.SilkS) (tstamp 5FCD4E27)
