@@ -2,7 +2,7 @@
 The gamepad for the Sega Master System is mostly compatible with the Atari-style joystick, but as people regularly did during those day - they came up with an entirely different way to get a secondary fire-button. What this means is that some rewire-ing is most likely needed. You could quite possibly just create a cable doing this for you for the necessary details), but since I hate soldering connectors I put together a small adapter board (just plug a 2x5 pin IDC cable in between the adapter and JoyKEY port 2). Either way you choose, check out the [schematic](https://github.com/tebl/C64-JoyKEY/raw/main/documentation/schematic/SMS%20Adapter.pdf) for the details.
 
 # BOM
-This section attempts to maintain a list of the parts you'd need in order to build a feature-complete *C64 JoyKEY*, any parts that you could potentially do without have part counts listed in parenthesis. 
+The parts listed are the ones I've used when building a Sega Mega Drive controller adapter for the *C64 JoyKEY*, part listed in parenthesis are considered optional (meaning you could build a more limited version of it). 
 
 | Reference     | Item                                      | Count |
 | ------------- | ----------------------------------------- | ----- |
