@@ -30,6 +30,8 @@
  *   KEYMAP_CURSOR_EDITOR     - Same as above except FIRE1/2/3 is copy/paste/cut
  *   KEYMAP_KEYMAP_PLATFORMIO - Fire keys compile, upload and open serial 
  *                              terminal (PlatformIO).
+ *   KEYMAP_FUNCTIONS         - Function keys F13-F19 (useful when module used
+ *                              as a macro keyboard such as a streamdeck).
  * 
  * If you do not like any of these, feel free to modify one of these within
  * the file constants.h - or create your own.

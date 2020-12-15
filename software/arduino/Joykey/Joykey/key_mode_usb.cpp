@@ -40,6 +40,9 @@ void init_mode_usb() {
  */
 unsigned int get_keycode(byte key_id) {
   switch (key_map) {
+    case KEYMAP_FUNCTIONS:
+      return KEYCODES_FUNCTIONS[key_id];
+
     case KEYMAP_PLATFORMIO:
       return KEYCODES_PLATFORMIO[key_id];
 
@@ -119,8 +122,9 @@ void press_key(byte key_id) {
   }
 }
 
-/*
- *
+/* Used to release a previously held key. This is mostly left to the
+ * operating system, except when we've associated it with a macro sequence -
+ * this is in order to avoid repeated sequences. 
  */
 void release_key(byte key_id) {
   unsigned int keycode = get_keycode(key_id);
