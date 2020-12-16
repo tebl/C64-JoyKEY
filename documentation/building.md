@@ -9,6 +9,7 @@ Congratulations on the taking the leap to build my slightly over-complicated 7-k
   - [Building the cables](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#building-the-cables)
   - [All done](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#all-done)
 - [BOM](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#bom)
+  - [BOM (Adapters)](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#bom-adapters)
 
 ## Ordering components
 The first step in building it, is what you've already done - figuring out what you wanted out of it in the first place! The second step is taking stock of which parts you don't already have, check out the [BOM](#BOM) (*Bill of Manufacturing*) below for a somewhat detailed of everything I used when building the prototype.
@@ -76,27 +77,28 @@ That should be most of the information you'll need. Head on over to the [configu
 # BOM
 This section attempts to maintain a list of the parts you'd need in order to build a feature-complete *C64 JoyKEY*, any parts that you could potentially do without have part counts listed in parenthesis. 
 
-| Reference     | Item                                      | Count |
-| ------------- | ----------------------------------------- | ----- |
-| PCB           | Fabricate using Gerber files ([order]())  |     1 |
-| PCB Faceplate | Fabricate using Gerber files ([order]())  |    (1)|
-| A1            | Arduino Pro Micro                         |    (1)|
-|               | 12-pin straight pin header                |    (2)|
-| D1 *          | 5mm bright LED, RED                       |    (1)|
-| D2 *          | 5mm bright LED, GREEN                     |    (1)|
-| D3 **         | 1N4001 diode DO-41                        |    (1)|
-| D4            | 1n4148 diode DO-35                        |    (1)|
-| J1,J2 ***     | 2x5 pin straight header pins or 2x5 IDC   |     2 |
-|               | 2x5 pin IDC to female DB9 cable           | 1 (1) |
-| JP1-JP3       | 3-pin right-angle header pins             |     3 |
-| R1,R2         | 270 ohm resistor                          |     2 | 
-| R3,R4         | 220 ohm resistor                          |    (2)| 
-| SW1-SW7 ****  | Cherry MX compatible switch (green)       |     7 |
-|               | MX compatible 1u blank keycaps            |     7 |
-| SW8           | Tactile momentary switch 6x6x6mm          |    (1)|
-|               | 3M bumpon adhesive rubber feet            |    (4)|
-|               | Nylon M3 hex standoffs 8mm                |    (4)|
-|               | Nylon M3 screws                           |    (8)|
+| Reference     | Item                                      | Count | Order  |
+| ------------- | ----------------------------------------- | ----- | ------ |
+| PCB           | Fabricate using Gerber files              |     1 | PCBway |
+| PCB Faceplate | Fabricate using Gerber files              |    (1)| PCBway |
+| A1            | Arduino Pro Micro                         |    (1)|        |
+|               | 12-pin straight pin header                |    (2)|        |
+| D1 *          | 5mm bright LED, RED                       |    (1)|        |
+| D2 *          | 5mm bright LED, GREEN                     |    (1)|        |
+| D3 **         | 1N4001 diode DO-41                        |    (1)|        |
+| D4            | 1n4148 diode DO-35                        |    (1)|        |
+| J1,J2 ***     | 2x5 pin straight header pins or 2x5 IDC   |     2 |        |
+|               | 2x5 pin IDC to female DB9 cable           | 1 (1) |        |
+| JP1-JP3       | 3-pin right-angle header pins             |     3 |        |
+| R1,R2         | 270 ohm resistor                          |     2 |        |
+| R3,R4         | 220 ohm resistor                          |    (2)|        |
+| SW1-SW7 ****  | Cherry MX compatible switch (green)       |     7 |        |
+|               | MX compatible 1u blank keycaps            |     7 |        |
+| SW8           | Tactile momentary switch 6x6x6mm          |    (1)|        |
+|               | 3M bumpon adhesive rubber feet            |    (4)|        |
+|               | Nylon M3 hex standoffs 8mm                |    (4)|        |
+|               | Nylon M3 screws                           |    (8)|        |
+
 
 *) When used with the faceplate, a bright LED will be needed to shine through the PCB. 5mm flat top type LEDs will allow less space between the PCBs.
 
@@ -105,3 +107,14 @@ This section attempts to maintain a list of the parts you'd need in order to bui
 ***) Breakable dual row pin headers can be used here, but I find it is nicer to use a 2x5 pin connector here instead. The easiest way to get a cable like this is to order a couple of 2x5 pin IDC cable (usually listed as *AVR* or *JTAG* cable) with sufficient length, cut off the end you don't need and then attach a female DB9 connector of the IDC variety. Pre-made cables have been observed on ebay, but have not seen any that are more than 20cm in length.
 
 ****) I've been using the cheaper Gateron clones and they work well for this type of use, you can use either the 3- or 5-pin variety. The green switches are the ones that have a clicky sound, pick a different colour if that is not something you'd be interested in. Keycaps are usually listed as blank mechanical gaming MX-compatible keycaps.
+
+
+## BOM (Adapters)
+Instead of adding a ton of jumpers to the module, in order to account for every system known to man - I instead chose to add the specifics for those edge cases to separate adapter boards. These generally slot into the specific system and is connected to port 2 of the *C64 JoyKEY* using a 2x5 pin *JTAG* or *AVR* cable, in this case on you haven't cut parts off the ends of. Click the link to each of the adapters you require to get the specific parts needed for that board.
+
+| Adapter                                                                         | System              | Order  |
+| ------------------------------------------------------------------------------- | ------------------- | ------ |
+| [A7800 Adapter](https://github.com/tebl/C64-JoyKEY/tree/main/A7800%20Adapter) * | Atari 7800          | PCBway |
+| [SMS Adapter](https://github.com/tebl/C64-JoyKEY/tree/main/SMS%20Adapter) *     | Sega Master System  | PCBway |
+
+*) Module is untested.
