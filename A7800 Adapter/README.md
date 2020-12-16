@@ -1,5 +1,6 @@
 # JoyKEY (Atari 7800 Adapter)
 **UNTESTED**
+
 In the age of the Commmodore 64, Atari decided that it was a good idea to put together a console without audio quality that would only rise to the level of competing with the almighty ZX Spectrum. Then they launched them with horrible controllers that fell part on the way home from the store. Here in Europe, we also got treated to a gamepad-like controller that can only be described as an implement created by someone who only have had the concept just barely described to them over the phone - yet, we still got the feeling that they hated gamers.
 
 Enough about all that, I actually have more than one of the consoles - somehow I sort of like playing on them, I just can't use any of their controllers. I've previously made an adapter so that I can use Sega Mega Drive controllers with the console, but since I've built the *C64 JoyKEY* I wanted to use it on that as well (which is the reason for this adapter).
