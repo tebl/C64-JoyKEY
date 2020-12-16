@@ -43,7 +43,9 @@ Push the MX keycaps onto the top of the MX-switches, again you'll need to use a 
 
 Those wanting to do a more complete build of the unit will probably have opted for the faceplate as well, it does not have any active (or passive components either) and is mostly just there to give the whole unit some added sturdyness. Both PCBs are screwed together using M3 hex spacers as well as screws to go with them, you can also use some of the nuts instead - if you got the *M3 nylon hex standoff kit* I recommended as part of the *BOM*. The space between needs to match the components you've installed on the module, to my eyes the 9mm ones look the best - though the 10mm ones seem to be a lot more commonly available on ebay (it's also in the kit). 8mm can also be used, but you'll need to install shorter LEDs (the kind listed as *5mm flat top LED* or *5mm straw hat LED*).
 
-![Faceplate installed](https://raw.githubusercontent.com/tebl/C64-JoyKEY/main/gallery/build_006.jpg)
+![Module sideview](https://raw.githubusercontent.com/tebl/C64-JoyKEY/main/gallery/build_006.jpg)
+![Faceplate installed](https://raw.githubusercontent.com/tebl/C64-JoyKEY/main/gallery/build_007.jpg)
+
 
 ## Building the cables
 The last step is putting together some cables for your most common vintage systems, but if you only want to use it as a USB device then feel free to skip this step. Still here? Awesome.
