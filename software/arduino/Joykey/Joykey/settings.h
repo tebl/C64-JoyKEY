@@ -4,7 +4,7 @@
  * Settings
  */
 #define APP_TITLE "JoyKEY"
-#define APP_VERSION "0.2"
+#define APP_VERSION "0.3"
 
 #define LED_FLASH_DELAY 100
 #define BOOT_MODE_THRESHOLD 1000

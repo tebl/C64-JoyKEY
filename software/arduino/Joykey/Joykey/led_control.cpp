@@ -2,19 +2,36 @@
 #include "constants.h"
 #include "settings.h"
 
-void init_led() {
-  pinMode(LED_PWR, OUTPUT);
-  analogWrite(LED_PWR, LED_PWR_MAX);
-
-  digitalWrite(LED_SYS, LOW);
-  pinMode(LED_SYS, OUTPUT);
-}
-
 /*
  * Effectively sets the brightness of the LED marked PWR. 
  */
+int current_pwr = LED_PWR_MAX;
 void set_pwr(int value) {
+  current_pwr = value;
   analogWrite(LED_PWR, value);
+}
+
+void fade_pwr() {
+  if (current_pwr > 0) {
+    current_pwr -= 8;
+    if (current_pwr < 0) current_pwr = 0;
+  }
+  set_pwr(current_pwr);
+}
+
+/*
+ * Set LED state for SYS.
+ */
+void set_sys(bool value) {
+  digitalWrite(LED_SYS, (value ? HIGH : LOW));
+}
+
+void init_led() {
+  pinMode(LED_PWR, OUTPUT);
+  set_pwr(LED_PWR_MAX);
+
+  digitalWrite(LED_SYS, LOW);
+  pinMode(LED_SYS, OUTPUT);
 }
 
 /*
@@ -34,11 +51,4 @@ void flash_sys(int num_flashes) {
       flash_delay();
       digitalWrite(LED_SYS, LOW);
   }
-}
-
-/*
- * Set LED state for SYS.
- */
-void set_sys(bool value) {
-  digitalWrite(LED_SYS, (value ? HIGH : LOW));
 }

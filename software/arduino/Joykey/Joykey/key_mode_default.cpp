@@ -6,6 +6,8 @@ void init_mode_default() {
   flash_sys(3);
 }
 
+
+
 void handle_mode_default() {
   #ifdef DEBUG
   if (
@@ -16,5 +18,8 @@ void handle_mode_default() {
     digitalRead(PIN_FIRE1) == LOW
     ) set_sys(true);
   else set_sys(false);
+  #else
+  delay(1000);
+  fade_pwr();
   #endif
 }

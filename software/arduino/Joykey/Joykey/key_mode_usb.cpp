@@ -4,6 +4,7 @@
 #include "settings.h"
 #include "led_control.h"
 
+unsigned long sys_shutoff = 0;
 extern unsigned long key_debounce[NUM_KEYS];
 extern byte key_state[NUM_KEYS];
 extern bool key_enabled[NUM_KEYS];
@@ -12,6 +13,7 @@ byte key_map = KEYMAP_DEFAULT;
 
 void init_mode_usb() {
   set_sys(true);
+  sys_shutoff = millis() + LED_SYS_SHUTOFF;
 
   for (int key_id = 0; key_id <= JOYKEY_FIRE1; key_id++) {
     pinMode(KEY_PINS[key_id], INPUT_PULLUP);
@@ -176,6 +178,13 @@ void check_key(byte key_id) {
 }
 
 void handle_mode_usb() {
+  /* Shut off SYS after 5 seconds */
+  if (sys_shutoff > 0 && millis() > sys_shutoff) {
+    sys_shutoff = 0;
+    set_sys(false);
+  }
+
+  /* Check keys */
   for (int key_id = 0; key_id < NUM_KEYS; key_id++) {
     if (key_enabled[key_id]) {
       check_key(key_id);
