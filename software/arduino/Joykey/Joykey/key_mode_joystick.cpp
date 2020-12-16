@@ -78,8 +78,7 @@ void update_joystick() {
   Joystick.sendState();
 }
 
-/*
- * Check the state of the specified key_id, any changes will be sent later after
+/* Check the state of the specified key_id, any changes will be sent later after
  * doing some sanity checks.
  */
 void debounce_joystick_key(byte key_id) {

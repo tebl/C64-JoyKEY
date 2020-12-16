@@ -6,8 +6,6 @@ void init_mode_default() {
   flash_sys(3);
 }
 
-
-
 void handle_mode_default() {
   #ifdef DEBUG
   if (
