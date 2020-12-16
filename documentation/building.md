@@ -61,7 +61,7 @@ I also bought some cables described *DB9 female to female cable d-sub* on AliExp
 ![Crimp](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/build_011.jpg)
 ![Added strain relief](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/build_012.jpg)
 
-The IDC connector comes with two parts, just make sure to align pin 1 on both sides (there'll be a blank space on the right side as we only have 9 cables instead of 10). Align the cable the wrong way, then clamp it into place by pushing very hard against a table etc. Wrap the cable over the top, then attach the strain relief clip and push it into place.
+The IDC connector comes with two parts, just make sure to align pin 1 on both sides (there'll be a blank space on the right side as we only have 9 cables instead of 10). Align the cable the wrong way, then clamp it into place by pushing very hard against a table etc. Trim the short end and wrap the cable over the top, finally - attach the strain relief clip and push it into place.
 
 ![Completed cable](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/build_013.jpg)
 

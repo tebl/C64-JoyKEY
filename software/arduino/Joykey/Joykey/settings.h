@@ -28,7 +28,7 @@
  *   KEYMAP_WASD_KEYS         - WASD
  *   KEYMAP_CURSOR_GAME       - Cursor keys
  *   KEYMAP_CURSOR_EDITOR     - Same as above except FIRE1/2/3 is copy/paste/cut
- *   KEYMAP_KEYMAP_PLATFORMIO - Fire keys compile, upload and open serial 
+ *   KEYMAP_PLATFORMIO - Fire keys compile, upload and open serial 
  *                              terminal (PlatformIO).
  *   KEYMAP_FUNCTIONS         - Function keys F13-F19 (useful when module used
  *                              as a macro keyboard such as a streamdeck).
