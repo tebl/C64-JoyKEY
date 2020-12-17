@@ -1,13 +1,23 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(5.1.5)-3*
-G04 #@! TF.CreationDate,2020-11-24T03:15:57+01:00*
+G04 #@! TF.CreationDate,2020-12-17T01:43:45+01:00*
 G04 #@! TF.ProjectId,C64 Joykey Faceplate,43363420-4a6f-4796-9b65-792046616365,rev?*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,OtherDrawing,Comment*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.1.5)-3) date 2020-11-24 03:15:57*
+G04 Created by KiCad (PCBNEW (5.1.5)-3) date 2020-12-17 01:43:45*
 %MOMM*%
 %LPD*%
 G04 APERTURE LIST*
+%ADD10C,0.050000*%
 G04 APERTURE END LIST*
+D10*
+X155653172Y-85725000D02*
+G75*
+G03X155653172Y-85725000I-2618172J0D01*
+G01*
+X163273172Y-85725000D02*
+G75*
+G03X163273172Y-85725000I-2618172J0D01*
+G01*
 M02*
