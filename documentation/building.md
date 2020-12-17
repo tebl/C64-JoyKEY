@@ -79,8 +79,8 @@ This section attempts to maintain a list of the parts you'd need in order to bui
 
 | Reference     | Item                                      | Count | Order  |
 | ------------- | ----------------------------------------- | ----- | ------ |
-| PCB           | Fabricate using Gerber files              |     1 | PCBway |
-| PCB Faceplate | Fabricate using Gerber files              |    (1)| PCBway |
+| PCB           | Fabricate using Gerber files              |     1 | [PCBway](https://www.pcbway.com/project/shareproject/C64_JoyKEY__Module_.html) |
+| PCB Faceplate | Fabricate using Gerber files              |    (1)| [PCBway](https://www.pcbway.com/project/shareproject/C64_JoyKEY_Faceplate.html) |
 | A1            | Arduino Pro Micro                         |    (1)|        |
 |               | 12-pin straight pin header                |    (2)|        |
 | D1 *          | 5mm bright LED, RED                       |    (1)|        |
