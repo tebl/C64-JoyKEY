@@ -8,10 +8,10 @@ Title "Atari 7800 Adapter (JoyKEY)"
 Date ""
 Rev "A"
 Comp ""
-Comment1 "This is untested."
+Comment1 ""
 Comment2 ""
 Comment3 ""
-Comment4 ""
+Comment4 "FIRE1_SEL and FIRE2_SEL should be in position 2-3."
 $EndDescr
 $Comp
 L c64_idc:C64_IDC2_OUT J1
