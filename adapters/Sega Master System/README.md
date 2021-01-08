@@ -1,6 +1,13 @@
 # JoyKEY (Sega Master System)
 
-The gamepad for the Sega Master System is mostly compatible with the Atari-style joystick, but as people regularly did during those day - they came up with an entirely different way to get a secondary fire-button. What this means is that some rewire-ing is most likely needed. You could quite possibly just create a cable doing this for you for the necessary details), but since I hate soldering connectors I put together a small adapter board (just plug a 2x5 pin IDC cable in between the adapter and JoyKEY port 2). Either way you choose, check out the [schematic](https://github.com/tebl/C64-JoyKEY/raw/main/documentation/schematic/SMS%20Adapter.pdf) for the details.
+The gamepad for the Sega Master System is mostly compatible with the Atari-style joystick, but as people regularly did during those day - they came up with an entirely different variation when it came to adding the secondary fire-button. The *C64 JoyKEY*, as the name directly implies, has been wired for the Commodore 64, when using it with the Sega Master System we need to change some of the wireing in order to make it all work. You could quite possibly just create a cable doing this for you for the necessary details), but since I hate soldering connectors I put together a small adapter board (just plug a 2x5 pin IDC cable in between the adapter and JoyKEY port 2).
+
+![Sega Master System](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/sms_system.jpg)
+
+The completed adapter can be seen below, this also includes the expected position that should be set on the *C64 JoyKEY* device itself. Note that the Sega Master System does not officially have a power pin, so the active parts of the *C64 JoyKEY* will not be powered up.
+
+![Sega Master System Adapter](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/sms_adapter.jpg)
+![Sega Master System Jumpers](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/sms_jumpers.jpg)
 
 # BOM
 The parts listed are the ones I've used when building a Sega Mega Drive controller adapter for the *C64 JoyKEY*, part listed in parenthesis are considered optional (meaning you could build a more limited version of it). 
