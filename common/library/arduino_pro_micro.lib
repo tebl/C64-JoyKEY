@@ -13,7 +13,6 @@ $FPLIST
  Connector*:*2x???Pitch*
 $ENDFPLIST
 DRAW
-T 0 325 -850 60 0 0 0 D10 Normal 0 R C
 T 0 325 -650 60 0 0 0 D14 Normal 0 R C
 T 0 325 -550 60 0 0 0 D15 Normal 0 R C
 T 0 325 -750 60 0 0 0 D16 Normal 0 R C
@@ -22,19 +21,20 @@ T 0 325 -350 60 0 0 0 D19 Normal 0 R C
 T 0 -325 -150 60 0 0 0 D2 Normal 0 L C
 T 0 325 -250 60 0 0 0 D20 Normal 0 R C
 T 0 325 -150 60 0 0 0 D21 Normal 0 R C
-T 0 -325 -250 60 0 0 0 D3 Normal 0 L C
+T 0 -325 -250 60 0 0 0 "D3~~" Normal 0 L C
 T 0 -325 -350 60 0 0 0 D4 Normal 0 L C
-T 0 -325 -450 60 0 0 0 D5 Normal 0 L C
-T 0 -325 -550 60 0 0 0 D6 Normal 0 L C
+T 0 -325 -450 60 0 0 0 "D5~~" Normal 0 L C
+T 0 -325 -550 60 0 0 0 "D6~~" Normal 0 L C
 T 0 -325 -650 60 0 0 0 D7 Normal 0 L C
 T 0 -325 -750 60 0 0 0 D8 Normal 0 L C
-T 0 -325 -850 60 0 0 0 D9 Normal 0 L C
+T 0 -325 -850 60 0 0 0 "D9~~" Normal 0 L C
 T 0 0 -900 60 0 0 0 GND Normal 0 C C
 T 0 325 250 60 0 0 0 RAW Normal 0 R C
 T 0 325 50 60 0 0 0 RST Normal 0 R C
 T 0 -325 150 60 0 0 0 RXI Normal 0 L C
 T 0 -325 250 60 0 0 0 TXO Normal 0 L C
 T 0 0 300 60 0 0 0 VCC Normal 0 C C
+T 0 325 -850 60 0 0 0 "~~D10" Normal 0 R C
 S -325 350 325 -950 0 0 0 f
 X TXO 1 -475 250 150 R 50 50 1 1 O
 X D7 10 -475 -650 150 R 50 50 1 1 B
