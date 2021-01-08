@@ -9,8 +9,8 @@ Date ""
 Rev "A"
 Comp ""
 Comment1 ""
-Comment2 ""
-Comment3 "This was designed for keycaps that don't go down past the top of the switches."
+Comment2 "This was designed for keycaps that don't go down past the top of the switches."
+Comment3 ""
 Comment4 "It's just a faceplate, nothing to see here."
 $EndDescr
 $Comp
