@@ -1,4 +1,4 @@
-19037758432698472
+19045815574634434
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -2274,13 +2274,6 @@ speaker CUI
 0
 2
 2
-C64 IDC
-IDC_Joystick
-Through hole straight IDC box header, 2x05, 2.54mm pitch, double rows
-Through hole IDC box header THT 2x05 2.54mm double row
-0
-10
-10
 Calibration_Scale
 Gauge_10mm_Type1_CopperTop
 Gauge, Massstab, 10mm, CopperTop, Type 1,
@@ -83047,6 +83040,62 @@ Arduino_Pro_Micro_Reverse
 0
 36
 24
+artwork
+captain_blood1
+
+
+0
+0
+0
+artwork
+captain_blood2
+
+
+0
+0
+0
+artwork
+captain_blood3
+
+
+0
+0
+0
+artwork
+ik_plus
+
+
+0
+0
+0
+artwork
+last_ninja
+
+
+0
+0
+0
+artwork
+platoon
+
+
+0
+0
+0
+artwork
+robocop
+
+
+0
+0
+0
+artwork
+shinobi
+
+
+0
+0
+0
 mounting
 M2
 module 1 pin (ou trou mecanique de percage)
@@ -83068,17 +83117,3 @@ DEV
 0
 1
 1
-solder_bridge
-bridge
-Through hole straight pin header, 1x02, 1.00mm pitch, single row
-Through hole pin header THT 1x02 1.00mm single row
-0
-2
-2
-solder_bridge
-select
-Through hole straight pin header, 1x02, 1.00mm pitch, single row
-Through hole pin header THT 1x02 1.00mm single row
-0
-3
-3
