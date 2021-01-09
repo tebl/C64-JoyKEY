@@ -9,10 +9,10 @@ Congratulations on the taking the leap to build my slightly over-complicated 7-k
   - [Building the cables](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#building-the-cables)
   - [All done](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#all-done)
 - [BOM](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#bom)
-  - [BOM (Adapters)](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#bom-adapters)
+  - [BOM (Adapters)](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/adapters.md)
 
 ## Ordering components
-The first step in building it, is what you've already done - figuring out what you wanted out of it in the first place! The second step is taking stock of which parts you don't already have, check out the [BOM](#BOM) (*Bill of Manufacturing*) below for a somewhat detailed of everything I used when building the prototype.
+The first step in building it, is what you've already done - figuring out what you wanted out of it in the first place! The second step is taking stock of which parts you don't already have, check out the [BOM](#BOM) (*Bill of Manufacturing*) below for a somewhat detailed of everything I used when building the prototype. Note that any adapters you'll want will have their own BOM.
 
 You should be able to get most from the more reputable electronic component oligopolists, but because of extreme import fees where I live - those are for the most part not an option for me (I can't afford to pay €40 worth of fees to get €10 worth of parts at ten times the cost). What I do instead is order most things from ebay and AliExpress, you'll have to do a bit more of guesswork to find the correct parts - additionally, delivery times are most probaly to be counted in number of weeks and not days. 
 
@@ -106,15 +106,4 @@ This section attempts to maintain a list of the parts you'd need in order to bui
 
 ***) Breakable dual row pin headers can be used here, but I find it is nicer to use a 2x5 pin connector here instead. The easiest way to get a cable like this is to order a couple of 2x5 pin IDC cable (usually listed as *AVR* or *JTAG* cable) with sufficient length, cut off the end you don't need and then attach a female DB9 connector of the IDC variety. Pre-made cables have been observed on ebay, but have not seen any that are more than 20cm in length.
 
-****) I've been using the cheaper Gateron clones and they work well for this type of use, you can use either the 3- or 5-pin variety. The green switches are the ones that have a clicky sound, pick a different colour if that is not something you'd be interested in. Keycaps are usually listed as blank mechanical gaming MX-compatible keycaps.
-
-
-## BOM (Adapters)
-Instead of adding a ton of jumpers to the module, in order to account for every system known to man - I instead chose to add the specifics for those edge cases to separate adapter boards. These generally slot into the specific system and is connected to port 2 of the *C64 JoyKEY* using a 2x5 pin *JTAG* or *AVR* cable, in this case on you haven't cut parts off the ends of. Click the link to each of the adapters you require to get the specific parts needed for that board.
-
-| Adapter                                                                         | System              | Order  |
-| ------------------------------------------------------------------------------- | ------------------- | ------ |
-| [A7800 Adapter](https://github.com/tebl/C64-JoyKEY/tree/main/A7800%20Adapter) * | Atari 7800          | PCBway |
-| [SMS Adapter](https://github.com/tebl/C64-JoyKEY/tree/main/SMS%20Adapter) *     | Sega Master System  | PCBway |
-
-*) Module is untested.
+****) I've been using the cheaper Gateron clones and they work well for this type of use, you can use either the 3- or 5-pin variety. The green and blue switches are the ones that have a clicky sound, pick a different colour if that is not something you'd be interested in. Keycaps are usually listed as blank mechanical gaming MX-compatible keycaps.
