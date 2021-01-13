@@ -3,4 +3,5 @@
   (lib (name Button_Switch_Keyboard)(type KiCad)(uri $KIPRJMOD/../../common/modules/Button_Switch_Keyboard.pretty)(options "")(descr ""))
   (lib (name Connector_IDC)(type KiCad)(uri ${KISYSMOD}/Connector_IDC.pretty)(options "")(descr ""))
   (lib (name arduino_pro_micro)(type KiCad)(uri $KIPRJMOD/../../common/modules/arduino_pro_micro.pretty)(options "")(descr ""))
+  (lib (name logo)(type KiCad)(uri $KIPRJMOD/../../common/modules/logo.pretty)(options "")(descr ""))
 )
