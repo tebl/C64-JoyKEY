@@ -5,9 +5,9 @@ Click the adapter for a more detailed description on how it is put together, the
 
 | Adapters                                                                                           | System                  | Order   |
 | -------------------------------------------------------------------------------------------------- | ----------------------- | ------- |
-| [Atari 7800](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Atari%207800)                   |                         | PCBway  |
-| [Sega Master System](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Sega%20Master%20System) | Sega Master System I/II | PCBway  |
-| [Sinclair](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Sinclair) *                       | ZX Spectrum +2/+3       | PCBway  |
+| [Atari 7800](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Atari%207800)                   |                         | [PCBWay](https://www.pcbway.com/project/shareproject/C64_JoyKEY__Atari_7800_adapter_.html)  |
+| [Sega Master System](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Sega%20Master%20System) | Sega Master System I/II | [PCBWay](https://www.pcbway.com/project/shareproject/C64_JoyKEY__Sega_Master_System_adapter_.html)  |
+| [Sinclair](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Sinclair) *                       | ZX Spectrum +2/+3       | PCBWay  |
 
 *) Module is untested.
 
