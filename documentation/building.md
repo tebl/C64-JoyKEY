@@ -2,16 +2,16 @@
 
 Congratulations on the taking the leap to build my slightly over-complicated 7-key keyboard/joystick, now probably compatible with your favourite vintage computer. It can be built or configured in a few ways, so take a look at the [configuration](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/configuration.md) document so that you'll have an idea of what you want to do with it - pay particular mention to whether you'd require any of the features provided by the Arduino Pro Micro. 
 
-- [Building C64 JoyKEY](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#building-c64-joykey)
-  - [Ordering components](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#ordering-components)
-  - [Soldering it together](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#soldering-it-together)
-  - [Assembling the parts](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#assembling-the-parts)
-  - [Building the cables](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#building-the-cables)
-  - [All done](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#all-done)
-- [BOM](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#bom)
-  - [BOM (Adapters)](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/adapters.md)
+- [1> Building C64 JoyKEY](#1-building-c64-joykey)
+  - [1.1> Ordering components](#11-ordering-components)
+  - [1.2> Soldering it together](#12-soldering-it-together)
+  - [1.3> Assembling the parts](#13-assembling-the-parts)
+  - [1.4> Building the cables](#14-building-the-cables)
+  - [1.5> All done](#15-all-done)
+- [2> BOM](#bom)
+  - [2.1> Adapters](#21-adapters)
 
-## Ordering components
+## 1.1> Ordering components
 The first step in building it, is what you've already done - figuring out what you wanted out of it in the first place! The second step is taking stock of which parts you don't already have, check out the [BOM](#BOM) (*Bill of Manufacturing*) below for a somewhat detailed of everything I used when building the prototype. Note that any adapters you'll want will have their own BOM.
 
 You should be able to get most from the more reputable electronic component oligopolists, but because of extreme import fees where I live - those are for the most part not an option for me (I can't afford to pay €40 worth of fees to get €10 worth of parts at ten times the cost). What I do instead is order most things from ebay and AliExpress, you'll have to do a bit more of guesswork to find the correct parts - additionally, delivery times are most probaly to be counted in number of weeks and not days. 
@@ -20,7 +20,7 @@ My best suggestion on getting what you need the first time, is to use the search
 
 Order what you need, set the components aside until you're ready to start assembling things.
 
-## Soldering it together
+## 1.2> Soldering it together
 When ready to start soldering things into place, start by installing the physically smaller parts such as the resistors then move on up vertically to the taller parts in order to make things easier on yourself. Note that the Cherry MX switches will usually take a bit of force to get into place, so make sure to push them firmly into place before soldering anything permanently into place (removing solder is a **lot** harder to remove than it is to add it).
 
 ![Arduino Pro Micro variants](https://raw.githubusercontent.com/tebl/C64-JoyKEY/main/gallery/build_001.jpg)
@@ -37,7 +37,7 @@ Next you'll want to screw together both pieces of PCBs, just put the female HEX 
 
 Given that this is a PCB you'll be handling directly, it is probably a good idea to clean the flux residue left from soldering the connection points. It probably won't be very toxic, but depending on how much you spent on the solder you never know (China isn't exactly known for focusing on employee health and safety) - it is however a very sticky substance, so at the very least it's pretty annoying. It can be cleaned by pouring isopropyl alcohol (*IPA*), sometimes sold as contact cleaner or rubbing alcohol, over the board and scrubbing it with an old toothbrush to dissolve it evenly. You'll now have an evenly super-sticky board, but do **NOT** panic if this happens! Next step is to put some cloth over the board, pour more more *IPA* over the cloth and allow it to soak through to the board and rub it gently - when the alcohol has mostly evaporated, the stickyness should now be on the cloth instead. Phew!
 
-## Assembling the parts
+## 1.3> Assembling the parts
 Push the MX keycaps onto the top of the MX-switches, again you'll need to use a bit of careful force. You should now have a mostly completed unit, a recommended addition is to add some 3M bumpon adhesive rubber feet to the button - these are mostly there to keep the PCB from sliding around on your desk, but also keeps the solder points from scratching up your desk.
 
 ![3M Bumpon placement](https://raw.githubusercontent.com/tebl/C64-JoyKEY/main/gallery/build_005.jpg)
@@ -48,7 +48,7 @@ Those wanting to do a more complete build of the unit will probably have opted f
 ![Faceplate installed](https://raw.githubusercontent.com/tebl/C64-JoyKEY/main/gallery/build_007.jpg)
 
 
-## Building the cables
+## 1.4> Building the cables
 The last step is putting together some cables for your most common vintage systems, but if you only want to use it as a USB device then feel free to skip this step. Still here? Awesome.
 
 ![IDC to female DB9 cable](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/build_015.jpg)
@@ -68,36 +68,36 @@ The IDC connector comes with two parts, just make sure to align pin 1 on both si
 
 If you're going to be playing on the *Commodore 64* or *Commodore Amiga*, you'll probably want two of these cables for a selection of games - so, feel free to build yet another cable. 
 
-## All done
+## 1.5> All done
 That should be most of the information you'll need. Head on over to the [configuration](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/configuration.md) page to ensure that you have the jumpers set up correctly before actually connecting it to something (configuration for Commodore 64 shown below). Check out the [firmware](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/firmware.md) page if you installed an Arduino Pro Micro and need some ready-made code for it.
 
 ![C64 Configuration](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/c64_jumpers.jpg)
 
 
-# BOM
-This section attempts to maintain a list of the parts you'd need in order to build a feature-complete *C64 JoyKEY*, any parts that you could potentially do without have part counts listed in parenthesis. 
+# 2> BOM
+This section attempts to maintain a list of the parts you'd need in order to build a feature-complete *C64 JoyKEY*, any parts that you could potentially do without have part counts listed in parenthesis. You will find all tested PCBs including on [PCBWay shared projects](https://www.pcbway.com/project/shareproject/?tag=C64%20JoyKEY) relation to this project, this will also include any [adapters](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/adapters.md) - if you should need them. See [faceplates](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/faceplates.md) for some more information on those.
 
-| Reference     | Item                                      | Count | Order  |
-| ------------- | ----------------------------------------- | ----- | ------ |
-| PCB           | Fabricate using Gerber files              |     1 | [PCBway](https://www.pcbway.com/project/shareproject/C64_JoyKEY__Module_.html) |
-| PCB Faceplate | Fabricate using Gerber files              |    (1)| [PCBway](https://www.pcbway.com/project/shareproject/C64_JoyKEY_Faceplate.html) |
-| A1            | Arduino Pro Micro                         |    (1)|        |
-|               | 12-pin straight pin header                |    (2)|        |
-| D1 *          | 5mm bright LED, RED                       |    (1)|        |
-| D2 *          | 5mm bright LED, GREEN                     |    (1)|        |
-| D3 **         | 1N4001 diode DO-41                        |    (1)|        |
-| D4            | 1n4148 diode DO-35                        |    (1)|        |
-| J1,J2 ***     | 2x5 pin straight header pins or 2x5 IDC   |     2 |        |
-|               | 2x5 pin IDC to female DB9 cable           | 1 (1) |        |
-| JP1-JP3       | 3-pin right-angle header pins             |     3 |        |
-| R1,R2         | 270 ohm resistor                          |     2 |        |
-| R3,R4         | 220 ohm resistor                          |    (2)|        |
-| SW1-SW7 ****  | Cherry MX compatible switch (green)       |     7 |        |
-|               | MX compatible 1u blank keycaps            |     7 |        |
-| SW8           | Tactile momentary switch 6x6x6mm          |    (1)|        |
-|               | 3M bumpon adhesive rubber feet            |    (4)|        |
-|               | Nylon M3 hex standoffs 8mm                |    (4)|        |
-|               | Nylon M3 screws                           |    (8)|        |
+| Reference        | Item                                      | Count | Order  |
+| ---------------- | ----------------------------------------- | ----- | ------ |
+| PCB              | Fabricate using Gerber files              |     1 | [PCBway](https://www.pcbway.com/project/shareproject/C64_JoyKEY__Module_.html)  |
+| PCB Faceplate A1 | Fabricate using Gerber files              |    (1)| [PCBway](https://www.pcbway.com/project/shareproject/C64_JoyKEY_Faceplate.html) |
+| A1               | Arduino Pro Micro                         |    (1)|        |
+|                  | 12-pin straight pin header                |    (2)|        |
+| D1 *             | 5mm bright LED, RED                       |    (1)|        |
+| D2 *             | 5mm bright LED, GREEN                     |    (1)|        |
+| D3 **            | 1N4001 diode DO-41                        |    (1)|        |
+| D4               | 1n4148 diode DO-35                        |    (1)|        |
+| J1,J2 ***        | 2x5 pin straight header pins or 2x5 IDC   |     2 |        |
+|                  | 2x5 pin IDC to female DB9 cable           | 1 (1) |        |
+| JP1-JP3          | 3-pin right-angle header pins             |     3 |        |
+| R1,R2            | 270 ohm resistor                          |     2 |        |
+| R3,R4            | 220 ohm resistor                          |    (2)|        |
+| SW1-SW7 ****     | Cherry MX compatible switch (green)       |     7 |        |
+|                  | MX compatible 1u blank keycaps            |     7 |        |
+| SW8              | Tactile momentary switch 6x6x6mm          |    (1)|        |
+|                  | 3M bumpon adhesive rubber feet            |    (4)|        |
+|                  | Nylon M3 hex standoffs 8mm                |    (4)|        |
+|                  | Nylon M3 screws                           |    (8)|        |
 
 
 *) When used with the faceplate, a bright LED will be needed to shine through the PCB. 5mm flat top type LEDs will allow less space between the PCBs.
@@ -107,3 +107,6 @@ This section attempts to maintain a list of the parts you'd need in order to bui
 ***) Breakable dual row pin headers can be used here, but I find it is nicer to use a 2x5 pin connector here instead. The easiest way to get a cable like this is to order a couple of 2x5 pin IDC cable (usually listed as *AVR* or *JTAG* cable) with sufficient length, cut off the end you don't need and then attach a female DB9 connector of the IDC variety. Pre-made cables have been observed on ebay, but have not seen any that are more than 20cm in length.
 
 ****) I've been using the cheaper Gateron clones and they work well for this type of use, you can use either the 3- or 5-pin variety. The green and blue switches are the ones that have a clicky sound, pick a different colour if that is not something you'd be interested in. Keycaps are usually listed as blank mechanical gaming MX-compatible keycaps.
+
+## 2.1 Adapters
+The necessity for adapters will depend on the type of systems that you have, so I've separated the BOM for those into separate joysticks. See document [adapters](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/adapters.md) for a list of available and tested adapters, click on the ones you are interested in to get a BOM for those.

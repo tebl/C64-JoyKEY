@@ -13,6 +13,7 @@ If you're wondering why there are two connectors on the PCB, this is where the *
 I won't be selling these, so if you want one you will probably have to build it yourself (or call your favourite friend, ideally someone with a reasonable quality soldering iron). I've created a separate document on [building](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md) a *C64 JoyKEY*, this is also where you'll find the [BOM](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md#bom) for this project (a list of needed parts and links to where PCBs can be ordered).
 
 * [Building C64 JoyKEY](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/building.md)
+* [PCBWay shared projects](https://www.pcbway.com/project/shareproject/?tag=C64%20JoyKEY)
 
 As with all things you're soldering together by yourself, the one who soldered it takes responsibility for it. I'll try answer any opened tickets as far as I am able, but know that this is a hobby-grade project and I might be busy on spending the little energy I have on other things (be patient, check out the [schematic](https://github.com/tebl/C64-JoyKEY/tree/main/documentation/schematic) while you wait).
 
