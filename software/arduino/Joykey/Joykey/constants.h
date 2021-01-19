@@ -15,13 +15,15 @@
 #define PIN_RIGHT 18
 #define PIN_UP 19
 #define PIN_DOWN 15
-#define LED_KEYS 6
-#define LED_PWR 9
-#define LED_SYS 10
+#define PIN_UNDERGLOW 6
+#define PIN_PWR 9
+#define PIN_SYS 10
 
 /* 
  * Definitions
  */
+#define LED_OFF 0
+
 #define KEY_STATE_NEUTRAL 0
 #define KEY_STATE_WAIT_RELEASE 1
 

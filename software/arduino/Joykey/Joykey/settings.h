@@ -6,8 +6,9 @@
 #define APP_TITLE "JoyKEY"
 #define APP_VERSION "0.4"
 
-#define LED_SYS_MAX 56
 #define LED_PWR_MAX 56
+#define LED_SYS_MAX 128
+#define LED_UNDERGLOW_MAX 56
 #define LED_SYS_SHUTOFF 5000
 #define LED_FLASH_DELAY 100
 #define BOOT_MODE_THRESHOLD 1000
