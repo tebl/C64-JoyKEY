@@ -7,22 +7,17 @@
  */
 #define PIN_FIRE1 2
 #define PIN_FIRE1_OUT 5
-
 #define PIN_FIRE2 3
-#define PIN_FIRE2_POL 6
-
+#define PIN_FIRE2_POL 21
 #define PIN_FIRE3 4
-#define PIN_FIRE3_POL 7
-
-#define PIN_LEFT 10
-#define PIN_RIGHT 14
-#define PIN_UP 15
-#define PIN_DOWN 16
-
+#define PIN_FIRE3_POL 20
+#define PIN_LEFT 14
+#define PIN_RIGHT 18
+#define PIN_UP 19
+#define PIN_DOWN 15
+#define LED_KEYS 6
 #define LED_PWR 9
-#define LED_PWR_MAX 56
-#define LED_SYS 19
-#define LED_SYS_SHUTOFF 5000
+#define LED_SYS 10
 
 /* 
  * Definitions

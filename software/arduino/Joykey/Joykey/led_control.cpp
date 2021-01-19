@@ -2,8 +2,10 @@
 #include "constants.h"
 #include "settings.h"
 
-/* Effectively sets the brightness of the LED marked PWR. */
 int current_pwr = LED_PWR_MAX;
+int current_sys = LED_SYS_MAX;
+
+/* Effectively sets the brightness of the LED marked PWR. */
 void set_pwr(int value) {
   current_pwr = value;
   analogWrite(LED_PWR, value);
@@ -18,9 +20,24 @@ void fade_pwr() {
   set_pwr(current_pwr);
 }
 
+/* Effectively sets the brightness of the LED marked SYS. */
+void set_sys(int value) {
+  current_sys = value;
+  analogWrite(LED_SYS, value);
+}
+
 /* Set LED state for SYS. */
 void set_sys(bool value) {
-  digitalWrite(LED_SYS, (value ? HIGH : LOW));
+  set_sys(value ? LED_SYS_MAX : 0);
+}
+
+/* Fade out the power LED, dims gradually with each call to the function. */
+void fade_sys() {
+  if (current_sys > 0) {
+    current_sys -= 8;
+    if (current_sys < 0) current_sys = 0;
+  }
+  set_sys(current_sys);
 }
 
 void init_led() {

@@ -4,8 +4,11 @@
  * Settings
  */
 #define APP_TITLE "JoyKEY"
-#define APP_VERSION "0.3"
+#define APP_VERSION "0.4"
 
+#define LED_SYS_MAX 56
+#define LED_PWR_MAX 56
+#define LED_SYS_SHUTOFF 5000
 #define LED_FLASH_DELAY 100
 #define BOOT_MODE_THRESHOLD 1000
 #define USB_DEBOUNCE_DELAY 10
@@ -21,7 +24,7 @@
  * vintage system of any kind. The mode used is the one specified by 
  * USB_ALTERNATE_MODE above.
  */
-//#define USB_FORCE_ALTERNATE
+#define USB_FORCE_ALTERNATE
 
 /* Specify the key mapping to use when setting USB_ALTERNATE_MODE to
  * KEY_MODE_USB (used as a USB keyboard). Valid options are:
