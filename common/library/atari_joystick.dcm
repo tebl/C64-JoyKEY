@@ -10,4 +10,9 @@ D 9-pin male D-SUB connector
 K connector male D-SUB
 $ENDCMP
 #
+$CMP Atari_Port
+D 9-pin male D-SUB connector
+K connector male D-SUB
+$ENDCMP
+#
 #End Doc Library
