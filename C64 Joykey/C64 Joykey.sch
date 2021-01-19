@@ -788,7 +788,7 @@ U 1 1 5FF9EE9A
 P 4575 7100
 F 0 "Q1" H 4765 7146 50  0000 L CNN
 F 1 "2N3904" H 4765 7055 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline_W4.0mm_Horizontal_FlatSideDown" H 4775 7025 50  0001 L CIN
+F 2 "2n3904:2N3904_TO-92_Horizontal_FlatSideDown" H 4775 7025 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 4575 7100 50  0001 L CNN
 	1    4575 7100
 	-1   0    0    -1  
