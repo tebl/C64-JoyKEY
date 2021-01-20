@@ -4,8 +4,11 @@
  * Settings
  */
 #define APP_TITLE "JoyKEY Autofire"
-#define APP_VERSION "0.2"
+#define APP_VERSION "0.3"
 
+#define LED_PWR_MAX 56
+#define LED_SYS_MAX 128
+#define LED_UNDERGLOW_MAX 56
 #define LED_FLASH_DELAY 100
 #define DEBOUNCE_DELAY 10
 
