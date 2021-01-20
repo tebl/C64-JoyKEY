@@ -8,11 +8,18 @@
 
 #define LED_PWR_MAX 56
 #define LED_SYS_MAX 128
-#define LED_UNDERGLOW_MAX 56
-#define LED_SYS_SHUTOFF 5000
+#define LED_SHUTOFF 5000
+#define LED_STEP 8
 #define LED_FLASH_DELAY 100
 #define BOOT_MODE_THRESHOLD 1000
 #define USB_DEBOUNCE_DELAY 10
+
+/* Controls underglow effects, if available - setting LED_UNDERGLOW_MAX to 0
+ * will disable it entirely. Effects are only available in USB-mode.
+ */
+#define LED_UNDERGLOW_MAX 64
+#define BOOST_UNDERGLOW
+#define BOOST_UNDERGLOW_MIN 8
 
 /* Specify KEY_MODE_JOYSTICK to have the alternate mode identify the
  * device as a joystick, alternatively you can use KEY_MODE_USB to have it

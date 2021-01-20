@@ -5,6 +5,7 @@
 #include "led_control.h"
 
 unsigned long sys_shutoff = 0;
+unsigned long underglow_timer = 0;
 extern unsigned long key_debounce[NUM_KEYS];
 extern byte key_state[NUM_KEYS];
 extern bool key_enabled[NUM_KEYS];
@@ -13,7 +14,8 @@ byte key_map = KEYMAP_DEFAULT;
 
 void init_mode_usb() {
   set_sys(true);
-  sys_shutoff = millis() + LED_SYS_SHUTOFF;
+  sys_shutoff = millis() + LED_SHUTOFF;
+  underglow_timer = millis() + LED_SHUTOFF;
 
   for (int key_id = 0; key_id <= JOYKEY_FIRE1; key_id++) {
     pinMode(KEY_PINS[key_id], INPUT_PULLUP);
@@ -122,6 +124,10 @@ void press_key(byte key_id) {
         break;
     }
   }
+
+  #ifdef BOOST_UNDERGLOW
+  boost_underglow();
+  #endif
 }
 
 /* Used to release a previously held key. This is mostly left to the
@@ -180,9 +186,22 @@ void check_key(byte key_id) {
 void handle_mode_usb() {
   /* Shut off SYS after 5 seconds */
   if (sys_shutoff > 0 && millis() > sys_shutoff) {
-    sys_shutoff = 0;
-    set_sys(false);
+    if (is_sys_on()) {
+      fade_sys();
+      sys_shutoff = millis() + 500;
+    } else sys_shutoff = 0;
   }
+
+  #ifdef BOOST_UNDERGLOW
+  if (millis() > underglow_timer) {
+    #ifdef BOOST_UNDERGLOW_MIN
+    fade_underglow(BOOST_UNDERGLOW_MIN);
+    #else
+    fade_underglow();
+    #endif
+    underglow_timer = millis() + 500;
+  }
+  #endif
 
   /* Check keys */
   for (int key_id = 0; key_id < NUM_KEYS; key_id++) {
