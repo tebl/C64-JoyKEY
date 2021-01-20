@@ -188,7 +188,7 @@ void handle_mode_usb() {
   if (sys_shutoff > 0 && millis() > sys_shutoff) {
     if (is_sys_on()) {
       fade_sys();
-      sys_shutoff = millis() + 500;
+      sys_shutoff = millis() + LED_FADE_SPEED;
     } else sys_shutoff = 0;
   }
 
@@ -199,7 +199,7 @@ void handle_mode_usb() {
     #else
     fade_underglow();
     #endif
-    underglow_timer = millis() + 500;
+    underglow_timer = millis() + LED_UNDERGLOW_FADE_SPEED;
   }
   #endif
 

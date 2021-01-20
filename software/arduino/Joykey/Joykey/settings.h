@@ -6,20 +6,23 @@
 #define APP_TITLE "JoyKEY"
 #define APP_VERSION "0.4"
 
-#define LED_PWR_MAX 56
-#define LED_SYS_MAX 128
-#define LED_SHUTOFF 5000
-#define LED_STEP 8
-#define LED_FLASH_DELAY 100
-#define BOOT_MODE_THRESHOLD 1000
-#define USB_DEBOUNCE_DELAY 10
+#define LED_PWR_MAX 56                // Maximum brightness
+#define LED_SYS_MAX 64                // Maximum brightness
+#define LED_SHUTOFF 5000              // Time after boot when fade starts
+#define LED_FADE_SPEED 200            // Delay between LED fade steps
+#define LED_STEP 8                    // Change per step when fading
+#define LED_FLASH_DELAY 100           // Delay between blink steps
+#define BOOT_MODE_THRESHOLD 1000      // Time needed before alternate mode
+#define USB_DEBOUNCE_DELAY 10         // Debounce delay for keys
 
 /* Controls underglow effects, if available - setting LED_UNDERGLOW_MAX to 0
  * will disable it entirely. Effects are only available in USB-mode.
  */
-#define LED_UNDERGLOW_MAX 64
-#define BOOST_UNDERGLOW
-#define BOOST_UNDERGLOW_MIN 8
+#define LED_UNDERGLOW_MAX 64          // Maximum brightness
+#define LED_UNDERGLOW_STEP 8          // Change per step when fading.
+#define LED_UNDERGLOW_FADE_SPEED 500  // Num ms. between fade out steps
+#define BOOST_UNDERGLOW               // Underglow reacts to activity
+#define BOOST_UNDERGLOW_MIN 8         // Uncomment to have underglow on at MIN.
 
 /* Specify KEY_MODE_JOYSTICK to have the alternate mode identify the
  * device as a joystick, alternatively you can use KEY_MODE_USB to have it
