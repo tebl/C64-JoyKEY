@@ -4,13 +4,23 @@
  * Settings
  */
 #define APP_TITLE "JoyKEY Autofire"
-#define APP_VERSION "0.3"
+#define APP_VERSION "0.4"
 
-#define LED_PWR_MAX 56
-#define LED_SYS_MAX 128
-#define LED_UNDERGLOW_MAX 56
-#define LED_FLASH_DELAY 100
-#define DEBOUNCE_DELAY 10
+#define LED_PWR_MAX 56                // Maximum brightness
+#define LED_SYS_MAX 64                // Maximum brightness
+#define LED_SHUTOFF 5000              // Time after boot when fade starts
+#define LED_FADE_SPEED 200            // Delay between LED fade steps
+#define LED_STEP 8                    // Change per step when fading
+#define LED_FLASH_DELAY 100           // Delay between blink steps
+#define BOOT_MODE_THRESHOLD 1000      // Time needed before alternate mode
+#define DEBOUNCE_DELAY 10             // Debounce delay for keys
+
+/* Controls underglow effects, if available - setting LED_UNDERGLOW_MAX to 0
+ * will disable it entirely. 
+ */
+#define LED_UNDERGLOW_MAX 0           // Maximum brightness
+#define LED_UNDERGLOW_STEP 8          // Change per step when fading.
+#define LED_UNDERGLOW_FADE_SPEED 500  // Num ms. between fade out steps
 
 /* Specifies the minimum hold time of the magic key-combination to enable
  * alternate mode. BOOT_DELAY specifies the length of the pause given the

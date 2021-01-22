@@ -1,6 +1,5 @@
 #ifndef _CONSTANTS_H
 #define _CONSTANTS_H
-#include "Keyboard.h"
 
 /* 
  * Pin definitions 
@@ -22,6 +21,8 @@
 /* 
  * Definitions
  */
+#define LED_OFF 0
+
 #define KEY_MODE_DEFAULT 0
 #define KEY_MODE_AUTOFIRE 1
 

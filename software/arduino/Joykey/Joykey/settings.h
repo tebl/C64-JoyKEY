@@ -35,7 +35,7 @@
  * vintage system of any kind. The mode used is the one specified by 
  * USB_ALTERNATE_MODE above.
  */
-#define USB_FORCE_ALTERNATE
+//#define USB_FORCE_ALTERNATE
 
 /* Specify the key mapping to use when setting USB_ALTERNATE_MODE to
  * KEY_MODE_USB (used as a USB keyboard). Valid options are:
