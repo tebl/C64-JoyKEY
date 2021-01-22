@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name "C64 IDC")(type KiCad)(uri "$KIPRJMOD/../../common/modules/C64 IDC.pretty")(options "")(descr ""))
   (lib (name RND_DSUB)(type KiCad)(uri $KIPRJMOD/../../common/modules/RND_DSUB.pretty)(options "")(descr ""))
+  (lib (name solder_bridge)(type KiCad)(uri $KIPRJMOD/../../common/modules/solder_bridge.pretty)(options "")(descr ""))
 )

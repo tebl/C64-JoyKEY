@@ -57,8 +57,8 @@ F 3 "" H 4825 2500 50  0001 C CNN
 	1    4825 2500
 	1    0    0    -1  
 $EndComp
-Text Notes 7000 6725 0    50   ~ 0
-A straight 2x5 pin IDC to DB9 adapter, this should allow the C64 JoyKEY to connect to systems where\nthe case shape normally would conflict with the IDC DB9 connectors.
+Text Notes 7000 6800 0    50   ~ 0
+A straight 2x5 pin IDC to DB9 adapter, this should allow the C64 JoyKEY to connect to systems where\nthe case shape normally would conflict with the IDC DB9 connectors. Link VCC_EN if you want to allow\ndevice to supply power to port.
 $Comp
 L joykey_jumpers:JUMPER_SETTINGS_1 #1
 U 1 1 5FD24880
@@ -133,12 +133,12 @@ $EndComp
 $Comp
 L power:VCC #PWR0102
 U 1 1 60066CE7
-P 4325 2225
-F 0 "#PWR0102" H 4325 2075 50  0001 C CNN
-F 1 "VCC" H 4340 2398 50  0000 C CNN
-F 2 "" H 4325 2225 50  0001 C CNN
-F 3 "" H 4325 2225 50  0001 C CNN
-	1    4325 2225
+P 4325 2025
+F 0 "#PWR0102" H 4325 1875 50  0001 C CNN
+F 1 "VCC" H 4340 2198 50  0000 C CNN
+F 2 "" H 4325 2025 50  0001 C CNN
+F 3 "" H 4325 2025 50  0001 C CNN
+	1    4325 2025
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -191,4 +191,15 @@ Wire Wire Line
 	7050 4650 6975 4650
 Wire Wire Line
 	6975 4050 6975 4650
+$Comp
+L Device:Jumper_NC_Small JP1
+U 1 1 600B5A02
+P 4325 2125
+F 0 "JP1" H 4325 2337 50  0000 C CNN
+F 1 "VCC_EN" H 4325 2246 50  0000 C CNN
+F 2 "solder_bridge:bridge" H 4325 2125 50  0001 C CNN
+F 3 "~" H 4325 2125 50  0001 C CNN
+	1    4325 2125
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
