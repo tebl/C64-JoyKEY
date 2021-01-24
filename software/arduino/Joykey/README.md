@@ -9,7 +9,7 @@ I've added a failsafe to the Arduino code so that it doesn't automatically start
 
 Supported systems and the jumpering expected when working with them have been added to the [configuration](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/configuration.md) - ensure you have the correct settings. When you have verified things, the failsafe can be disabled by holding down the LEFT and RIGHT key when plugging in the device. When successful, the SYS LED will then be lit and then stay on. You have 3 seconds to do this.
 
-![Magic combination](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/2020-12-05%2021.04.29.jpg)
+![Magic combination](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/alternate_mode.jpg)
 
 ## Settings
 The Arduino sketch have some configurable options, you'll need to edit the file named **settings.h**. Note that you'll have to recompile and upload the new version of the firmware every time you make changes to it.

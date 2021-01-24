@@ -15,7 +15,7 @@ Most of the fireware options require at least a couple of additional libraries t
 
 For more specifics on the firmware, follow the links from the [Firmware selection](#firmware-selection) section. One thing worth mentioning is that the firmware will have a failsafe mode, the reason for this is that some combinations may be considered harmful to vintage computers connected unless you actively pay attention to what you are doing. The unit will start up only when the LEFT and RIGHT key is held down just after it is powered on, the SYS LED will come on to show you that the unit is now enabled.
 
-![Magic combination](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/2020-12-05%2021.04.29.jpg)
+![Magic combination](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/alternate_mode.jpg)
 
 ### Arduino Studio
 For assistance on getting going with the Pro Micro on common tasks such as uploading code and communicating with the module, I found the drivers guides on [learn.sparkfun.com](https://learn.sparkfun.com/tutorials/pro-micro--fio-v3-hookup-guide#hardware-overview-pro-micro) to be of great help (the board I purchased and used for the project was a DIY MORE Arduino Pro Micro). The following is what I have selected as board type, make sure that you pick the one that corresponds to your module - the Pro Micro will have to be manually reset using the reset switch if you run into problems.

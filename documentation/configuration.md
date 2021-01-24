@@ -95,5 +95,5 @@ The [Default FW](https://github.com/tebl/C64-JoyKEY/blob/main/software/arduino/J
 
 As mentioned in the description for the firmware, there is a failsafe in place so that it will not be automatically activated when the board is connected to a computer over USB (you can change this behavior if you only intend to use it connected over USB). The failsafe is disabled by holding down the LEFT and RIGHT key when plugging in the device - you will have approximately 3 seconds to do this and you should hold them down until the SYS LED lights up.
 
-![Magic combination](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/2020-12-05%2021.04.29.jpg)
+![Magic combination](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/alternate_mode.jpg)
 ![USB Configuration](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/usb_jumpers.jpg)
