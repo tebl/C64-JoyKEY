@@ -20,7 +20,7 @@
  */
 #define LED_UNDERGLOW_MAX 32          // Maximum brightness
 #define LED_UNDERGLOW_STEP 1          // Change per step when fading.
-#define LED_UNDERGLOW_FADE_SPEED 250  // Num ms. between fade out steps
+#define LED_UNDERGLOW_FADE_SPEED 400  // Num ms. between fade out steps
 #define BOOST_UNDERGLOW               // Underglow reacts to activity
 #define BOOST_UNDERGLOW_MIN 1         // Uncomment to have underglow on at MIN.
 

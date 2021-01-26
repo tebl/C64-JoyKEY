@@ -15,6 +15,8 @@ byte key_map = KEYMAP_DEFAULT;
 void init_mode_usb() {
   set_sys(true);
   sys_shutoff = millis() + LED_SHUTOFF;
+
+  set_underglow(LED_UNDERGLOW_MAX);
   underglow_timer = millis() + LED_SHUTOFF;
 
   for (int key_id = 0; key_id <= JOYKEY_FIRE1; key_id++) {
@@ -39,8 +41,9 @@ void init_mode_usb() {
   Keyboard.begin();
 }
 
-/*
- * Translate keypad keys to their equivalents found on a modern keyboard.
+/* Translate keypad keys to their equivalents found on a modern keyboard, if
+ * at all possible. There's probably an easier way of doing this, but it is
+ * what it is.
  */
 unsigned int get_keycode(byte key_id) {
   switch (key_map) {
@@ -125,6 +128,8 @@ void press_key(byte key_id) {
     }
   }
 
+  /* Boost key underglow to show activity, update timer to keep it from alsmost
+   * instantly reducing intensity again. */
   #ifdef BOOST_UNDERGLOW
   boost_underglow();
   underglow_timer = millis() + LED_UNDERGLOW_FADE_SPEED;
