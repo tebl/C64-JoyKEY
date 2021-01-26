@@ -127,6 +127,7 @@ void press_key(byte key_id) {
 
   #ifdef BOOST_UNDERGLOW
   boost_underglow();
+  underglow_timer = millis() + LED_UNDERGLOW_FADE_SPEED;
   #endif
 }
 

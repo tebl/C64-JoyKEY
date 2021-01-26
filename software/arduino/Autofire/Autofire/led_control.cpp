@@ -96,5 +96,5 @@ void init_led() {
   set_sys(LED_OFF);
 
   pinMode(PIN_UNDERGLOW, OUTPUT);
-  set_underglow(LED_UNDERGLOW_MAX);
+  set_underglow(LED_OFF);
 }

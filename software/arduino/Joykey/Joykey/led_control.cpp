@@ -84,7 +84,7 @@ void flash_sys(int num_flashes) { flash_led(LED_INDEX_SYS, num_flashes); }
 void set_underglow(int value) { set_led(LED_INDEX_UNDERGLOW, value); }
 void set_underglow(bool value) { set_led(LED_INDEX_UNDERGLOW, value); }
 void fade_underglow() { fade_led(LED_INDEX_UNDERGLOW, LED_UNDERGLOW_STEP); }
-void fade_underglow(const int minimum) { fade_led(LED_INDEX_UNDERGLOW, minimum); };
+void fade_underglow(const int minimum) { fade_led(LED_INDEX_UNDERGLOW, minimum, LED_UNDERGLOW_STEP); };
 void boost_underglow() { boost_led(LED_INDEX_UNDERGLOW, LED_UNDERGLOW_STEP); }
 void flash_underglow(int num_flashes) { flash_led(LED_INDEX_UNDERGLOW, num_flashes); }
 
@@ -96,5 +96,5 @@ void init_led() {
   set_sys(LED_OFF);
 
   pinMode(PIN_UNDERGLOW, OUTPUT);
-  set_underglow(LED_UNDERGLOW_MAX);
+  set_underglow(LED_OFF);
 }
