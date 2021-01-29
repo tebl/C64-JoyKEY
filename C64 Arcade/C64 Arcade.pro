@@ -1,4 +1,4 @@
-update=19.01.2021 14:41:12
+update=30.01.2021 00:01:26
 version=1
 last_client=kicad
 [general]
@@ -15,7 +15,7 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=C64 Joykey.net
+LastNetListRead=C64 Arcade.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
