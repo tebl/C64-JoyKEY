@@ -130,9 +130,14 @@ void press_key(byte key_id) {
 
   /* Boost key underglow to show activity, update timer to keep it from alsmost
    * instantly reducing intensity again. */
-  #ifdef BOOST_UNDERGLOW
-  boost_underglow();
-  underglow_timer = millis() + LED_UNDERGLOW_FADE_SPEED;
+  #if defined(UNDERGLOW_EFFECT_BOOST) || defined(UNDERGLOW_EFFECT_FLASH)
+    #if defined(UNDERGLOW_EFFECT_BOOST)
+      boost_underglow();
+      underglow_timer = millis() + LED_UNDERGLOW_FADE_SPEED;
+    #elif defined(UNDERGLOW_EFFECT_FLASH)
+      set_underglow(true);
+      underglow_timer = millis() + LED_SHUTOFF;
+    #endif
   #endif
 }
 
@@ -198,10 +203,10 @@ void handle_mode_usb() {
     } else sys_shutoff = 0;
   }
 
-  #ifdef BOOST_UNDERGLOW
+  #if defined(UNDERGLOW_EFFECT_BOOST) || defined(UNDERGLOW_EFFECT_FLASH)
   if (millis() > underglow_timer) {
-    #ifdef BOOST_UNDERGLOW_MIN
-    fade_underglow(BOOST_UNDERGLOW_MIN);
+    #ifdef LED_UNDERGLOW_MIN
+    fade_underglow(LED_UNDERGLOW_MIN);
     #else
     fade_underglow();
     #endif
