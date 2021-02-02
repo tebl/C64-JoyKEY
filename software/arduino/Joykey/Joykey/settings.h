@@ -25,6 +25,12 @@
 //#define UNDERGLOW_EFFECT_BOOST      // Underglow fades in on activity.
 #define UNDERGLOW_EFFECT_FLASH        // Underglow goes to max then fades without activity.               
 
+/* This controls the underglow LEDs when in the default mode, this should only
+ * be enabled if you know that you can safely power that much from the joystick
+ * port of whatever you've connected the C64 JoyKEY to.
+ */
+//#define DEFAULT_UNDERGLOW 16        // Uncomment to enable, also set brightness
+
 /* Specify KEY_MODE_JOYSTICK to have the alternate mode identify the
  * device as a joystick, alternatively you can use KEY_MODE_USB to have it
  * function as a weird keyboard (see KEY_MAP_DEFAULT below for keymap used). 

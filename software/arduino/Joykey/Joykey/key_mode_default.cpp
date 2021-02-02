@@ -1,9 +1,14 @@
 #include <Arduino.h>
 #include "constants.h"
 #include "led_control.h"
+#include "settings.h"
 
 void init_mode_default() {
   flash_sys(3);
+
+  #ifdef DEFAULT_UNDERGLOW
+  set_underglow(DEFAULT_UNDERGLOW);
+  #endif
 }
 
 void handle_mode_default() {
