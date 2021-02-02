@@ -21,11 +21,11 @@ My best suggestion on getting what you need the first time, is to use the search
 Order what you need, set the components aside until you're ready to start assembling things.
 
 ## 1.2> Soldering it together
-When ready to start soldering things into place, start by installing the physically smaller parts such as the resistors then move on up vertically to the taller parts in order to make things easier on yourself. Note that the Cherry MX switches will usually take a bit of force to get into place, so make sure to push them firmly into place before soldering anything permanently into place (removing solder is a **lot** harder to remove than it is to add it).
+When ready to start soldering things into place, start by installing the physically smaller parts such as the resistors then move on up vertically to the taller parts in order to make things easier on yourself. Note that if you intend to install the underglow LEDs, these should be soldered onto the board after the Cherry MX switches (the longest LED pin goes into the round hole). The actual Cherry MX switches themselves will usually take a bit of force to get into place, so make sure to push them firmly into place before finally soldering them permanently into place (removing solder is a **lot** harder to remove than it is to add it, so it is a good idea to check alignment more than once).
 
 ![Arduino Pro Micro variants](https://raw.githubusercontent.com/tebl/C64-JoyKEY/main/gallery/build_001.jpg)
 
-Arduino Pro Micro unfortunately seem to come in physically different variations, the ones most common seem to be the ones shown above (at least those are the two I have, the black DIYmore branded unit is recommended) - the *C64 JoyKEY* can use either of these, but you need to align it so that the pins are soldered in the correct place so do a bit of dry-fitting **before** commiting. The switch below it is needed if you accidentally try to flash it using the wrong settings in *Arduino Studio*, there is a separate page that details how to deal with the [firmware](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/firmware.md).
+The Arduino Pro Micro unfortunately seem to come in physically different variations, the ones most common seem to be the ones shown above (at least those are the two I have, the black DIYmore branded unit is recommended for purely aesthetic reasons) - the *C64 JoyKEY* can use either of these, but you need to align it so that the pins are soldered in the correct place so do a bit of dry-fitting **before** commiting. The switch below it is needed if you accidentally try to flash it using the wrong settings in *Arduino Studio*, there is a separate page that details how to deal with the [firmware](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/firmware.md).
 
 ![C64 JoyKEY board](https://raw.githubusercontent.com/tebl/C64-JoyKEY/main/gallery/build_003.jpg)
 
@@ -83,15 +83,18 @@ This section attempts to maintain a list of the parts you'd need in order to bui
 | PCB Faceplate A1 | Fabricate using Gerber files              |    (1)| [PCBway](https://www.pcbway.com/project/shareproject/C64_JoyKEY_Faceplate.html) |
 | A1               | Arduino Pro Micro                         |    (1)|        |
 |                  | 12-pin straight pin header                |    (2)|        |
-| D1 *             | 5mm bright LED, RED                       |    (1)|        |
-| D2 *             | 5mm bright LED, GREEN                     |    (1)|        |
+| D1,D2            | 5mm LED                                   |    (2)|        |
 | D3 **            | 1N4001 diode DO-41                        |    (1)|        |
 | D4               | 1n4148 diode DO-35                        |    (1)|        |
+| D5-D11 *         | 3mm or 2x3x4mm LED                        |    (7)|        |
 | J1,J2 ***        | 2x5 pin straight header pins or 2x5 IDC   |     2 |        |
 |                  | 2x5 pin IDC to female DB9 cable           | 1 (1) |        |
 | JP1-JP3          | 3-pin right-angle header pins             |     3 |        |
+| Q1 *             | 2N3904 (TO-92)                            |    (1)|        |
 | R1,R2            | 270 ohm resistor                          |     2 |        |
 | R3,R4            | 220 ohm resistor                          |    (2)|        |
+| R6,R12           | 330 ohm resistor                          |    (7)|        |
+| R13              | 1k ohm resistor                           |    (1)|        |
 | SW1-SW7 ****     | Cherry MX compatible switch (green)       |     7 |        |
 |                  | MX compatible 1u blank keycaps            |     7 |        |
 | SW8              | Tactile momentary switch 6x6x6mm          |    (1)|        |
@@ -100,13 +103,13 @@ This section attempts to maintain a list of the parts you'd need in order to bui
 |                  | Nylon M3 screws                           |    (8)|        |
 
 
-*) When used with the faceplate, a bright LED will be needed to shine through the PCB. 5mm flat top type LEDs will allow less space between the PCBs.
+*) These are components exclusively used by the underglow LEDs, these are there to light up the keycaps and serve no other function than looking cool. As noted below you'll need key switches with an opening for installing these, the Gateron brand switches I tested usually do. You'll need either 3mm LEDs, 2x3x4mm LEDs should also fit rather nicely.
 
-**) Replace with piece of wire if not installing Arduino Pro Micro on the board.
+**) Replace with piece of wire if not installing Arduino Pro Micro on the board, or you know you won't need the alternative autofire firmware at any point.
 
 ***) Breakable dual row pin headers can be used here, but I find it is nicer to use a 2x5 pin connector here instead. The easiest way to get a cable like this is to order a couple of 2x5 pin IDC cable (usually listed as *AVR* or *JTAG* cable) with sufficient length, cut off the end you don't need and then attach a female DB9 connector of the IDC variety. Pre-made cables have been observed on ebay, but have not seen any that are more than 20cm in length.
 
-****) I've been using the cheaper Gateron clones and they work well for this type of use, you can use either the 3- or 5-pin variety. The green and blue switches are the ones that have a clicky sound, pick a different colour if that is not something you'd be interested in. Keycaps are usually listed as blank mechanical gaming MX-compatible keycaps.
+****) I've been using the cheaper Gateron clones and they work well for this type of use, you can use either the 3- or 5-pin variety. The green and blue switches are the ones that have a clicky sound, pick a different colour if that is not something you'd be interested in. If you want LEDs below the keycaps, you need switches with a spot for those like the Gateron brands do. The keycaps you need are usually listed as *mechanical gaming MX-compatible keycaps*.
 
 ## 2.1 Adapters
 The necessity for adapters will depend on the type of systems that you have, so I've separated the BOM for those into separate joysticks. See document [adapters](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/adapters.md) for a list of available and tested adapters, click on the ones you are interested in to get a BOM for those.
