@@ -1,12 +1,12 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(5.1.8)-1*
-G04 #@! TF.CreationDate,2021-01-30T00:00:37+01:00*
+G04 #@! TF.CreationDate,2021-02-04T22:11:43+01:00*
 G04 #@! TF.ProjectId,C64 Arcade,43363420-4172-4636-9164-652e6b696361,rev?*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Soldermask,Top*
 G04 #@! TF.FilePolarity,Negative*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (5.1.8)-1) date 2021-01-30 00:00:37*
+G04 Created by KiCad (PCBNEW (5.1.8)-1) date 2021-02-04 22:11:43*
 %MOMM*%
 %LPD*%
 G01*
@@ -28,6 +28,10 @@ G04 APERTURE LIST*
 %ADD24O,2.000000X1.700000*%
 %ADD25O,1.700000X1.950000*%
 G04 APERTURE END LIST*
+D10*
+X215900000Y-115316000D03*
+D11*
+X215900000Y-117856000D03*
 D10*
 X233045000Y-127000000D03*
 D11*

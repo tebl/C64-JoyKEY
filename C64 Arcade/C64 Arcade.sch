@@ -762,12 +762,12 @@ Wire Wire Line
 $Comp
 L arcade:DIR J3
 U 1 1 601F1F84
-P 1000 1225
-F 0 "J3" V 1300 1275 50  0000 R CNN
-F 1 "DIRECTION" V 1225 1425 50  0000 R CNN
-F 2 "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical" H 1000 1225 50  0001 C CNN
-F 3 "~" H 1000 1225 50  0001 C CNN
-	1    1000 1225
+P 1000 850
+F 0 "J3" V 1300 900 50  0000 R CNN
+F 1 "DIRECTION" V 1225 1050 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical" H 1000 850 50  0001 C CNN
+F 3 "~" H 1000 850 50  0001 C CNN
+	1    1000 850 
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -786,23 +786,13 @@ Connection ~ 1350 2225
 Connection ~ 1350 1875
 Connection ~ 1350 1525
 Wire Wire Line
-	1200 1425 1200 1525
-Wire Wire Line
 	1200 1525 1350 1525
-Wire Wire Line
-	1100 1425 1100 1875
 Wire Wire Line
 	1100 1875 1350 1875
 Wire Wire Line
-	1000 1425 1000 2225
-Wire Wire Line
 	1000 2225 1350 2225
 Wire Wire Line
-	900  1425 900  2575
-Wire Wire Line
 	900  2575 1350 2575
-Wire Wire Line
-	800  1425 800  2800
 Wire Wire Line
 	800  2800 1275 2800
 $Comp
@@ -1154,4 +1144,27 @@ Connection ~ 10175 1300
 Wire Wire Line
 	8900 1400 10250 1400
 Connection ~ 8900 1400
+$Comp
+L Device:Jumper_NC_Small JP8
+U 1 1 601D8F08
+P 1200 1250
+F 0 "JP8" H 1200 1425 50  0000 C CNN
+F 1 "UP_EN" H 1200 1350 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1200 1250 50  0001 C CNN
+F 3 "~" H 1200 1250 50  0001 C CNN
+	1    1200 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1200 1350 1200 1525
+Wire Wire Line
+	1200 1150 1200 1050
+Wire Wire Line
+	1100 1050 1100 1875
+Wire Wire Line
+	1000 1050 1000 2225
+Wire Wire Line
+	900  1050 900  2575
+Wire Wire Line
+	800  1050 800  2800
 $EndSCHEMATC
