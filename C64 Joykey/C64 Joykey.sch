@@ -490,7 +490,6 @@ F 3 "~" H 9850 4250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8400 3925 8400 3850
-Connection ~ 8400 3925
 $Comp
 L Device:LED D2
 U 1 1 5FBDF2F9
@@ -617,8 +616,6 @@ F 3 "~" H 9850 3925 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9850 4725 9850 4800
-Wire Wire Line
-	8400 3925 8400 4350
 Wire Wire Line
 	8400 3925 9600 3925
 Wire Wire Line
@@ -747,7 +744,7 @@ Wire Wire Line
 Wire Wire Line
 	6175 5300 6250 5300
 $Comp
-L c64_idc:C64_IDC2_OUT J2
+L c64_idc:C64_IDC2 J2
 U 1 1 5FB748C4
 P 8350 1400
 F 0 "J2" H 8400 1817 50  0000 C CNN
@@ -1188,7 +1185,7 @@ Wire Wire Line
 Text Label 7900 5400 2    50   ~ 0
 UNDERGLOW
 $Comp
-L Device:Jumper_NC_Small JP8
+L promicro:VCC_EN JP8
 U 1 1 601EE585
 P 9675 1300
 F 0 "JP8" H 9675 1475 50  0000 C CNN
@@ -1202,4 +1199,20 @@ Wire Wire Line
 	9950 1300 9775 1300
 Wire Wire Line
 	8825 1300 9575 1300
+$Comp
+L Device:Jumper_NC_Small JP9
+U 1 1 6021387A
+P 8400 4125
+F 0 "JP9" H 8400 4300 50  0000 C CNN
+F 1 "ARD_EN" H 8400 4225 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8400 4125 50  0001 C CNN
+F 3 "~" H 8400 4125 50  0001 C CNN
+	1    8400 4125
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8400 3925 8400 4025
+Connection ~ 8400 3925
+Wire Wire Line
+	8400 4225 8400 4350
 $EndSCHEMATC
