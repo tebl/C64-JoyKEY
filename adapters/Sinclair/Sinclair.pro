@@ -1,4 +1,4 @@
-update=08.01.2021 23:41:14
+update=08.02.2021 23:38:47
 version=1
 last_client=kicad
 [general]
@@ -15,7 +15,7 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=Sinclair Adapter.net
+LastNetListRead=Sinclair.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0

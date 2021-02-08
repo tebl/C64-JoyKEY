@@ -1,4 +1,4 @@
-19045815574634434
+19038859437891921
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83026,76 +83026,41 @@ varistor SIOV
 0
 2
 2
-arduino_pro_micro
-Arduino_Pro_Micro
+breadboard
+bridge
+Through hole straight pin header, 1x02, 1.00mm pitch, single row
+Through hole pin header THT 1x02 1.00mm single row
+0
+2
+2
+breadboard
+bridge2
+Through hole straight pin header, 1x02, 1.00mm pitch, single row
+Through hole pin header THT 1x02 1.00mm single row
+0
+2
+2
+breadboard
+power
 
 
 0
-36
-24
-arduino_pro_micro
-Arduino_Pro_Micro_Reverse
+10
+2
+breadboard
+section
 
 
 0
-36
-24
-artwork
-captain_blood1
-
-
+10
+2
+breadboard
+select
+Through hole straight pin header, 1x02, 1.00mm pitch, single row
+Through hole pin header THT 1x02 1.00mm single row
 0
-0
-0
-artwork
-captain_blood2
-
-
-0
-0
-0
-artwork
-captain_blood3
-
-
-0
-0
-0
-artwork
-ik_plus
-
-
-0
-0
-0
-artwork
-last_ninja
-
-
-0
-0
-0
-artwork
-platoon
-
-
-0
-0
-0
-artwork
-robocop
-
-
-0
-0
-0
-artwork
-shinobi
-
-
-0
-0
-0
+3
+3
 mounting
 M2
 module 1 pin (ou trou mecanique de percage)

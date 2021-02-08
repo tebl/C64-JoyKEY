@@ -36,6 +36,10 @@ F 3 "" H 7350 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 4625 3450
+Wire Wire Line
+	7050 4450 6975 4450
+Wire Wire Line
+	6975 4450 6975 5075
 $Comp
 L power:GND #PWR02
 U 1 1 5FD2A883
@@ -59,6 +63,8 @@ F 3 "" H 4325 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 4325 2525
+Wire Wire Line
+	4325 3450 4325 4250
 Wire Wire Line
 	4425 2125 4325 2125
 Wire Wire Line
@@ -108,7 +114,7 @@ Text Label 4850 4850 0    50   ~ 0
 RIGHT
 Text Label 4850 4150 0    50   ~ 0
 UP
-Text Label 4850 4450 0    50   ~ 0
+Text Label 4850 4250 0    50   ~ 0
 DOWN
 $Comp
 L joykey_jumpers:JUMPER_NOT_CONNECTED #4
@@ -129,6 +135,8 @@ Wire Wire Line
 Wire Wire Line
 	4225 4150 4225 3450
 Wire Wire Line
+	7050 4250 4325 4250
+Wire Wire Line
 	7050 4650 4425 4650
 Wire Wire Line
 	4425 3450 4425 4650
@@ -142,12 +150,4 @@ Wire Wire Line
 	4775 4350 7050 4350
 Text Label 4850 4350 0    50   ~ 0
 FIRE
-Wire Wire Line
-	6975 5075 6975 4750
-Wire Wire Line
-	6975 4750 7050 4750
-Wire Wire Line
-	7050 4450 4325 4450
-Wire Wire Line
-	4325 3450 4325 4450
 $EndSCHEMATC

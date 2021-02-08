@@ -393,10 +393,10 @@ F 3 "" H 1950 5150 50  0001 C CNN
 	1    1950 5150
 	1    0    0    -1  
 $EndComp
-Text Notes 4350 3275 0    50   ~ 0
-JP1 (FIRE2 polarity):\n1-2 C64 (POTX)\n2-3 Amiga (POTY)\n     SMS\n
-Text Notes 4350 5150 0    50   ~ 0
-JP2 (FIRE3 polarity):\n1-2 C64 (POTY)\n2-3 Amiga (POTX)\nN/C SMS\n
+Text Notes 4350 3350 0    50   ~ 0
+JP1 (FIRE2 polarity):\n1-2 C64 (POTX)\nN/C Other system\n\nRead documentation for\ndetails if not C64.
+Text Notes 4350 5275 0    50   ~ 0
+JP2 (FIRE3 polarity):\n1-2 C64 (POTY)\nN/C Other system\n\nRead documentation for\ndetails if not C64.\n
 Wire Wire Line
 	975  950  1200 950 
 Wire Wire Line
@@ -557,8 +557,8 @@ Wire Wire Line
 	9025 5400 8875 5400
 Wire Wire Line
 	9025 5300 8875 5300
-Text Notes 4350 4375 0    50   ~ 0
-JP3 (FIRE3 output select):\n1-2 C64/Amiga FIRE1 (port 1)\n2-3 C64/Amiga FIRE3 (port 2)\nN/C SMS/Arduino
+Text Notes 4350 4475 0    50   ~ 0
+JP3 (FIRE3 output select):\n1-2 C64 FIRE1 (port 1)\nN/C Other system\n\nRead documentation for\ndetails if not C64.
 Wire Wire Line
 	6825 3925 6825 5200
 Wire Wire Line
