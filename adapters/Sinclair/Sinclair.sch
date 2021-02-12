@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L c64_idc:C64_IDC2 J1
+L c64_idc:C64_IDC_ADAPTER J1
 U 1 1 5FD1F19D
 P 4425 3000
 F 0 "J1" V 4475 3425 50  0000 C CNN
@@ -108,7 +108,7 @@ Text Label 4850 4850 0    50   ~ 0
 RIGHT
 Text Label 4850 4150 0    50   ~ 0
 UP
-Text Label 4850 4450 0    50   ~ 0
+Text Label 4850 4250 0    50   ~ 0
 DOWN
 $Comp
 L joykey_jumpers:JUMPER_NOT_CONNECTED #4
@@ -147,7 +147,13 @@ Wire Wire Line
 Wire Wire Line
 	6975 4750 7050 4750
 Wire Wire Line
-	7050 4450 4325 4450
+	4325 3450 4325 4250
 Wire Wire Line
-	4325 3450 4325 4450
+	7050 4250 4325 4250
+Wire Wire Line
+	6975 4750 6975 4450
+Wire Wire Line
+	6975 4450 7050 4450
+Connection ~ 6975 4750
+NoConn ~ 4625 2525
 $EndSCHEMATC
