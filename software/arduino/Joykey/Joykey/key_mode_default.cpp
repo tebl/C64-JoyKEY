@@ -13,16 +13,16 @@ void init_mode_default() {
 
 void handle_mode_default() {
   #ifdef DEBUG
-  if (
-    digitalRead(PIN_UP) == LOW ||
-    digitalRead(PIN_DOWN) == LOW ||
-    digitalRead(PIN_LEFT) == LOW ||
-    digitalRead(PIN_RIGHT) == LOW ||
-    digitalRead(PIN_FIRE1) == LOW
-    ) set_sys(true);
-  else set_sys(false);
+    if (
+      digitalRead(PIN_UP) == LOW ||
+      digitalRead(PIN_DOWN) == LOW ||
+      digitalRead(PIN_LEFT) == LOW ||
+      digitalRead(PIN_RIGHT) == LOW ||
+      digitalRead(PIN_FIRE1) == LOW
+      ) set_sys(true);
+    else set_sys(false);
   #else
-  delay(1000);
-  fade_pwr();
+    delay(1000);
+    fade_pwr();
   #endif
 }

@@ -60,9 +60,14 @@ void process_keys() {
     if (!boot_done) init_mode(USB_ALTERNATE_MODE);
     else handle_mode();
   #else
-    if (!boot_done) check_boot();
-    else {
-      handle_mode();
-    }
+    #ifdef FORCE_DEFAULT
+      if (!boot_done) init_mode(KEY_MODE_DEFAULT);
+      else handle_mode();
+    #else
+      if (!boot_done) check_boot();
+      else {
+        handle_mode();
+      }
+    #endif
   #endif
 }

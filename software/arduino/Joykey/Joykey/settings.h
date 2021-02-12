@@ -40,8 +40,9 @@
 /* Uncomment this line to force the alternate mode, this is useful if you only
  * want to use the C64 JoyKEY over USB and do not want to connect it to a
  * vintage system of any kind. The mode used is the one specified by 
- * USB_ALTERNATE_MODE above.
+ * USB_ALTERNATE_MODE above. FORCE_DEFAULT forces the default mode instead.
  */
+//#define FORCE_DEFAULT
 //#define USB_FORCE_ALTERNATE
 
 /* Specify the key mapping to use when setting USB_ALTERNATE_MODE to
