@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "C64 JoyKEY"
 Date ""
-Rev "C"
+Rev "D"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -105,17 +105,6 @@ Wire Wire Line
 	2275 2525 2350 2525
 Wire Wire Line
 	2275 1350 2350 1350
-$Comp
-L c64_idc:C64_IDC2_OUT J1
-U 1 1 5FB76154
-P 8350 2200
-F 0 "J1" H 8400 2617 50  0000 C CNN
-F 1 "Port_1" H 8400 2526 50  0000 C CNN
-F 2 "C64 IDC:IDC_Joystick" H 8350 2200 50  0001 C CNN
-F 3 "~" H 8350 2200 50  0001 C CNN
-	1    8350 2200
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR03
 U 1 1 5FB76300
@@ -393,10 +382,10 @@ F 3 "" H 1950 5150 50  0001 C CNN
 	1    1950 5150
 	1    0    0    -1  
 $EndComp
-Text Notes 4350 3275 0    50   ~ 0
-JP1 (FIRE2 polarity):\n1-2 C64 (POTX)\n2-3 Amiga (POTY)\n     SMS\n
-Text Notes 4350 5150 0    50   ~ 0
-JP2 (FIRE3 polarity):\n1-2 C64 (POTY)\n2-3 Amiga (POTX)\nN/C SMS\n
+Text Notes 4350 3350 0    50   ~ 0
+JP1 (FIRE2 polarity):\n1-2 C64 (POTX)\nN/C Other system\n\nRead documentation for\ndetails if not C64.
+Text Notes 4350 5275 0    50   ~ 0
+JP2 (FIRE3 polarity):\n1-2 C64 (POTY)\nN/C Other system\n\nRead documentation for\ndetails if not C64.\n
 Wire Wire Line
 	975  950  1200 950 
 Wire Wire Line
@@ -541,34 +530,28 @@ Wire Wire Line
 	8900 1400 8900 2200
 Wire Wire Line
 	10325 1300 10325 1125
-Text GLabel 9025 5300 2    50   Input ~ 0
+Text GLabel 9300 5300 2    50   Input ~ 0
 P2_RIGHT
 Wire Wire Line
 	9025 5200 8875 5200
-Text GLabel 9025 5200 2    50   Input ~ 0
+Text GLabel 9300 5200 2    50   Input ~ 0
 P2_UP
 Wire Wire Line
 	9025 5500 8875 5500
-Text GLabel 9025 5400 2    50   Input ~ 0
+Text GLabel 9300 5400 2    50   Input ~ 0
 P2_DOWN
-Text GLabel 9025 5500 2    50   Input ~ 0
+Text GLabel 9300 5500 2    50   Input ~ 0
 P2_LEFT
 Wire Wire Line
 	9025 5400 8875 5400
 Wire Wire Line
 	9025 5300 8875 5300
-Text Notes 4350 4375 0    50   ~ 0
-JP3 (FIRE3 output select):\n1-2 C64/Amiga FIRE1 (port 1)\n2-3 C64/Amiga FIRE3 (port 2)\nN/C SMS/Arduino
-Wire Wire Line
-	6825 3925 6825 5200
+Text Notes 4350 4475 0    50   ~ 0
+JP3 (FIRE3 output select):\n1-2 C64 FIRE1 (port 1)\nN/C Other system\n\nRead documentation for\ndetails if not C64.
 Wire Wire Line
 	6825 5200 7925 5200
 Wire Wire Line
-	6925 2275 6925 5100
-Wire Wire Line
 	6925 5100 7925 5100
-Wire Wire Line
-	7025 1100 7025 5000
 Wire Wire Line
 	2550 1100 3025 1100
 Wire Wire Line
@@ -733,7 +716,7 @@ L Device:R_Small R5
 U 1 1 5FDC0E14
 P 6350 5300
 F 0 "R5" V 6175 5250 50  0000 L CNN
-F 1 "150" V 6250 5225 50  0000 L CNN
+F 1 "10k" V 6250 5225 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 6350 5300 50  0001 C CNN
 F 3 "~" H 6350 5300 50  0001 C CNN
 	1    6350 5300
@@ -744,7 +727,7 @@ Wire Wire Line
 Wire Wire Line
 	6175 5300 6250 5300
 $Comp
-L c64_idc:C64_IDC2 J2
+L c64_idc:C64_IDC_PORT2 J2
 U 1 1 5FB748C4
 P 8350 1400
 F 0 "J2" H 8400 1817 50  0000 C CNN
@@ -1157,8 +1140,8 @@ $Comp
 L Device:R_Small R14
 U 1 1 600C6BE8
 P 6350 5500
-F 0 "R14" V 6450 5450 50  0000 L CNN
-F 1 "150" V 6525 5425 50  0000 L CNN
+F 0 "R14" V 6450 5425 50  0000 L CNN
+F 1 "10k" V 6525 5425 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 6350 5500 50  0001 C CNN
 F 3 "~" H 6350 5500 50  0001 C CNN
 	1    6350 5500
@@ -1176,12 +1159,6 @@ Text Label 8900 5700 0    50   ~ 0
 SYS
 Text Label 7900 5700 2    50   ~ 0
 PWR
-Wire Wire Line
-	7700 5700 7700 6425
-Wire Wire Line
-	7700 5700 7925 5700
-Wire Wire Line
-	7700 6425 10175 6425
 Text Label 7900 5400 2    50   ~ 0
 UNDERGLOW
 $Comp
@@ -1215,4 +1192,128 @@ Wire Wire Line
 Connection ~ 8400 3925
 Wire Wire Line
 	8400 4225 8400 4350
+$Comp
+L c64_idc:C64_IDC_PORT1 J1
+U 1 1 5FB76154
+P 8350 2200
+F 0 "J1" H 8400 2617 50  0000 C CNN
+F 1 "Port_1" H 8400 2526 50  0000 C CNN
+F 2 "C64 IDC:IDC_Joystick" H 8350 2200 50  0001 C CNN
+F 3 "~" H 8350 2200 50  0001 C CNN
+	1    8350 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8825 1600 10325 1600
+Wire Wire Line
+	10325 1600 10325 1300
+Connection ~ 10325 1300
+Wire Wire Line
+	10325 1600 10325 2400
+Wire Wire Line
+	10325 2400 8825 2400
+Connection ~ 10325 1600
+Wire Wire Line
+	7575 6425 7575 5700
+Wire Wire Line
+	7575 5700 7925 5700
+Wire Wire Line
+	7575 6425 10175 6425
+$Comp
+L Device:R_Small R18
+U 1 1 603170B6
+P 9125 5200
+F 0 "R18" V 9075 4950 50  0000 L CNN
+F 1 "10k" V 9125 5150 31  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 9125 5200 50  0001 C CNN
+F 3 "~" H 9125 5200 50  0001 C CNN
+	1    9125 5200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9225 5200 9300 5200
+$Comp
+L Device:R_Small R19
+U 1 1 6034215B
+P 9125 5300
+F 0 "R19" V 9075 5050 50  0000 L CNN
+F 1 "10k" V 9125 5250 31  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 9125 5300 50  0001 C CNN
+F 3 "~" H 9125 5300 50  0001 C CNN
+	1    9125 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9225 5300 9300 5300
+$Comp
+L Device:R_Small R20
+U 1 1 603493E3
+P 9125 5400
+F 0 "R20" V 9075 5150 50  0000 L CNN
+F 1 "10k" V 9125 5350 31  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 9125 5400 50  0001 C CNN
+F 3 "~" H 9125 5400 50  0001 C CNN
+	1    9125 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9225 5400 9300 5400
+$Comp
+L Device:R_Small R21
+U 1 1 60350811
+P 9125 5500
+F 0 "R21" V 9075 5250 50  0000 L CNN
+F 1 "10k" V 9125 5450 31  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 9125 5500 50  0001 C CNN
+F 3 "~" H 9125 5500 50  0001 C CNN
+	1    9125 5500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9225 5500 9300 5500
+$Comp
+L Device:R_Small R17
+U 1 1 60386764
+P 7025 4675
+F 0 "R17" V 7075 4425 50  0000 L CNN
+F 1 "10k" V 7025 4625 31  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 7025 4675 50  0001 C CNN
+F 3 "~" H 7025 4675 50  0001 C CNN
+	1    7025 4675
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R16
+U 1 1 6038DB1E
+P 6925 4775
+F 0 "R16" V 6975 4525 50  0000 L CNN
+F 1 "10k" V 6925 4725 31  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 6925 4775 50  0001 C CNN
+F 3 "~" H 6925 4775 50  0001 C CNN
+	1    6925 4775
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R15
+U 1 1 60394ED2
+P 6825 4875
+F 0 "R15" V 6875 4625 50  0000 L CNN
+F 1 "10k" V 6825 4825 31  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 6825 4875 50  0001 C CNN
+F 3 "~" H 6825 4875 50  0001 C CNN
+	1    6825 4875
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6825 4775 6825 3925
+Wire Wire Line
+	6925 4675 6925 2275
+Wire Wire Line
+	7025 4575 7025 1100
+Wire Wire Line
+	7025 4775 7025 5000
+Wire Wire Line
+	6925 4875 6925 5100
+Wire Wire Line
+	6825 4975 6825 5200
 $EndSCHEMATC
