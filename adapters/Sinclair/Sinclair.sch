@@ -156,4 +156,58 @@ Wire Wire Line
 	6975 4450 7050 4450
 Connection ~ 6975 4750
 NoConn ~ 4625 2525
+$Comp
+L atari_joystick:Atari_Port J3
+U 1 1 60303164
+P 3775 5675
+F 0 "J3" H 3909 6367 50  0000 C CNN
+F 1 "Atari" H 3909 6276 50  0000 C CNN
+F 2 "RND_DSUB:DSUB-9_Male_Edge" H 3775 5675 50  0001 C CNN
+F 3 "" H 3775 5675 50  0001 C CNN
+	1    3775 5675
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 6030695F
+P 4150 6200
+F 0 "#PWR0101" H 4150 5950 50  0001 C CNN
+F 1 "GND" H 4155 6027 50  0000 C CNN
+F 2 "" H 4150 6200 50  0001 C CNN
+F 3 "" H 4150 6200 50  0001 C CNN
+	1    4150 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4075 5575 4150 5575
+Wire Wire Line
+	4150 5575 4150 6200
+NoConn ~ 4075 5275
+NoConn ~ 4075 5375
+NoConn ~ 4075 5775
+Wire Wire Line
+	4225 4150 4225 6075
+Connection ~ 4225 4150
+Wire Wire Line
+	4075 6075 4225 6075
+Wire Wire Line
+	4325 4250 4325 5875
+Wire Wire Line
+	4325 5875 4075 5875
+Connection ~ 4325 4250
+Wire Wire Line
+	4425 4650 4425 5675
+Wire Wire Line
+	4425 5675 4075 5675
+Connection ~ 4425 4650
+Wire Wire Line
+	4525 4850 4525 5475
+Wire Wire Line
+	4525 5475 4075 5475
+Connection ~ 4525 4850
+Connection ~ 4775 4350
+Wire Wire Line
+	4775 4350 4775 5975
+Wire Wire Line
+	4075 5975 4775 5975
 $EndSCHEMATC
