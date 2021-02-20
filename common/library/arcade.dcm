@@ -6,6 +6,12 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP DIR_REV
+D Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
 $CMP LED_Plugin
 D Light emitting diode
 K LED diode
