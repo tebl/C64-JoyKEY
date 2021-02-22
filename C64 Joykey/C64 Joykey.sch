@@ -1170,7 +1170,7 @@ F 1 "ARD_EN" H 8400 4225 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8400 4125 50  0001 C CNN
 F 3 "~" H 8400 4125 50  0001 C CNN
 	1    8400 4125
-	0    -1   -1   0   
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	8400 3925 8400 4025

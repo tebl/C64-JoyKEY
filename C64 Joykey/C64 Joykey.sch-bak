@@ -1126,17 +1126,6 @@ Wire Wire Line
 Text GLabel 6175 5500 0    50   Output ~ 0
 P2_FIRE2
 $Comp
-L Device:D_Small D12
-U 1 1 600C6BE2
-P 6625 5500
-F 0 "D12" H 6625 5600 50  0000 C CNN
-F 1 "1n4148" H 6625 5675 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 6625 5500 50  0001 C CNN
-F 3 "~" V 6625 5500 50  0001 C CNN
-	1    6625 5500
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:R_Small R14
 U 1 1 600C6BE8
 P 6350 5500
@@ -1148,11 +1137,7 @@ F 3 "~" H 6350 5500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6450 5500 6525 5500
-Wire Wire Line
 	6175 5500 6250 5500
-Wire Wire Line
-	6725 5500 7925 5500
 Text Label 7900 5500 2    50   ~ 0
 FIRE2_OUT
 Text Label 8900 5700 0    50   ~ 0
@@ -1185,7 +1170,7 @@ F 1 "ARD_EN" H 8400 4225 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8400 4125 50  0001 C CNN
 F 3 "~" H 8400 4125 50  0001 C CNN
 	1    8400 4125
-	0    -1   -1   0   
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	8400 3925 8400 4025
@@ -1316,4 +1301,6 @@ Wire Wire Line
 	6925 4875 6925 5100
 Wire Wire Line
 	6825 4975 6825 5200
+Wire Wire Line
+	6450 5500 7925 5500
 $EndSCHEMATC
