@@ -1,0 +1,688 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "SMD Adapter (C64 JoyKEY)"
+Date ""
+Rev "A"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L c64_idc:C64_IDC_ADAPTER J2
+U 1 1 5FD1F19D
+P 3675 2400
+F 0 "J2" V 3725 2825 50  0000 C CNN
+F 1 "Port 2" V 3650 2825 50  0000 C CNN
+F 2 "C64 IDC:IDC_Joystick" H 3675 2400 50  0001 C CNN
+F 3 "~" H 3675 2400 50  0001 C CNN
+	1    3675 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5FD2B691
+P 3575 1600
+F 0 "#PWR01" H 3575 1350 50  0001 C CNN
+F 1 "GND" H 3580 1427 50  0000 C CNN
+F 2 "" H 3575 1600 50  0001 C CNN
+F 3 "" H 3575 1600 50  0001 C CNN
+	1    3575 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3675 1525 3575 1525
+Wire Wire Line
+	3575 1525 3575 1600
+Wire Wire Line
+	3675 1525 3675 1925
+$Comp
+L joykey_jumpers:JUMPER_SETTINGS_1 #1
+U 1 1 5FD24880
+P 10975 700
+F 0 "#1" H 10875 825 50  0001 C CNN
+F 1 "JUMPER_SETTINGS_1" H 10850 -450 50  0001 C CNN
+F 2 "" H 10975 525 50  0001 C CNN
+F 3 "~" H 10975 525 50  0001 C CNN
+	1    10975 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L joykey_jumpers:JUMPER_CONNECTED #4
+U 1 1 5FD250F4
+P 10975 1650
+F 0 "#4" H 10975 1550 50  0001 C CNN
+F 1 "JUMPER_CONNECTED" H 10975 1750 50  0001 C CNN
+F 2 "" H 10975 1650 50  0001 C CNN
+F 3 "" H 10975 1650 50  0001 C CNN
+	1    10975 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L c64_idc:C64_IDC_ADAPTER J1
+U 1 1 60386EDE
+P 2350 2400
+F 0 "J1" V 2400 2825 50  0000 C CNN
+F 1 "Port 1" V 2325 2825 50  0000 C CNN
+F 2 "C64 IDC:IDC_Joystick" H 2350 2400 50  0001 C CNN
+F 3 "~" H 2350 2400 50  0001 C CNN
+	1    2350 2400
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 2250 1925
+Wire Wire Line
+	3475 1925 3475 1450
+Wire Wire Line
+	3475 1450 4300 1450
+Wire Wire Line
+	3775 1925 3775 1525
+Wire Wire Line
+	3775 1525 4225 1525
+Text Label 4375 4500 0    50   ~ 0
+JK_FIRE1
+Text Label 4375 4600 0    50   ~ 0
+JK_FIRE2
+Text Label 4375 4900 0    50   ~ 0
+JK_FIRE3
+Text Label 4375 4300 0    50   ~ 0
+JK_RIGHT
+Text Label 4375 4000 0    50   ~ 0
+JK_LEFT
+Text Label 7525 3050 0    50   ~ 0
+MD_DOWN
+Text Label 7525 2950 0    50   ~ 0
+MD_UP
+$Comp
+L 74xx:74LS157 U1
+U 1 1 6039D8B8
+P 6800 4500
+F 0 "U1" H 6575 5250 50  0000 C CNN
+F 1 "74LS157" V 6800 4500 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 6800 4500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 6800 4500 50  0001 C CNN
+	1    6800 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3900 6225 3900
+Wire Wire Line
+	6225 3900 6225 4200
+Wire Wire Line
+	6225 4200 6300 4200
+Wire Wire Line
+	6225 4200 6225 5200
+Wire Wire Line
+	6225 5200 6300 5200
+Connection ~ 6225 4200
+Wire Wire Line
+	6225 5200 6225 5575
+Connection ~ 6225 5200
+Wire Wire Line
+	6800 5500 6800 5575
+Wire Wire Line
+	6800 5575 6225 5575
+Wire Wire Line
+	6800 5575 6800 5650
+Connection ~ 6800 5575
+$Comp
+L power:GND #PWR0101
+U 1 1 603A5DD9
+P 6800 5650
+F 0 "#PWR0101" H 6800 5400 50  0001 C CNN
+F 1 "GND" H 6805 5477 50  0000 C CNN
+F 2 "" H 6800 5650 50  0001 C CNN
+F 3 "" H 6800 5650 50  0001 C CNN
+	1    6800 5650
+	1    0    0    -1  
+$EndComp
+Text Label 4375 4800 0    50   ~ 0
+JK_START
+$Comp
+L power:VCC #PWR0102
+U 1 1 603C39C6
+P 6800 3600
+F 0 "#PWR0102" H 6800 3450 50  0001 C CNN
+F 1 "VCC" H 6815 3773 50  0000 C CNN
+F 2 "" H 6800 3600 50  0001 C CNN
+F 3 "" H 6800 3600 50  0001 C CNN
+	1    6800 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3675 2850 3675 4000
+Wire Wire Line
+	4300 1450 4300 4500
+Wire Wire Line
+	4225 1525 4225 4600
+Wire Wire Line
+	3775 2850 3775 4300
+Wire Wire Line
+	3875 2850 3875 4900
+$Comp
+L Switch:SW_Push SW1
+U 1 1 603D5BF9
+P 2075 4800
+F 0 "SW1" H 2075 5085 50  0000 C CNN
+F 1 "START" H 2075 4994 50  0000 C CNN
+F 2 "switch_cutout:SW_PUSH_6mm" H 2075 5000 50  0001 C CNN
+F 3 "~" H 2075 5000 50  0001 C CNN
+	1    2075 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J4
+U 1 1 603D7981
+P 2650 3225
+F 0 "J4" V 2746 3405 50  0000 L CNN
+F 1 "START_SEL" V 2655 3405 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 2650 3225 50  0001 C CNN
+F 3 "~" H 2650 3225 50  0001 C CNN
+	1    2650 3225
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 603E5353
+P 2250 1600
+F 0 "#PWR0103" H 2250 1350 50  0001 C CNN
+F 1 "GND" H 2255 1427 50  0000 C CNN
+F 2 "" H 2250 1600 50  0001 C CNN
+F 3 "" H 2250 1600 50  0001 C CNN
+	1    2250 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 1525 2250 1525
+Wire Wire Line
+	2250 1525 2250 1600
+Wire Wire Line
+	2350 1525 2350 1925
+Wire Wire Line
+	2150 1925 2150 1450
+Wire Wire Line
+	2150 1450 2750 1450
+Wire Wire Line
+	2450 1925 2450 1525
+Wire Wire Line
+	2450 1525 2650 1525
+Wire Wire Line
+	2550 2850 2550 2925
+Wire Wire Line
+	2650 2925 2650 1525
+Wire Wire Line
+	2750 2925 2750 1450
+Wire Wire Line
+	2550 3425 2550 3500
+Wire Wire Line
+	2550 3500 2650 3500
+Wire Wire Line
+	2650 3500 2650 3425
+Wire Wire Line
+	2650 3500 2750 3500
+Wire Wire Line
+	2750 3500 2750 3425
+Connection ~ 2650 3500
+Wire Wire Line
+	2650 3500 2650 4800
+Wire Wire Line
+	2650 4800 2275 4800
+Connection ~ 2650 4800
+Wire Wire Line
+	1875 4800 1800 4800
+Wire Wire Line
+	1800 4800 1800 4875
+$Comp
+L power:GND #PWR0104
+U 1 1 603FBC7C
+P 1800 4875
+F 0 "#PWR0104" H 1800 4625 50  0001 C CNN
+F 1 "GND" H 1805 4702 50  0000 C CNN
+F 2 "" H 1800 4875 50  0001 C CNN
+F 3 "" H 1800 4875 50  0001 C CNN
+	1    1800 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L joykey_jumpers:JUMPER_CONNECTED #3
+U 1 1 604080DA
+P 10975 1250
+F 0 "#3" H 10975 1150 50  0001 C CNN
+F 1 "JUMPER_CONNECTED" H 10975 1350 50  0001 C CNN
+F 2 "" H 10975 1250 50  0001 C CNN
+F 3 "" H 10975 1250 50  0001 C CNN
+	1    10975 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L joykey_jumpers:JUMPER_CONNECTED #2
+U 1 1 6040915A
+P 10975 850
+F 0 "#2" H 10975 750 50  0001 C CNN
+F 1 "JUMPER_CONNECTED" H 10975 950 50  0001 C CNN
+F 2 "" H 10975 850 50  0001 C CNN
+F 3 "" H 10975 850 50  0001 C CNN
+	1    10975 850 
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2725 3225 2775 3225
+Wire Notes Line
+	2775 3225 2775 3125
+Wire Notes Line
+	2775 3125 2725 3125
+Wire Notes Line
+	2725 3125 2725 3225
+$Comp
+L sega_joypad:sega_joypad_idc J3
+U 1 1 60415751
+P 8925 3150
+F 0 "J3" H 8925 3565 50  0000 C CNN
+F 1 "Sega Mega Drive" H 8925 3474 50  0000 C CNN
+F 2 "C64 IDC:IDC_Joystick" H 8875 2825 50  0001 C CNN
+F 3 "" H 8875 2825 50  0001 C CNN
+	1    8925 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3575 2850 3575 3050
+Wire Wire Line
+	3475 2850 3475 2950
+Wire Wire Line
+	7300 3900 7375 3900
+Wire Wire Line
+	7375 3900 7375 3150
+Wire Wire Line
+	7375 3150 8400 3150
+Wire Wire Line
+	7300 4200 7450 4200
+Wire Wire Line
+	7450 4200 7450 3250
+Wire Wire Line
+	7450 3250 8400 3250
+Wire Wire Line
+	8400 3350 8325 3350
+Wire Wire Line
+	8325 3350 8325 2700
+$Comp
+L power:VCC #PWR0105
+U 1 1 604409AE
+P 8325 2700
+F 0 "#PWR0105" H 8325 2550 50  0001 C CNN
+F 1 "VCC" H 8340 2873 50  0000 C CNN
+F 2 "" H 8325 2700 50  0001 C CNN
+F 3 "" H 8325 2700 50  0001 C CNN
+	1    8325 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 3150 9525 3150
+Wire Wire Line
+	9525 3150 9525 3475
+$Comp
+L power:GND #PWR0106
+U 1 1 60447695
+P 9525 3475
+F 0 "#PWR0106" H 9525 3225 50  0001 C CNN
+F 1 "GND" H 9530 3302 50  0000 C CNN
+F 2 "" H 9525 3475 50  0001 C CNN
+F 3 "" H 9525 3475 50  0001 C CNN
+	1    9525 3475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4500 9675 4500
+Wire Wire Line
+	9450 2950 9675 2950
+Wire Wire Line
+	9675 2950 9675 4500
+Wire Wire Line
+	9450 3250 9750 3250
+Wire Wire Line
+	9750 3250 9750 4800
+Wire Wire Line
+	9750 4800 7300 4800
+Wire Wire Line
+	6300 5100 6150 5100
+Wire Wire Line
+	6150 5100 6150 5925
+Wire Wire Line
+	6150 5925 9825 5925
+Wire Wire Line
+	9825 3050 9450 3050
+NoConn ~ 3875 1925
+NoConn ~ 2550 1925
+NoConn ~ 2150 2850
+NoConn ~ 2250 2850
+NoConn ~ 2350 2850
+NoConn ~ 2450 2850
+Text Label 7525 3150 0    50   ~ 0
+MD_LEFT
+Text Label 7525 3250 0    50   ~ 0
+MD_RIGHT
+Text Label 7525 4500 0    50   ~ 0
+MD_B_A
+Text Label 7525 4800 0    50   ~ 0
+MD_C_START
+Text Label 7525 5925 0    50   ~ 0
+MD_SEL
+Wire Wire Line
+	9825 5925 9825 3050
+Text Label 4375 2950 0    50   ~ 0
+JK_UP
+Text Label 4375 3050 0    50   ~ 0
+JK_DOWN
+$Comp
+L Device:C_Small C1
+U 1 1 6049A7C8
+P 6525 7150
+F 0 "C1" H 6617 7196 50  0000 L CNN
+F 1 "100nF" H 6617 7105 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 6525 7150 50  0001 C CNN
+F 3 "~" H 6525 7150 50  0001 C CNN
+	1    6525 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 6049AA7D
+P 6525 7250
+F 0 "#PWR0107" H 6525 7000 50  0001 C CNN
+F 1 "GND" H 6530 7077 50  0000 C CNN
+F 2 "" H 6525 7250 50  0001 C CNN
+F 3 "" H 6525 7250 50  0001 C CNN
+	1    6525 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0108
+U 1 1 6049AE4C
+P 6525 7050
+F 0 "#PWR0108" H 6525 6900 50  0001 C CNN
+F 1 "VCC" H 6540 7223 50  0000 C CNN
+F 2 "" H 6525 7050 50  0001 C CNN
+F 3 "" H 6525 7050 50  0001 C CNN
+	1    6525 7050
+	1    0    0    -1  
+$EndComp
+Text Notes 7000 6900 0    50   ~ 0
+Transforms the C64 JoyKEY into a simple 3-button controller for the Sega Mega Drive (named Sega\nGenesis in North America). Given that we are missing one of the buttons, this adapter has a separate\nSTART button when used with the base unit (C64 Arcade version can assign any of the other 3 buttons to\nthis).
+$Comp
+L mounting:Mounting M1
+U 1 1 604B1C82
+P 550 550
+F 0 "M1" H 550 650 50  0001 C CNN
+F 1 "Mounting" H 550 475 50  0001 C CNN
+F 2 "mounting:M3_pin" H 550 550 50  0001 C CNN
+F 3 "~" H 550 550 50  0001 C CNN
+	1    550  550 
+	1    0    0    -1  
+$EndComp
+$Comp
+L mounting:Mounting M2
+U 1 1 604B204C
+P 675 550
+F 0 "M2" H 675 650 50  0001 C CNN
+F 1 "Mounting" H 675 475 50  0001 C CNN
+F 2 "mounting:M3_pin" H 675 550 50  0001 C CNN
+F 3 "~" H 675 550 50  0001 C CNN
+	1    675  550 
+	1    0    0    -1  
+$EndComp
+$Comp
+L mounting:Mounting M3
+U 1 1 604B239C
+P 800 550
+F 0 "M3" H 800 650 50  0001 C CNN
+F 1 "Mounting" H 800 475 50  0001 C CNN
+F 2 "mounting:M3_pin" H 800 550 50  0001 C CNN
+F 3 "~" H 800 550 50  0001 C CNN
+	1    800  550 
+	1    0    0    -1  
+$EndComp
+$Comp
+L mounting:Mounting M4
+U 1 1 604B26C5
+P 925 550
+F 0 "M4" H 925 650 50  0001 C CNN
+F 1 "Mounting" H 925 475 50  0001 C CNN
+F 2 "mounting:M3_pin" H 925 550 50  0001 C CNN
+F 3 "~" H 925 550 50  0001 C CNN
+	1    925  550 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3575 1925 3575 1850
+$Comp
+L Device:Jumper_NO_Small JP1
+U 1 1 604C213A
+P 3100 1275
+F 0 "JP1" V 3054 1227 50  0000 R CNN
+F 1 "VCC_EN" V 3145 1227 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3100 1275 50  0001 C CNN
+F 3 "~" H 3100 1275 50  0001 C CNN
+	1    3100 1275
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3100 1850 3575 1850
+Wire Wire Line
+	3100 1375 3100 1850
+$Comp
+L power:VCC #PWR0109
+U 1 1 604CC126
+P 3100 1175
+F 0 "#PWR0109" H 3100 1025 50  0001 C CNN
+F 1 "VCC" H 3115 1348 50  0000 C CNN
+F 2 "" H 3100 1175 50  0001 C CNN
+F 3 "" H 3100 1175 50  0001 C CNN
+	1    3100 1175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3875 4900 5675 4900
+Wire Wire Line
+	2650 4800 5575 4800
+Wire Wire Line
+	4225 4600 5475 4600
+Wire Wire Line
+	4300 4500 5375 4500
+Wire Wire Line
+	3775 4300 5275 4300
+Wire Wire Line
+	3675 4000 5175 4000
+Wire Wire Line
+	3475 2950 4975 2950
+Wire Wire Line
+	3575 3050 5075 3050
+$Comp
+L Device:R R1
+U 1 1 604EB780
+P 4975 2650
+F 0 "R1" V 4925 2400 50  0000 L CNN
+F 1 "R" V 4975 2625 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4905 2650 50  0001 C CNN
+F 3 "~" H 4975 2650 50  0001 C CNN
+	1    4975 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4975 2800 4975 2950
+Connection ~ 4975 2950
+Wire Wire Line
+	4975 2950 8400 2950
+$Comp
+L Device:R R2
+U 1 1 604F20EA
+P 5075 2650
+F 0 "R2" V 5025 2400 50  0000 L CNN
+F 1 "R" V 5075 2625 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5005 2650 50  0001 C CNN
+F 3 "~" H 5075 2650 50  0001 C CNN
+	1    5075 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 604F3B9E
+P 5175 2650
+F 0 "R3" V 5125 2400 50  0000 L CNN
+F 1 "R" V 5175 2625 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5105 2650 50  0001 C CNN
+F 3 "~" H 5175 2650 50  0001 C CNN
+	1    5175 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 604F5537
+P 5275 2650
+F 0 "R4" V 5225 2400 50  0000 L CNN
+F 1 "R" V 5275 2625 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5205 2650 50  0001 C CNN
+F 3 "~" H 5275 2650 50  0001 C CNN
+	1    5275 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 604F6EDD
+P 5375 2650
+F 0 "R5" V 5325 2400 50  0000 L CNN
+F 1 "R" V 5375 2625 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5305 2650 50  0001 C CNN
+F 3 "~" H 5375 2650 50  0001 C CNN
+	1    5375 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 604F88BA
+P 5475 2650
+F 0 "R6" V 5425 2400 50  0000 L CNN
+F 1 "R" V 5475 2625 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5405 2650 50  0001 C CNN
+F 3 "~" H 5475 2650 50  0001 C CNN
+	1    5475 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 604FA2E7
+P 5575 2650
+F 0 "R7" V 5525 2400 50  0000 L CNN
+F 1 "R" V 5575 2625 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5505 2650 50  0001 C CNN
+F 3 "~" H 5575 2650 50  0001 C CNN
+	1    5575 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 604FBCC5
+P 5675 2650
+F 0 "R8" V 5625 2400 50  0000 L CNN
+F 1 "R" V 5675 2625 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5605 2650 50  0001 C CNN
+F 3 "~" H 5675 2650 50  0001 C CNN
+	1    5675 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5075 2800 5075 3050
+Connection ~ 5075 3050
+Wire Wire Line
+	5075 3050 8400 3050
+Wire Wire Line
+	5175 2800 5175 4000
+Connection ~ 5175 4000
+Wire Wire Line
+	5175 4000 6300 4000
+Wire Wire Line
+	5275 2800 5275 4300
+Connection ~ 5275 4300
+Wire Wire Line
+	5275 4300 6300 4300
+Wire Wire Line
+	5375 2800 5375 4500
+Connection ~ 5375 4500
+Wire Wire Line
+	5375 4500 6300 4500
+Wire Wire Line
+	5475 2800 5475 4600
+Connection ~ 5475 4600
+Wire Wire Line
+	5475 4600 6300 4600
+Wire Wire Line
+	5575 2800 5575 4800
+Connection ~ 5575 4800
+Wire Wire Line
+	5575 4800 6300 4800
+Wire Wire Line
+	5675 2800 5675 4900
+Connection ~ 5675 4900
+Wire Wire Line
+	5675 4900 6300 4900
+Wire Wire Line
+	4975 2500 4975 2425
+Wire Wire Line
+	4975 2425 5075 2425
+Wire Wire Line
+	5075 2425 5075 2500
+Wire Wire Line
+	4975 2425 4975 2350
+Connection ~ 4975 2425
+$Comp
+L power:VCC #PWR0110
+U 1 1 6051608D
+P 4975 2350
+F 0 "#PWR0110" H 4975 2200 50  0001 C CNN
+F 1 "VCC" H 4990 2523 50  0000 C CNN
+F 2 "" H 4975 2350 50  0001 C CNN
+F 3 "" H 4975 2350 50  0001 C CNN
+	1    4975 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5075 2425 5175 2425
+Wire Wire Line
+	5175 2425 5175 2500
+Connection ~ 5075 2425
+Wire Wire Line
+	5175 2425 5275 2425
+Wire Wire Line
+	5275 2425 5275 2500
+Connection ~ 5175 2425
+Wire Wire Line
+	5275 2425 5375 2425
+Wire Wire Line
+	5375 2425 5375 2500
+Connection ~ 5275 2425
+Wire Wire Line
+	5375 2425 5475 2425
+Wire Wire Line
+	5475 2425 5475 2500
+Connection ~ 5375 2425
+Wire Wire Line
+	5475 2425 5575 2425
+Wire Wire Line
+	5575 2425 5575 2500
+Connection ~ 5475 2425
+Wire Wire Line
+	5575 2425 5675 2425
+Wire Wire Line
+	5675 2425 5675 2500
+Connection ~ 5575 2425
+Wire Notes Line
+	4850 2075 4850 2925
+Wire Notes Line
+	4850 2925 5800 2925
+Wire Notes Line
+	5800 2925 5800 2075
+Wire Notes Line
+	5800 2075 4850 2075
+$EndSCHEMATC
