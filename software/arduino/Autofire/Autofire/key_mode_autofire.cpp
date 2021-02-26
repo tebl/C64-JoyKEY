@@ -87,7 +87,7 @@ void update_state() {
   /* Handle autofire */
   if (autofire) {
     if (millis() > next_change) {
-      flip_cycle(AUTO_FIRE_PERIOD_LOW, AUTO_FIRE_PERIOD_HIGH);
+      flip_cycle(AUTO_FIRE_PERIOD_HIGH, AUTO_FIRE_PERIOD_LOW);
     }
     return;
   }
