@@ -1,8 +1,22 @@
-1612567584145
-switch_cutout
-SW_PUSH_6mm
-https://www.omron.com/ecb/products/pdf/en-b3f.pdf
-tact sw push 6mm
+4784113787881
+mounting
+M2
+module 1 pin (ou trou mecanique de percage)
+DEV
 0
-4
-2
+1
+1
+mounting
+M3
+module 1 pin (ou trou mecanique de percage)
+DEV
+0
+0
+0
+mounting
+M3_pin
+module 1 pin (ou trou mecanique de percage)
+DEV
+0
+1
+1
