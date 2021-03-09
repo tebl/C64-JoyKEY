@@ -18,7 +18,7 @@
 /* Controls underglow effects, if available - setting LED_UNDERGLOW_MAX to 0
  * will disable it entirely. Effects are only available in USB-mode, you should
  * only activate one of them. */
-#define LED_UNDERGLOW_MAX 32          // Maximum brightness
+#define LED_UNDERGLOW_MAX 64          // Maximum brightness
 #define LED_UNDERGLOW_STEP 4          // Change per step when fading.
 #define LED_UNDERGLOW_FADE_SPEED 400  // Num ms. between fade out steps
 #define LED_UNDERGLOW_MIN 1           // Uncomment to keep underglow above MIN.
