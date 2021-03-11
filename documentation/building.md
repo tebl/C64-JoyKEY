@@ -1,6 +1,6 @@
 # Building C64 JoyKEY
 
-Congratulations on the taking the leap to build my slightly over-complicated 7-key keyboard/joystick, now probably compatible with your favourite vintage computer. It can be built or configured in a few ways, so take a look at the [configuration](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/configuration.md) document so that you'll have an idea of what you want to do with it - pay particular mention to whether you'd require any of the features provided by the Arduino Pro Micro. 
+Congratulations on the taking the leap to build my slightly over-complicated 7-key keyboard/joystick, now probably compatible with most of your favourite vintage computers. It can be built or configured in a few ways, so take a look at the [configuration](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/configuration.md) document so that you'll have an idea of what you want to do with it - pay particular mention to whether you'd require any of the features provided by the Arduino Pro Micro. 
 
 - [1> Building C64 JoyKEY](#1-building-c64-joykey)
   - [1.1> Ordering components](#11-ordering-components)
@@ -29,7 +29,9 @@ The Arduino Pro Micro unfortunately seem to come in physically different variati
 
 ![C64 JoyKEY board](https://raw.githubusercontent.com/tebl/C64-JoyKEY/main/gallery/build_003.jpg)
 
-Notice the spot for two jumpers marked **DEFAULT_FW** (green in the picture above)? You'll need to add solder a piece of wire here, the leftovers you got when snipping the leads from the resistors can be used for this purpose. You need to do this even if you don't want the Arduino at all, the only reason not to do so is if you specifically want to use the autofire variant of the firmware instead. Installing pin headers here may lead to accidents as well as increase the required space between the module and faceplate.
+Notice the spot for two jumpers marked **DEFAULT_FW** (green in the picture above)? You'll need to add solder a piece of wire here, the leftovers you got when snipping the leads from the resistors can be used for this purpose. You need to do this even if you don't want the Arduino at all, the only reason not to do so is if you specifically want to use the autofire variant of the firmware instead. Installing pin headers here may lead to accidents as well as increase the required space between the module and faceplate. The same goes for the power links marked **VCC_EN** and **ARD_EN**. It may be tempting to install male pin headers and jumper caps here, but note that this would be a little too tall to fit under the faceplate - if you want them, you can either sand a bit off the top of the jumper caps or use some pliers to pull off the base of the pin headers (snip off a bit of the pins as well).
+
+![Shorter jumpers](https://raw.githubusercontent.com/tebl/C64-JoyKEY/main/gallery/build_003_a.jpg)
 
 Next you'll want to screw together both pieces of PCBs, just put the female HEX standoffs of the size you want between them and add screws from both sides - this should make the whole thing stand up to some abuse (physical, not the MS-DOS game though you could try that one out later in DOSBOX). 
 
@@ -93,6 +95,7 @@ This section attempts to maintain a list of the parts you'd need in order to bui
 | Q1 *             | 2N3904 (TO-92)                            |    (1)|        |
 | R1,R2            | 270 ohm resistor                          |     2 |        |
 | R3,R4            | 220 ohm resistor                          |    (2)|        |
+| R5,R14-R21       | 10k ohm resistor                          |    (9)|        |
 | R6,R12           | 330 ohm resistor                          |    (7)|        |
 | R13              | 1k ohm resistor                           |    (1)|        |
 | SW1-SW7 ****     | Cherry MX compatible switch (green)       |     7 |        |
