@@ -1,4 +1,4 @@
-19044213948707254
+19059878269911247
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -51666,6 +51666,13 @@ heatsink
 0
 2
 1
+IDC_Joystick
+IDC_Joystick
+Through hole straight IDC box header, 2x05, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x05 2.54mm double row
+0
+10
+10
 Inductor_SMD
 L_6.3x6.3_H3
 Choke, SMD, 6.3x6.3mm 3mm height
@@ -83026,64 +83033,113 @@ varistor SIOV
 0
 2
 2
-arduino_pro_micro
-Arduino_Pro_Micro
-
-
-0
-36
-24
-arduino_pro_micro
-Arduino_Pro_Micro_Reverse
-
-
-0
-36
-24
-logo
-c64_ready
+artwork
+arrows
 
 
 0
 0
 0
-logo
-c64_ready2
+artwork
+key_0
 
 
 0
 0
 0
-logo
-ik_plus
+artwork
+key_1
 
 
 0
 0
 0
-logo
-last_ninja
+artwork
+key_2
 
 
 0
 0
 0
-logo
-platoon
+artwork
+key_3
 
 
 0
 0
 0
-logo
-robocop
+artwork
+key_4
 
 
 0
 0
 0
-logo
-shinobi
+artwork
+key_5
+
+
+0
+0
+0
+artwork
+key_6
+
+
+0
+0
+0
+artwork
+key_7
+
+
+0
+0
+0
+artwork
+key_8
+
+
+0
+0
+0
+artwork
+key_9
+
+
+0
+0
+0
+artwork
+key_hash
+
+
+0
+0
+0
+artwork
+key_star
+
+
+0
+0
+0
+artwork
+keys
+
+
+0
+0
+0
+artwork
+title
+
+
+0
+0
+0
+artwork
+title_basic
 
 
 0
@@ -83110,3 +83166,10 @@ DEV
 0
 1
 1
+switch_cutout
+SW_PUSH_6mm
+https://www.omron.com/ecb/products/pdf/en-b3f.pdf
+tact sw push 6mm
+0
+4
+2
