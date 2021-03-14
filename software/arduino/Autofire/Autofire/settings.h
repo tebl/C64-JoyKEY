@@ -14,6 +14,7 @@
 #define LED_FLASH_DELAY 100           // Delay between blink steps
 #define BOOT_MODE_THRESHOLD 1000      // Time needed before alternate mode
 #define DEBOUNCE_DELAY 10             // Debounce delay for keys
+#define LED_DISABLE_RX_TX             // Disable RX/TX LEDs on Arduino
 
 /* Controls underglow effects, if available - setting LED_UNDERGLOW_MAX to 0
  * will disable it entirely. 

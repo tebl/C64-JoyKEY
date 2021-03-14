@@ -14,6 +14,7 @@
 #define LED_FLASH_DELAY 100           // Delay between blink steps
 #define BOOT_MODE_THRESHOLD 1000      // Time needed before alternate mode
 #define USB_DEBOUNCE_DELAY 10         // Debounce delay for keys
+#define LED_DISABLE_RX_TX             // Disable RX/TX LEDs on Arduino
 
 /* Controls underglow effects, if available - setting LED_UNDERGLOW_MAX to 0
  * will disable it entirely. Effects are only available in USB-mode, you should
@@ -29,7 +30,7 @@
  * be enabled if you know that you can safely power that much from the joystick
  * port of whatever you've connected the C64 JoyKEY to.
  */
-//#define DEFAULT_UNDERGLOW 16        // Uncomment to enable, also set brightness
+#define DEFAULT_UNDERGLOW 16          // Uncomment to enable, also set brightness
 
 /* Specify KEY_MODE_JOYSTICK to have the alternate mode identify the
  * device as a joystick, alternatively you can use KEY_MODE_USB to have it
