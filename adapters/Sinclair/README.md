@@ -1,5 +1,5 @@
-# JoyKEY (ZX Spectrum +2/+3 and Interface 2)
-Back in the days when the ZX Spectrum was still all the rage in Europe, but mostly Britain - the Atari joysticks were available from most computer stores. Given that the ZX Spectrum lacked a dedicated joystick port, Kempston released an interface that allowed gamers to use an Atari-style joystick with their system. Sinclair did not like that, so when they released the ZX Interface 2 as well as the later ZX Spectrum +2/+3 line of computers they chose to include a joystick port with the wires jumbled together so that the Atari-style joysticks wouldn't work with the system with the official devices.
+# JoyKEY (ZX Spectrum +2/+3)
+Back in the days when the ZX Spectrum was still all the rage in Europe, but mostly Britain - the Atari joysticks were available from most computer stores. Given that the ZX Spectrum originally lacked a dedicated joystick port, Kempston released an interface that allowed gamers to use an Atari-style joystick with their system. Sinclair, after being bought up by Amstrad added joystick ports to their newly updated machines, but in an attempt to corner the market on the sale of joysticks they changed the pinouts - allowing only the Sinclair SJS to function as expected.
 
 ![Sinclair System](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/sinclair_system.jpg)
 ![Sinclair System](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/sinclair_system_db9.jpg)

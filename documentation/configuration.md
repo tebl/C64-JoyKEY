@@ -10,7 +10,7 @@ This document details the jumpers physically found on the *C64 JoyKEY*, see docu
   - [Commodore VIC-20](#14-commodore-64)
   - [Commodore Amiga](#15-commodore-amiga)
   - [Sega Master System](#16-sega-master-system) *
-  - [ZX Interface 2](#17-zx-interface-2) *
+  - [ZX Spectrum +2/+3](#17-zx-spectrum-2-3) *
 - [Autofire](#2-autofire)
 - [USB-mode](#3-usb-mode)
 
@@ -93,12 +93,14 @@ Released in 1986, this is probably my favourite console - if I was forced to pic
 ![Sega Master System Adapter](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/sms_adapter.jpg)
 ![Sega Master System Jumpers](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/sms_jumpers.jpg)
 
-### 1.7> ZX Interface 2
-The ZX Interface 2 peripheral for the Sinclair ZX Spectrum was the first official way of using joysticks on the popular Sinclair home computers, also referred to as a doorstop in some circles. Rumour has it that Sinclair wanted to corner the market on selling joysticks for their computers by changing the pinouts used, making it incompatible with the popular Kempston-style interfaces that used the standard Atari-style joysticks. Unfortunately the joystick they sold, the SJS1, was your typical weekend-warrior type of products so users were mostly left with a nice peripheral and nothing to connect to it.
+### 1.7> ZX Spectrum +2/+3
+Sinclair, having recently been acquired by their competitor - Amstrad - added joystick ports directly to their shiny new +2 and +3 computers, but in order to ensure the sale of branded Sinclair joysticks (SJS and the later SJS2) they changed the pinouts. This ensured that your run of the mill Atari-style joysticks didn't work, but as history would show the ever-present Kempston interfaces would instead remain the standard for gaming on the ZX Spectrum - leaving the ports mostly unused.
 
-Unphased by the reception of the rather cheap feeling SJS1 joysticks, they doubled down and had the same joystick port layout added to the internals of the ZX Spectrum +2/+3 computers as well. I don't actually own an Interface 2, but please send me - I'll promise to love and never let it go. I do however own +2 and +3 computer that I've always wanted to use the built-in joystick ports on, so I've made an [adapter](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Sinclair) for the C64 JoyKEY. This can also be assembled so that you can use the adapter with any Atari-style joystick, not just the C64 JoyKEY. There is no support for using more than one joystick button on these interfaces, even if you use two adapters.
+While I do not own an ZX Interface 2, the schematics found online seem to indicate that while they shared the same interface (as seen from the computer) - the ZX Interface 2 doesn't have the same shuffling of pinouts like the Amstrad produced machines. I would like to verify this, but that would require owning an Interface 2 - so please send me one, I promise to love and ultimately never give it up ([source](https://www.youtube.com/watch?v=dQw4w9WgXcQ)).
 
-**NB!** If it wasn't entirely clear; you will only need this adapter when connecting up to the built-in joystick ports on the ZX Interface 2, ZX Spectrum +2 or ZX Spectrum +3. Most other peripherals that came with joystick ports, the most being the Kempston, used standard Atari-style joysticks and no adapter is needed for those.
+I do however own +2 and +3 computers that I've always wanted to have a got at using the built-in joystick ports on, so I've made an [adapter](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Sinclair) for this purpose. This can also be assembled so that you can use the adapter with any Atari-style joystick, not just the C64 JoyKEY. There is no support for using more than one joystick button on these interfaces, even if you use two adapters.
+
+**NB!** If it wasn't entirely clear; you will only need this adapter when connecting up to the built-in joystick ports on the ZX Spectrum +2 or ZX Spectrum +3. Most other peripherals that came with joystick ports, more than likely a Kempston - used standard Atari-style joysticks and no adapter would be needed for those.
 
 ![Sinclair System](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/sinclair_system.jpg)
 ![Sinclair System Adapter](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/sinclair_adapter.jpg)
