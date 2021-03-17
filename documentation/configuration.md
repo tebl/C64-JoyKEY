@@ -10,7 +10,7 @@ This document details the jumpers physically found on the *C64 JoyKEY*, see docu
   - [Commodore VIC-20](#14-commodore-64)
   - [Commodore Amiga](#15-commodore-amiga)
   - [Sega Master System](#16-sega-master-system) *
-  - [ZX Spectrum +2/+3](#17-zx-spectrum-2-3) *
+  - [ZX Spectrum +2/+3](#17-zx-spectrum-23) *
 - [Autofire](#2-autofire)
 - [USB-mode](#3-usb-mode)
 

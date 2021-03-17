@@ -4,7 +4,7 @@ Back in the days when the ZX Spectrum was still all the rage in Europe, but most
 ![Sinclair System](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/sinclair_system.jpg)
 ![Sinclair System](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/sinclair_system_db9.jpg)
 
-A lengthy story that mostly just explains why an adapter is needed, in the case of the *C64 JoyKEY* this an adapter that let's you connect directly to the mentioned systems (ZX Spectrum +2/+3 and Sinclair Interface 2 expansion). This is not needed if the joystick port you are using is on one of the common DivIDE/DivMMC or on a standalone Kempston compatible device, as those are already Atari-compatible interfaces. When soldering together the adapter, you will have the option to add a male DB9 connector as well, allowing you to use it as an adapter with common Atari-style joysticks as well.
+A lengthy story that mostly just explains why an adapter is needed, in the case of the *C64 JoyKEY* this an adapter that let's you connect directly to the mentioned systems (ZX Spectrum +2/+3). This is not needed if the joystick port you are using is on one of the common DivIDE/DivMMC or on a standalone Kempston compatible device, as those are already Atari-compatible interfaces. When soldering together the adapter, you will have the option to add a male DB9 connector as well, allowing you to use it as an adapter with common Atari-style joysticks as well.
 
 The completed adapter can be seen below, this also includes the expected position that should be set on the *C64 JoyKEY* device itself. Note that the Sinclair Interface 2 standard does not officially have a power pin, so the active parts of the *C64 JoyKEY* will not be powered up by the system.
 
