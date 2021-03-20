@@ -10,7 +10,8 @@ This document details the jumpers physically found on the *C64 JoyKEY*, see docu
   - [Commodore VIC-20](#14-commodore-64)
   - [Commodore Amiga](#15-commodore-amiga)
   - [Sega Master System](#16-sega-master-system) *
-  - [ZX Spectrum +2/+3](#17-zx-spectrum-23) *
+  - [Sega Mega Drive](#17-sega-mega-drive) *
+  - [ZX Spectrum +2/+3](#18-zx-spectrum-23) *
 - [Autofire](#2-autofire)
 - [USB-mode](#3-usb-mode)
 
@@ -93,7 +94,19 @@ Released in 1986, this is probably my favourite console - if I was forced to pic
 ![Sega Master System Adapter](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/sms_adapter.jpg)
 ![Sega Master System Jumpers](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/sms_jumpers.jpg)
 
-### 1.7> ZX Spectrum +2/+3
+### 1.7> Sega Mega Drive
+The only console that was truly *mega*, doing whatever Ninten...don't! Apparantly that was mostly sports so I never bought one back in the day, then again most software for my IBM PC was available for the cost of a blank floppy so that might be why I never had much desire for the cartridge-based systems back then. For some reason the system was launched as the Sega Genesis in North America, but we try not to talk about those guys anymore.
+
+Over to the actual system, mine is one version 1 - the one marked *high definition graphics* on the device itself. Now that I have an Everdrive for the system, I find myself playing on it more and more. More than likely, just because it has the definitive 16-bit home version of Out Run on it (observe the shiny red keycaps to match the iconic Ferrari Testarossa Spider). 
+
+![Sega Mega Drive](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/smd_system.jpg)
+
+I've gone ahead and made a [3-button adapter](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Sega%20Mega%20Drive) for the *C64 JoyKEY*, but note that as the system actually requires a fourth button - the *START* button - I added that to the adapter itself. Sega did however make their controller ports recessed into the case, so we also need to add a straight [IDC to DB9](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/IDC%20to%20DB9) adapter in order to make the cable fit into the controller ports. [IDC to DB9](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/IDC%20to%20DB9) *VCC_EN* must be linked in order to power the adapter.
+
+![Sega Mega Drive Adapter](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/smd_adapters.jpg)
+![Sega Mega Drive Jumpers](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/smd_jumpers.jpg)
+
+### 1.8> ZX Spectrum +2/+3
 Sinclair, having recently been acquired by their competitor - Amstrad - added joystick ports directly to their shiny new +2 and +3 computers, but in order to ensure the sale of branded Sinclair joysticks (SJS and the later SJS2) they changed the pinouts. This ensured that your run of the mill Atari-style joysticks didn't work, but as history would show the ever-present Kempston interfaces would instead remain the standard for gaming on the ZX Spectrum - leaving the ports mostly unused.
 
 While I do not own an ZX Interface 2, the schematics found online seem to indicate that while they shared the same interface (as seen from the computer) - the ZX Interface 2 doesn't have the same shuffling of pinouts like the Amstrad produced machines. I would like to verify this, but that would require owning an Interface 2 - so please send me one, I promise to love and ultimately never give it up ([source](https://www.youtube.com/watch?v=dQw4w9WgXcQ)).

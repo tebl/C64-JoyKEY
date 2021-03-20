@@ -409,8 +409,8 @@ F 3 "" H 6525 7050 50  0001 C CNN
 	1    6525 7050
 	1    0    0    -1  
 $EndComp
-Text Notes 7000 6900 0    50   ~ 0
-Transforms the C64 JoyKEY into a simple 3-button controller for the Sega Mega Drive (named Sega\nGenesis in North America). Given that we are missing one of the buttons, this adapter has a separate\nSTART button when used with the base unit (C64 Arcade version can assign any of the other 3 buttons to\nthis).
+Text Notes 7000 7050 0    50   ~ 0
+Transforms the C64 JoyKEY into a simple 3-button controller for the Sega Mega Drive (named Sega\nGenesis in North America). Given that we are missing one of the buttons, this adapter has a separate\nSTART button when used with the base unit (C64 Arcade version can assign any of the other 3 buttons to\nthis).\n\nThis design is untested!
 $Comp
 L mounting:Mounting M1
 U 1 1 604B1C82

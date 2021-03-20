@@ -10,7 +10,7 @@ The completed adapter can be seen below, this also includes the expected positio
 ![Sega Master System Jumpers](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/sms_jumpers.jpg)
 
 # BOM
-The parts listed are the ones I've used when building a Sega Mega Drive controller adapter for the *C64 JoyKEY*, part listed in parenthesis are considered optional (meaning you could build a more limited version of it). 
+The parts listed are the ones I've used when building a Sega Master System controller adapter for the *C64 JoyKEY*, part listed in parenthesis are considered optional (meaning you could build a more limited version of it). 
 
 | Reference     | Item                                      | Count |
 | ------------- | ----------------------------------------- | ----- |

@@ -3,13 +3,13 @@ Instead of adding a ton of jumpers to the module with the aim of accounting for 
 
 Click the adapter for a more detailed description on how it is put together, the parts needed to build the thing as well as any other relevant details. Some of these will require a specific blue connector that is not sold directly in the way you usually encounter them, see the details below how to dismantle a common component to get it.
 
-| Adapters                                                                                           | System                        | Order   |
-| -------------------------------------------------------------------------------------------------- | ----------------------------- | ------- |
-| [Atari 7800](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Atari%207800)                   | Atari 7800 (Atari 7800 Pro System in N.A.)                               | [PCBWay](https://www.pcbway.com/project/shareproject/C64_JoyKEY__Atari_7800_adapter_.html) |
-| [IDC to DB9](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/IDC%20to%20DB9)                 | Any Atari-style joystick port | [PCBWay](https://www.pcbway.com/project/shareproject/C64_JoyKEY__IDC_to_DB9_.html) |
-| [Sega Master System](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Sega%20Master%20System) | Sega Master System I/II       | [PCBWay](https://www.pcbway.com/project/shareproject/C64_JoyKEY__Sega_Master_System_adapter_.html)  |
-| [Sega Mega Drive](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Sega%20Mega%20Drive)  * | Sega Mega Drive I/II (also called Sega Genesis in N.A.) | PCBWay |
-| [Sinclair](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Sinclair)                       | ZX Spectrum +2/+3             | [PCBWay](https://www.pcbway.com/project/shareproject/C64_JoyKEY__Sinclair_adapter_.html)  |
+| Adapters                                                                                           | System                                                    | Order   |
+| -------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | ------- |
+| [Atari 7800](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Atari%207800)                   | Atari 7800 (Atari 7800 Pro System in N.A.)                | [PCBWay](https://www.pcbway.com/project/shareproject/C64_JoyKEY__Atari_7800_adapter_.html)
+| [IDC to DB9](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/IDC%20to%20DB9)                 | Any Atari-style joystick port                             | [PCBWay](https://www.pcbway.com/project/shareproject/C64_JoyKEY__IDC_to_DB9_.html)
+| [Sega Master System](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Sega%20Master%20System) | Sega Master System I/II                                   | [PCBWay](https://www.pcbway.com/project/shareproject/C64_JoyKEY__Sega_Master_System_adapter_.html)
+| [Sega Mega Drive](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Sega%20Mega%20Drive)       | Sega Mega Drive I/II (also called Sega Genesis in N.A.)   | PCBWay
+| [Sinclair](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Sinclair)                         | ZX Spectrum +2/+3                                         | [PCBWay](https://www.pcbway.com/project/shareproject/C64_JoyKEY__Sinclair_adapter_.html)
 
 *) Module is untested.
 
