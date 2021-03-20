@@ -128,7 +128,7 @@ T 900 -275 -500 31 0 0 0 F3_POL Normal 0 C C
 T 900 -275 -100 31 0 0 0 FIRE3_SEL Normal 0 C C
 T 0 -100 150 59 0 0 0 JoyKEY Normal 0 C C
 T 900 -125 -25 31 0 0 0 "P1 Fire1" Normal 0 C C
-T 900 -200 -150 31 0 0 0 "P1 Fire3" Normal 0 C C
+T 900 -200 -150 31 0 0 0 "P2 Fire3" Normal 0 C C
 T 900 -200 -950 31 0 1 1 GND Normal 0 C C
 T 900 -200 -550 31 0 1 1 GND Normal 0 C C
 T 900 -125 -825 31 0 1 1 VCC Normal 0 C C

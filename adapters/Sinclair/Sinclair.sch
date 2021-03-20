@@ -67,8 +67,8 @@ Wire Wire Line
 	4425 2125 4425 2525
 Wire Wire Line
 	4225 2050 4225 2525
-Text Notes 7000 7125 0    50   ~ 0
-When Sinclair wanted to add joystick ports to the ZX Spectrum Interface 2 and the later ZX Spectrum\n+2/+3, they chose to change the pinouts (mostly to keep people from buying Atari-style joysticks). \nNot to be confused with the Atari-compatible Kempston interfaces.\n\nThere are no active components on this, so you may as well just create a dedicated cable with these\nchanges instead of having a straight-through IDC to DE-9. There is no power provided, so the device\nwill need to be powered from USB if autofire is needed.
+Text Notes 7000 7050 0    50   ~ 0
+When Sinclair (Amstrad at that point) wanted to add joystick ports to the ZX Spectrum +2/+3, they chose\nto change the pinouts (mostly to keep people from buying Atari-style joysticks). Not to be confused with\nthe Atari-compatible Kempston interfaces.\n\nThere are no active components on this, so you may as well just create a dedicated cable with these\nchanges instead of having a straight-through IDC to DE-9.
 $Comp
 L joykey_jumpers:JUMPER_SETTINGS_1 #1
 U 1 1 5FD24880
