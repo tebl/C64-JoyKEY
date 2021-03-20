@@ -15,9 +15,9 @@ The completed adapter can be seen below, this also includes the expected positio
 # BOM
 The parts listed are the ones I've used when building a Sinclair adapter for use with the *C64 JoyKEY*, part listed in parenthesis are considered optional (meaning you could build a more limited or alternative version of it). Note that depending on the joysticks you want to use with the adapter, you may only need one of the input headers (either IDC or male DB9) - though both would most likely be preferred, as that way you'll have the option later on. 
 
-| Reference     | Item                                      | Count |
-| ------------- | ----------------------------------------- | ----- |
-| PCB           | Fabricate using Gerber files ([order](https://www.pcbway.com/project/shareproject/C64_JoyKEY__Sinclair_adapter_.html))  |     1 |
+| Reference     | Item                                      | Count | Order   |
+| ------------- | ----------------------------------------- | ----- | ------- |
+| PCB           | Fabricate using Gerber files              |     1 | [PCBway](https://www.pcbway.com/project/shareproject/C64_JoyKEY__Sinclair_adapter_.html)
 | J1 *          | 2x5 pin straight header pins or 2x5 IDC   |     1 |
 | J2 **         | DE-9 Female straight connector            |     1 |
 | J3            | DE-9 Male straight connector              |    (1)|

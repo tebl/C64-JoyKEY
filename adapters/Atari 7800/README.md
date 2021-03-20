@@ -14,9 +14,9 @@ The completed adapter can be seen below, this also includes the expected positio
 # BOM
 The parts listed are the ones I've used when building an Atari 7800 controller adapter for the *C64 JoyKEY*, part listed in parenthesis are considered optional (meaning you could build a more limited version of it). 
 
-| Reference     | Item                                      | Count |
-| ------------- | ----------------------------------------- | ----- |
-| PCB           | Fabricate using Gerber files ([order]())  |    (1)|
+| Reference     | Item                                      | Count | Order   |
+| ------------- | ----------------------------------------- | ----- | ------- |
+| PCB           | Fabricate using Gerber files              |    (1)| [PCBway](https://www.pcbway.com/project/shareproject/C64_JoyKEY__Atari_7800_adapter_.html)
 | J1 *          | 2x5 pin straight header pins or 2x5 IDC   |     1 |
 | J2 **         | DE-9 Female straight connector            |     1 |
 | JP1,JP2 ***   | 3-pin breakable header pins (w/jumpers    |    (2)|

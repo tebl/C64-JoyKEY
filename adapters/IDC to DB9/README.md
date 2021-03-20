@@ -10,9 +10,9 @@ Given the rather generic use of this module compared to the others, I can't say 
 # BOM
 The parts listed are the ones I've used when building a Sinclair adapter for use with the *C64 JoyKEY*, part listed in parenthesis are considered optional (meaning you could build a more limited version of it). 
 
-| Reference     | Item                                      | Count |
-| ------------- | ----------------------------------------- | ----- |
-| PCB           | Fabricate using Gerber files ([order]())  |    (1)|
+| Reference     | Item                                      | Count | Order   |
+| ------------- | ----------------------------------------- | ----- | ------- |
+| PCB           | Fabricate using Gerber files              |    (1)| [PCBway](https://www.pcbway.com/project/shareproject/C64_JoyKEY__IDC_to_DB9_.html)
 | J1 *          | 2x5 pin straight header pins or 2x5 IDC   |     1 |
 | J2 **         | DE-9 Female straight connector            |     1 |
 
