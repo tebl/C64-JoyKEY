@@ -1,6 +1,6 @@
 # Building C64 JoyKEY
 
-Congratulations on the taking the leap to build my slightly over-complicated 7-key keyboard/joystick, now probably compatible with most of your favourite vintage computers. It can be built or configured in a few ways, so take a look at the [configuration](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/configuration.md) document so that you'll have an idea of what you want to do with it - pay particular mention to whether you'd require any of the features provided by the Arduino Pro Micro. 
+Congratulations on the taking the leap to build my slightly over-complicated 7-key keyboard/joystick, now probably compatible with most of your favourite vintage computers. It can be built or configured in a few ways, so take a look at the [configuration](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/configuration.md) document so that you'll have an idea of what you want to do with it - pay particular mention to whether you'd require any of the features provided by the Arduino Pro Micro and which of the separate adapters you will need. 
 
 - [1> Building C64 JoyKEY](#1-building-c64-joykey)
   - [1.1> Ordering components](#11-ordering-components)
@@ -115,4 +115,4 @@ This section attempts to maintain a list of the parts you'd need in order to bui
 ****) I've been using the cheaper Gateron clones and they work well for this type of use, you can use either the 3- or 5-pin variety. The green and blue switches are the ones that have a clicky sound, pick a different colour if that is not something you'd be interested in. If you want LEDs below the keycaps, you need switches with a spot for those like the Gateron brands do. The keycaps you need are usually listed as *mechanical gaming MX-compatible keycaps*.
 
 ## 2.1 Adapters
-The necessity for adapters will depend on the type of systems that you have, so I've separated the BOM for those into separate joysticks. See document [adapters](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/adapters.md) for a list of available and tested adapters, click on the ones you are interested in to get a BOM for those.
+The necessity for adapters will depend on the type of systems that you have, so I've separated the BOM for those into separate modules. See document [adapters](https://github.com/tebl/C64-JoyKEY/blob/main/documentation/adapters.md) for a list of available and tested adapters, click on the ones you are interested in to get a BOM for those.
