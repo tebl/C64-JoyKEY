@@ -58,7 +58,7 @@ F 3 "~" H 15900 600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW1
+L sw_push:SW_Push SW1
 U 1 1 5FB706DC
 P 3650 2100
 F 0 "SW1" H 3550 2200 50  0000 C CNN
@@ -69,7 +69,7 @@ F 3 "" H 3650 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW2
+L sw_push:SW_Push SW2
 U 1 1 5FB7132D
 P 3650 3575
 F 0 "SW2" H 3550 3675 50  0000 C CNN
@@ -80,7 +80,7 @@ F 3 "" H 3650 3775 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW3
+L sw_push:SW_Push SW3
 U 1 1 5FB71722
 P 3650 5375
 F 0 "SW3" H 3550 5475 50  0000 C CNN
@@ -106,62 +106,62 @@ Wire Wire Line
 $Comp
 L power:GND #PWR03
 U 1 1 5FB76300
-P 12625 3475
-F 0 "#PWR03" H 12625 3225 50  0001 C CNN
-F 1 "GND" H 12630 3302 50  0000 C CNN
-F 2 "" H 12625 3475 50  0001 C CNN
-F 3 "" H 12625 3475 50  0001 C CNN
-	1    12625 3475
+P 12075 3650
+F 0 "#PWR03" H 12075 3400 50  0001 C CNN
+F 1 "GND" H 12080 3477 50  0000 C CNN
+F 2 "" H 12075 3650 50  0001 C CNN
+F 3 "" H 12075 3650 50  0001 C CNN
+	1    12075 3650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12550 3000 12700 3000
-Text GLabel 12700 2200 2    50   Input ~ 0
+	12000 3175 12150 3175
+Text GLabel 12150 2375 2    50   Input ~ 0
 P2_FIRE1
-Text GLabel 12700 3000 2    50   Input ~ 0
+Text GLabel 12150 3175 2    50   Input ~ 0
 P1_FIRE1
 $Comp
 L power:VCC #PWR02
 U 1 1 5FB781A5
-P 14050 2125
-F 0 "#PWR02" H 14050 1975 50  0001 C CNN
-F 1 "VCC" H 14067 2298 50  0000 C CNN
-F 2 "" H 14050 2125 50  0001 C CNN
-F 3 "" H 14050 2125 50  0001 C CNN
-	1    14050 2125
+P 13400 2300
+F 0 "#PWR02" H 13400 2150 50  0001 C CNN
+F 1 "VCC" H 13417 2473 50  0000 C CNN
+F 2 "" H 13400 2300 50  0001 C CNN
+F 3 "" H 13400 2300 50  0001 C CNN
+	1    13400 2300
 	1    0    0    -1  
 $EndComp
-NoConn ~ 11625 3000
-NoConn ~ 11625 3100
-NoConn ~ 11625 3200
-NoConn ~ 11625 3300
-NoConn ~ 12550 3100
-Text GLabel 11475 2200 0    50   Input ~ 0
+NoConn ~ 11075 3175
+NoConn ~ 11075 3275
+NoConn ~ 11075 3375
+NoConn ~ 11075 3475
+NoConn ~ 12000 3275
+Text GLabel 10925 2375 0    50   Input ~ 0
 P2_UP
 Wire Wire Line
-	11475 2200 11625 2200
-Text GLabel 11475 2300 0    50   Input ~ 0
+	10925 2375 11075 2375
+Text GLabel 10925 2475 0    50   Input ~ 0
 P2_DOWN
 Wire Wire Line
-	11625 2300 11475 2300
-Text GLabel 11475 2400 0    50   Input ~ 0
+	11075 2475 10925 2475
+Text GLabel 10925 2575 0    50   Input ~ 0
 P2_LEFT
 Wire Wire Line
-	11475 2400 11625 2400
-Text GLabel 11475 2500 0    50   Input ~ 0
+	10925 2575 11075 2575
+Text GLabel 10925 2675 0    50   Input ~ 0
 P2_RIGHT
 Wire Wire Line
-	11475 2500 11625 2500
-Text GLabel 12700 2500 2    50   Input ~ 0
+	10925 2675 11075 2675
+Text GLabel 12150 2675 2    50   Input ~ 0
 P2_FIRE2
 Wire Wire Line
-	12700 2500 12550 2500
-Text GLabel 11475 2600 0    50   Input ~ 0
+	12150 2675 12000 2675
+Text GLabel 10925 2775 0    50   Input ~ 0
 P2_FIRE3
 Wire Wire Line
-	11475 2600 11625 2600
+	10925 2775 11075 2775
 $Comp
-L Switch:SW_Push SW4
+L sw_push:SW_Push SW4
 U 1 1 5FB7E128
 P 1625 3225
 F 0 "SW4" H 1525 3325 50  0000 C CNN
@@ -172,7 +172,7 @@ F 3 "" H 1625 3425 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW5
+L sw_push:SW_Push SW5
 U 1 1 5FB7E12E
 P 1625 3750
 F 0 "SW5" H 1525 3850 50  0000 C CNN
@@ -183,7 +183,7 @@ F 3 "" H 1625 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW6
+L sw_push:SW_Push SW6
 U 1 1 5FB7E134
 P 1625 4275
 F 0 "SW6" H 1525 4375 50  0000 C CNN
@@ -205,7 +205,7 @@ F 3 "" H 1275 5325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_Push SW7
+L sw_push:SW_Push SW7
 U 1 1 5FB81454
 P 1625 4800
 F 0 "SW7" H 1525 4900 50  0000 C CNN
@@ -365,167 +365,161 @@ JP2 (FIRE3 polarity):\n1-2 C64 (POTY)\nN/C Other system\n\nWARNING: Read documen
 $Comp
 L Switch:SW_Push SW8
 U 1 1 5FBBF92E
-P 11550 6250
-F 0 "SW8" H 11550 6425 50  0000 C CNN
-F 1 "RESET" H 11550 6175 50  0000 C CNN
-F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 11550 6450 50  0001 C CNN
-F 3 "~" H 11550 6450 50  0001 C CNN
-	1    11550 6250
+P 12325 6250
+F 0 "SW8" H 12325 6425 50  0000 C CNN
+F 1 "RESET" H 12325 6175 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm" H 12325 6450 50  0001 C CNN
+F 3 "~" H 12325 6450 50  0001 C CNN
+	1    12325 6250
 	1    0    0    -1  
 $EndComp
-NoConn ~ 11275 6050
-NoConn ~ 10325 6050
-NoConn ~ 10325 6150
+NoConn ~ 12050 6050
+NoConn ~ 11100 6050
+NoConn ~ 11100 6150
 $Comp
 L power:GND #PWR0101
 U 1 1 5FBC3892
-P 10900 7550
-F 0 "#PWR0101" H 10900 7300 50  0001 C CNN
-F 1 "GND" H 10905 7377 50  0000 C CNN
-F 2 "" H 10900 7550 50  0001 C CNN
-F 3 "" H 10900 7550 50  0001 C CNN
-	1    10900 7550
+P 11675 7550
+F 0 "#PWR0101" H 11675 7300 50  0001 C CNN
+F 1 "GND" H 11680 7377 50  0000 C CNN
+F 2 "" H 11675 7550 50  0001 C CNN
+F 3 "" H 11675 7550 50  0001 C CNN
+	1    11675 7550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10900 7550 10900 7475
+	11675 7550 11675 7475
 Wire Wire Line
-	10900 7475 10800 7475
+	11675 7475 11575 7475
 Wire Wire Line
-	10700 7475 10700 7400
+	11475 7475 11475 7400
 Wire Wire Line
-	10800 7400 10800 7475
-Connection ~ 10800 7475
+	11575 7400 11575 7475
+Connection ~ 11575 7475
 Wire Wire Line
-	10800 7475 10700 7475
+	11575 7475 11475 7475
 Wire Wire Line
-	10900 7400 10900 7475
-Connection ~ 10900 7475
+	11675 7400 11675 7475
+Connection ~ 11675 7475
 $Comp
 L power:VCC #PWR0102
 U 1 1 5FBC8167
-P 10800 5300
-F 0 "#PWR0102" H 10800 5150 50  0001 C CNN
-F 1 "VCC" H 10817 5473 50  0000 C CNN
-F 2 "" H 10800 5300 50  0001 C CNN
-F 3 "" H 10800 5300 50  0001 C CNN
-	1    10800 5300
+P 11575 5300
+F 0 "#PWR0102" H 11575 5150 50  0001 C CNN
+F 1 "VCC" H 11592 5473 50  0000 C CNN
+F 2 "" H 11575 5300 50  0001 C CNN
+F 3 "" H 11575 5300 50  0001 C CNN
+	1    11575 5300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0103
 U 1 1 5FBD56FF
-P 12250 7225
-F 0 "#PWR0103" H 12250 6975 50  0001 C CNN
-F 1 "GND" H 12255 7052 50  0000 C CNN
-F 2 "" H 12250 7225 50  0001 C CNN
-F 3 "" H 12250 7225 50  0001 C CNN
-	1    12250 7225
+P 13025 7225
+F 0 "#PWR0103" H 13025 6975 50  0001 C CNN
+F 1 "GND" H 13030 7052 50  0000 C CNN
+F 2 "" H 13025 7225 50  0001 C CNN
+F 3 "" H 13025 7225 50  0001 C CNN
+	1    13025 7225
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D1
 U 1 1 5FBD6E88
-P 12250 6025
-F 0 "D1" H 12250 5925 50  0000 C CNN
-F 1 "PWR" H 12250 6125 50  0000 C CNN
-F 2 "LEDs:LED_D5.0mm" H 12250 6025 50  0001 C CNN
-F 3 "~" H 12250 6025 50  0001 C CNN
-	1    12250 6025
+P 13025 6025
+F 0 "D1" H 13025 5925 50  0000 C CNN
+F 1 "PWR" H 13025 6125 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 13025 6025 50  0001 C CNN
+F 3 "~" H 13025 6025 50  0001 C CNN
+	1    13025 6025
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small R3
 U 1 1 5FBD9406
-P 12250 5700
-F 0 "R3" V 12150 5650 50  0000 L CNN
-F 1 "330" V 12350 5625 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 12250 5700 50  0001 C CNN
-F 3 "~" H 12250 5700 50  0001 C CNN
-	1    12250 5700
+P 13025 5700
+F 0 "R3" V 12925 5650 50  0000 L CNN
+F 1 "330" V 13125 5625 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 13025 5700 50  0001 C CNN
+F 3 "~" H 13025 5700 50  0001 C CNN
+	1    13025 5700
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	10800 5375 10800 5300
+	11575 5375 11575 5300
 $Comp
 L Device:LED D2
 U 1 1 5FBDF2F9
-P 12025 7150
-F 0 "D2" H 12025 7050 50  0000 C CNN
-F 1 "SYS" H 12025 7250 50  0000 C CNN
-F 2 "LEDs:LED_D5.0mm" H 12025 7150 50  0001 C CNN
-F 3 "~" H 12025 7150 50  0001 C CNN
-	1    12025 7150
+P 12800 7150
+F 0 "D2" H 12800 7050 50  0000 C CNN
+F 1 "SYS" H 12800 7250 50  0000 C CNN
+F 2 "LEDs:LED_D5.0mm" H 12800 7150 50  0001 C CNN
+F 3 "~" H 12800 7150 50  0001 C CNN
+	1    12800 7150
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R4
 U 1 1 5FBDF2FF
-P 11700 7150
-F 0 "R4" V 11600 7100 50  0000 L CNN
-F 1 "330" V 11800 7075 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 11700 7150 50  0001 C CNN
-F 3 "~" H 11700 7150 50  0001 C CNN
-	1    11700 7150
+P 12475 7150
+F 0 "R4" V 12375 7100 50  0000 L CNN
+F 1 "330" V 12575 7075 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 12475 7150 50  0001 C CNN
+F 3 "~" H 12475 7150 50  0001 C CNN
+	1    12475 7150
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	12250 7225 12250 7150
+	13025 7225 13025 7150
 Wire Wire Line
-	12250 7150 12175 7150
+	13025 7150 12950 7150
 Wire Wire Line
-	11600 7150 11275 7150
+	12375 7150 12050 7150
 Wire Wire Line
-	11800 7150 11875 7150
-Connection ~ 12250 7150
+	12575 7150 12650 7150
+Connection ~ 13025 7150
 Wire Wire Line
-	12250 5800 12250 5875
+	13025 5800 13025 5875
 Wire Wire Line
-	11275 6250 11350 6250
+	12050 6250 12125 6250
 Wire Wire Line
-	11750 6250 12250 6250
-Text GLabel 8575 6750 0    50   Output ~ 0
+	12525 6250 13025 6250
+Text GLabel 8725 6750 0    50   Output ~ 0
 P2_FIRE1
 Wire Wire Line
-	12550 3200 12625 3200
-Connection ~ 12625 3200
+	12000 3375 12075 3375
+Connection ~ 12075 3375
 Wire Wire Line
-	12625 3200 12625 3475
+	12075 3375 12075 3650
 Wire Wire Line
-	12550 2400 12625 2400
+	12000 2575 12075 2575
 Wire Wire Line
-	12625 2400 12625 3200
+	12075 2575 12075 3375
 Wire Wire Line
-	14050 2300 14050 2125
-Text GLabel 11700 6750 2    50   Input ~ 0
+	13400 2475 13400 2300
+Text GLabel 12475 6750 2    50   Input ~ 0
 P2_RIGHT
 Wire Wire Line
-	11425 6650 11275 6650
-Text GLabel 11700 6650 2    50   Input ~ 0
+	12200 6650 12050 6650
+Text GLabel 12475 6650 2    50   Input ~ 0
 P2_UP
 Wire Wire Line
-	11425 6950 11275 6950
-Text GLabel 11700 6850 2    50   Input ~ 0
+	12200 6950 12050 6950
+Text GLabel 12475 6850 2    50   Input ~ 0
 P2_DOWN
-Text GLabel 11700 6950 2    50   Input ~ 0
+Text GLabel 12475 6950 2    50   Input ~ 0
 P2_LEFT
 Wire Wire Line
-	11425 6850 11275 6850
+	12200 6850 12050 6850
 Wire Wire Line
-	11425 6750 11275 6750
+	12200 6750 12050 6750
 Text Notes 6200 5925 0    50   ~ 0
 JP3 (FIRE3 output select):\n1-2 C64 FIRE1 (port 1)\nN/C Other system\n\nRead documentation for\ndetails if not C64.
-Wire Wire Line
-	9225 6650 10325 6650
-Wire Wire Line
-	9325 6550 10325 6550
-Wire Wire Line
-	9425 6450 10325 6450
-Text Label 10300 6450 2    50   ~ 0
+Text Label 11075 6450 2    50   ~ 0
 FIRE1_IN
-Text Label 10300 6550 2    50   ~ 0
+Text Label 11075 6550 2    50   ~ 0
 FIRE2_IN
-Text Label 10300 6650 2    50   ~ 0
+Text Label 11075 6650 2    50   ~ 0
 FIRE3_IN
 Wire Wire Line
 	4875 2325 5075 2325
@@ -534,42 +528,42 @@ There will be an alternate Arduino firmware where FIRE2/FIRE3\ncontrols various 
 $Comp
 L promicro:Arduino_Pro_Micro A1
 U 1 1 5FBBE539
-P 10800 6300
-F 0 "A1" H 10525 6700 50  0000 C CNN
-F 1 "Arduino_Pro_Micro" V 10800 6000 50  0000 C CNN
-F 2 "arduino_pro_micro:Arduino_Pro_Micro" H 10750 6300 50  0001 C CNN
-F 3 "~" H 10750 6300 50  0001 C CNN
-	1    10800 6300
+P 11575 6300
+F 0 "A1" H 11300 6700 50  0000 C CNN
+F 1 "Arduino_Pro_Micro" V 11575 6000 50  0000 C CNN
+F 2 "arduino_pro_micro:Arduino_Pro_Micro" H 11525 6300 50  0001 C CNN
+F 3 "~" H 11525 6300 50  0001 C CNN
+	1    11575 6300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Jumper:Jumper_3_Bridged12 JP5
 U 1 1 60BF4B55
-P 12250 5375
-F 0 "JP5" H 12250 5486 50  0000 C CNN
-F 1 "LED_SEL" H 12250 5577 50  0000 C CNN
-F 2 "solder_bridge:select" H 12250 5375 50  0001 C CNN
-F 3 "~" H 12250 5375 50  0001 C CNN
-	1    12250 5375
+P 13025 5375
+F 0 "JP5" H 13025 5486 50  0000 C CNN
+F 1 "LED_SEL" H 13025 5577 50  0000 C CNN
+F 2 "solder_bridge:select" H 13025 5375 50  0001 C CNN
+F 3 "~" H 13025 5375 50  0001 C CNN
+	1    13025 5375
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12250 6175 12250 6250
+	13025 6175 13025 6250
 Wire Wire Line
-	10800 5375 12000 5375
+	11575 5375 12775 5375
 Wire Wire Line
-	12575 7875 12575 5375
+	13350 7875 13350 5375
 Wire Wire Line
-	12575 5375 12500 5375
+	13350 5375 13275 5375
 Wire Wire Line
-	12250 5525 12250 5600
-NoConn ~ 10325 7050
-Text Notes 11650 5075 0    50   ~ 0
+	13025 5525 13025 5600
+NoConn ~ 11100 7050
+Text Notes 12425 5075 0    50   ~ 0
 Linking 1-2 will light PWR LED\npermanently, 2-3 allows Arduino\nto take control of it instead.
 Wire Notes Line
-	12950 5550 12950 4800
+	13725 5550 13725 4800
 Wire Notes Line
-	11625 4800 11625 5550
+	12400 4800 12400 5550
 Text Notes 11850 10300 0    50   ~ 0
 WASD-style keypad for use with vintage computers, can also be used as a simple USB keyboard with\nArduino Pro Micro installed. Note that selecting the wrong polarity may not be a good thing \ndepending on which system you're connecting it to (not installing a jumper here may be the safe\nchoice).
 $Comp
@@ -590,18 +584,18 @@ Wire Wire Line
 $Comp
 L Device:D D3
 U 1 1 5FCFF93E
-P 13825 2300
-F 0 "D3" H 13825 2084 50  0000 C CNN
-F 1 "1n4001" H 13825 2175 50  0000 C CNN
-F 2 "Diodes_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 13825 2300 50  0001 C CNN
-F 3 "~" H 13825 2300 50  0001 C CNN
-	1    13825 2300
+P 13175 2475
+F 0 "D3" H 13175 2259 50  0000 C CNN
+F 1 "1n4001" H 13175 2350 50  0000 C CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 13175 2475 50  0001 C CNN
+F 3 "~" H 13175 2475 50  0001 C CNN
+	1    13175 2475
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	12550 2200 12700 2200
+	12000 2375 12150 2375
 Wire Wire Line
-	13975 2300 14050 2300
+	13325 2475 13400 2475
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5FD15FFC
@@ -633,15 +627,15 @@ Wire Wire Line
 $Comp
 L Device:D_Small D4
 U 1 1 5FD49B7F
-P 9025 6750
-F 0 "D4" H 9025 6575 50  0000 C CNN
-F 1 "1n4148" H 9025 6650 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 9025 6750 50  0001 C CNN
-F 3 "~" V 9025 6750 50  0001 C CNN
-	1    9025 6750
+P 9175 6750
+F 0 "D4" H 9175 6575 50  0000 C CNN
+F 1 "1n4148" H 9175 6650 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 9175 6750 50  0001 C CNN
+F 3 "~" V 9175 6750 50  0001 C CNN
+	1    9175 6750
 	-1   0    0    1   
 $EndComp
-Text Label 10300 6750 2    50   ~ 0
+Text Label 11075 6750 2    50   ~ 0
 FIRE1_OUT
 Wire Wire Line
 	5275 2325 5450 2325
@@ -661,27 +655,27 @@ $EndComp
 $Comp
 L Device:R_Small R5
 U 1 1 5FDC0E14
-P 8750 6750
-F 0 "R5" V 8575 6700 50  0000 L CNN
-F 1 "10k" V 8650 6675 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 8750 6750 50  0001 C CNN
-F 3 "~" H 8750 6750 50  0001 C CNN
-	1    8750 6750
+P 8900 6750
+F 0 "R5" V 8725 6700 50  0000 L CNN
+F 1 "10k" V 8800 6675 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 8900 6750 50  0001 C CNN
+F 3 "~" H 8900 6750 50  0001 C CNN
+	1    8900 6750
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8850 6750 8925 6750
+	9000 6750 9075 6750
 Wire Wire Line
-	8575 6750 8650 6750
+	8725 6750 8800 6750
 $Comp
 L c64_idc:C64_IDC_PORT2 J2
 U 1 1 5FB748C4
-P 12075 2400
-F 0 "J2" H 12125 2817 50  0000 C CNN
-F 1 "Port_2" H 12125 2726 50  0000 C CNN
-F 2 "C64 IDC:IDC_Joystick" H 12075 2400 50  0001 C CNN
-F 3 "~" H 12075 2400 50  0001 C CNN
-	1    12075 2400
+P 11525 2575
+F 0 "J2" H 11575 2992 50  0000 C CNN
+F 1 "Port_2" H 11575 2901 50  0000 C CNN
+F 2 "C64 IDC:IDC_Joystick" H 11525 2575 50  0001 C CNN
+F 3 "~" H 11525 2575 50  0001 C CNN
+	1    11525 2575
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -900,9 +894,9 @@ $EndComp
 Wire Wire Line
 	6825 9625 6750 9625
 Wire Wire Line
-	12250 6250 12250 7150
-Connection ~ 12250 6250
-NoConn ~ 11275 7050
+	13025 6250 13025 7150
+Connection ~ 13025 6250
+NoConn ~ 12050 7050
 Text GLabel 3550 4050 2    50   Output ~ 0
 FIRE2_POL
 Text GLabel 3550 6050 2    50   Output ~ 0
@@ -914,16 +908,14 @@ Wire Wire Line
 Connection ~ 3375 4050
 Wire Wire Line
 	3375 4050 3375 4150
-Text GLabel 11425 6450 2    50   Input ~ 0
+Text GLabel 12200 6450 2    50   Input ~ 0
 FIRE2_POL
-Text GLabel 11425 6550 2    50   Input ~ 0
+Text GLabel 12200 6550 2    50   Input ~ 0
 FIRE3_POL
 Wire Wire Line
-	11275 6450 11425 6450
+	12050 6450 12200 6450
 Wire Wire Line
-	11275 6550 11425 6550
-Wire Wire Line
-	9225 6850 10325 6850
+	12050 6550 12200 6550
 $Comp
 L Device:R_Small R7
 U 1 1 6014570E
@@ -995,8 +987,6 @@ Wire Wire Line
 Text Notes 3475 9925 0    50   ~ 0
 These components adds the underglow LEDs to the key\nswitches. Footprints should match 2x3x4mm LEDs.\nStandard 3mm should also work with Gateron switches.
 Wire Wire Line
-	9125 6750 10325 6750
-Wire Wire Line
 	5100 5450 5100 5375
 Wire Notes Line
 	4600 5425 7525 5425
@@ -1019,188 +1009,182 @@ F 3 "~" H 6175 9350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6275 9350 6450 9350
-Text GLabel 8575 6950 0    50   Output ~ 0
+Text GLabel 8725 6950 0    50   Output ~ 0
 P2_FIRE2
 $Comp
 L Device:R_Small R14
 U 1 1 600C6BE8
-P 8750 6950
-F 0 "R14" V 8850 6875 50  0000 L CNN
-F 1 "10k" V 8925 6875 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 8750 6950 50  0001 C CNN
-F 3 "~" H 8750 6950 50  0001 C CNN
-	1    8750 6950
+P 8900 6950
+F 0 "R14" V 9000 6875 50  0000 L CNN
+F 1 "10k" V 9075 6875 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 8900 6950 50  0001 C CNN
+F 3 "~" H 8900 6950 50  0001 C CNN
+	1    8900 6950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8575 6950 8650 6950
-Text Label 10300 6950 2    50   ~ 0
+	8725 6950 8800 6950
+Text Label 11075 6950 2    50   ~ 0
 FIRE2_OUT
-Text Label 11300 7150 0    50   ~ 0
+Text Label 12075 7150 0    50   ~ 0
 SYS
-Text Label 10300 7150 2    50   ~ 0
+Text Label 11075 7150 2    50   ~ 0
 PWR
-Text Label 10300 6850 2    50   ~ 0
+Text Label 11075 6850 2    50   ~ 0
 UNDERGLOW
 $Comp
 L promicro:VCC_EN JP8
 U 1 1 601EE585
-P 13400 2300
-F 0 "JP8" H 13400 2475 50  0000 C CNN
-F 1 "VCC_EN" H 13400 2400 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 13400 2300 50  0001 C CNN
-F 3 "~" H 13400 2300 50  0001 C CNN
-	1    13400 2300
+P 12850 2475
+F 0 "JP8" H 12850 2650 50  0000 C CNN
+F 1 "VCC_EN" H 12850 2575 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 12850 2475 50  0001 C CNN
+F 3 "~" H 12850 2475 50  0001 C CNN
+	1    12850 2475
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13675 2300 13500 2300
-Wire Wire Line
-	12550 2300 13300 2300
+	12000 2475 12750 2475
 $Comp
 L Device:Jumper_NC_Small JP9
 U 1 1 6021387A
-P 10800 5575
-F 0 "JP9" H 10800 5750 50  0000 C CNN
-F 1 "ARD_EN" H 10800 5675 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10800 5575 50  0001 C CNN
-F 3 "~" H 10800 5575 50  0001 C CNN
-	1    10800 5575
+P 11575 5575
+F 0 "JP9" H 11575 5750 50  0000 C CNN
+F 1 "ARD_EN" H 11575 5675 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 11575 5575 50  0001 C CNN
+F 3 "~" H 11575 5575 50  0001 C CNN
+	1    11575 5575
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	10800 5375 10800 5475
-Connection ~ 10800 5375
+	11575 5375 11575 5475
+Connection ~ 11575 5375
 Wire Wire Line
-	10800 5675 10800 5800
+	11575 5675 11575 5800
 $Comp
 L c64_idc:C64_IDC_PORT1 J1
 U 1 1 5FB76154
-P 12075 3200
-F 0 "J1" H 12125 3617 50  0000 C CNN
-F 1 "Port_1" H 12125 3526 50  0000 C CNN
-F 2 "C64 IDC:IDC_Joystick" H 12075 3200 50  0001 C CNN
-F 3 "~" H 12075 3200 50  0001 C CNN
-	1    12075 3200
+P 11525 3375
+F 0 "J1" H 11575 3792 50  0000 C CNN
+F 1 "Port_1" H 11575 3701 50  0000 C CNN
+F 2 "C64 IDC:IDC_Joystick" H 11525 3375 50  0001 C CNN
+F 3 "~" H 11525 3375 50  0001 C CNN
+	1    11525 3375
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12550 2600 14050 2600
+	13400 2775 13400 2475
+Connection ~ 13400 2475
 Wire Wire Line
-	14050 2600 14050 2300
-Connection ~ 14050 2300
+	13400 2775 13400 3575
 Wire Wire Line
-	14050 2600 14050 3400
+	13400 3575 12000 3575
+Connection ~ 13400 2775
 Wire Wire Line
-	14050 3400 12550 3400
-Connection ~ 14050 2600
+	10750 7875 10750 7150
 Wire Wire Line
-	9975 7875 9975 7150
+	10750 7150 11100 7150
 Wire Wire Line
-	9975 7150 10325 7150
-Wire Wire Line
-	9975 7875 12575 7875
+	10750 7875 13350 7875
 $Comp
 L Device:R_Small R18
 U 1 1 603170B6
-P 11525 6650
-F 0 "R18" V 11475 6400 50  0000 L CNN
-F 1 "10k" V 11525 6600 31  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 11525 6650 50  0001 C CNN
-F 3 "~" H 11525 6650 50  0001 C CNN
-	1    11525 6650
+P 12300 6650
+F 0 "R18" V 12250 6400 50  0000 L CNN
+F 1 "10k" V 12300 6600 31  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 12300 6650 50  0001 C CNN
+F 3 "~" H 12300 6650 50  0001 C CNN
+	1    12300 6650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	11625 6650 11700 6650
+	12400 6650 12475 6650
 $Comp
 L Device:R_Small R19
 U 1 1 6034215B
-P 11525 6750
-F 0 "R19" V 11475 6500 50  0000 L CNN
-F 1 "10k" V 11525 6700 31  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 11525 6750 50  0001 C CNN
-F 3 "~" H 11525 6750 50  0001 C CNN
-	1    11525 6750
+P 12300 6750
+F 0 "R19" V 12250 6500 50  0000 L CNN
+F 1 "10k" V 12300 6700 31  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 12300 6750 50  0001 C CNN
+F 3 "~" H 12300 6750 50  0001 C CNN
+	1    12300 6750
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	11625 6750 11700 6750
+	12400 6750 12475 6750
 $Comp
 L Device:R_Small R20
 U 1 1 603493E3
-P 11525 6850
-F 0 "R20" V 11475 6600 50  0000 L CNN
-F 1 "10k" V 11525 6800 31  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 11525 6850 50  0001 C CNN
-F 3 "~" H 11525 6850 50  0001 C CNN
-	1    11525 6850
+P 12300 6850
+F 0 "R20" V 12250 6600 50  0000 L CNN
+F 1 "10k" V 12300 6800 31  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 12300 6850 50  0001 C CNN
+F 3 "~" H 12300 6850 50  0001 C CNN
+	1    12300 6850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	11625 6850 11700 6850
+	12400 6850 12475 6850
 $Comp
 L Device:R_Small R21
 U 1 1 60350811
-P 11525 6950
-F 0 "R21" V 11475 6700 50  0000 L CNN
-F 1 "10k" V 11525 6900 31  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 11525 6950 50  0001 C CNN
-F 3 "~" H 11525 6950 50  0001 C CNN
-	1    11525 6950
+P 12300 6950
+F 0 "R21" V 12250 6700 50  0000 L CNN
+F 1 "10k" V 12300 6900 31  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 12300 6950 50  0001 C CNN
+F 3 "~" H 12300 6950 50  0001 C CNN
+	1    12300 6950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	11625 6950 11700 6950
+	12400 6950 12475 6950
 $Comp
 L Device:R_Small R17
 U 1 1 60386764
-P 9425 6125
-F 0 "R17" V 9475 5875 50  0000 L CNN
-F 1 "10k" V 9425 6075 31  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 9425 6125 50  0001 C CNN
-F 3 "~" H 9425 6125 50  0001 C CNN
-	1    9425 6125
+P 9575 6125
+F 0 "R17" V 9625 5875 50  0000 L CNN
+F 1 "10k" V 9575 6075 31  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 9575 6125 50  0001 C CNN
+F 3 "~" H 9575 6125 50  0001 C CNN
+	1    9575 6125
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R16
 U 1 1 6038DB1E
-P 9325 6225
-F 0 "R16" V 9375 5975 50  0000 L CNN
-F 1 "10k" V 9325 6175 31  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 9325 6225 50  0001 C CNN
-F 3 "~" H 9325 6225 50  0001 C CNN
-	1    9325 6225
+P 9475 6225
+F 0 "R16" V 9525 5975 50  0000 L CNN
+F 1 "10k" V 9475 6175 31  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 9475 6225 50  0001 C CNN
+F 3 "~" H 9475 6225 50  0001 C CNN
+	1    9475 6225
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R15
 U 1 1 60394ED2
-P 9225 6325
-F 0 "R15" V 9275 6075 50  0000 L CNN
-F 1 "10k" V 9225 6275 31  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 9225 6325 50  0001 C CNN
-F 3 "~" H 9225 6325 50  0001 C CNN
-	1    9225 6325
+P 9375 6325
+F 0 "R15" V 9425 6075 50  0000 L CNN
+F 1 "10k" V 9375 6275 31  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 9375 6325 50  0001 C CNN
+F 3 "~" H 9375 6325 50  0001 C CNN
+	1    9375 6325
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	9225 6225 9225 5375
+	9375 6225 9375 5375
 Wire Wire Line
-	9425 6225 9425 6450
+	9575 6225 9575 6450
 Wire Wire Line
-	9325 6325 9325 6550
+	9475 6325 9475 6550
 Wire Wire Line
-	9225 6425 9225 6650
-Wire Wire Line
-	8850 6950 10325 6950
+	9375 6425 9375 6650
 Wire Notes Line
-	12950 4800 11625 4800
+	13725 4800 12400 4800
 Wire Notes Line
-	11625 5550 12950 5550
+	12400 5550 13725 5550
 $Comp
-L Switch:SW_Push SW9
+L sw_push:SW_Push SW9
 U 1 1 61F8916C
 P 3650 2350
 F 0 "SW9" H 3550 2450 50  0000 C CNN
@@ -1220,7 +1204,7 @@ P1_FIRE1
 Wire Wire Line
 	3375 3575 3450 3575
 $Comp
-L Switch:SW_Push SW10
+L sw_push:SW_Push SW10
 U 1 1 6207B64E
 P 3650 3825
 F 0 "SW10" H 3550 3925 50  0000 C CNN
@@ -1240,7 +1224,7 @@ Wire Wire Line
 	3375 3825 3375 3575
 Connection ~ 3375 3825
 Wire Wire Line
-	9225 6850 9225 9625
+	9375 6850 9375 9625
 Wire Notes Line
 	6975 3950 6975 4900
 Wire Notes Line
@@ -1254,7 +1238,7 @@ Wire Wire Line
 Wire Wire Line
 	3375 5375 3375 5625
 $Comp
-L Switch:SW_Push SW11
+L sw_push:SW_Push SW11
 U 1 1 62170BFE
 P 3650 5625
 F 0 "SW11" H 3550 5725 50  0000 C CNN
@@ -1268,8 +1252,6 @@ Text GLabel 3925 5625 2    50   Output ~ 0
 P1_FIRE3
 Wire Wire Line
 	3450 5625 3375 5625
-Wire Wire Line
-	3850 5375 5100 5375
 Connection ~ 3375 6050
 Wire Wire Line
 	3375 6050 3375 6150
@@ -1290,14 +1272,14 @@ Wire Wire Line
 	3850 3825 3925 3825
 Wire Wire Line
 	3850 2350 3925 2350
-Text GLabel 12700 3300 2    50   Input ~ 0
+Text GLabel 12150 3475 2    50   Input ~ 0
 P1_FIRE2
 Wire Wire Line
-	12700 3300 12550 3300
-Text GLabel 11475 3400 0    50   Input ~ 0
+	12150 3475 12000 3475
+Text GLabel 10925 3575 0    50   Input ~ 0
 P1_FIRE3
 Wire Wire Line
-	11475 3400 11625 3400
+	10925 3575 11075 3575
 Wire Notes Line style solid
 	7575 6950 2850 6950
 Wire Notes Line style solid
@@ -1310,7 +1292,6 @@ Wire Wire Line
 	3850 3575 4875 3575
 Wire Wire Line
 	4875 3575 4875 3800
-Connection ~ 4875 3575
 Wire Notes Line style solid
 	2850 4950 2850 3200
 Wire Notes Line style solid
@@ -1323,7 +1304,6 @@ Wire Wire Line
 	3850 2100 4875 2100
 Wire Wire Line
 	4875 2100 4875 2325
-Connection ~ 4875 2100
 Wire Notes Line style solid
 	2850 2950 7575 2950
 Wire Notes Line style solid
@@ -1335,9 +1315,9 @@ Wire Notes Line style solid
 Text Notes 2850 5175 0    98   ~ 0
 FIRE 3:
 Wire Wire Line
-	9325 3575 9325 6125
+	9475 3575 9475 6125
 Wire Wire Line
-	9425 2100 9425 6025
+	9575 2100 9575 6025
 Text Notes 2850 3175 0    98   ~ 0
 FIRE 2:
 Text Notes 2850 1725 0    98   ~ 0
@@ -1359,15 +1339,6 @@ Underglow LEDs:
 Wire Wire Line
 	5700 9350 6075 9350
 Connection ~ 3900 8625
-Wire Wire Line
-	4875 2100 9425 2100
-Wire Wire Line
-	4875 3575 9325 3575
-Wire Wire Line
-	5100 5375 9225 5375
-Connection ~ 5100 5375
-Wire Wire Line
-	7025 9625 9225 9625
 Wire Notes Line style solid
 	2600 1750 2600 6950
 Wire Notes Line style solid
@@ -1405,4 +1376,45 @@ Wire Wire Line
 	1275 4800 1275 5325
 Text Notes 825  1725 0    98   ~ 0
 DIRECTIONS:
+Wire Wire Line
+	4875 2100 9575 2100
+Connection ~ 4875 2100
+Wire Wire Line
+	4875 3575 9475 3575
+Connection ~ 4875 3575
+Wire Wire Line
+	7025 9625 9375 9625
+Wire Wire Line
+	5100 5375 9375 5375
+Wire Wire Line
+	3850 5375 5100 5375
+Connection ~ 5100 5375
+Wire Wire Line
+	9575 6450 11100 6450
+Wire Wire Line
+	9475 6550 11100 6550
+Wire Wire Line
+	9375 6650 11100 6650
+Wire Wire Line
+	9275 6750 11100 6750
+Wire Wire Line
+	9375 6850 11100 6850
+Wire Wire Line
+	9000 6950 11100 6950
+Wire Notes Line style solid
+	10050 1750 15775 1750
+Wire Notes Line style solid
+	15775 1750 15775 4150
+Wire Notes Line style solid
+	15775 4150 10050 4150
+Wire Notes Line style solid
+	10050 4150 10050 1750
+Text Notes 10050 1725 0    98   ~ 0
+OUTPUT:
+Wire Wire Line
+	12000 2775 13400 2775
+Wire Wire Line
+	12950 2475 13025 2475
+Text Notes 13600 3075 0    50   ~ 0
+As is common, but definitely not always, on the\nCommodore 64, port 2 is the main controller port.\nPort 1 is simply used for additional fire buttons, at\nthe moment it does not include direction signals\n(this is by design).\n\nPay particular attention to the polarity settings\nfor the switches, these need to be set correctly\nin order to avoid damaging the system (this will\naffect both ports). An adapter designed for a\nspecific system will usually denote this setting.
 $EndSCHEMATC

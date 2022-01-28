@@ -5,5 +5,6 @@
   (lib (name arduino_pro_micro)(type KiCad)(uri $KIPRJMOD/../common/modules/arduino_pro_micro.pretty)(options "")(descr ""))
   (lib (name "C64 IDC")(type KiCad)(uri "$KIPRJMOD/../common/modules/C64 IDC.pretty")(options "")(descr ""))
   (lib (name solder_bridge)(type KiCad)(uri $KIPRJMOD/../common/modules/solder_bridge.pretty)(options "")(descr ""))
-  (lib (name 2n3904)(type KiCad)(uri "D:/ownCloud/Documents/Projects/C64 Joykey/common/modules/2n3904.pretty")(options "")(descr ""))
+  (lib (name 2n3904)(type KiCad)(uri $KIPRJMOD/../common/modules/2n3904.pretty)(options "")(descr ""))
+  (lib (name logo)(type KiCad)(uri $KIPRJMOD/../common/modules/logo.pretty)(options "")(descr ""))
 )

@@ -3,4 +3,5 @@
   (lib (name sw_keyboard)(type Legacy)(uri $KIPRJMOD/../common/library/sw_keyboard.lib)(options "")(descr ""))
   (lib (name c64_idc)(type Legacy)(uri $KIPRJMOD/../common/library/c64_idc.lib)(options "")(descr ""))
   (lib (name promicro)(type Legacy)(uri $KIPRJMOD/../common/library/arduino_pro_micro.lib)(options "")(descr ""))
+  (lib (name sw_push)(type Legacy)(uri "D:/ownCloud/Documents/Projects/C64 Joykey/common/library/sw_push.lib")(options "")(descr ""))
 )
