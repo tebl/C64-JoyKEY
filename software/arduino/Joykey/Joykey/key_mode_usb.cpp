@@ -2,10 +2,9 @@
 #include "Keyboard.h"
 #include "constants.h"
 #include "settings.h"
+#include "key_mode.h"
 #include "led_control.h"
 
-unsigned long sys_shutoff = 0;
-unsigned long underglow_timer = 0;
 extern unsigned long key_debounce[NUM_KEYS];
 extern byte key_state[NUM_KEYS];
 extern bool key_enabled[NUM_KEYS];
@@ -13,12 +12,6 @@ extern bool key_enabled[NUM_KEYS];
 byte key_map = KEYMAP_DEFAULT;
 
 void init_mode_usb() {
-  set_sys(true);
-  sys_shutoff = millis() + LED_SHUTOFF;
-
-  set_underglow(LED_UNDERGLOW_MAX);
-  underglow_timer = millis() + LED_SHUTOFF;
-
   for (int key_id = 0; key_id <= JOYKEY_FIRE1; key_id++) {
     pinMode(KEY_PINS[key_id], INPUT_PULLUP);
     key_enabled[key_id] = true;
@@ -128,17 +121,7 @@ void press_key(byte key_id) {
     }
   }
 
-  /* Boost key underglow to show activity, update timer to keep it from alsmost
-   * instantly reducing intensity again. */
-  #if defined(UNDERGLOW_EFFECT_BOOST) || defined(UNDERGLOW_EFFECT_FLASH)
-    #if defined(UNDERGLOW_EFFECT_BOOST)
-      boost_underglow();
-      underglow_timer = millis() + LED_UNDERGLOW_FADE_SPEED;
-    #elif defined(UNDERGLOW_EFFECT_FLASH)
-      set_underglow(true);
-      underglow_timer = millis() + LED_SHUTOFF;
-    #endif
-  #endif
+  handle_on_activity();
 }
 
 /* Used to release a previously held key. This is mostly left to the
@@ -195,25 +178,6 @@ void check_key(byte key_id) {
 }
 
 void handle_mode_usb() {
-  /* Shut off SYS after 5 seconds */
-  if (sys_shutoff > 0 && millis() > sys_shutoff) {
-    if (is_sys_on()) {
-      fade_sys();
-      sys_shutoff = millis() + LED_FADE_SPEED;
-    } else sys_shutoff = 0;
-  }
-
-  #if defined(UNDERGLOW_EFFECT_BOOST) || defined(UNDERGLOW_EFFECT_FLASH)
-  if (millis() > underglow_timer) {
-    #ifdef LED_UNDERGLOW_MIN
-    fade_underglow(LED_UNDERGLOW_MIN);
-    #else
-    fade_underglow();
-    #endif
-    underglow_timer = millis() + LED_UNDERGLOW_FADE_SPEED;
-  }
-  #endif
-
   /* Check keys */
   for (int key_id = 0; key_id < NUM_KEYS; key_id++) {
     if (key_enabled[key_id]) {

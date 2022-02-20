@@ -2,6 +2,9 @@
 #define _CONSTANTS_H
 #include "Keyboard.h"
 
+#define APP_TITLE "JoyKEY"
+#define APP_VERSION "0.5"
+
 /* 
  * Pin definitions 
  */
@@ -62,4 +65,5 @@ const unsigned int KEYCODES_CURSOR_GAME[NUM_KEYS] = {   KEY_UP_ARROW, KEY_DOWN_A
 const unsigned int KEYCODES_CURSOR_EDITOR[NUM_KEYS] = { KEY_UP_ARROW, KEY_DOWN_ARROW, KEY_LEFT_ARROW, KEY_RIGHT_ARROW, MACRO_COPY,             MACRO_PASTE,             MACRO_CUT };
 const unsigned int KEYCODES_PLATFORMIO[NUM_KEYS] = {    KEY_UP_ARROW, KEY_DOWN_ARROW, KEY_LEFT_ARROW, KEY_RIGHT_ARROW, MACRO_PLATFORMIO_BUILD, MACRO_PLATFORMIO_UPLOAD, MACRO_PLATFORMIO_SERIAL };
 const unsigned int KEYCODES_FUNCTIONS[NUM_KEYS] = {     KEY_F13,      KEY_F14,        KEY_F15,        KEY_F16,         KEY_F17,                KEY_F18,                 KEY_F19 };
+const unsigned int KEYCODES_VICE[NUM_KEYS] = {          '8',          '2',            '4',            '6',             '0',                    ' ',                     '5'};
 #endif

@@ -81,24 +81,26 @@ void update_joystick() {
 /* Check the state of the specified key_id, any changes will be sent later after
  * doing some sanity checks.
  */
-void debounce_joystick_key(byte key_id) {
-  if (!key_enabled[key_id]) return;
+bool debounce_joystick_key(byte key_id) {
+  if (!key_enabled[key_id]) return false;
   if (digitalRead(KEY_PINS[key_id]) == LOW) {
     switch (key_state[key_id]) {
       case KEY_STATE_NEUTRAL:
         if(key_debounce[key_id] == 0) {
           key_debounce[key_id] = millis() + USB_DEBOUNCE_DELAY;
-          return;
+          return false;
         }
 
         if (millis() > key_debounce[key_id]) {
           key_state[key_id] = KEY_STATE_WAIT_RELEASE;
-          return;
+          return true;
         }
         break;
       
       case KEY_STATE_WAIT_RELEASE:
         /* Wait for a high state to release */
+        return true;
+
       default:
         break;
     }
@@ -106,17 +108,24 @@ void debounce_joystick_key(byte key_id) {
     key_debounce[key_id] = 0;
     key_state[key_id] = KEY_STATE_NEUTRAL;
   }
+
+  return false;
 }
 
+bool activity = false;
 void handle_mode_joystick() {
-  debounce_joystick_key(JOYKEY_LEFT);
-  debounce_joystick_key(JOYKEY_RIGHT);
-  debounce_joystick_key(JOYKEY_UP);
-  debounce_joystick_key(JOYKEY_DOWN);
+  activity = false;
+  if ( debounce_joystick_key(JOYKEY_LEFT) ) activity = true;
+  if ( debounce_joystick_key(JOYKEY_RIGHT) ) activity = true;
+  if ( debounce_joystick_key(JOYKEY_UP) ) activity = true;
+  if ( debounce_joystick_key(JOYKEY_DOWN) ) activity = true;
   
-  debounce_joystick_key(JOYKEY_FIRE1);
-  debounce_joystick_key(JOYKEY_FIRE2);
-  debounce_joystick_key(JOYKEY_FIRE3);
+  if ( debounce_joystick_key(JOYKEY_FIRE1) ) activity = true;
+  if ( debounce_joystick_key(JOYKEY_FIRE2) ) activity = true;
+  if ( debounce_joystick_key(JOYKEY_FIRE3) ) activity = true;
 
   update_joystick();
+  if (activity) {
+    handle_on_activity();
+  }
 }
