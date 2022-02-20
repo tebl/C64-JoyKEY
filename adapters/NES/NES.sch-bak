@@ -1,0 +1,616 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "NES Adapter (C64 JoyKEY)"
+Date ""
+Rev "A"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 "SELECT is placed on the third fire button, START placed on adapter itself or recent JoyKEY."
+Comment4 "Transforms the C64 JoyKEY into a gamepad for the Nintendo Entertainment System."
+$EndDescr
+$Comp
+L joykey_jumpers:JUMPER_SETTINGS_1 #1
+U 1 1 5FD24880
+P 10975 700
+F 0 "#1" H 10875 825 50  0001 C CNN
+F 1 "JUMPER_SETTINGS_1" H 10850 -450 50  0001 C CNN
+F 2 "" H 10975 525 50  0001 C CNN
+F 3 "~" H 10975 525 50  0001 C CNN
+	1    10975 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L joykey_jumpers:JUMPER_CONNECTED #4
+U 1 1 5FD250F4
+P 10975 1650
+F 0 "#4" H 10975 1550 50  0001 C CNN
+F 1 "JUMPER_CONNECTED" H 10975 1750 50  0001 C CNN
+F 2 "" H 10975 1650 50  0001 C CNN
+F 3 "" H 10975 1650 50  0001 C CNN
+	1    10975 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L joykey_jumpers:JUMPER_CONNECTED #3
+U 1 1 604080DA
+P 10975 1250
+F 0 "#3" H 10975 1150 50  0001 C CNN
+F 1 "JUMPER_CONNECTED" H 10975 1350 50  0001 C CNN
+F 2 "" H 10975 1250 50  0001 C CNN
+F 3 "" H 10975 1250 50  0001 C CNN
+	1    10975 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L joykey_jumpers:JUMPER_CONNECTED #2
+U 1 1 6040915A
+P 10975 850
+F 0 "#2" H 10975 750 50  0001 C CNN
+F 1 "JUMPER_CONNECTED" H 10975 950 50  0001 C CNN
+F 2 "" H 10975 850 50  0001 C CNN
+F 3 "" H 10975 850 50  0001 C CNN
+	1    10975 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 6049A7C8
+P 6525 7150
+F 0 "C1" H 6617 7196 50  0000 L CNN
+F 1 "100nF" H 6617 7105 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 6525 7150 50  0001 C CNN
+F 3 "~" H 6525 7150 50  0001 C CNN
+	1    6525 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 6049AA7D
+P 6525 7250
+F 0 "#PWR0107" H 6525 7000 50  0001 C CNN
+F 1 "GND" H 6530 7077 50  0000 C CNN
+F 2 "" H 6525 7250 50  0001 C CNN
+F 3 "" H 6525 7250 50  0001 C CNN
+	1    6525 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0108
+U 1 1 6049AE4C
+P 6525 7050
+F 0 "#PWR0108" H 6525 6900 50  0001 C CNN
+F 1 "VCC" H 6540 7223 50  0000 C CNN
+F 2 "" H 6525 7050 50  0001 C CNN
+F 3 "" H 6525 7050 50  0001 C CNN
+	1    6525 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L mounting:Mounting M1
+U 1 1 604B1C82
+P 550 550
+F 0 "M1" H 550 650 50  0001 C CNN
+F 1 "Mounting" H 550 475 50  0001 C CNN
+F 2 "mounting:M3_pin" H 550 550 50  0001 C CNN
+F 3 "~" H 550 550 50  0001 C CNN
+	1    550  550 
+	1    0    0    -1  
+$EndComp
+$Comp
+L mounting:Mounting M2
+U 1 1 604B204C
+P 675 550
+F 0 "M2" H 675 650 50  0001 C CNN
+F 1 "Mounting" H 675 475 50  0001 C CNN
+F 2 "mounting:M3_pin" H 675 550 50  0001 C CNN
+F 3 "~" H 675 550 50  0001 C CNN
+	1    675  550 
+	1    0    0    -1  
+$EndComp
+$Comp
+L mounting:Mounting M3
+U 1 1 604B239C
+P 800 550
+F 0 "M3" H 800 650 50  0001 C CNN
+F 1 "Mounting" H 800 475 50  0001 C CNN
+F 2 "mounting:M3_pin" H 800 550 50  0001 C CNN
+F 3 "~" H 800 550 50  0001 C CNN
+	1    800  550 
+	1    0    0    -1  
+$EndComp
+$Comp
+L mounting:Mounting M4
+U 1 1 604B26C5
+P 925 550
+F 0 "M4" H 925 650 50  0001 C CNN
+F 1 "Mounting" H 925 475 50  0001 C CNN
+F 2 "mounting:M3_pin" H 925 550 50  0001 C CNN
+F 3 "~" H 925 550 50  0001 C CNN
+	1    925  550 
+	1    0    0    -1  
+$EndComp
+$Comp
+L c64_idc:C64_IDC_ADAPTER J2
+U 1 1 5FD1F19D
+P 4625 3400
+F 0 "J2" V 4675 3825 50  0000 C CNN
+F 1 "Port 2" V 4600 3825 50  0000 C CNN
+F 2 "C64 IDC:IDC_Joystick" H 4625 3400 50  0001 C CNN
+F 3 "~" H 4625 3400 50  0001 C CNN
+	1    4625 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5FD2B691
+P 4525 2600
+F 0 "#PWR01" H 4525 2350 50  0001 C CNN
+F 1 "GND" H 4530 2427 50  0000 C CNN
+F 2 "" H 4525 2600 50  0001 C CNN
+F 3 "" H 4525 2600 50  0001 C CNN
+	1    4525 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4625 2525 4525 2525
+Wire Wire Line
+	4525 2525 4525 2600
+Wire Wire Line
+	4625 2525 4625 2925
+$Comp
+L c64_idc:C64_IDC_ADAPTER J1
+U 1 1 60386EDE
+P 3300 3400
+F 0 "J1" V 3350 3825 50  0000 C CNN
+F 1 "Port 1" V 3275 3825 50  0000 C CNN
+F 2 "C64 IDC:IDC_Joystick" H 3300 3400 50  0001 C CNN
+F 3 "~" H 3300 3400 50  0001 C CNN
+	1    3300 3400
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 3200 2925
+Wire Wire Line
+	4425 2925 4425 2450
+Wire Wire Line
+	4425 2450 5250 2450
+Wire Wire Line
+	4725 2925 4725 2525
+Wire Wire Line
+	4725 2525 5150 2525
+$Comp
+L Switch:SW_Push SW1
+U 1 1 603D5BF9
+P 3300 4350
+F 0 "SW1" H 3300 4635 50  0000 C CNN
+F 1 "START" H 3300 4544 50  0000 C CNN
+F 2 "switch_cutout:SW_PUSH_6mm" H 3300 4550 50  0001 C CNN
+F 3 "~" H 3300 4550 50  0001 C CNN
+	1    3300 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 603E5353
+P 3200 2600
+F 0 "#PWR0103" H 3200 2350 50  0001 C CNN
+F 1 "GND" H 3205 2427 50  0000 C CNN
+F 2 "" H 3200 2600 50  0001 C CNN
+F 3 "" H 3200 2600 50  0001 C CNN
+	1    3200 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2525 3200 2525
+Wire Wire Line
+	3200 2525 3200 2600
+Wire Wire Line
+	3300 2525 3300 2925
+Wire Wire Line
+	3100 2925 3100 2450
+Wire Wire Line
+	3400 2925 3400 2525
+Wire Wire Line
+	3100 4350 3025 4350
+$Comp
+L power:GND #PWR0104
+U 1 1 603FBC7C
+P 3025 4425
+F 0 "#PWR0104" H 3025 4175 50  0001 C CNN
+F 1 "GND" H 3030 4252 50  0000 C CNN
+F 2 "" H 3025 4425 50  0001 C CNN
+F 3 "" H 3025 4425 50  0001 C CNN
+	1    3025 4425
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4825 2925
+NoConn ~ 3500 2925
+NoConn ~ 3100 3850
+NoConn ~ 3200 3850
+NoConn ~ 3300 3850
+NoConn ~ 3400 3850
+Wire Wire Line
+	4525 2925 4525 2850
+$Comp
+L solder_select:Jumper_VCC JP1
+U 1 1 604C213A
+P 4050 2275
+F 0 "JP1" V 4004 2227 50  0000 R CNN
+F 1 "VCC_EN" V 4095 2227 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4050 2275 50  0001 C CNN
+F 3 "~" H 4050 2275 50  0001 C CNN
+	1    4050 2275
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4050 2850 4525 2850
+Wire Wire Line
+	4050 2375 4050 2850
+$Comp
+L power:VCC #PWR0109
+U 1 1 604CC126
+P 4050 2175
+F 0 "#PWR0109" H 4050 2025 50  0001 C CNN
+F 1 "VCC" H 4065 2348 50  0000 C CNN
+F 2 "" H 4050 2175 50  0001 C CNN
+F 3 "" H 4050 2175 50  0001 C CNN
+	1    4050 2175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 604EB780
+P 5825 3600
+F 0 "R1" V 5775 3350 50  0000 L CNN
+F 1 "1k" V 5825 3550 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5755 3600 50  0001 C CNN
+F 3 "~" H 5825 3600 50  0001 C CNN
+	1    5825 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 604F20EA
+P 5925 3600
+F 0 "R2" V 5875 3350 50  0000 L CNN
+F 1 "1k" V 5925 3550 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5855 3600 50  0001 C CNN
+F 3 "~" H 5925 3600 50  0001 C CNN
+	1    5925 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 604F3B9E
+P 6025 3600
+F 0 "R3" V 5975 3350 50  0000 L CNN
+F 1 "1k" V 6025 3550 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5955 3600 50  0001 C CNN
+F 3 "~" H 6025 3600 50  0001 C CNN
+	1    6025 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 604F5537
+P 6125 3600
+F 0 "R4" V 6075 3350 50  0000 L CNN
+F 1 "1k" V 6125 3550 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6055 3600 50  0001 C CNN
+F 3 "~" H 6125 3600 50  0001 C CNN
+	1    6125 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 604F6EDD
+P 6225 3600
+F 0 "R5" V 6175 3350 50  0000 L CNN
+F 1 "1k" V 6225 3550 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6155 3600 50  0001 C CNN
+F 3 "~" H 6225 3600 50  0001 C CNN
+	1    6225 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 604F88BA
+P 6325 3600
+F 0 "R6" V 6275 3350 50  0000 L CNN
+F 1 "1k" V 6325 3550 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6255 3600 50  0001 C CNN
+F 3 "~" H 6325 3600 50  0001 C CNN
+	1    6325 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 604FA2E7
+P 6425 3600
+F 0 "R7" V 6375 3350 50  0000 L CNN
+F 1 "1k" V 6425 3550 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6355 3600 50  0001 C CNN
+F 3 "~" H 6425 3600 50  0001 C CNN
+	1    6425 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 604FBCC5
+P 6525 3600
+F 0 "R8" V 6475 3350 50  0000 L CNN
+F 1 "1k" V 6525 3550 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6455 3600 50  0001 C CNN
+F 3 "~" H 6525 3600 50  0001 C CNN
+	1    6525 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5825 3450 5825 3375
+Wire Wire Line
+	5825 3375 5925 3375
+Wire Wire Line
+	5925 3375 5925 3450
+Wire Wire Line
+	5825 3375 5825 3300
+Connection ~ 5825 3375
+$Comp
+L power:VCC #PWR0110
+U 1 1 6051608D
+P 5825 3300
+F 0 "#PWR0110" H 5825 3150 50  0001 C CNN
+F 1 "VCC" H 5840 3473 50  0000 C CNN
+F 2 "" H 5825 3300 50  0001 C CNN
+F 3 "" H 5825 3300 50  0001 C CNN
+	1    5825 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5925 3375 6025 3375
+Wire Wire Line
+	6025 3375 6025 3450
+Connection ~ 5925 3375
+Wire Wire Line
+	6025 3375 6125 3375
+Wire Wire Line
+	6125 3375 6125 3450
+Connection ~ 6025 3375
+Wire Wire Line
+	6125 3375 6225 3375
+Wire Wire Line
+	6225 3375 6225 3450
+Connection ~ 6125 3375
+Wire Wire Line
+	6225 3375 6325 3375
+Wire Wire Line
+	6325 3375 6325 3450
+Connection ~ 6225 3375
+Wire Wire Line
+	6325 3375 6425 3375
+Wire Wire Line
+	6425 3375 6425 3450
+Connection ~ 6325 3375
+Wire Wire Line
+	6425 3375 6525 3375
+Wire Wire Line
+	6525 3375 6525 3450
+Connection ~ 6425 3375
+$Comp
+L nes_joypad:NES_Gamepad J3
+U 1 1 6213CB5E
+P 9325 4100
+F 0 "J3" H 9175 4392 50  0000 C CNN
+F 1 "NES_Gamepad" H 9175 4301 50  0000 C CNN
+F 2 "NES:NES_Output" H 9050 4000 50  0001 C CNN
+F 3 "" H 9050 4000 50  0001 C CNN
+	1    9325 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9475 4100 9550 4100
+Wire Wire Line
+	9550 4100 9550 4475
+$Comp
+L power:GND #PWR0111
+U 1 1 62142492
+P 9550 4475
+F 0 "#PWR0111" H 9550 4225 50  0001 C CNN
+F 1 "GND" H 9555 4302 50  0000 C CNN
+F 2 "" H 9550 4475 50  0001 C CNN
+F 3 "" H 9550 4475 50  0001 C CNN
+	1    9550 4475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8875 4200 8800 4200
+Wire Wire Line
+	8800 4200 8800 4125
+$Comp
+L power:VCC #PWR0112
+U 1 1 6214C52E
+P 8800 4125
+F 0 "#PWR0112" H 8800 3975 50  0001 C CNN
+F 1 "VCC" H 8815 4298 50  0000 C CNN
+F 2 "" H 8800 4125 50  0001 C CNN
+F 3 "" H 8800 4125 50  0001 C CNN
+	1    8800 4125
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8875 4300
+NoConn ~ 8875 4400
+Wire Wire Line
+	9475 4200 9625 4200
+Wire Wire Line
+	9625 4300 9475 4300
+Wire Wire Line
+	9625 4400 9475 4400
+Text GLabel 9625 4400 2    50   Input ~ 0
+DATA
+Text GLabel 9625 4300 2    50   Output ~ 0
+LATCH
+Text GLabel 9625 4200 2    50   Output ~ 0
+CLK
+$Comp
+L cd4021:CD4021 U1
+U 1 1 621813C7
+P 7200 4850
+F 0 "U1" H 6850 6000 50  0000 C CNN
+F 1 "CD4021" V 7200 5400 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm_Socket_LongPads" H 9225 5000 50  0001 L CNN
+F 3 "" H 9055 5590 50  0001 C CNN
+	1    7200 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 62182F8A
+P 7200 5200
+F 0 "#PWR0113" H 7200 4950 50  0001 C CNN
+F 1 "GND" H 7205 5027 50  0000 C CNN
+F 2 "" H 7200 5200 50  0001 C CNN
+F 3 "" H 7200 5200 50  0001 C CNN
+	1    7200 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 5200 7200 5125
+Wire Wire Line
+	7200 5125 7875 5125
+Wire Wire Line
+	7875 5125 7875 4650
+Wire Wire Line
+	7875 4650 7800 4650
+Wire Wire Line
+	7200 5050 7200 5125
+Connection ~ 7200 5125
+$Comp
+L power:VCC #PWR0101
+U 1 1 62190EBF
+P 7200 3300
+F 0 "#PWR0101" H 7200 3150 50  0001 C CNN
+F 1 "VCC" H 7215 3473 50  0000 C CNN
+F 2 "" H 7200 3300 50  0001 C CNN
+F 3 "" H 7200 3300 50  0001 C CNN
+	1    7200 3300
+	1    0    0    -1  
+$EndComp
+Text GLabel 7875 4550 2    50   Input ~ 0
+LATCH
+Wire Wire Line
+	7875 4550 7800 4550
+Text GLabel 7875 4450 2    50   Input ~ 0
+CLK
+Wire Wire Line
+	7875 4450 7800 4450
+NoConn ~ 7800 3950
+NoConn ~ 7800 4050
+Text GLabel 7875 4150 2    50   Output ~ 0
+DATA
+Wire Wire Line
+	7875 4150 7800 4150
+Wire Wire Line
+	7200 3300 7200 3550
+Wire Wire Line
+	6525 3750 6525 3950
+Wire Wire Line
+	6525 3950 6600 3950
+Wire Wire Line
+	6425 3750 6425 4050
+Wire Wire Line
+	6425 4050 6600 4050
+Wire Wire Line
+	6325 3750 6325 4150
+Wire Wire Line
+	6325 4150 6600 4150
+Wire Wire Line
+	6225 3750 6225 4250
+Wire Wire Line
+	6225 4250 6600 4250
+Wire Wire Line
+	6125 3750 6125 4350
+Wire Wire Line
+	6125 4350 6600 4350
+Wire Wire Line
+	6600 4450 6025 4450
+Wire Wire Line
+	6025 4450 6025 3750
+Wire Wire Line
+	5925 3750 5925 4550
+Wire Wire Line
+	5925 4550 6600 4550
+Wire Wire Line
+	6600 4650 5825 4650
+Wire Wire Line
+	5825 4650 5825 3750
+Wire Wire Line
+	3025 4425 3025 4350
+Wire Wire Line
+	4725 3850 4725 3950
+Wire Wire Line
+	4725 3950 6525 3950
+Connection ~ 6525 3950
+Wire Wire Line
+	4625 3850 4625 4050
+Wire Wire Line
+	4625 4050 6425 4050
+Connection ~ 6425 4050
+Wire Wire Line
+	4525 3850 4525 4150
+Wire Wire Line
+	4525 4150 6325 4150
+Connection ~ 6325 4150
+Wire Wire Line
+	4425 3850 4425 4250
+Wire Wire Line
+	4425 4250 6225 4250
+Connection ~ 6225 4250
+Text Label 4750 3950 0    50   ~ 0
+RIGHT
+Text Label 4650 4050 0    50   ~ 0
+LEFT
+Text Label 4550 4150 0    50   ~ 0
+DOWN
+Text Label 4450 4250 0    50   ~ 0
+UP
+Text Label 3950 4350 0    50   ~ 0
+START
+Text Label 3950 4450 0    50   ~ 0
+SELECT
+Text Label 5550 4550 0    50   ~ 0
+B
+Text Label 5550 4650 0    50   ~ 0
+A
+Connection ~ 6125 4350
+Connection ~ 6025 4450
+Connection ~ 5925 4550
+Connection ~ 5825 4650
+NoConn ~ 4825 3850
+Wire Wire Line
+	5250 2450 5250 4550
+Wire Wire Line
+	5250 4550 5925 4550
+Wire Wire Line
+	5150 4650 5150 2525
+Wire Wire Line
+	5150 4650 5825 4650
+Wire Wire Line
+	3100 2450 3925 2450
+Wire Wire Line
+	3400 2525 3825 2525
+Wire Wire Line
+	3925 2450 3925 4450
+Wire Wire Line
+	3925 4450 6025 4450
+Wire Wire Line
+	3825 2525 3825 4350
+Wire Wire Line
+	3825 4350 6125 4350
+Wire Wire Line
+	3500 4350 3825 4350
+Connection ~ 3825 4350
+NoConn ~ 3500 3850
+$EndSCHEMATC
