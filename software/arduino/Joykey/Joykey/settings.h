@@ -21,7 +21,7 @@
 #define LED_UNDERGLOW_STEP 8          // Change per step when fading.
 #define LED_UNDERGLOW_FADE_SPEED 200  // Num ms. between fade out steps
 #define LED_UNDERGLOW_MIN 1           // Uncomment to keep underglow above MIN.
-// #define UNDERGLOW_EFFECT_BOOST        // Underglow fades in on activity.
+#define UNDERGLOW_EFFECT_BOOST        // Underglow fades in on activity.
 // #define UNDERGLOW_EFFECT_FLASH     // Underglow goes to max then fades without activity.
 
 /* This controls the underglow LEDs when in the default mode, this should only
