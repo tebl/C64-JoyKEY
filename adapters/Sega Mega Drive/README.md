@@ -15,6 +15,7 @@ The parts listed are the ones I've used when building a Sega Mega Drive controll
 | Reference     | Item                                      | Count | Order  |
 | ------------- | ----------------------------------------- | ----- | ------ |
 | PCB           | Fabricate using Gerber files              |    (1)| [PCBway](https://www.pcbway.com/project/shareproject/C64_JoyKEY__Sega_Mega_Drive_Genesis_adapter_.html)
+| C1            | 100nF ceramic capacitor (5mm)             |     1 |
 | J1 *          | 2x5 pin straight header pins or 2x5 IDC   |    (1)|
 | J2,J3 *       | 2x5 pin straight header pins or 2x5 IDC   |     2 |
 | J4            | 3-pin dual row breakable pin headers      |    (1)|

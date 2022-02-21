@@ -1,0 +1,10 @@
+(sym_lib_table
+  (lib (name c64_idc)(type Legacy)(uri $KIPRJMOD/../../common/library/c64_idc.lib)(options "")(descr ""))
+  (lib (name sega_joypad)(type Legacy)(uri $KIPRJMOD/../../common/library/sega_joypad.lib)(options "")(descr ""))
+  (lib (name joykey_jumpers)(type Legacy)(uri $KIPRJMOD/../../common/library/joykey_jumpers.lib)(options "")(descr ""))
+  (lib (name mounting)(type Legacy)(uri $KIPRJMOD/../../common/library/mounting.lib)(options "")(descr ""))
+  (lib (name nes_joypad)(type Legacy)(uri $KIPRJMOD/../../common/library/nes_joypad.lib)(options "")(descr ""))
+  (lib (name cd4021)(type Legacy)(uri "D:/ownCloud/Documents/Projects/C64 Joykey/common/library/cd4021.lib")(options "")(descr ""))
+  (lib (name solder_select)(type Legacy)(uri "D:/ownCloud/Documents/Projects/C64 Joykey/common/library/solder_select.lib")(options "")(descr ""))
+  (lib (name pc_engine_joypad)(type Legacy)(uri "D:/ownCloud/Documents/Projects/C64 Joykey/common/library/pc_engine_joypad.lib")(options "")(descr ""))
+)

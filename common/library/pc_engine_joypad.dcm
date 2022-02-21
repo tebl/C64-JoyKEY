@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PC_Engine_Pad
+D 8-pin Mini-DIN connector
+K Mini-DIN
+$ENDCMP
+#
+#End Doc Library
