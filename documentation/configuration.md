@@ -9,9 +9,11 @@ This document details the jumpers physically found on the *C64 JoyKEY*, see docu
   - [Commodore 64GS](#14-commodore-64)
   - [Commodore VIC-20](#14-commodore-64)
   - [Commodore Amiga](#15-commodore-amiga)
-  - [Sega Master System](#16-sega-master-system) *
-  - [Sega Mega Drive](#17-sega-mega-drive) *
-  - [ZX Spectrum +2/+3](#18-zx-spectrum-23) *
+  - [MSX](#16-msx) *
+  - [Nintendo Entertainment System (NES)](#17-nintendo-entertainment-system-nes) *
+  - [Sega Master System](#18-sega-master-system) *
+  - [Sega Mega Drive](#19-sega-mega-drive) *
+  - [ZX Spectrum +2/+3](#110-zx-spectrum-23) *
 - [Autofire](#2-autofire)
 - [USB-mode](#3-usb-mode)
 
@@ -84,8 +86,19 @@ There are some caveats with the Amiga systems, for one the standard connector wo
 
 ![Amiga Jumpers](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/amiga_jumpers.jpg)
 
+### 1.6> MSX
 
-### 1.6> Sega Master System
+### 1.7> Nintendo Entertainment System (NES)
+Nintendo Entertainment System, commonly referred to as the *NES*, is a console that doesn't really require an introduction. While it wasn't as popular around here, mainly for the fact that it wasn't a computer, it certainly has found its place among just about any collector. A somewhat furiating system to maintain for collectors today due to issues with the cartridge port, but when you want the full-size thing - there's no way around it. The original gamepad was actually quite good, but it's a bit cramped for my hands and so I made yet another [adapter](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/NES) for the *C64 JoyKEY*, if only so that I'd have the option of using it. Also, it's surprisingly satisfying to play Super Mario with proper clicky keyboard switches! 
+
+![Nintendo Entertainment System](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/nes_system.jpg)
+
+Requires the sacrifice of an unoriginal extension cable, but in case someone is wondering - no original hardware was hurt in the making of this. For reference, the original controller that came with this system is still intact in its original box - ready at a few seconds notice, just in case the Nintendo-compliance department does a sudden inspection of my setup. A completed adapter including the relevant jumper settings on the *C64 JoyKEY*  is shown below, with this setup you'll have *SELECT* on the top switch as well as *START* on the adapter itself. With later revisions of the C64 JoyKEY you can disable the top switch, using the switches on the bottom-left corner instead for these functions.
+
+![Nintendo Entertainment System Adapter](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/nes_adapter.jpg)
+![Nintendo Entertainment System Jumpers](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/nes_jumpers.jpg)
+
+### 1.8> Sega Master System
 Released in 1986, this is probably my favourite console - if I was forced to pick something without a keyboard built into the case. I'm not completely convinced by the gamepads available though, so I took it unto myself to build an adapter [adapter](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Sega%20Master%20System) for it so that the C64 JoyKEY could be used instead. 
 
 **NB!** This is not recommended when a pause mod has been installed in the system, the reason for this is that the key combinations used are easy to activate, usually by accident, when using the C64 JoyKEY (it's not dangerous, it'll just annoying as the system will pause every time the combination is activated).
@@ -94,7 +107,7 @@ Released in 1986, this is probably my favourite console - if I was forced to pic
 ![Sega Master System Adapter](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/sms_adapter.jpg)
 ![Sega Master System Jumpers](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/sms_jumpers.jpg)
 
-### 1.7> Sega Mega Drive
+### 1.9> Sega Mega Drive
 The only console that was truly *mega*, doing whatever Ninten...don't! Apparantly that was mostly sports so I never bought one back in the day, then again most software for my IBM PC was available for the cost of a blank floppy so that might be why I never had much desire for the cartridge-based systems back then. For some reason the system was launched as the Sega Genesis in North America, but we try not to talk about those guys anymore.
 
 Over to the actual system, mine is one version 1 - the one marked *high definition graphics* on the device itself. Now that I have an Everdrive for the system, I find myself playing on it more and more. More than likely, just because it has the definitive 16-bit home version of Out Run on it (observe the shiny red keycaps to match the iconic Ferrari Testarossa Spider). 
@@ -106,7 +119,7 @@ I've gone ahead and made a [3-button adapter](https://github.com/tebl/C64-JoyKEY
 ![Sega Mega Drive Adapter](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/smd_adapters.jpg)
 ![Sega Mega Drive Jumpers](https://github.com/tebl/C64-JoyKEY/raw/main/gallery/smd_jumpers.jpg)
 
-### 1.8> ZX Spectrum +2/+3
+### 1.10> ZX Spectrum +2/+3
 Sinclair, having recently been acquired by their competitor - Amstrad - added joystick ports directly to their shiny new +2 and +3 computers, but in order to ensure the sale of branded Sinclair joysticks (SJS and the later SJS2) they changed the pinouts. This ensured that your run of the mill Atari-style joysticks didn't work, but as history would show the ever-present Kempston interfaces would instead remain the standard for gaming on the ZX Spectrum - leaving the ports mostly unused.
 
 While I do not own an ZX Interface 2, the schematics found online seem to indicate that while they shared the same interface (as seen from the computer) - the ZX Interface 2 doesn't have the same shuffling of pinouts like the Amstrad produced machines. I would like to verify this, but that would require owning an Interface 2 - so please send me one, I promise to love and ultimately never give it up ([source](https://www.youtube.com/watch?v=dQw4w9WgXcQ)).
