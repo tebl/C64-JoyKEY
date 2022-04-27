@@ -4,4 +4,6 @@
   (lib (name switch_cutout)(type KiCad)(uri $KIPRJMOD/../../common/modules/switch_cutout.pretty)(options "")(descr ""))
   (lib (name mounting)(type KiCad)(uri $KIPRJMOD/../../common/modules/mounting.pretty)(options "")(descr ""))
   (lib (name solder_bridge)(type KiCad)(uri $KIPRJMOD/../../common/modules/solder_bridge.pretty)(options "")(descr ""))
+  (lib (name resistor)(type KiCad)(uri $KIPRJMOD/../../common/modules/resistor.pretty)(options "")(descr ""))
+  (lib (name logo)(type KiCad)(uri $KIPRJMOD/../../common/modules/logo.pretty)(options "")(descr ""))
 )
