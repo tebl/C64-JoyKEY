@@ -5,7 +5,7 @@ Click the adapter for a more detailed description on how it is put together, the
 
 | Adapters                                                                                           | System                                                    | Order   |
 | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | ------- |
-| [Amiga CD32](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Amiga%20CD32)                   | Commodore Amiga CD32                                      | PCBWay
+| [Amiga CD32](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Amiga%20CD32) *                 | Commodore Amiga CD32                                      | PCBWay
 | [Atari 7800](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Atari%207800)                   | Atari 7800 (Atari 7800 Pro System in N.A.)                | [PCBWay](https://www.pcbway.com/project/shareproject/C64_JoyKEY__Atari_7800_adapter_.html)
 | [IDC to DB9](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/IDC%20to%20DB9)                 | Any Atari-style joystick port                             | [PCBWay](https://www.pcbway.com/project/shareproject/C64_JoyKEY__IDC_to_DB9_.html)
 | [MSX](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/MSX) *                                 | MSX-line of computers                                     | PCBWay

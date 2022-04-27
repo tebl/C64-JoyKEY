@@ -131,7 +131,6 @@ F 3 "" H 13400 2300 50  0001 C CNN
 	1    13400 2300
 	1    0    0    -1  
 $EndComp
-NoConn ~ 11075 3175
 NoConn ~ 11075 3275
 NoConn ~ 11075 3375
 NoConn ~ 11075 3475
@@ -163,65 +162,65 @@ Wire Wire Line
 $Comp
 L sw_push:SW_Push SW4
 U 1 1 5FB7E128
-P 1625 3225
-F 0 "SW4" H 1525 3325 50  0000 C CNN
-F 1 "UP" H 1625 3150 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 1625 3425 50  0001 C CNN
-F 3 "" H 1625 3425 50  0001 C CNN
-	1    1625 3225
+P 1650 2125
+F 0 "SW4" H 1550 2225 50  0000 C CNN
+F 1 "UP" H 1650 2050 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 1650 2325 50  0001 C CNN
+F 3 "" H 1650 2325 50  0001 C CNN
+	1    1650 2125
 	1    0    0    -1  
 $EndComp
 $Comp
 L sw_push:SW_Push SW5
 U 1 1 5FB7E12E
-P 1625 3750
-F 0 "SW5" H 1525 3850 50  0000 C CNN
-F 1 "DOWN" H 1625 3675 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 1625 3950 50  0001 C CNN
-F 3 "" H 1625 3950 50  0001 C CNN
-	1    1625 3750
+P 1650 2650
+F 0 "SW5" H 1550 2750 50  0000 C CNN
+F 1 "DOWN" H 1650 2575 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 1650 2850 50  0001 C CNN
+F 3 "" H 1650 2850 50  0001 C CNN
+	1    1650 2650
 	1    0    0    -1  
 $EndComp
 $Comp
 L sw_push:SW_Push SW6
 U 1 1 5FB7E134
-P 1625 4275
-F 0 "SW6" H 1525 4375 50  0000 C CNN
-F 1 "LEFT" H 1625 4200 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 1625 4475 50  0001 C CNN
-F 3 "" H 1625 4475 50  0001 C CNN
-	1    1625 4275
+P 1650 3175
+F 0 "SW6" H 1550 3275 50  0000 C CNN
+F 1 "LEFT" H 1650 3100 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 1650 3375 50  0001 C CNN
+F 3 "" H 1650 3375 50  0001 C CNN
+	1    1650 3175
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR04
 U 1 1 5FB7E13A
-P 1275 5325
-F 0 "#PWR04" H 1275 5075 50  0001 C CNN
-F 1 "GND" H 1280 5152 50  0000 C CNN
-F 2 "" H 1275 5325 50  0001 C CNN
-F 3 "" H 1275 5325 50  0001 C CNN
-	1    1275 5325
+P 1300 3775
+F 0 "#PWR04" H 1300 3525 50  0001 C CNN
+F 1 "GND" H 1305 3602 50  0000 C CNN
+F 2 "" H 1300 3775 50  0001 C CNN
+F 3 "" H 1300 3775 50  0001 C CNN
+	1    1300 3775
 	1    0    0    -1  
 $EndComp
 $Comp
 L sw_push:SW_Push SW7
 U 1 1 5FB81454
-P 1625 4800
-F 0 "SW7" H 1525 4900 50  0000 C CNN
-F 1 "RIGHT" H 1625 4725 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 1625 5000 50  0001 C CNN
-F 3 "" H 1625 5000 50  0001 C CNN
-	1    1625 4800
+P 1650 3700
+F 0 "SW7" H 1550 3800 50  0000 C CNN
+F 1 "RIGHT" H 1650 3625 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB" H 1650 3900 50  0001 C CNN
+F 3 "" H 1650 3900 50  0001 C CNN
+	1    1650 3700
 	1    0    0    -1  
 $EndComp
-Text GLabel 1900 3225 2    50   Output ~ 0
+Text GLabel 1925 2125 2    50   Output ~ 0
 P2_UP
-Text GLabel 1900 4275 2    50   Output ~ 0
+Text GLabel 1925 3175 2    50   Output ~ 0
 P2_LEFT
-Text GLabel 1900 3750 2    50   Output ~ 0
+Text GLabel 1925 2650 2    50   Output ~ 0
 P2_DOWN
-Text GLabel 1900 4800 2    50   Output ~ 0
+Text GLabel 1925 3700 2    50   Output ~ 0
 P2_RIGHT
 Text GLabel 5450 3800 2    50   Output ~ 0
 P2_FIRE2
@@ -1348,32 +1347,29 @@ Wire Notes Line style solid
 Wire Notes Line style solid
 	825  1750 2600 1750
 Wire Wire Line
-	1825 3225 1900 3225
-Connection ~ 1275 3750
+	1850 2125 1925 2125
+Connection ~ 1300 2650
 Wire Wire Line
-	1275 3225 1275 3750
+	1300 2125 1300 2650
 Wire Wire Line
-	1275 3750 1275 4275
+	1300 2650 1300 3175
 Wire Wire Line
-	1275 3225 1425 3225
+	1300 2125 1450 2125
 Wire Wire Line
-	1275 3750 1425 3750
+	1300 2650 1450 2650
 Wire Wire Line
-	1900 3750 1825 3750
+	1925 2650 1850 2650
 Wire Wire Line
-	1275 4275 1425 4275
-Connection ~ 1275 4275
+	1300 3175 1450 3175
+Connection ~ 1300 3175
 Wire Wire Line
-	1275 4275 1275 4800
+	1300 3175 1300 3700
 Wire Wire Line
-	1275 4800 1425 4800
-Connection ~ 1275 4800
+	1300 3700 1450 3700
 Wire Wire Line
-	1900 4800 1825 4800
+	1925 3700 1850 3700
 Wire Wire Line
-	1825 4275 1900 4275
-Wire Wire Line
-	1275 4800 1275 5325
+	1850 3175 1925 3175
 Text Notes 825  1725 0    98   ~ 0
 DIRECTIONS:
 Wire Wire Line
@@ -1415,6 +1411,43 @@ Wire Wire Line
 	12000 2775 13400 2775
 Wire Wire Line
 	12950 2475 13025 2475
-Text Notes 13600 3000 0    50   ~ 0
-As is common, but definitely not always, on the\nCommodore 64, port 2 is the main controller port.\nPort 1 is simply used for additional fire buttons, at\nthe moment it does not include direction signals\n(this is by design).\n\nPay particular attention to the polarity settings\nfor the switches, these need to be set correctly\nin order to avoid damaging the system (this will\naffect both ports).
+Text Notes 13600 3075 0    50   ~ 0
+As is common, but definitely not always, on the\nCommodore 64, port 2 is the main controller port.\nPort 1 is simply used for additional fire buttons, at\nthe moment it does not include direction signals\n(this is by design).\n\nPay particular attention to the polarity settings\nfor the switches, these need to be set correctly\nin order to avoid damaging the system (this will\naffect both ports). An adapter designed for a\nspecific system will usually denote this setting.
+Text GLabel 10925 3175 0    50   Input ~ 0
+P1_FIRE4
+Wire Wire Line
+	10925 3175 11075 3175
+Text GLabel 1925 5125 2    50   Output ~ 0
+P1_FIRE4
+$Comp
+L sw_push:SW_Push SW12
+U 1 1 62D9D03F
+P 1650 5125
+F 0 "SW12" H 1550 5225 50  0000 C CNN
+F 1 "P1_FIRE4" H 1650 5050 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx31-2LFS" H 1650 5325 50  0001 C CNN
+F 3 "" H 1650 5325 50  0001 C CNN
+	1    1650 5125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 5125 1925 5125
+Wire Wire Line
+	1450 5125 1300 5125
+Wire Wire Line
+	1300 3775 1300 3700
+Connection ~ 1300 3700
+$Comp
+L power:GND #PWR0107
+U 1 1 62DF21A8
+P 1300 5200
+F 0 "#PWR0107" H 1300 4950 50  0001 C CNN
+F 1 "GND" H 1305 5027 50  0000 C CNN
+F 2 "" H 1300 5200 50  0001 C CNN
+F 3 "" H 1300 5200 50  0001 C CNN
+	1    1300 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 5200 1300 5125
 $EndSCHEMATC
