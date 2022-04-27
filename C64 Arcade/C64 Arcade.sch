@@ -107,35 +107,24 @@ F 3 "" H 10200 1200 50  0001 C CNN
 	1    10200 1200
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7925 2075
 NoConn ~ 7925 2175
 NoConn ~ 7925 2275
 NoConn ~ 7925 2375
 NoConn ~ 8850 2175
-Text GLabel 7775 1275 0    50   Input ~ 0
+Text GLabel 7850 1275 0    50   Input ~ 0
 P2_UP
-Wire Wire Line
-	7775 1275 7925 1275
-Text GLabel 7775 1375 0    50   Input ~ 0
+Text GLabel 7850 1375 0    50   Input ~ 0
 P2_DOWN
-Wire Wire Line
-	7925 1375 7775 1375
-Text GLabel 7775 1475 0    50   Input ~ 0
+Text GLabel 7850 1475 0    50   Input ~ 0
 P2_LEFT
-Wire Wire Line
-	7775 1475 7925 1475
-Text GLabel 7775 1575 0    50   Input ~ 0
+Text GLabel 7850 1575 0    50   Input ~ 0
 P2_RIGHT
-Wire Wire Line
-	7775 1575 7925 1575
 Text GLabel 9000 1575 2    50   Input ~ 0
 P2_FIRE2
 Wire Wire Line
 	9000 1575 8850 1575
-Text GLabel 7775 1675 0    50   Input ~ 0
+Text GLabel 7850 1675 0    50   Input ~ 0
 P2_FIRE3
-Wire Wire Line
-	7775 1675 7925 1675
 $Comp
 L power:GND #PWR04
 U 1 1 60445FA1
@@ -360,10 +349,8 @@ Text GLabel 9000 2375 2    50   Input ~ 0
 P1_FIRE2
 Wire Wire Line
 	9000 2375 8850 2375
-Text GLabel 7775 2475 0    50   Input ~ 0
+Text GLabel 7850 2475 0    50   Input ~ 0
 P1_FIRE3
-Wire Wire Line
-	7775 2475 7925 2475
 $Comp
 L arcade:SWITCH J4
 U 1 1 600A32A1
@@ -1156,4 +1143,50 @@ Wire Wire Line
 Wire Wire Line
 	7975 5450 7600 5450
 NoConn ~ 7600 5450
+Text GLabel 7850 2075 0    50   Input ~ 0
+P1_FIRE4
+$Comp
+L power:GND #PWR09
+U 1 1 62E4482B
+P 3325 5375
+F 0 "#PWR09" H 3325 5125 50  0001 C CNN
+F 1 "GND" H 3330 5202 50  0000 C CNN
+F 2 "" H 3325 5375 50  0001 C CNN
+F 3 "" H 3325 5375 50  0001 C CNN
+	1    3325 5375
+	1    0    0    -1  
+$EndComp
+$Comp
+L arcade:SWITCH J16
+U 1 1 62E44831
+P 2925 5250
+F 0 "J16" H 3050 5300 50  0000 L CNN
+F 1 "P1_FIRE4" H 3225 5225 50  0000 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 2875 5400 50  0001 C CNN
+F 3 "~" H 2875 5400 50  0001 C CNN
+	1    2925 5250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3175 5300 3325 5300
+Wire Wire Line
+	3325 5375 3325 5300
+Text GLabel 3400 5200 2    50   Output ~ 0
+P1_FIRE4
+Wire Wire Line
+	3175 5200 3400 5200
+Wire Wire Line
+	7925 1275 7850 1275
+Wire Wire Line
+	7925 1375 7850 1375
+Wire Wire Line
+	7925 1475 7850 1475
+Wire Wire Line
+	7925 1575 7850 1575
+Wire Wire Line
+	7925 1675 7850 1675
+Wire Wire Line
+	7925 2075 7850 2075
+Wire Wire Line
+	7850 2475 7925 2475
 $EndSCHEMATC
