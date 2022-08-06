@@ -20,6 +20,9 @@ The parts listed are the ones I've used when building an Atari 7800 controller a
 | J1 *          | 2x5 pin straight header pins or 2x5 IDC   |     1 |
 | J2 **         | DE-9 Female straight connector            |     1 |
 | JP1,JP2 ***   | 3-pin breakable header pins (w/jumpers    |    (2)|
+| Q1,Q2         | 2N3906 transistor (TO-92)                 |     2 |
+| R1,R3         | 620 ohm resistor                          |     2 |
+| R2,R4         | 1k ohm resistor                           |     2 |
 
 *) Breakable dual row pin headers can be used here, but I find it is nicer to use a 2x5 pin connector here instead. The cable needed is a 2x5 pin IDC cable (usually listed as *AVR* or *JTAG* cable) with sufficient length.
 
