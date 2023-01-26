@@ -571,7 +571,7 @@ U 1 1 5FCB76F7
 P 5175 3800
 F 0 "JP6" H 5175 3975 50  0000 C CNN
 F 1 "DEFAULT_FW" H 5175 3900 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5175 3800 50  0001 C CNN
+F 2 "solder_bridge:bridge_r" H 5175 3800 50  0001 C CNN
 F 3 "~" H 5175 3800 50  0001 C CNN
 	1    5175 3800
 	1    0    0    -1  
@@ -581,7 +581,7 @@ Wire Wire Line
 Wire Wire Line
 	5275 3800 5450 3800
 $Comp
-L Device:D D3
+L Diode:1N5819 D3
 U 1 1 5FCFF93E
 P 13175 2475
 F 0 "D3" H 13175 2259 50  0000 C CNN
@@ -646,7 +646,7 @@ U 1 1 5FCF52E4
 P 5175 2325
 F 0 "JP4" H 5175 2500 50  0000 C CNN
 F 1 "DEFAULT_FW" H 5175 2425 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5175 2325 50  0001 C CNN
+F 2 "solder_bridge:bridge" H 5175 2325 50  0001 C CNN
 F 3 "~" H 5175 2325 50  0001 C CNN
 	1    5175 2325
 	1    0    0    -1  
