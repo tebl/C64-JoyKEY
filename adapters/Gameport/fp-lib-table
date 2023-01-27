@@ -1,0 +1,8 @@
+(fp_lib_table
+  (lib (name "C64 IDC")(type KiCad)(uri "$KIPRJMOD/../../common/modules/C64 IDC.pretty")(options "")(descr ""))
+  (lib (name RND_DSUB)(type KiCad)(uri $KIPRJMOD/../../common/modules/RND_DSUB.pretty)(options "")(descr ""))
+  (lib (name solder_bridge)(type KiCad)(uri $KIPRJMOD/../../common/modules/solder_bridge.pretty)(options "")(descr ""))
+  (lib (name resistor)(type KiCad)(uri $KIPRJMOD/../../common/modules/resistor.pretty)(options "")(descr ""))
+  (lib (name "Gameport IDC")(type KiCad)(uri "$KIPRJMOD/../../common/modules/Gameport IDC.pretty")(options "")(descr ""))
+  (lib (name RM-065)(type KiCad)(uri $KIPRJMOD/../../common/modules/RM-065.pretty)(options "")(descr ""))
+)

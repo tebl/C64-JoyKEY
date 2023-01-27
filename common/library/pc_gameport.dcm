@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Gameport_DB15
+D 15-pin male D-SUB connector (low-density/2 columns)
+K male D-SUB connector
+F  ~
+$ENDCMP
+#
+#End Doc Library

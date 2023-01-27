@@ -7,6 +7,7 @@ Click the adapter for a more detailed description on how it is put together, the
 | -------------------------------------------------------------------------------------------------- | --------------------------------------------------------- | ------- |
 | [Amiga CD32](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Amiga%20CD32) *                 | Commodore Amiga CD32                                      | PCBWay
 | [Atari 7800](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Atari%207800)                   | Atari 7800 (Atari 7800 Pro System in N.A.)                | [PCBWay](https://www.pcbway.com/project/shareproject/C64_JoyKEY__Atari_7800_adapter_.html)
+| [Gameport](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/Gameport) *                       | PC Gameport, a feature found on most sound cards          | PCBWay
 | [IDC to DB9](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/IDC%20to%20DB9)                 | Any Atari-style joystick port                             | [PCBWay](https://www.pcbway.com/project/shareproject/C64_JoyKEY__IDC_to_DB9_.html)
 | [MSX](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/MSX) *                                 | MSX-line of computers                                     | PCBWay
 | [NES](https://github.com/tebl/C64-JoyKEY/tree/main/adapters/NES)                                   | Nintendo Entertainment System                             | [PCBWay](https://www.pcbway.com/project/shareproject/C64_JoyKEY_NES_adapter_74ada4a5.html)
