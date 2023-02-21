@@ -24,8 +24,6 @@ F 3 "" H 8450 4375 50  0001 C CNN
 	1    8450 4375
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8450 4450 8450 4375
 $Comp
 L pc_gameport:Gameport_DB15 J3
 U 1 1 63D3A71F
@@ -38,13 +36,8 @@ F 3 " ~" H 8900 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8450 4450 8450 5750
-Connection ~ 8450 4450
-Wire Wire Line
 	8450 5750 8450 5850
 Connection ~ 8450 5750
-Wire Wire Line
-	8450 4450 8600 4450
 Wire Wire Line
 	8450 5750 8600 5750
 Wire Wire Line
@@ -322,7 +315,7 @@ U 1 1 63DEED4A
 P 6650 1850
 F 0 "RV1" H 6580 1896 50  0000 R CNN
 F 1 "100k" H 6580 1805 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Runtron_RM-065_Vertical" H 6650 1850 50  0001 C CNN
+F 2 "RM-065:RM-065" H 6650 1850 50  0001 C CNN
 F 3 "~" H 6650 1850 50  0001 C CNN
 	1    6650 1850
 	-1   0    0    -1  
@@ -461,7 +454,7 @@ U 1 1 63E81B57
 P 6650 3500
 F 0 "RV2" H 6580 3546 50  0000 R CNN
 F 1 "100k" H 6580 3455 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Runtron_RM-065_Vertical" H 6650 3500 50  0001 C CNN
+F 2 "RM-065:RM-065" H 6650 3500 50  0001 C CNN
 F 3 "~" H 6650 3500 50  0001 C CNN
 	1    6650 3500
 	-1   0    0    -1  
@@ -598,4 +591,7 @@ Wire Wire Line
 Connection ~ 3025 1550
 Wire Wire Line
 	3025 1550 3025 1950
+Wire Wire Line
+	8450 4375 8450 5750
+NoConn ~ 8600 4450
 $EndSCHEMATC

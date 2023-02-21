@@ -8,7 +8,7 @@ Title "Gameport (C64 JoyKEY)"
 Date ""
 Rev "A"
 Comp ""
-Comment1 "Adapter is untested!"
+Comment1 ""
 Comment2 "Gravis gamepad makes this a viable option for many games."
 Comment3 "gameport. While originally an analog controller, the adoption of gamepads such as the"
 Comment4 "Rewires the C64 JoyKEY for a 2-button layout suitable for use with PCs with a 15-pin"
@@ -24,8 +24,6 @@ F 3 "" H 8450 4375 50  0001 C CNN
 	1    8450 4375
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8450 4450 8450 4375
 $Comp
 L pc_gameport:Gameport_DB15 J3
 U 1 1 63D3A71F
@@ -38,13 +36,8 @@ F 3 " ~" H 8900 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8450 4450 8450 5750
-Connection ~ 8450 4450
-Wire Wire Line
 	8450 5750 8450 5850
 Connection ~ 8450 5750
-Wire Wire Line
-	8450 4450 8600 4450
 Wire Wire Line
 	8450 5750 8600 5750
 Wire Wire Line
@@ -598,4 +591,7 @@ Wire Wire Line
 Connection ~ 3025 1550
 Wire Wire Line
 	3025 1550 3025 1950
+Wire Wire Line
+	8450 4375 8450 5750
+NoConn ~ 8600 4450
 $EndSCHEMATC
