@@ -8,10 +8,10 @@ Title "Gameport (C64 JoyKEY)"
 Date ""
 Rev "A"
 Comp ""
-Comment1 ""
-Comment2 "Gravis gamepad makes this a viable option for many games."
-Comment3 "gameport. While originally an analog controller, the adoption of gamepads such as the"
-Comment4 "Rewires the C64 JoyKEY for a 2-button layout suitable for use with PCs with a 15-pin"
+Comment1 "*DESIGN IS UNTESTED*"
+Comment2 "as the Gravis gamepad makes this a viable option for many games."
+Comment3 "gameport. While originally a system for analog joysticks, the adoption of gamepads such"
+Comment4 "Rewires the C64 JoyKEY for a 4-button layout suitable for use with PCs with a 15-pin"
 $EndDescr
 $Comp
 L power:VCC #PWR0101
@@ -35,11 +35,6 @@ F 3 " ~" H 8900 5150 50  0001 C CNN
 	1    8900 5150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8450 5750 8450 5850
-Connection ~ 8450 5750
-Wire Wire Line
-	8450 5750 8600 5750
 Wire Wire Line
 	8525 5250 8600 5250
 Wire Wire Line
@@ -283,17 +278,6 @@ NoConn ~ 2475 2950
 NoConn ~ 2375 2025
 Wire Wire Line
 	2575 4750 8600 4750
-$Comp
-L Device:R R5
-U 1 1 63DD75B1
-P 5875 1600
-F 0 "R5" H 5945 1646 50  0000 L CNN
-F 1 "2k2" H 5945 1555 50  0000 L CNN
-F 2 "resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5805 1600 50  0001 C CNN
-F 3 "~" H 5875 1600 50  0001 C CNN
-	1    5875 1600
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	3700 2950 3700 3050
 Wire Wire Line
@@ -301,254 +285,24 @@ Wire Wire Line
 $Comp
 L power:VCC #PWR0104
 U 1 1 63DECB99
-P 5125 1250
-F 0 "#PWR0104" H 5125 1100 50  0001 C CNN
-F 1 "VCC" H 5140 1423 50  0000 C CNN
-F 2 "" H 5125 1250 50  0001 C CNN
-F 3 "" H 5125 1250 50  0001 C CNN
-	1    5125 1250
+P 5650 1250
+F 0 "#PWR0104" H 5650 1100 50  0001 C CNN
+F 1 "VCC" H 5665 1423 50  0000 C CNN
+F 2 "" H 5650 1250 50  0001 C CNN
+F 3 "" H 5650 1250 50  0001 C CNN
+	1    5650 1250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_POT RV1
-U 1 1 63DEED4A
-P 6650 1850
-F 0 "RV1" H 6580 1896 50  0000 R CNN
-F 1 "100k" H 6580 1805 50  0000 R CNN
-F 2 "RM-065:RM-065" H 6650 1850 50  0001 C CNN
-F 3 "~" H 6650 1850 50  0001 C CNN
-	1    6650 1850
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4148 D1
-U 1 1 63DF1931
-P 6275 1850
-F 0 "D1" H 6275 1633 50  0000 C CNN
-F 1 "1N4148" H 6275 1724 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6275 1675 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 6275 1850 50  0001 C CNN
-	1    6275 1850
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6425 1850 6500 1850
-$Comp
-L Transistor_BJT:BC557 Q1
-U 1 1 63DF3AB5
-P 7400 1850
-F 0 "Q1" H 7591 1804 50  0000 L CNN
-F 1 "BC557" H 7591 1895 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 7600 1775 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf" H 7400 1850 50  0001 L CNN
-	1    7400 1850
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 63DFF86A
-P 5125 1575
-F 0 "R1" H 5195 1621 50  0000 L CNN
-F 1 "2k2" H 5195 1530 50  0000 L CNN
-F 2 "resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5055 1575 50  0001 C CNN
-F 3 "~" H 5125 1575 50  0001 C CNN
-	1    5125 1575
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5125 1425 5125 1350
-Wire Wire Line
-	5875 1750 5875 1850
 Wire Wire Line
 	3700 3050 4300 3050
 Wire Wire Line
 	3600 3150 4375 3150
-$Comp
-L Device:R R3
-U 1 1 63E1938D
-P 5425 2250
-F 0 "R3" V 5525 2150 50  0000 L CNN
-F 1 "100k" V 5600 2150 50  0000 L CNN
-F 2 "resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5355 2250 50  0001 C CNN
-F 3 "~" H 5425 2250 50  0001 C CNN
-	1    5425 2250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5125 2250 5275 2250
-Wire Wire Line
-	5575 2250 7700 2250
-Wire Wire Line
-	7700 1850 7600 1850
-Wire Wire Line
-	7300 2050 7300 2150
-Wire Wire Line
-	7700 1850 7700 2250
-Connection ~ 5125 2250
-Wire Wire Line
-	7300 2150 6650 2150
-Wire Wire Line
-	6650 2150 6650 2000
-Wire Wire Line
-	5875 2125 5875 1850
-Connection ~ 5875 1850
-Wire Wire Line
-	5875 1850 6125 1850
-Wire Wire Line
-	5875 1350 5875 1450
-Wire Wire Line
-	5875 1350 5125 1350
-Wire Wire Line
-	5125 1350 5125 1250
-Connection ~ 5125 1350
-Wire Wire Line
-	5125 1725 5125 2250
 Wire Wire Line
 	8600 5450 8250 5450
 Wire Wire Line
-	8250 2150 7300 2150
-Connection ~ 7300 2150
-Wire Wire Line
-	5875 1350 6650 1350
-Wire Wire Line
-	6650 1350 6650 1700
-Connection ~ 5875 1350
-Wire Wire Line
-	6650 1350 7300 1350
-Wire Wire Line
-	7300 1350 7300 1650
-Connection ~ 6650 1350
-Wire Wire Line
 	4300 3050 4300 2125
 Wire Wire Line
-	4300 2125 5875 2125
-Wire Wire Line
-	5125 2250 4375 2250
-Wire Wire Line
 	4375 2250 4375 3150
-$Comp
-L Device:R R6
-U 1 1 63E81B4B
-P 5875 3250
-F 0 "R6" H 5945 3296 50  0000 L CNN
-F 1 "2k2" H 5945 3205 50  0000 L CNN
-F 2 "resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5805 3250 50  0001 C CNN
-F 3 "~" H 5875 3250 50  0001 C CNN
-	1    5875 3250
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0105
-U 1 1 63E81B51
-P 5125 2900
-F 0 "#PWR0105" H 5125 2750 50  0001 C CNN
-F 1 "VCC" H 5140 3073 50  0000 C CNN
-F 2 "" H 5125 2900 50  0001 C CNN
-F 3 "" H 5125 2900 50  0001 C CNN
-	1    5125 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_POT RV2
-U 1 1 63E81B57
-P 6650 3500
-F 0 "RV2" H 6580 3546 50  0000 R CNN
-F 1 "100k" H 6580 3455 50  0000 R CNN
-F 2 "RM-065:RM-065" H 6650 3500 50  0001 C CNN
-F 3 "~" H 6650 3500 50  0001 C CNN
-	1    6650 3500
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4148 D2
-U 1 1 63E81B5D
-P 6275 3500
-F 0 "D2" H 6275 3283 50  0000 C CNN
-F 1 "1N4148" H 6275 3374 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6275 3325 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 6275 3500 50  0001 C CNN
-	1    6275 3500
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6425 3500 6500 3500
-$Comp
-L Transistor_BJT:BC557 Q2
-U 1 1 63E81B64
-P 7400 3500
-F 0 "Q2" H 7591 3454 50  0000 L CNN
-F 1 "BC557" H 7591 3545 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 7600 3425 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf" H 7400 3500 50  0001 L CNN
-	1    7400 3500
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 63E81B6A
-P 5125 3225
-F 0 "R2" H 5195 3271 50  0000 L CNN
-F 1 "2k2" H 5195 3180 50  0000 L CNN
-F 2 "resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5055 3225 50  0001 C CNN
-F 3 "~" H 5125 3225 50  0001 C CNN
-	1    5125 3225
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5125 3075 5125 3000
-Wire Wire Line
-	5875 3400 5875 3500
-$Comp
-L Device:R R4
-U 1 1 63E81B72
-P 5425 3900
-F 0 "R4" V 5525 3800 50  0000 L CNN
-F 1 "100k" V 5600 3800 50  0000 L CNN
-F 2 "resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5355 3900 50  0001 C CNN
-F 3 "~" H 5425 3900 50  0001 C CNN
-	1    5425 3900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5125 3900 5275 3900
-Wire Wire Line
-	5575 3900 7700 3900
-Wire Wire Line
-	7700 3500 7600 3500
-Wire Wire Line
-	7300 3700 7300 3800
-Wire Wire Line
-	7700 3500 7700 3900
-Connection ~ 5125 3900
-Wire Wire Line
-	7300 3800 6650 3800
-Wire Wire Line
-	6650 3800 6650 3650
-Wire Wire Line
-	5875 3775 5875 3500
-Connection ~ 5875 3500
-Wire Wire Line
-	5875 3500 6125 3500
-Wire Wire Line
-	5875 3000 5875 3100
-Wire Wire Line
-	5875 3000 5125 3000
-Wire Wire Line
-	5125 3000 5125 2900
-Connection ~ 5125 3000
-Wire Wire Line
-	5125 3375 5125 3900
-Connection ~ 7300 3800
-Wire Wire Line
-	5875 3000 6650 3000
-Wire Wire Line
-	6650 3000 6650 3350
-Connection ~ 5875 3000
-Wire Wire Line
-	6650 3000 7300 3000
-Wire Wire Line
-	7300 3000 7300 3300
-Connection ~ 6650 3000
 Wire Wire Line
 	4150 1625 4150 4650
 Wire Wire Line
@@ -558,21 +312,11 @@ Wire Wire Line
 Wire Wire Line
 	3800 2950 3800 5550
 Wire Wire Line
-	7300 3800 8150 3800
-Wire Wire Line
-	8150 3800 8150 4850
-Wire Wire Line
 	8150 4850 8600 4850
-Wire Wire Line
-	3400 3900 5125 3900
 Wire Wire Line
 	3400 2950 3400 3900
 Wire Wire Line
 	3500 2950 3500 3775
-Wire Wire Line
-	3500 3775 5875 3775
-Wire Wire Line
-	8250 2150 8250 5450
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 63EF476C
@@ -591,7 +335,253 @@ Wire Wire Line
 Connection ~ 3025 1550
 Wire Wire Line
 	3025 1550 3025 1950
-Wire Wire Line
-	8450 4375 8450 5750
 NoConn ~ 8600 4450
+Wire Wire Line
+	8450 4375 8450 5850
+NoConn ~ 8600 5750
+$Comp
+L Transistor_BJT:2N3906 Q1
+U 1 1 63F912B9
+P 6725 1850
+F 0 "Q1" H 6916 1804 50  0000 L CNN
+F 1 "2N3906" H 6916 1895 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 6925 1775 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3906-D.PDF" H 6725 1850 50  0001 L CNN
+	1    6725 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 63F9E7E9
+P 5650 1550
+F 0 "R1" H 5725 1600 50  0000 L CNN
+F 1 "100k" H 5725 1525 50  0000 L CNN
+F 2 "resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5580 1550 50  0001 C CNN
+F 3 "~" H 5650 1550 50  0001 C CNN
+	1    5650 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D1
+U 1 1 63FA8035
+P 5900 2125
+F 0 "D1" H 5900 1908 50  0000 C CNN
+F 1 "1N4148" H 5900 1999 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5900 1950 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5900 2125 50  0001 C CNN
+	1    5900 2125
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5650 2125 5750 2125
+Connection ~ 5650 2125
+Wire Wire Line
+	8250 2125 8250 5450
+Wire Wire Line
+	6050 2125 6150 2125
+Wire Wire Line
+	5650 1700 5650 2125
+Wire Wire Line
+	5650 1400 5650 1325
+$Comp
+L Device:R R3
+U 1 1 63FB9CD2
+P 6150 1550
+F 0 "R3" H 6225 1600 50  0000 L CNN
+F 1 "100k" H 6225 1525 50  0000 L CNN
+F 2 "resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6080 1550 50  0001 C CNN
+F 3 "~" H 6150 1550 50  0001 C CNN
+	1    6150 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2125 6150 1700
+Connection ~ 6150 2125
+Wire Wire Line
+	6150 2125 6625 2125
+Wire Wire Line
+	5650 1325 6150 1325
+Wire Wire Line
+	6150 1325 6150 1400
+Wire Wire Line
+	5650 1250 5650 1325
+Connection ~ 5650 1325
+Wire Wire Line
+	6625 2050 6625 2125
+Connection ~ 6625 2125
+Wire Wire Line
+	6625 2125 8250 2125
+Wire Wire Line
+	6625 1650 6625 1325
+Wire Wire Line
+	6625 1325 6150 1325
+Connection ~ 6150 1325
+$Comp
+L Device:R R7
+U 1 1 63FC9482
+P 7000 1550
+F 0 "R7" H 7075 1600 50  0000 L CNN
+F 1 "100k" H 7075 1525 50  0000 L CNN
+F 2 "resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6930 1550 50  0001 C CNN
+F 3 "~" H 7000 1550 50  0001 C CNN
+	1    7000 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 1700 7000 1850
+Wire Wire Line
+	7000 1850 6925 1850
+Wire Wire Line
+	7000 1400 7000 1325
+Wire Wire Line
+	7000 1325 6625 1325
+Connection ~ 6625 1325
+$Comp
+L Device:R R5
+U 1 1 63FCF4D9
+P 6775 2250
+F 0 "R5" V 6675 2200 50  0000 L CNN
+F 1 "47k" V 6600 2175 50  0000 L CNN
+F 2 "resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6705 2250 50  0001 C CNN
+F 3 "~" H 6775 2250 50  0001 C CNN
+	1    6775 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7000 1850 7000 2250
+Wire Wire Line
+	7000 2250 6925 2250
+Connection ~ 7000 1850
+Wire Wire Line
+	4300 2125 5650 2125
+Wire Wire Line
+	4375 2250 6625 2250
+$Comp
+L power:VCC #PWR0105
+U 1 1 64008FDE
+P 5650 2900
+F 0 "#PWR0105" H 5650 2750 50  0001 C CNN
+F 1 "VCC" H 5665 3073 50  0000 C CNN
+F 2 "" H 5650 2900 50  0001 C CNN
+F 3 "" H 5650 2900 50  0001 C CNN
+	1    5650 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3906 Q2
+U 1 1 64008FE4
+P 6725 3500
+F 0 "Q2" H 6916 3454 50  0000 L CNN
+F 1 "2N3906" H 6916 3545 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline_Wide" H 6925 3425 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/2N3906-D.PDF" H 6725 3500 50  0001 L CNN
+	1    6725 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 64008FEA
+P 5650 3200
+F 0 "R2" H 5725 3250 50  0000 L CNN
+F 1 "100k" H 5725 3175 50  0000 L CNN
+F 2 "resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5580 3200 50  0001 C CNN
+F 3 "~" H 5650 3200 50  0001 C CNN
+	1    5650 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D2
+U 1 1 64008FF0
+P 5900 3775
+F 0 "D2" H 5900 3558 50  0000 C CNN
+F 1 "1N4148" H 5900 3649 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5900 3600 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5900 3775 50  0001 C CNN
+	1    5900 3775
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5650 3775 5750 3775
+Connection ~ 5650 3775
+Wire Wire Line
+	6050 3775 6150 3775
+Wire Wire Line
+	5650 3350 5650 3775
+Wire Wire Line
+	5650 3050 5650 2975
+$Comp
+L Device:R R4
+U 1 1 64008FFB
+P 6150 3200
+F 0 "R4" H 6225 3250 50  0000 L CNN
+F 1 "100k" H 6225 3175 50  0000 L CNN
+F 2 "resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6080 3200 50  0001 C CNN
+F 3 "~" H 6150 3200 50  0001 C CNN
+	1    6150 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3775 6150 3350
+Connection ~ 6150 3775
+Wire Wire Line
+	6150 3775 6625 3775
+Wire Wire Line
+	5650 2975 6150 2975
+Wire Wire Line
+	6150 2975 6150 3050
+Wire Wire Line
+	5650 2900 5650 2975
+Connection ~ 5650 2975
+Wire Wire Line
+	6625 3700 6625 3775
+Connection ~ 6625 3775
+Wire Wire Line
+	6625 3775 8150 3775
+Wire Wire Line
+	6625 3300 6625 2975
+Wire Wire Line
+	6625 2975 6150 2975
+Connection ~ 6150 2975
+$Comp
+L Device:R R8
+U 1 1 6400900E
+P 7000 3200
+F 0 "R8" H 7075 3250 50  0000 L CNN
+F 1 "100k" H 7075 3175 50  0000 L CNN
+F 2 "resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6930 3200 50  0001 C CNN
+F 3 "~" H 7000 3200 50  0001 C CNN
+	1    7000 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3350 7000 3500
+Wire Wire Line
+	7000 3500 6925 3500
+Wire Wire Line
+	7000 3050 7000 2975
+Wire Wire Line
+	7000 2975 6625 2975
+Connection ~ 6625 2975
+$Comp
+L Device:R R6
+U 1 1 64009019
+P 6775 3900
+F 0 "R6" V 6875 3825 50  0000 L CNN
+F 1 "47k" V 6950 3825 50  0000 L CNN
+F 2 "resistor:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6705 3900 50  0001 C CNN
+F 3 "~" H 6775 3900 50  0001 C CNN
+	1    6775 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 3500 7000 3900
+Wire Wire Line
+	7000 3900 6925 3900
+Connection ~ 7000 3500
+Wire Wire Line
+	3500 3775 5650 3775
+Wire Wire Line
+	3400 3900 6625 3900
+Wire Wire Line
+	8150 3775 8150 4850
 $EndSCHEMATC
