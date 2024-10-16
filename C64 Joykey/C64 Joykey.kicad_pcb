@@ -20291,7 +20291,7 @@
 			(justify mirror)
 		)
 	)
-	(gr_text "~{IMPORTANT!\nConfigure} FIRE2/FIRE3 polarity according\nto  what the system required by the system,\nleave unjumpered (N/C) if you are not sure.\n\nYou break it, you fix it!"
+	(gr_text "IMPORTANT!\nConfigure FIRE2/FIRE3 polarity according\nto what is required by the system,\nleave unjumpered (N/C) if you are not sure.\n\nYou break it, you fix it!"
 		(at 222.885 109.22 90)
 		(layer "B.SilkS")
 		(uuid "86642885-2bca-4f53-b562-d0935d9a1a07")
