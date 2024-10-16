@@ -1,4 +1,4 @@
-19051832708730303
+19050157928453858
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -74402,13 +74402,6 @@ WiFi IEEE802.11 b/g/n
 0
 44
 44
-RM-065
-RM-065
-Potentiometer, vertical, Trimmer, RM-065 http://www.runtron.com/down/PDF%20Datasheet/Carbon%20Film%20Potentiometer/RM065%20RM063.pdf
-Potentiometer Trimmer RM-065
-0
-3
-3
 RND_DSUB
 DSUB-9_Female_Edge
 Straight DE-9 connector, the blue kind with metal shield removed (solder to pads).
