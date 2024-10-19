@@ -1,0 +1,9 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "mounting")(type "KiCad")(uri "${KIPRJMOD}/../common/library/mounting.kicad_sym")(options "")(descr ""))
+  (lib (name "sw_keyboard")(type "KiCad")(uri "${KIPRJMOD}/../common/library/sw_keyboard.kicad_sym")(options "")(descr ""))
+  (lib (name "c64_idc")(type "KiCad")(uri "${KIPRJMOD}/../common/library/c64_idc.kicad_sym")(options "")(descr ""))
+  (lib (name "promicro")(type "KiCad")(uri "${KIPRJMOD}/../common/library/arduino_pro_micro.kicad_sym")(options "")(descr ""))
+  (lib (name "sw_push")(type "KiCad")(uri "${KIPRJMOD}/../common/library/sw_push.kicad_sym")(options "")(descr ""))
+  (lib (name "pi_pico")(type "KiCad")(uri "${KIPRJMOD}/../common/library/pi_pico.kicad_sym")(options "")(descr ""))
+)
