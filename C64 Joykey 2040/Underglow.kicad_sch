@@ -2,7 +2,7 @@
 	(version 20231120)
 	(generator "eeschema")
 	(generator_version "8.0")
-	(uuid "65b093c1-156a-42a7-bef2-a21a6be72e5b")
+	(uuid "7c2fcdd5-273f-45af-8c5d-21af65034e98")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Connector:Conn_01x01_Pin"
@@ -1716,7 +1716,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "2n3904:2N3904_TO-92_Horizontal_FlatSideDown"
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline_Wide"
 			(at 186.69 109.855 0)
 			(effects
 				(font
@@ -2404,7 +2404,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
 			(at 217.17 107.95 0)
 			(effects
 				(font

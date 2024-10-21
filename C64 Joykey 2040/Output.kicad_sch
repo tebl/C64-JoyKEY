@@ -2,7 +2,7 @@
 	(version 20231120)
 	(generator "eeschema")
 	(generator_version "8.0")
-	(uuid "60f869ba-2272-46a8-8127-9e53ae10cea6")
+	(uuid "e834f65e-f46d-4098-ae20-18d26bcb2995")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Diode:1N5819"
@@ -1486,7 +1486,7 @@
 		)
 		(uuid "90314681-e7df-4432-8f1d-21cca61cd814")
 	)
-	(text "The jumper VCC_EN is to enable the computer to\npower up the C64 JoyKEY, a diode has been added\nto ensure that other direction doesn't happen.\n\nPower is always routed through to APWR, this is\nonly used in order to provide power to the\nadapters themselves. Not sure if I'll ever need\nit, but if I have it - then I'll have it."
+	(text "The jumper VCC_EN is to enable the computer to\npower up the C64 JoyKEY, a diode has been added\nto ensure that other direction doesn't happen.\n\nPower is always routed through to APWR, but this\nis only used in order to provide power to the\nadapters themselves. Not sure if I'll ever need\nit, but if I have it - then I have it."
 		(exclude_from_sim no)
 		(at 199.39 83.82 0)
 		(effects
