@@ -1,6 +1,4 @@
 (sym_lib_table
-  (lib (name mounting)(type Legacy)(uri $KIPRJMOD/../../common/library/mounting.lib)(options "")(descr ""))
-  (lib (name sw_keyboard)(type Legacy)(uri $KIPRJMOD/../../common/library/sw_keyboard.lib)(options "")(descr ""))
-  (lib (name c64_idc)(type Legacy)(uri $KIPRJMOD/../../common/library/c64_idc.lib)(options "")(descr ""))
-  (lib (name promicro)(type Legacy)(uri $KIPRJMOD/../../common/library/arduino_pro_micro.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "mounting")(type "KiCad")(uri "$KIPRJMOD/../../common/library/mounting.kicad_sym")(options "")(descr ""))
 )
