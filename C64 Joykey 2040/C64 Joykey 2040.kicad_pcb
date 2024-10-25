@@ -2215,7 +2215,7 @@
 		(descr "tactile switch SPST right angle, PTS645VL31-2 LFS")
 		(tags "tactile switch SPST angled PTS645VL31-2 LFS C&K Button")
 		(property "Reference" "SW8"
-			(at 2.25 1.68 360)
+			(at 2.25 1.68 0)
 			(layer "F.SilkS")
 			(uuid "35b90217-c9ad-43c7-8f6a-d14fe0dd7f11")
 			(effects
@@ -2226,7 +2226,7 @@
 			)
 		)
 		(property "Value" "P1_FIRE3"
-			(at 2.25 5.38988 360)
+			(at 2.25 5.38988 0)
 			(layer "F.Fab")
 			(uuid "b40fddc9-10ac-4346-830f-bf8a5df33d27")
 			(effects
@@ -2560,7 +2560,7 @@
 			(uuid "7e7b5497-81f0-4d13-8085-47f0e2ea90ed")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.25 1.68 360)
+			(at 2.25 1.68 0)
 			(layer "F.Fab")
 			(uuid "6a5c90c0-faf9-4c17-af38-47154081cb50")
 			(effects
@@ -11492,7 +11492,7 @@
 		(descr "TO-92 leads in-line, wide, drill 0.75mm (see NXP sot054_po.pdf)")
 		(tags "to-92 sc-43 sc-43a sot54 PA33 transistor")
 		(property "Reference" "Q1"
-			(at -0.635 1.905 360)
+			(at -0.635 1.905 0)
 			(layer "F.SilkS")
 			(uuid "11238679-a0f3-4cfb-8092-0e4721742ad0")
 			(effects
@@ -11503,7 +11503,7 @@
 			)
 		)
 		(property "Value" "2N3904"
-			(at 2.54 2.79 360)
+			(at 2.54 2.79 0)
 			(layer "F.Fab")
 			(uuid "f8571d4f-8a9f-4914-b198-3fc8f829dc04")
 			(effects
@@ -11684,7 +11684,7 @@
 			(uuid "68bb9644-4231-4604-be45-ccdbb8cb2f19")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.54 0 360)
+			(at 2.54 0 0)
 			(layer "F.Fab")
 			(uuid "43e2e55f-515e-4cb2-820c-7ae4f1432d3b")
 			(effects
@@ -14307,7 +14307,7 @@
 		(descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D16"
-			(at 4.445 0 360)
+			(at 4.445 0 0)
 			(layer "F.SilkS")
 			(uuid "f2277752-45e4-4041-884d-3f3865ff414c")
 			(effects
@@ -14318,7 +14318,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 3.81 2.12 360)
+			(at 3.81 2.12 0)
 			(layer "F.Fab")
 			(uuid "7d379d56-b50b-41be-8e79-757994ac40d9")
 			(effects
@@ -14619,7 +14619,7 @@
 			(uuid "ffab511a-27b7-4ff2-8121-1411c7cd62f9")
 		)
 		(fp_text user "K"
-			(at 0 -1.8 360)
+			(at 0 -1.8 0)
 			(layer "F.SilkS")
 			(uuid "cb42e0ad-22bc-48ee-b24b-92a74fd8ff98")
 			(effects
@@ -14630,7 +14630,7 @@
 			)
 		)
 		(fp_text user "K"
-			(at 0 -1.8 360)
+			(at 0 -1.8 0)
 			(layer "F.Fab")
 			(uuid "4725e488-750e-43f9-a279-e18aafbe49ec")
 			(effects
@@ -14641,7 +14641,7 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 4.11 0 360)
+			(at 4.11 0 0)
 			(layer "F.Fab")
 			(uuid "aed81c4c-9115-4c60-b5a7-e7936ebdf9a3")
 			(effects
@@ -14692,7 +14692,7 @@
 		(descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D23"
-			(at 4.445 0 360)
+			(at 4.445 0 0)
 			(layer "F.SilkS")
 			(uuid "e068385d-3642-44af-95dd-7d714dddeb8d")
 			(effects
@@ -14703,7 +14703,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 3.81 2.12 360)
+			(at 3.81 2.12 0)
 			(layer "F.Fab")
 			(uuid "f247dfa8-f68f-47eb-9554-6627c4cfdb19")
 			(effects
@@ -15004,7 +15004,7 @@
 			(uuid "ba80d009-2e33-4095-af22-ee7792ed0fe9")
 		)
 		(fp_text user "K"
-			(at 0 -1.8 360)
+			(at 0 -1.8 0)
 			(layer "F.SilkS")
 			(uuid "714e2c9c-7d15-4ae6-9e58-2d5b48c13b1b")
 			(effects
@@ -15015,7 +15015,7 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 4.11 0 360)
+			(at 4.11 0 0)
 			(layer "F.Fab")
 			(uuid "870464f9-957b-49ef-9a3d-56c03961a70f")
 			(effects
@@ -15026,7 +15026,7 @@
 			)
 		)
 		(fp_text user "K"
-			(at 0 -1.8 360)
+			(at 0 -1.8 0)
 			(layer "F.Fab")
 			(uuid "d76190df-1e7a-488d-adaf-1c66c6aaeda2")
 			(effects
@@ -15077,7 +15077,7 @@
 		(descr "tactile switch SPST right angle, PTS645VL31-2 LFS")
 		(tags "tactile switch SPST angled PTS645VL31-2 LFS C&K Button")
 		(property "Reference" "SW13"
-			(at 2.25 1.68 360)
+			(at 2.25 1.68 0)
 			(layer "F.SilkS")
 			(uuid "05d2c285-8516-477e-a385-c1ee269d69ea")
 			(effects
@@ -15088,7 +15088,7 @@
 			)
 		)
 		(property "Value" "P1_FIRE6"
-			(at 2.25 5.38988 360)
+			(at 2.25 5.38988 0)
 			(layer "F.Fab")
 			(uuid "75bbe57b-52d7-4c91-9aed-cafb25a4b4d6")
 			(effects
@@ -15422,7 +15422,7 @@
 			(uuid "25fb8cb3-af5b-41b4-9efd-63c01561bb8d")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.25 1.68 360)
+			(at 2.25 1.68 0)
 			(layer "F.Fab")
 			(uuid "36ea5e65-19e3-4e11-bd35-538c499675ef")
 			(effects
@@ -15897,7 +15897,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9cbaa0e6-edf3-45e9-8b7a-1cf2ad31e7ea")
@@ -15909,7 +15909,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "98c7b4a1-4153-47f6-87ae-fa469e3163ad")
@@ -15921,7 +15921,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "93842378-ca7d-4da7-a66d-deecba684fc8")
@@ -16097,7 +16097,7 @@
 			(uuid "005f5734-a301-4f97-a00d-510c359a3fb0")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -2.54 -2.794 360)
+			(at -2.54 -2.794 0)
 			(layer "F.Fab")
 			(uuid "844c6db3-81f9-42a4-9107-c3cbfaef5fd4")
 			(effects
@@ -18640,7 +18640,7 @@
 		(descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D21"
-			(at 4.445 0 360)
+			(at 4.445 0 0)
 			(layer "F.SilkS")
 			(uuid "4b106e98-452a-4f78-8d44-2205fba76252")
 			(effects
@@ -18651,7 +18651,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 3.81 2.12 360)
+			(at 3.81 2.12 0)
 			(layer "F.Fab")
 			(uuid "35df0bc0-8bc5-463b-ab35-3281620a9693")
 			(effects
@@ -18952,7 +18952,7 @@
 			(uuid "ee173cbf-a347-4b22-82a0-69ef797a32e4")
 		)
 		(fp_text user "K"
-			(at 0 -1.8 360)
+			(at 0 -1.8 0)
 			(layer "F.SilkS")
 			(uuid "a610d9bd-baa8-440e-aa00-3fd7e0e6dbcb")
 			(effects
@@ -18963,7 +18963,7 @@
 			)
 		)
 		(fp_text user "K"
-			(at 0 -1.8 360)
+			(at 0 -1.8 0)
 			(layer "F.Fab")
 			(uuid "76b4cceb-156e-4949-989a-b3dee2de73c2")
 			(effects
@@ -18974,7 +18974,7 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 4.11 0 360)
+			(at 4.11 0 0)
 			(layer "F.Fab")
 			(uuid "cc107524-0b1a-4d12-be91-ac1ff319b946")
 			(effects
@@ -19036,7 +19036,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 6.35 0 360)
+			(at 6.35 0 0)
 			(layer "F.SilkS")
 			(uuid "8dad7992-e573-44e4-a5a3-951f9c9ced34")
 			(effects
@@ -19251,7 +19251,7 @@
 			(uuid "afb73ec1-b6ec-4e8f-bbbe-5e868f30ca2e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 5.08 0 360)
+			(at 5.08 0 0)
 			(layer "F.Fab")
 			(uuid "7bf8c545-c5a6-4556-97de-8da67de51fd0")
 			(effects
@@ -20070,7 +20070,7 @@
 		(descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x04 2.54mm single row")
 		(property "Reference" "J4"
-			(at 0 -2.54 360)
+			(at 0 -2.54 0)
 			(layer "F.SilkS")
 			(uuid "37f1acb8-6bde-410f-8589-af850f8ad624")
 			(effects
@@ -21130,7 +21130,7 @@
 		(descr "Diode, DO-35_SOD27 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=4*2mm^2, , http://www.diodes.com/_files/packages/DO-35.pdf")
 		(tags "Diode DO-35_SOD27 series Axial Horizontal pin pitch 7.62mm  length 4mm diameter 2mm")
 		(property "Reference" "D22"
-			(at 4.445 0 360)
+			(at 4.445 0 0)
 			(layer "F.SilkS")
 			(uuid "f77d1e90-6e73-4554-ac98-447585d9879f")
 			(effects
@@ -21141,7 +21141,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 3.81 2.12 360)
+			(at 3.81 2.12 0)
 			(layer "F.Fab")
 			(uuid "7889baa2-a1ef-4a47-b3dc-b544079e3e7c")
 			(effects
@@ -21442,7 +21442,7 @@
 			(uuid "4b2f1548-e1c3-414c-ad3f-8941d93655e9")
 		)
 		(fp_text user "K"
-			(at 0 -1.8 360)
+			(at 0 -1.8 0)
 			(layer "F.SilkS")
 			(uuid "c2162ddb-9206-4a07-81ca-6ea5abad1099")
 			(effects
@@ -21453,7 +21453,7 @@
 			)
 		)
 		(fp_text user "${REFERENCE}"
-			(at 4.11 0 360)
+			(at 4.11 0 0)
 			(layer "F.Fab")
 			(uuid "4b92964e-cd27-4b3c-8702-ab7a7630d009")
 			(effects
@@ -21464,7 +21464,7 @@
 			)
 		)
 		(fp_text user "K"
-			(at 0 -1.8 360)
+			(at 0 -1.8 0)
 			(layer "F.Fab")
 			(uuid "6dd6fa44-f16d-4730-9d86-e3fca093451c")
 			(effects
@@ -22425,7 +22425,7 @@
 			)
 		)
 		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "94e39fb3-f3ef-4c13-9922-5827002eaf89")
@@ -22437,7 +22437,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a983506a-6248-4a24-b04c-4c48261244cb")
@@ -22449,7 +22449,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "66839ead-2ba5-483a-a532-9c70412d266f")
@@ -22625,7 +22625,7 @@
 			(uuid "0b118f59-3003-4a31-a212-82a712031c61")
 		)
 		(fp_text user "${REFERENCE}"
-			(at -2.54 -2.794 360)
+			(at -2.54 -2.794 0)
 			(layer "F.Fab")
 			(uuid "2ef31599-a8e9-42c2-bc59-da24602d28f5")
 			(effects
@@ -24015,6 +24015,18 @@
 				(size 1 1)
 				(thickness 0.15)
 			)
+		)
+	)
+	(gr_text "WayWayWay"
+		(at 177.165 98.425 0)
+		(layer "F.SilkS")
+		(uuid "d914a977-cd68-4d4f-98be-15f63ff9ba04")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify bottom)
 		)
 	)
 	(gr_text "P1\nF6"
@@ -30596,8 +30608,8 @@
 				(xy 164.415009 117.47795) (xy 164.4482 117.4735) (xy 166.690406 117.4735) (xy 166.758527 117.493502)
 				(xy 166.779501 117.510405) (xy 166.969595 117.700499) (xy 167.003621 117.762811) (xy 167.0065 117.789594)
 				(xy 167.0065 118.682606) (xy 167.0065 118.807394) (xy 167.030845 118.929785) (xy 167.0786 119.045075)
-				(xy 167.147929 119.148833) (xy 169.052929 121.053833) (xy 169.141167 121.142071) (xy 169.244925 121.2114)
-				(xy 169.360215 121.259155) (xy 169.482606 121.2835) (xy 188.5218 121.2835) (xy 188.589921 121.303502)
+				(xy 167.147929 119.148833) (xy 169.141167 121.142071) (xy 169.244925 121.2114) (xy 169.360215 121.259155)
+				(xy 169.482606 121.2835) (xy 169.607394 121.2835) (xy 188.5218 121.2835) (xy 188.589921 121.303502)
 				(xy 188.615437 121.32519) (xy 188.618747 121.328866) (xy 188.773248 121.441118) (xy 188.947712 121.518794)
 				(xy 189.134513 121.5585) (xy 189.325487 121.5585) (xy 189.512288 121.518794) (xy 189.686752 121.441118)
 				(xy 189.841253 121.328866) (xy 189.89606 121.267997) (xy 189.969034 121.186951) (xy 189.969035 121.186949)

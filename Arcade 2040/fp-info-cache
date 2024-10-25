@@ -1,4 +1,4 @@
-23717588109817192
+23714643382838020
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -96410,104 +96410,6 @@ Varistor VF
 0
 2
 2
-artwork
-c64_ready
-
-
-0
-0
-0
-artwork
-c64_ready2
-
-
-0
-0
-0
-artwork
-dizzy
-
-
-0
-0
-0
-artwork
-ik_plus
-
-
-0
-0
-0
-artwork
-last_ninja
-
-
-0
-0
-0
-artwork
-platoon
-
-
-0
-0
-0
-artwork
-robocop
-
-
-0
-0
-0
-artwork
-shinobi
-
-
-0
-0
-0
-artwork
-sotb
-
-
-0
-0
-0
-artwork
-sotb2
-
-
-0
-0
-0
-artwork
-sotb_left
-
-
-0
-0
-0
-artwork
-sotb_orb
-
-
-0
-0
-0
-artwork
-sotb_right
-
-
-0
-0
-0
-artwork
-sotb_title
-
-
-0
-0
-0
 logo
 c64_joykey
 
@@ -96536,3 +96438,87 @@ DEV
 0
 1
 1
+pi_pico
+RP2040-Zero
+Through hole straight pin header, 2x20, 2.54mm pitch, double rows
+Through hole pin header THT 2x20 2.54mm double row
+0
+46
+23
+pi_pico
+RPi_Pico_SMD_TH
+Through hole straight pin header, 2x20, 2.54mm pitch, double rows
+Through hole pin header THT 2x20 2.54mm double row
+0
+86
+43
+pi_pico
+RPi_Pico_SMD_TH_Clean
+Through hole straight pin header, 2x20, 2.54mm pitch, double rows
+Through hole pin header THT 2x20 2.54mm double row
+0
+86
+43
+power
+BARREL_JACK
+DC Barrel Jack
+Power Jack
+0
+3
+3
+power
+PWR_Specification
+Barrel connector polarity indicator
+barrel polarity
+0
+0
+0
+power
+PWR_Specification_Single
+Barrel connector polarity indicator
+barrel polarity
+0
+0
+0
+solder_bridge
+bridge
+Through hole straight pin header, 1x02, 1.00mm pitch, single row
+Through hole pin header THT 1x02 1.00mm single row
+0
+2
+2
+solder_bridge
+bridge2
+Through hole straight pin header, 1x02, 1.00mm pitch, single row
+Through hole pin header THT 1x02 1.00mm single row
+0
+2
+2
+solder_bridge
+bridge_r
+Through hole straight pin header, 1x02, 1.00mm pitch, single row
+Through hole pin header THT 1x02 1.00mm single row
+0
+2
+2
+solder_bridge
+select
+Through hole straight pin header, 1x02, 1.00mm pitch, single row
+Through hole pin header THT 1x02 1.00mm single row
+0
+3
+3
+solder_bridge
+select_r
+Through hole straight pin header, 1x02, 1.00mm pitch, single row
+Through hole pin header THT 1x02 1.00mm single row
+0
+3
+3
+switch_cutout
+SW_PUSH_6mm
+https://www.omron.com/ecb/products/pdf/en-b3f.pdf
+tact sw push 6mm
+0
+4
+2

@@ -48,10 +48,16 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.508
+          "min_clearance": 0.0
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -63,7 +69,7 @@
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
-        "courtyards_overlap": "error",
+        "courtyards_overlap": "ignore",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
@@ -91,9 +97,9 @@
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
-        "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_edge_clearance": "ignore",
+        "silk_over_copper": "ignore",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
@@ -109,7 +115,7 @@
         "via_dangling": "warning",
         "zones_intersect": "error"
       },
-      "rule_severitieslegacy_courtyards_overlap": true,
+      "rule_severitieslegacy_courtyards_overlap": false,
       "rule_severitieslegacy_no_courtyard_defined": false,
       "rules": {
         "max_error": 0.005,
@@ -174,7 +180,10 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.381
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -201,7 +210,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -434,7 +448,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "C64 Joykey Faceplate A1.kicad_pro",
+    "filename": "Arcade 2040.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -455,6 +469,23 @@
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "PWR",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.381,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -464,8 +495,20 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "Default",
-        "pattern": "Net-(M1-Pad1)"
+        "netclass": "PWR",
+        "pattern": "VCC"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "VIN"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "+3V3"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "GND"
       }
     ]
   },
@@ -473,7 +516,7 @@
     "last_paths": {
       "gencad": "",
       "idf": "",
-      "netlist": "C64 Joykey Faceplate.net",
+      "netlist": "C64 Joykey.net",
       "plot": "export/",
       "pos_files": "",
       "specctra_dsn": "",
@@ -572,7 +615,7 @@
     },
     "net_format_name": "Pcbnew",
     "page_layout_descr_file": "",
-    "plot_directory": "../../documentation/schematic/faceplates/",
+    "plot_directory": "../documentation/schematic/",
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -585,8 +628,20 @@
   },
   "sheets": [
     [
-      "ef925227-edd1-4e26-802a-be0da2d3a35f",
+      "1673ead5-026d-4add-8d8b-47a838e01efc",
       "Root"
+    ],
+    [
+      "72ab2428-84f3-4b62-be7c-b8c5e77f1187",
+      "System"
+    ],
+    [
+      "c0604445-6768-4ea1-84de-6d0e018f2545",
+      "Power"
+    ],
+    [
+      "cd8d7051-b9d7-40e0-bf7b-1ec0874d76e2",
+      "Buttons"
     ]
   ],
   "text_variables": {}
