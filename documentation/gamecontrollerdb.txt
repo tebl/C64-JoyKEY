@@ -1,0 +1,4 @@
+03000000591c00002300000010010000,Retro Games LTD THEJosytick Original Joystick,b:b1,a:b0,back:b6,leftshoulder:b4,leftx:a0,lefty:a1,rightshoulder:b5,start:b7,x:b2,y:b3,platform:Linux,
+03000000591c00002400000010010000,Retro Games LTD THEJoystick MicroSwitch Joystick,b:b1,a:b0,back:b6,leftshoulder:b4,leftx:a0,lefty:a1,rightshoulder:b5,start:b7,x:b2,y:b3,platform:Linux,
+03000000591c00002600000010010000,Retro Games LTD THEGamepad,a:b2,b:b1,x:b3,y:b0,back:b6,start:b7,leftshoulder:b4,rightshoulder:b5,leftx:a0,lefty:a1,platform:Linux,
+030003f05e0400008e020000140100001118654,C64 JoyKEY 2040,a:b0,b:b1,x:b2,y:b3,back:b6,start:b7,guide:b8,leftshoulder:b4,rightshoulder:b5,leftstick:b9,rightstick:b10,leftx:a0,lefty:a1,rightx:a3,righty:a4,lefttrigger:a2,righttrigger:a5,dpup:h0.1,dpleft:h0.8,dpdown:h0.4,dpright:h0.2,platform:Linux,
