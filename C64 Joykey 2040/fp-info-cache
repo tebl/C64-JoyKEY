@@ -1,4 +1,4 @@
-23705064595863359
+23706794398229545
 2n3904
 2N3904_TO-92_Horizontal_FlatSideDown
 TO-92 horizontal, leads in-line, narrow, oval pads, drill 0.75mm (see NXP sot054_po.pdf)
@@ -96461,6 +96461,13 @@ Through hole pin header THT 2x20 2.54mm double row
 23
 pi_pico
 RPi_Pico_SMD_TH
+Through hole straight pin header, 2x20, 2.54mm pitch, double rows
+Through hole pin header THT 2x20 2.54mm double row
+0
+86
+43
+pi_pico
+RPi_Pico_SMD_TH_Clean
 Through hole straight pin header, 2x20, 2.54mm pitch, double rows
 Through hole pin header THT 2x20 2.54mm double row
 0

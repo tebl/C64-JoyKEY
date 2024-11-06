@@ -52,15 +52,7 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [
-        "shorting_items|169545000|102235000|8b44ffe1-2332-406b-b1f7-32acc7106100|3d5423ba-cc0c-47c2-b60b-b04afa1b964a",
-        "shorting_items|169545000|97155000|0db67e5a-a12b-41a0-ad2b-13cdd62f95b0|b7731273-bfab-4832-b05c-86f90aec5321",
-        "shorting_items|169545000|99695000|6c7c900c-bd93-45de-b3ac-732dd72c43ba|d14981af-496f-4e2d-a733-66bf8d919fe5",
-        "shorting_items|172085000|104775000|ee645ffb-8223-43bd-9328-beca6755bf03|ac02fa82-7930-4189-995f-0e68cc73af42",
-        "shorting_items|182245000|104775000|2f6356eb-21e3-40d7-a95a-7006b917f1ba|897881ce-5423-4132-9fce-bf2a2cac6fa3",
-        "starved_thermal|200025000|86360000|00000000-0000-0000-0000-0000601db789|96dd1066-288a-4213-8041-ff8e6ec81ec3|B.Cu",
-        "starved_thermal|222885000|86360000|00000000-0000-0000-0000-0000601db789|5913bb1f-2559-4d00-9368-3eedc1214d15|B.Cu"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -702,6 +694,10 @@
       {
         "netclass": "PWR",
         "pattern": "VCC"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "Net-(D26-A)"
       }
     ]
   },

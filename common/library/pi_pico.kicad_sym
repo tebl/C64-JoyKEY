@@ -886,7 +886,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RPi_Pico:RPi_Pico_SMD_TH"
+		(property "Footprint" "pi_pico:RP2040-Zero"
 			(at 0 27.94 0)
 			(effects
 				(font
@@ -938,7 +938,7 @@
 					(type outline)
 				)
 			)
-			(pin power_in line
+			(pin power_out line
 				(at -20.32 24.13 0)
 				(length 5.08)
 				(name "VBUS"

@@ -664,6 +664,151 @@
 				)
 			)
 		)
+		(symbol "Diode:1N5819"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N5819"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.vishay.com/docs/88525/1n5817.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "40V 1A Schottky Barrier Rectifier Diode, DO-41"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?41*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N5819_0_1"
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N5819_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "mounting:Mounting_Pin"
 			(pin_names
 				(offset 1.016) hide)
@@ -801,7 +946,7 @@
 					)
 				)
 			)
-			(property "Footprint" "RPi_Pico:RPi_Pico_SMD_TH"
+			(property "Footprint" "pi_pico:RP2040-Zero"
 				(at 0 27.94 0)
 				(effects
 					(font
@@ -853,7 +998,7 @@
 						(type outline)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at -20.32 24.13 0)
 					(length 5.08)
 					(name "VBUS"
@@ -1721,8 +1866,8 @@
 		(uuid "88c383ab-eb07-483b-99fa-1b7d4dbf698b")
 	)
 	(no_connect
-		(at 219.71 170.18)
-		(uuid "10b1cd08-0877-4faf-87e6-0e6e5a8dcd24")
+		(at 262.89 144.78)
+		(uuid "5d8eca5e-7959-4b2a-938f-875b863cb8c6")
 	)
 	(no_connect
 		(at 195.58 139.7)
@@ -1752,16 +1897,6 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 144.78) (xy 267.97 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02efa214-5550-4e3f-b9d5-73449292d711")
-	)
-	(wire
-		(pts
 			(xy 368.3 157.48) (xy 368.3 161.29)
 		)
 		(stroke
@@ -1782,7 +1917,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 161.29) (xy 227.33 177.8)
+			(xy 227.33 161.29) (xy 227.33 180.34)
 		)
 		(stroke
 			(width 0)
@@ -1832,7 +1967,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 175.26) (xy 224.79 175.26)
+			(xy 186.69 177.8) (xy 224.79 177.8)
 		)
 		(stroke
 			(width 0)
@@ -1912,6 +2047,26 @@
 	)
 	(wire
 		(pts
+			(xy 176.53 172.72) (xy 181.61 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f09f281-d599-49cb-8411-8f88ecc1255e")
+	)
+	(wire
+		(pts
+			(xy 186.69 172.72) (xy 219.71 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f5b4255-c074-4fbf-a117-94260203e0e3")
+	)
+	(wire
+		(pts
 			(xy 405.13 24.13) (xy 405.13 27.94)
 		)
 		(stroke
@@ -1952,7 +2107,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 177.8) (xy 181.61 177.8)
+			(xy 176.53 180.34) (xy 181.61 180.34)
 		)
 		(stroke
 			(width 0)
@@ -2082,7 +2237,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 172.72) (xy 186.69 172.72)
+			(xy 222.25 175.26) (xy 186.69 175.26)
 		)
 		(stroke
 			(width 0)
@@ -2112,7 +2267,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 177.8) (xy 227.33 177.8)
+			(xy 186.69 180.34) (xy 227.33 180.34)
 		)
 		(stroke
 			(width 0)
@@ -2142,7 +2297,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 175.26) (xy 224.79 161.29)
+			(xy 224.79 161.29) (xy 224.79 177.8)
 		)
 		(stroke
 			(width 0)
@@ -2152,7 +2307,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 170.18) (xy 219.71 161.29)
+			(xy 219.71 161.29) (xy 219.71 172.72)
 		)
 		(stroke
 			(width 0)
@@ -2162,7 +2317,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 172.72) (xy 176.53 172.72)
+			(xy 181.61 175.26) (xy 176.53 175.26)
 		)
 		(stroke
 			(width 0)
@@ -2232,7 +2387,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 120.65) (xy 194.31 129.54)
+			(xy 194.31 113.03) (xy 194.31 129.54)
 		)
 		(stroke
 			(width 0)
@@ -2252,7 +2407,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 175.26) (xy 176.53 175.26)
+			(xy 181.61 177.8) (xy 176.53 177.8)
 		)
 		(stroke
 			(width 0)
@@ -2302,7 +2457,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 161.29) (xy 222.25 172.72)
+			(xy 222.25 161.29) (xy 222.25 175.26)
 		)
 		(stroke
 			(width 0)
@@ -2786,7 +2941,7 @@
 	)
 	(global_label "P1_FIRE5"
 		(shape input)
-		(at 176.53 172.72 180)
+		(at 176.53 175.26 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2795,7 +2950,7 @@
 		)
 		(uuid "b761ff7b-4a12-41a6-9e35-eeb8c19a7b5a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 176.53 172.72 0)
+			(at 176.53 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2828,7 +2983,7 @@
 	)
 	(global_label "P1_FIRE3"
 		(shape input)
-		(at 176.53 175.26 180)
+		(at 176.53 177.8 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2837,7 +2992,7 @@
 		)
 		(uuid "c17d4301-932c-4b0d-8d79-7faff9a5a4df")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 176.53 175.26 0)
+			(at 176.53 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2848,16 +3003,16 @@
 	)
 	(global_label "P1_FIRE6"
 		(shape input)
-		(at 273.05 144.78 0)
+		(at 176.53 172.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "d4ea7ca4-9eff-4918-ae51-ef999b5db72c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 273.05 144.78 0)
+			(at 176.53 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2888,7 +3043,7 @@
 	)
 	(global_label "P2_FIRE3"
 		(shape input)
-		(at 176.53 177.8 180)
+		(at 176.53 180.34 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2897,7 +3052,7 @@
 		)
 		(uuid "e65711b8-8d13-44e0-84bc-b8a25203447d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 176.53 177.8 0)
+			(at 176.53 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3650,32 +3805,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Small")
-		(at 184.15 175.26 0)
+		(lib_id "Diode:1N5819")
+		(at 200.66 116.84 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "3965644f-8b8d-4fd7-9bcb-4168d9f1735f")
-		(property "Reference" "D15"
-			(at 180.34 173.99 0)
+		(uuid "2967e7b0-b2f9-4096-8d12-ba9be4e42744")
+		(property "Reference" "D26"
+			(at 206.1464 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "1N4148"
-			(at 189.23 173.99 0)
+		(property "Value" "1n5819"
+			(at 203.835 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 184.15 175.26 90)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
+			(at 200.66 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3684,7 +3840,74 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 184.15 175.26 90)
+			(at 200.66 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 200.66 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "355ca822-da07-4355-b4de-3ed321ca3207")
+		)
+		(pin "2"
+			(uuid "43071bfd-6207-42a7-bf1f-696aaa2a98f1")
+		)
+		(instances
+			(project "C64 Joykey 2040"
+				(path "/1673ead5-026d-4add-8d8b-47a838e01efc"
+					(reference "D26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 184.15 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3965644f-8b8d-4fd7-9bcb-4168d9f1735f")
+		(property "Reference" "D15"
+			(at 180.34 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 189.23 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 184.15 177.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 184.15 177.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3693,7 +3916,7 @@
 			)
 		)
 		(property "Description" "Diode, small symbol"
-			(at 184.15 175.26 0)
+			(at 184.15 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3702,7 +3925,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 184.15 175.26 0)
+			(at 184.15 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3711,7 +3934,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 184.15 175.26 0)
+			(at 184.15 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4020,7 +4243,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Small")
-		(at 184.15 177.8 0)
+		(at 184.15 180.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4028,7 +4251,7 @@
 		(dnp no)
 		(uuid "76827742-2433-4374-bedb-8d9ce67229ff")
 		(property "Reference" "D16"
-			(at 180.34 176.53 0)
+			(at 180.34 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4036,7 +4259,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 189.23 176.53 0)
+			(at 189.23 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4044,7 +4267,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 184.15 177.8 90)
+			(at 184.15 180.34 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4053,7 +4276,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 184.15 177.8 90)
+			(at 184.15 180.34 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4062,7 +4285,7 @@
 			)
 		)
 		(property "Description" "Diode, small symbol"
-			(at 184.15 177.8 0)
+			(at 184.15 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4071,7 +4294,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 184.15 177.8 0)
+			(at 184.15 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4080,7 +4303,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 184.15 177.8 0)
+			(at 184.15 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4277,7 +4500,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Small")
-		(at 184.15 172.72 0)
+		(at 184.15 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4285,7 +4508,7 @@
 		(dnp no)
 		(uuid "8705e526-4062-48f8-bb8b-6a18598d8cb5")
 		(property "Reference" "D14"
-			(at 180.34 171.45 0)
+			(at 180.34 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4293,7 +4516,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 189.23 171.45 0)
+			(at 189.23 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4301,7 +4524,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 184.15 172.72 90)
+			(at 184.15 175.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4310,7 +4533,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 184.15 172.72 90)
+			(at 184.15 175.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4319,7 +4542,7 @@
 			)
 		)
 		(property "Description" "Diode, small symbol"
-			(at 184.15 172.72 0)
+			(at 184.15 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4328,7 +4551,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 184.15 172.72 0)
+			(at 184.15 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4337,7 +4560,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 184.15 172.72 0)
+			(at 184.15 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4448,7 +4671,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 200.66 120.65 0)
+		(at 200.66 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4457,7 +4680,7 @@
 		(fields_autoplaced yes)
 		(uuid "8f2651fe-a829-464d-8460-766049c4147f")
 		(property "Reference" "#PWR018"
-			(at 200.66 124.46 0)
+			(at 200.66 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4466,7 +4689,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 200.66 115.57 0)
+			(at 200.66 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4474,7 +4697,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 200.66 120.65 0)
+			(at 200.66 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4483,7 +4706,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 200.66 120.65 0)
+			(at 200.66 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4492,7 +4715,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 200.66 120.65 0)
+			(at 200.66 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5071,7 +5294,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 194.31 120.65 0)
+		(at 194.31 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5080,7 +5303,7 @@
 		(fields_autoplaced yes)
 		(uuid "e238501b-95f4-4f17-9e0b-fb3ebea30e5f")
 		(property "Reference" "#PWR019"
-			(at 194.31 124.46 0)
+			(at 194.31 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5089,7 +5312,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 194.31 115.57 0)
+			(at 194.31 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5097,7 +5320,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 194.31 120.65 0)
+			(at 194.31 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5106,7 +5329,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 194.31 120.65 0)
+			(at 194.31 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5115,7 +5338,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 194.31 120.65 0)
+			(at 194.31 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5137,8 +5360,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Small")
-		(at 265.43 144.78 0)
-		(mirror y)
+		(at 184.15 172.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5146,7 +5368,7 @@
 		(dnp no)
 		(uuid "e776c680-a6b5-4e58-989c-c86e45bfcfff")
 		(property "Reference" "D25"
-			(at 269.24 143.51 0)
+			(at 180.34 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5154,7 +5376,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 260.35 143.51 0)
+			(at 189.23 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5162,7 +5384,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 265.43 144.78 90)
+			(at 184.15 172.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5171,7 +5393,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 265.43 144.78 90)
+			(at 184.15 172.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5180,7 +5402,7 @@
 			)
 		)
 		(property "Description" "Diode, small symbol"
-			(at 265.43 144.78 0)
+			(at 184.15 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5189,7 +5411,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 265.43 144.78 0)
+			(at 184.15 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5198,7 +5420,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 265.43 144.78 0)
+			(at 184.15 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
