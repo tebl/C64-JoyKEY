@@ -6793,14 +6793,15 @@
 			)
 		)
 		(property "Value" "330"
-			(at 6.35 0 90)
+			(at 7.62 -0.635 90)
 			(layer "F.SilkS")
 			(uuid "14967105-6725-4581-bc4c-2ced80442fb1")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.8 0.8)
+					(thickness 0.1)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
@@ -7065,14 +7066,15 @@
 			)
 		)
 		(property "Value" "100"
-			(at 6.35 0 90)
+			(at 7.62 -0.635 90)
 			(layer "F.SilkS")
 			(uuid "dfd840f3-c108-44a5-9111-804a6dee4954")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.8 0.8)
+					(thickness 0.1)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
@@ -7337,14 +7339,15 @@
 			)
 		)
 		(property "Value" "330"
-			(at 6.35 0 90)
+			(at 7.62 -0.635 90)
 			(layer "F.SilkS")
 			(uuid "102bcbcb-fe40-4388-a0a6-1c0db9117c10")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.8 0.8)
+					(thickness 0.1)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
@@ -7609,14 +7612,15 @@
 			)
 		)
 		(property "Value" "330"
-			(at 6.35 0 90)
+			(at 7.62 -0.635 90)
 			(layer "F.SilkS")
 			(uuid "77df658d-0198-4bed-9db7-2df8c3ba7b12")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.8 0.8)
+					(thickness 0.1)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
@@ -7881,14 +7885,15 @@
 			)
 		)
 		(property "Value" "330"
-			(at 6.35 0 90)
+			(at 7.62 -0.635 90)
 			(layer "F.SilkS")
 			(uuid "a73145c8-da28-453e-ad37-6a288408579a")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.8 0.8)
+					(thickness 0.1)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
@@ -8153,14 +8158,15 @@
 			)
 		)
 		(property "Value" "330"
-			(at 6.35 0 90)
+			(at 7.62 -0.635 90)
 			(layer "F.SilkS")
 			(uuid "6f76b84f-9b84-4309-ad52-70d0b4d52f0a")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.8 0.8)
+					(thickness 0.1)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
@@ -8425,14 +8431,15 @@
 			)
 		)
 		(property "Value" "330"
-			(at 6.35 0 90)
+			(at 7.62 -0.635 90)
 			(layer "F.SilkS")
 			(uuid "1b80c1bd-37fa-4a7d-89b9-81a5f2900680")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.8 0.8)
+					(thickness 0.1)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
@@ -8697,14 +8704,15 @@
 			)
 		)
 		(property "Value" "330"
-			(at 6.35 0 90)
+			(at 7.62 -0.635 90)
 			(layer "F.SilkS")
 			(uuid "afeebd0a-808b-41e3-a00c-d4d88e16a446")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.8 0.8)
+					(thickness 0.1)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
@@ -9172,14 +9180,15 @@
 			)
 		)
 		(property "Value" "330"
-			(at 6.35 0 90)
+			(at 7.62 -0.635 90)
 			(layer "F.SilkS")
 			(uuid "256829a2-c466-46a1-b9bb-d029ac37a4bf")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.8 0.8)
+					(thickness 0.1)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
@@ -17174,17 +17183,6 @@
 				(justify right)
 			)
 		)
-		(fp_text user "Copper Keepouts shown on Dwgs layer"
-			(at 0.1 -30.2 0)
-			(layer "Cmts.User")
-			(uuid "1d76b95f-0375-48dd-8fc3-c6036c7ec145")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(fp_text user "${REFERENCE}"
 			(at 0 0 180)
 			(layer "F.Fab")
@@ -19142,7 +19140,7 @@
 			(uuid "f63d092f-d547-4141-adf0-7cc356d81e3c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 5.08 0 360)
+			(at 5.08 0 0)
 			(layer "F.Fab")
 			(uuid "e75c401d-91fb-4000-9c7e-4fa6c7133282")
 			(effects
@@ -20357,7 +20355,7 @@
 			)
 		)
 		(property "Value" "Expansion"
-			(at -2.54 3.81 270)
+			(at -2.54 3.81 -90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "76fe1942-294a-4179-8a37-2c24a2cfc206")
@@ -24895,6 +24893,18 @@
 			)
 		)
 	)
+	(gr_text "DOWN"
+		(at 194.31 143.51 90)
+		(layer "F.SilkS")
+		(uuid "1d122df3-0391-457b-8674-fd51ea7236e6")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "P1\nF1"
 		(at 147.955 155.575 0)
 		(layer "F.SilkS")
@@ -24906,6 +24916,18 @@
 			)
 		)
 	)
+	(gr_text "RIGHT"
+		(at 215.265 143.51 90)
+		(layer "F.SilkS")
+		(uuid "59924865-3295-4588-b694-470b48de65cb")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "P1\nF5"
 		(at 211.393 155.575 0)
 		(layer "F.SilkS")
@@ -24915,6 +24937,18 @@
 				(size 1 1)
 				(thickness 0.15)
 			)
+		)
+	)
+	(gr_text "UP"
+		(at 194.31 122.555 90)
+		(layer "F.SilkS")
+		(uuid "7e047add-0eb5-4dab-bc7d-c248d79d8752")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+			(justify left bottom)
 		)
 	)
 	(gr_text "SDA"
@@ -24929,6 +24963,42 @@
 			(justify left)
 		)
 	)
+	(gr_text "PWR"
+		(at 143.51 98.425 90)
+		(layer "F.SilkS")
+		(uuid "7fa5e445-2f4c-4c07-a8a9-5f8c6c12bd77")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "P2_F3"
+		(at 143.51 123.825 90)
+		(layer "F.SilkS")
+		(uuid "906580c8-8da2-40f4-8d0c-1d5088957877")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "SYS"
+		(at 147.32 98.425 90)
+		(layer "F.SilkS")
+		(uuid "a6a402c1-3467-4c88-a67a-728ddaed8498")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "GND"
 		(at 146.05 133.35 0)
 		(layer "F.SilkS")
@@ -24939,6 +25009,30 @@
 				(thickness 0.1)
 			)
 			(justify left)
+		)
+	)
+	(gr_text "P2_F2"
+		(at 147.32 123.825 90)
+		(layer "F.SilkS")
+		(uuid "b6a30b1c-3eab-4882-a8b9-618ca9b9b289")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "LEFT"
+		(at 173.355 143.51 90)
+		(layer "F.SilkS")
+		(uuid "ba1f3c6f-7e7e-4d42-b9f2-dd4524fc68e4")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+			(justify left bottom)
 		)
 	)
 	(gr_text "SCL"
@@ -24985,6 +25079,18 @@
 				(size 1 1)
 				(thickness 0.15)
 			)
+		)
+	)
+	(gr_text "P2_F1"
+		(at 169.545 143.51 90)
+		(layer "F.SilkS")
+		(uuid "fdb4655b-7713-48cb-ac8a-77b66cb52fc8")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+			(justify left bottom)
 		)
 	)
 	(gr_text "3v3"
