@@ -4823,7 +4823,7 @@
 				)
 			)
 		)
-		(property "Footprint" "pi_pico:RP2040-Zero"
+		(property "Footprint" "pi_pico:RP2040-Zero-THT"
 			(at 224.79 120.65 0)
 			(effects
 				(font
