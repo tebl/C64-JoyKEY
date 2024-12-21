@@ -5240,7 +5240,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+		(property "Footprint" "JST_XH_Right_Angle:JST_XH_B4B-XH-A_1x04_P2.50mm_Right_Angle"
 			(at 252.73 138.43 0)
 			(effects
 				(font

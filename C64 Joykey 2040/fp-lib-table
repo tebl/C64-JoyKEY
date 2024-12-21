@@ -7,4 +7,5 @@
   (lib (name "2n3904")(type "KiCad")(uri "$KIPRJMOD/../common/modules/2n3904.pretty")(options "")(descr ""))
   (lib (name "logo")(type "KiCad")(uri "$KIPRJMOD/../common/modules/logo.pretty")(options "")(descr ""))
   (lib (name "pi_pico")(type "KiCad")(uri "$KIPRJMOD/../common/modules/pi_pico.pretty")(options "")(descr ""))
+  (lib (name "JST_XH_Right_Angle")(type "KiCad")(uri "D:/ownCloud/Documents/Projects/C64 Joykey/common/modules/JST_XH_Right_Angle.pretty")(options "")(descr ""))
 )

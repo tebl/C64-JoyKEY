@@ -1,4 +1,4 @@
-23708529757516221
+23710264328681509
 2n3904
 2N3904_TO-92_Horizontal_FlatSideDown
 TO-92 horizontal, leads in-line, narrow, oval pads, drill 0.75mm (see NXP sot054_po.pdf)
@@ -63076,6 +63076,13 @@ THT
 0
 4
 2
+JST_XH_Right_Angle
+JST_XH_B4B-XH-A_1x04_P2.50mm_Right_Angle
+JST XH series connector, B4B-XH-A (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf), generated with kicad-footprint-generator
+connector JST XH vertical
+0
+4
+4
 Jumper
 SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm
 SMD Solder Jumper, 1x1.5mm Pads, 0.3mm gap, bridged with 2 copper strips
