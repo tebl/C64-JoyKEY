@@ -948,7 +948,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5d6ddf0d-24ff-4c31-825e-b485f46cfadb")
-		(property "Reference" "JP3"
+		(property "Reference" "JP2"
 			(at 163.0172 82.6516 90)
 			(effects
 				(font
@@ -1005,7 +1005,7 @@
 		(instances
 			(project "Adapter 9 from 2040"
 				(path "/1673ead5-026d-4add-8d8b-47a838e01efc/2fa2432a-52d4-42db-b1d9-b3c408329551"
-					(reference "JP3")
+					(reference "JP2")
 					(unit 1)
 				)
 			)
@@ -1021,7 +1021,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6f0ec593-5128-444f-a5f7-4357fed5d2db")
-		(property "Reference" "JP2"
+		(property "Reference" "JP3"
 			(at 144.3228 82.6516 90)
 			(effects
 				(font
@@ -1078,7 +1078,7 @@
 		(instances
 			(project "Adapter 9 from 2040"
 				(path "/1673ead5-026d-4add-8d8b-47a838e01efc/2fa2432a-52d4-42db-b1d9-b3c408329551"
-					(reference "JP2")
+					(reference "JP3")
 					(unit 1)
 				)
 			)
