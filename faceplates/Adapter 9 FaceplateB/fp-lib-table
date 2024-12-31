@@ -1,0 +1,10 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "mounting")(type "KiCad")(uri "$KIPRJMOD/../common/modules/mounting.pretty")(options "")(descr ""))
+  (lib (name "solder_bridge")(type "KiCad")(uri "$KIPRJMOD/../common/modules/solder_bridge.pretty")(options "")(descr ""))
+  (lib (name "logo")(type "KiCad")(uri "$KIPRJMOD/../common/modules/logo.pretty")(options "")(descr ""))
+  (lib (name "pi_pico")(type "KiCad")(uri "$KIPRJMOD/../common/modules/pi_pico.pretty")(options "")(descr ""))
+  (lib (name "switch_cutout")(type "KiCad")(uri "$KIPRJMOD/../common/modules/switch_cutout.pretty")(options "")(descr ""))
+  (lib (name "RND_DSUB")(type "KiCad")(uri "$KIPRJMOD/../common/modules/RND_DSUB.pretty")(options "")(descr ""))
+  (lib (name "i2c_oled")(type "KiCad")(uri "$KIPRJMOD/../common/modules/i2c_oled.pretty")(options "")(descr ""))
+)
