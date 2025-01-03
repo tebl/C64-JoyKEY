@@ -6724,6 +6724,17 @@
 			(justify mirror)
 		)
 	)
+	(gr_text "WayWayWay"
+		(at 160.169698 118.1565 270)
+		(layer "F.SilkS")
+		(uuid "0ccf7268-0cb7-44b6-a06d-3da1e77f2800")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.1)
+			)
+		)
+	)
 	(gr_text "SCL"
 		(at 196.85 119.38 0)
 		(layer "F.SilkS")
