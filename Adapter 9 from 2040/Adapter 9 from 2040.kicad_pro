@@ -54,8 +54,7 @@
       "diff_pair_dimensions": [],
       "drc_exclusions": [
         "shorting_items|207528000|123236500|7c867210-cbcb-407e-9b4d-92bc121857f8|48e7e000-006f-4282-afa2-6d7bea5101d4",
-        "starved_thermal|225308000|110536500|00000000-0000-0000-0000-0000601db789|49194f96-5a3b-4ab0-9084-f2e2a5febc33|B.Cu",
-        "unconnected_items|168787500|105656500|7c957015-d6e0-4148-b3e6-762f42956dd8|33769952-e2fc-4734-b6d3-2760b58e5019"
+        "starved_thermal|225308000|110536500|00000000-0000-0000-0000-0000601db789|49194f96-5a3b-4ab0-9084-f2e2a5febc33|B.Cu"
       ],
       "meta": {
         "filename": "board_design_settings.json",
