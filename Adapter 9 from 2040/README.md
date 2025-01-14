@@ -10,7 +10,6 @@ Except this time the implementation was based on [GP2040-CE](https://gp2040-ce.i
 Personally I wanted it for use with the various releases from *Retro Games Ltd.* - great little systems for playing games on when I want something that should just work, but absolutely terrible controllers. I've tested it with *TheC64 Mini*, *TheA500 Mini* and most recently *TheSpectrum* to great effect, and being able to use my vintage joysticks with them only adds to the enjoyment.
 
 - [1> Building the device](#1-building-the-device)
-  - [1.1> SD-card](#11-sd-card)
 - [2> Schematic](#2-schematic)
 - [3> BOM](#3-bom)
 
